@@ -80,7 +80,7 @@ on-display: {!
 
 @grand_coalition_saxony
 subtitle: 우리는 부르주아 정당들과 어떻게든 화해하여 그들이 다시 우리와 함께 통치할 의사가 있음을 확인했습니다.
-unavailable-subtitle: [? if z_relation < 45 and stegerwald_path: 우리는 [? if z_party_name != “CVP”: <span style="color: #000000;">중앙당</span>?][? if z_party_name == “CVP”: <span style="color: #000000;">**CVP**</span>?]와의 관계를 더욱 강화해야 합니다. ?][? if dvp_toleration_threshold_fail_saxony: 우리는 [? if not lvp_formed: <span style="color: #C0A054;">DVP</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]와의 더 높은 관계가 필요합니다. ?][? if left_strength >= 30: 우리 작센 주 조직은 너무 좌파적이어서 이 선택지를 고려조차 할 수 없습니다. 결국, 과거 그들의 완고한 거부는 의회 파벌 대다수의 추방과 그에 따른 <span style="color: #fe9e00;">ASPD</span>의 결성으로 이어졌습니다. ?]
+unavailable-subtitle: [? if z_relation < 45 and stegerwald_path: 우리는 [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]와의 관계를 더욱 강화해야 합니다. ?][? if dvp_toleration_threshold_fail_saxony: 우리는 [? if not lvp_formed: <span style="color: #C0A054;">DVP</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]와의 더 높은 관계가 필요합니다. ?][? if left_strength >= 30: 우리 작센 주 조직은 너무 좌파적이어서 이 선택지를 고려조차 할 수 없습니다. 결국, 과거 그들의 완고한 거부는 의회 파벌 대다수의 추방과 그에 따른 <span style="color: #fe9e00;">ASPD</span>의 결성으로 이어졌습니다. ?]
 view-if: spd_coalition_saxony >= 50
 choose-if: spd_coalition_possible_saxony and left_strength < 30
 on-arrival: saxony_spd = 1; workers_nsdap -= 3; unemployed_nsdap -= 3; workers_spd += 3; unemployed_spd += 3; z_relation += 3; ddp_relation += 3; lvp_relation += 3; dvp_relation += 5; pro_republic += 3; reformist_dissent -= 15; reformist_strength += 10; aspd_dead = 1
