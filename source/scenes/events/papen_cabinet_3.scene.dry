@@ -1,5 +1,5 @@
-title: Papen Lifts the Ban on the <span style="color: #7A3C00;">**SA**</span>!
-subtitle: Political violence has made a resurgence...
+title: 파펜이 <span style="color: #7A3C00;">**SA**</span> 금지령을 해제하다!
+subtitle: 정치적 폭력이 다시금 급증하고 있습니다...
 view-if: chancellor = "Papen" and papen_time == 2 and sa_nationwide_ban
 new-page: true
 tags: event
@@ -17,16 +17,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= <span style="color: #7A3C00;">**SA**</span> Ban Lifted
+= <span style="color: #7A3C00;">**SA**</span> 금지령 해제
 
-The ban on the <span style="color: #7A3C00;">**SA**</span>, instituted by the previous cabinet, has been lifted in an emergency decree. This is doubtlessly apart of the conditions the [+ nsdap_leader +] attached for the <span style="color: #7A3C00;">**NSDAP**</span>'s support of the cabinet, as its paramilitary plays a large role in disrupting political meetings and creating an oppressive atmosphere on the streets.
+이전 내각이 시행했던 <span style="color: #7A3C00;">**SA**</span> 금지 조치가 긴급 명령을 통해 해제되었습니다. 이는 의심할 여지 없이 [+ nsdap_leader +]가 내각에 대한 <span style="color: #7A3C00;">**NSDAP**</span>의 지지를 대가로 내건 조건 중 하나입니다. 그들의 준군사조직이 정치 집회를 방해하고 거리에 공포 분위기를 조성하는 데 큰 역할을 하기 때문입니다.
 
-This is met with an instant increase in political violence, with the lifting of the ban being opposed by everyone except the <span style="color: #7A3C00;">Nazis</span>. This also eliminates the last rationale for continued <span style="color: #7A3C00;">Nazi</span> support for the unpopular Papen.
+이 조치는 즉각적인 정치적 폭력의 증가를 불러왔으며, <span style="color: #7A3C00;">나치</span>를 제외한 모든 이들이 금지 해제에 반대하고 있습니다. 또한 이는 인기 없는 파펜 내각을 <span style="color: #7A3C00;">나치</span>가 계속 지지해야 할 마지막 명분마저 없애버렸습니다.
 
 - @papen
 
 @papen
-title: The decree is signed by President Hindenburg.
+title: 힌덴부르크 대통령이 법령에 서명한다.
 on-arrival: sa_strength *= 2; sa_militancy += 0.1; coup_progress += 2; pro_republic -= 5; sa_ban_repealed = 1; sa_nationwide_ban = 0; sa_banned = 0
 
-The <span style="color: #7A3C00;">**SA**</span> immediately returns to mass recruiting and arming. This is too much for the Prussian police to handle.
+<span style="color: #7A3C00;">**SA**</span>는 즉시 대규모 모집과 무장을 재개했습니다. 이는 프로이센 경찰이 감당하기엔 역부족입니다.

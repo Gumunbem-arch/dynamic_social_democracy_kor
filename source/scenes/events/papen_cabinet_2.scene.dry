@@ -1,5 +1,5 @@
-title: Papen's First Emergency Decree
-subtitle: A virtual abolishment of unemployment insurance!
+title: 파펜의 첫 번째 긴급 명령
+subtitle: 실업 보험의 사실상 폐지!
 view-if: chancellor = "Papen" and papen_time == 2
 new-page: true
 tags: event
@@ -17,16 +17,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Papen's First Emergency Decree
+= 파펜의 첫 번째 긴급 명령
 
-Papen has unveiled his first emergency decree—one that keeps most of Brüning’s planned austerity measures but strips away the system of peasant homesteads. Most egregiously, it subjects all recipients of unemployment insurance to a means test after just six weeks. In effect, the system has been dismantled—radicalizing the proletariat, especially toward the <span style="color: #700000;">**Communists**</span>.
+파펜이 첫 번째 긴급 명령을 발표했습니다. 이는 브뤼닝이 계획했던 긴축 조치 대부분을 유지하면서도 농민 정착지 지원책은 폐기하는 내용입니다. 가장 심각한 점은 모든 실업 보험 수령자가 단 6주 만에 자산 조사를 받아야 한다는 것입니다. 사실상 제도가 해체된 것이나 다름없으며, 이는 프롤레타리아 계급을 급진화시켜 특히 <span style="color: #700000;">**공산당**</span> 쪽으로 쏠리게 만들고 있습니다.
 
-Unlike Brüning, who at least aimed to share the burdens of austerity across classes, Papen’s decree openly targets the working poor. Unsurprisingly, the gutting of the welfare state has triggered a spike in unemployment and a sharp dip in the stock market. As ever, Germany finds itself with no shortage of problems.
+적어도 계급 간에 긴축의 고통을 분담하려 했던 브뤼닝과 달리, 파펜의 명령은 노골적으로 빈곤 노동자층을 겨냥하고 있습니다. 당연하게도 복지 국가의 해체는 실업률 급증과 주식 시장의 폭락을 초래했습니다. 언제나 그렇듯, 독일에는 문제가 끊이지 않습니다.
 
 - @papen
 
 @papen
-title: The decree is signed by President Hindenburg.
+title: 힌덴부르크 대통령이 법령에 서명한다.
 on-arrival: unemployed += 3.5; economic_growth -= 1; inflation -= 1; budget += 1; unemployed_kpd += 4; workers_kpd += 4; workers_spd += 2; unemployed_spd += 2; workers_dnvp -= 2; workers_dnf -= 2; workers_nsdap -= 2; unemployed_nsdap -= 2; new_middle_nsdap -= 2; new_middle_kpd += 2; pro_republic -= 5
 
-The decree confirms the overtly anti-social character of the so-called “cabinet of barons,” and has ignited fury across the working class. With nearly two-thirds of the country now irrevocably hostile to the chancellor, it is politically suicidal for any party outside the <span style="color: #808080;">reactionary</span> right to support him without suffering severe electoral consequences.
+이 법령은 소위 "남작들의 내각"이 가진 명백한 반사회적 성격을 확인시켜 주었으며, 노동 계급 전체의 분노를 불러일으켰습니다. 이제 국민의 3분의 2 가까이가 총리에게 돌이킬 수 없는 적대감을 품고 있는 상황에서, <span style="color: #808080;">반동</span> 우파 이외의 정당이 심각한 선거 패배를 감수하지 않고 그를 지지하는 것은 정치적 자살행위나 다름없습니다.
