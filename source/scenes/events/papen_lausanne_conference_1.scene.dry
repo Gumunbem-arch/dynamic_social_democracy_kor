@@ -1,5 +1,5 @@
-title: Lausanne Conference Begins
-subtitle: On the question of reparations...
+title: 로잔 회의가 시작되다
+subtitle: 배상금 문제에 대하여...
 view-if: chancellor == "Papen" and papen_time == 3 and not reparations_resolved
 new-page: true
 max-visits: 1
@@ -17,15 +17,15 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Lausanne Conference Begins
+= 로잔 회의 시작
 
-At the Lausanne Conference, the Allies will meet with German representatives to settle the reparations question once and for all. With the global economic crisis still raging, most now accept that Germany cannot resume payments once the current moratorium expires.
+로잔 회의에서 연합국은 배상금 문제를 완전히 해결하기 위해 독일 대표들과 만날 것입니다. 세계 경제 위기가 여전히 맹위를 떨치고 있는 가운데, 대부분은 이제 현재의 지불 유예가 만료되면 독일이 지불을 재개할 수 없다는 것을 인정하고 있습니다.
 
-But with the reactionary nationalist Papen at the helm, Germany’s negotiating hand is weakened. The absence of the internationally respected Brüning, coupled with Papen’s reckless ambition to press for rearmament and a deletion of the 'war guilt' clause, threatens to derail the entire process.
+하지만 반동적인 민족주의자 파펜이 키를 잡고 있어, 독일의 협상력은 약화되었습니다. 국제적으로 존경받는 브뤼닝의 부재는, 재무장과 '전쟁 책임' 조항의 삭제를 압박하려는 파펜의 무모한 야망과 결합되어 전체 과정을 탈선시킬 위협이 되고 있습니다.
 
 - @lausanne
 
 @lausanne
-title: Anyhow, the German delegation is off to Switzerland.
+title: 어쨌든, 독일 대표단은 스위스로 떠납니다.
 
-At the opening session, our delegation demands the complete cancellation of reparations. This position has found sympathy from the <span style="color: #C8102E;">British</span> and the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span>. France’s new left-wing government has softened its stance as well—though they still insist that Germany enter a pact with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span>, including provisions for military détente. Negotiations will continue in the coming weeks.
+개회식에서 우리 대표단은 배상금의 완전한 취소를 요구했습니다. 이 입장은 <span style="color: #C8102E;">영국</span>과 <span style="color: #B31942;">미</span><span style="color: #0A3161;">국</span>으로부터 공감을 얻었습니다. 프랑스의 새로운 좌파 정부 또한 태도를 완화했지만, 그들은 여전히 독일이 군사적 긴장 완화 조항을 포함하여 <span style="color: #0A3161;">서방</span> <span style="color: #C8102E;">연합국</span>과 조약을 맺을 것을 주장하고 있습니다. 협상은 앞으로 몇 주 동안 계속될 것입니다.

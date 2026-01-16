@@ -1,5 +1,5 @@
-title: Lausanne Conference Concludes
-subtitle: Germany's reparations payments are virtually abolished!
+title: 로잔 회의가 종료되다
+subtitle: 독일의 배상금 지불이 사실상 폐지되다!
 view-if: chancellor == "Papen" and papen_time == 5 and not reparations_resolved
 new-page: true
 max-visits: 1
@@ -17,16 +17,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Lausanne Conference Concludes
+= 로잔 회의 종료
 
-After weeks of difficult negotiations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span>, the German delegation at the Lausanne Conference has finally secured a result—though not the one it had hoped for. When talks hit a snag, Papen made a dramatic offer: a military alliance with <span style="color: #002654;">France</span>, sealed by an exchange of general staff officers. This only outraged the <span style="color: #C8102E;">British</span> and deepened <span style="color: #002654;">French</span> mistrust.
+<span style="color: #0A3161;">서방</span> <span style="color: #C8102E;">연합국</span>과의 몇 주간의 어려운 협상 끝에, 로잔 회의의 독일 대표단은 마침내 결과를 얻어냈지만, 그것이 희망했던 결과는 아니었습니다. 회담이 난관에 부딪혔을 때, 파펜은 극적인 제안을 했습니다. 바로 참모 장교 교환으로 보증되는 <span style="color: #002654;">프랑스</span>와의 군사 동맹이었습니다. 이는 <span style="color: #C8102E;">영국</span>을 격분시키고 <span style="color: #002654;">프랑스</span>의 불신을 깊게 했을 뿐입니다.
 
-<span style="color: #C8102E;">British</span> Prime Minister Ramsay MacDonald tried to salvage the negotiations by proposing the repeal of disarmament clauses. But <span style="color: #002654;">French</span> Prime Minister Édouard Herriot rejected this outright—refusing any political discussions and treating Germany’s offer as an admission it could still pay. Backed into a corner, Papen’s delegation was left with no option but to offer a final payment of three billion marks—in exchange for nothing.
+<span style="color: #C8102E;">영국</span> 총리 램지 맥도널드는 군축 조항의 폐지를 제안함으로써 협상을 구제하려 했습니다. 그러나 <span style="color: #002654;">프랑스</span> 총리 에두아르 에리오는 이를 즉시 거부했습니다. 그는 어떠한 정치적 논의도 거부하고 독일의 제안을 여전히 지불 능력이 있다는 증거로 취급했습니다. 구석으로 몰린 파펜의 대표단은 아무런 대가 없이 30억 마르크의 최종 지불을 제안하는 것 외에는 선택의 여지가 없었습니다.
 
 - @lausanne
 
 @lausanne
-title: At least we walked away with something.
+title: 적어도 빈손으로 돌아오진 않았습니다.
 on-arrival: {!
 Q.reparations = -2;
 Q.budget += 1;
@@ -48,8 +48,8 @@ Q.old_middle_nsdap -= 2;
 Q.rural_nsdap -= 2;
 !}
 
-Germany’s reparations burden has been slashed by 90%, with no payments due for another three years. This eases the strain on the national budget and gives the government new room to maneuver on monetary and fiscal policy.
+독일의 배상금 부담은 90% 삭감되었으며, 향후 3년 동안 지불 유예를 받았습니다. 이는 국가 예산에 대한 압박을 완화하고 정부에게 통화 및 재정 정책을 운용할 새로운 여지를 줍니다.
 
-Unfortunately for Papen, this does little to ease the near-universal hatred of his government. The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> has denounced the treaty as a failure, outraged by his inability to secure any political or military concessions. Meanwhile, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties and press have handed the credit to Brüning, who laid the groundwork for the conference in the first place. This development would've certainly been more impactful if Brüning had remained in office.
+불행히도 파펜에게 있어, 이것은 그의 정부에 대한 거의 보편적인 증오를 완화하는 데 별 도움이 되지 않습니다. <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span>파는 조약을 실패로 규정하며, 어떤 정치적 또는 군사적 양보도 얻어내지 못한 그의 무능력에 분노했습니다. 한편, <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 정당들과 언론은 처음에 회의를 위한 토대를 마련한 브뤼닝에게 공을 돌렸습니다. 만약 브뤼닝이 총리직에 남아 있었다면 이 성과는 확실히 더 큰 영향력을 발휘했을 것입니다.
 
-Papen’s tarnished reputation among the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> has severely undermined Germany’s standing at the Geneva Disarmament Conference. With many now convinced that militarism has triumphed in Berlin, Schleicher’s efforts to negotiate military parity are likely to face steep resistance.
+<span style="color: #0A3161;">서방</span> <span style="color: #C8102E;">연합국</span> 사이에서 실추된 파펜의 평판은 제네바 군축 회의에서 독일의 입지를 심각하게 훼손했습니다. 많은 이들이 이제 베를린에서 군국주의가 승리했다고 확신함에 따라, 군사적 동등성을 협상하려는 슐라이허의 노력은 거센 저항에 직면할 가능성이 높습니다.

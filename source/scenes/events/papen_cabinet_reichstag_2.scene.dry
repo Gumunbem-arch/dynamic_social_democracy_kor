@@ -1,5 +1,5 @@
-title: Emergency Decree to Suspend Parliament?
-subtitle: Rumors of a President authorized unconstitutional decree...
+title: 의회를 정지시키기 위한 긴급 명령?
+subtitle: 대통령이 승인한 위헌적 법령에 대한 소문...
 view-if: chancellor = "Papen" and papen_time and (next_reichstag_time - 1) == rubicon_time and next_reichstag_time > 0 and reichstag_pres_rubicon
 on-arrival: reichstag_decree_rubicon = 1; papen_strength += 1; papen_goal = "Postpone elections indefinitely"
 new-page: true
@@ -18,8 +18,8 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Rumored Emergency Decree
+= 긴급 명령에 대한 소문
 
-It is rumored that by the end of last month, Chancellor von Papen secured Hindenburg's approval for two emergency decrees: one to dissolve the Reichstag, and another—blatantly unconstitutional—to postpone elections beyond the 60-day limit mandated by the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Constitution. These decrees would allow Papen to govern unchallenged, free from the threat of parliamentary repeal or a vote of no confidence.
+지난달 말 폰 파펜 총리가 힌덴부르크로부터 두 개의 긴급 명령에 대한 승인을 받아냈다는 소문이 돌고 있습니다. 하나는 제국의회를 해산하는 것이고, 다른 하나는—명백히 위헌적인—<span style="color: #000000;">바</span><span style="color: #DD0000;">이마</span><span style="color: #FFCC00;">르</span> 헌법이 규정한 60일 제한을 넘어 선거를 연기하는 것입니다. 이 법령들은 파펜이 의회의 폐지나 불신임 투표의 위협 없이 독단적으로 통치할 수 있게 해 줄 것입니다.
 
-Papen has quickly become Hindenburg’s favorite, and the president—unwilling to part with him—has signed off on a decree that violates the constitution he swore to uphold. Former Chancellor Brüning, upon learning of this, has threatened Hindenburg with impeachment should he proceed, persuading himself that he'd deterred Papen from presenting the decree in the next session.
+파펜은 빠르게 힌덴부르크의 총애를 받게 되었고, 대통령은 그를 잃기 싫어 자신이 수호하기로 맹세한 헌법을 위반하는 법령에 서명했습니다. 브뤼닝 전 총리는 이 사실을 알게 되자, 만약 이를 강행한다면 힌덴부르크를 탄핵하겠다고 위협했으며, 자신이 다음 회기에서 파펜이 법령을 제출하는 것을 막았다고 믿고 있습니다.

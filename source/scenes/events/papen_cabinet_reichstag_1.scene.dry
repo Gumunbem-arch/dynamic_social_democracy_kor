@@ -1,5 +1,5 @@
-title: The Reichstag Reconvenes
-subtitle: A new President of the Reichstag must be elected.
+title: 제국의회가 다시 소집되다
+subtitle: 제국의회의 새로운 의장을 선출해야 합니다.
 view-if: chancellor == "Papen" and (next_reichstag_time == rubicon_time and next_reichstag_time > 0)
 on-arrival: reichstag_pres_rubicon = 1
 new-page: true
@@ -19,26 +19,26 @@ on-display: {!
 !}
 go-to: nsdap_lead if largest_party == "NSDAP"; spd_lead if largest_party != "NSDAP"
 
-= Reichstag Reconvenes
+= 제국의회 재소집
 
 @nsdap_lead
 
-The Reichstag has reconvened for the first time since the election, with a significantly larger contingent of <span style="color: #7A3C00;">**NSDAP**</span> members now present. The immediate issue at hand is the election of the President of the Reichstag. While the position has traditionally been a procedural one, it has taken on heightened importance under Papen's presidential government, given the President's authority to influence the agenda and adjourn sessions.
+선거 이후 처음으로 제국의회가 재소집되었으며, <span style="color: #7A3C00;">**NSDAP**</span> 의원들의 수가 상당히 늘어났습니다. 당면 과제는 제국의회 의장 선출입니다. 전통적으로 절차적인 직책이었지만, 파펜의 대통령제 정부 하에서 의제에 영향을 미치고 회기를 휴회시킬 수 있는 의장의 권한을 고려할 때 그 중요성이 커졌습니다.
 
-By long-standing custom, the role is granted to the largest parliamentary delegation. That delegation is now the <span style="color: #7A3C00;">**NSDAP**</span>. The <span style="color: #000000;">Center Party</span> holds the balance of power. Will they uphold tradition and hand a key parliamentary post to an openly anti-constitutional party?
+오랜 관례에 따라 의장직은 제1당에게 돌아갑니다. 현재 제1당은 <span style="color: #7A3C00;">**NSDAP**</span>입니다. <span style="color: #000000;">중앙당</span>이 캐스팅보트를 쥐고 있습니다. 그들은 관례를 따라 공공연히 반헌법적인 정당에게 주요 의회 직책을 넘겨줄까요?
 
 - @reichstag_calculations
 
 @spd_lead
 
-The Reichstag has reconvened for the first time since the election, with a significantly larger contingent of <span style="color: #7A3C00;">**NSDAP**</span> members now present. The immediate issue at hand is the election of the President of the Reichstag. While the position has traditionally been a procedural one, it has taken on heightened importance under Papen's presidential government, given the President's authority to influence the agenda and adjourn sessions.
+선거 이후 처음으로 제국의회가 재소집되었으며, <span style="color: #7A3C00;">**NSDAP**</span> 의원들의 수가 상당히 늘어났습니다. 당면 과제는 제국의회 의장 선출입니다. 전통적으로 절차적인 직책이었지만, 파펜의 대통령제 정부 하에서 의제에 영향을 미치고 회기를 휴회시킬 수 있는 의장의 권한을 고려할 때 그 중요성이 커졌습니다.
 
-By long-standing custom, the role is granted to the largest parliamentary delegation. That delegation isn't the <span style="color: #7A3C00;">**NSDAP**</span>, but the <span style="color: #000000;">Center Party</span> backing them nonetheless is a key part of negotiations between the two parties. Without such backing, it is likely that our candidate, Paul Löbe, would be elected once again.
+오랜 관례에 따라 의장직은 제1당에게 돌아갑니다. 제1당은 <span style="color: #7A3C00;">**NSDAP**</span>가 아니지만, 그들을 지지하는 <span style="color: #000000;">중앙당</span>의 존재는 두 당 사이의 협상에서 핵심적인 부분입니다. 그러한 지지가 없다면, 우리 당의 후보인 파울 레베가 다시 한번 선출될 가능성이 높습니다.
 
 - @reichstag_calculations
 
 @reichstag_calculations
-title: The votes are tallied...
+title: 개표가 진행된다...
 go-to: goring if largest_party == "NSDAP" and z_relation < 55 and hitler_right_coalition >= 50; spd if largest_party != "NSDAP" or z_relation >= 55 or hitler_right_coalition < 50
 
 
@@ -69,9 +69,9 @@ Q.reichstag_goring = 1;
 Q.reichstag_president = "Göring";
 !}
 
-With negotiations between the <span style="color: #000000;">Center Party</span> and the <span style="color: #7A3C00;">**NSDAP**</span> underway, previously hostile relations have thawed enough for the <span style="color: #000000;">Center Party</span> to support Hermann Göring’s election as President of the Reichstag. The <span style="color: #7A3C00;">**NSDAP**</span> delegation’s newfound decorum convinced many that the party had turned over a new leaf.
+<span style="color: #000000;">중앙당</span>과 <span style="color: #7A3C00;">**NSDAP**</span> 간의 협상이 진행되는 가운데, 이전에 적대적이었던 관계가 <span style="color: #000000;">중앙당</span>이 헤르만 괴링의 제국의회 의장 선출을 지지할 만큼 충분히 완화되었습니다. <span style="color: #7A3C00;">**NSDAP**</span> 의원들이 새로이 보여준 예의 바른 태도는 많은 이들에게 당이 개과천선했다고 믿게 만들었습니다.
 
-In line with a promise made to the <span style="color: #000000;">Center Party</span>, the Reichstag has adjourned for two more weeks to allow coalition talks to take place. Yet unease is growing within the <span style="color: #000000;">Center Party</span> at the possibility of a [+ nsdap_chancellor +] chancellorship, and they may soon walk away from the table.
+<span style="color: #000000;">중앙당</span>과의 약속에 따라, 제국의회는 연정 협상을 위해 2주간 휴회에 들어갔습니다. 그러나 <span style="color: #000000;">중앙당</span> 내에서는 [+ nsdap_chancellor +] 총리직 가능성에 대한 불안감이 커지고 있어, 그들이 곧 협상 테이블을 박차고 나갈지도 모릅니다.
 
 @spd
 on-arrival: {!
@@ -101,8 +101,8 @@ Q.reichstag_president = "Löbe";
 if (!(Q.largest_party != "NSDAP" && ((Q.weimar_coalition >= 40) || (Q.popular_front_coalition >= 50 && Q.kpd_relation >= 50)))) Q.reichstag_president = "Eßer";
 !}
 
-[? if largest_party != "NSDAP": In Reichstag tradition, as the <span style="color: #c00000;">**SPD**</span> is the largest party, the <span style="color: #000000;">Center Party</span> feels bound to support us, regardless of our relations. ?][? if (z_relation >= 55 or hitler_right_coalition < 50) and largest_party == "NSDAP": However, the <span style="color: #000000;">Center Party</span> simply cannot bring itself to support elevating a <span style="color: #7A3C00;">Nazi</span> to the Reichstag presidency, breaking with tradition to elect our candidate. ?]
+[? if largest_party != "NSDAP": 제국의회 전통에 따라 <span style="color: #c00000;">**SPD**</span>가 제1당이므로, <span style="color: #000000;">중앙당</span>은 우리와의 관계와 상관없이 우리를 지지해야 한다고 느낍니다. ?][? if (z_relation >= 55 or hitler_right_coalition < 50) and largest_party == "NSDAP": 그러나 <span style="color: #000000;">중앙당</span>은 <span style="color: #7A3C00;">나치</span>를 제국의회 의장직에 앉히는 것을 도저히 지지할 수 없어, 관례를 깨고 우리 후보를 선출했습니다. ?]
 
-[? if largest_party != "NSDAP" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and kpd_relation >= 50)): Paul Löbe is elected President of the Reichstag once more, a position he held for the majority of the republic. ?][? if not (largest_party != "NSDAP" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and kpd_relation >= 50))): Unfortunately, very few other parties are willing—or have the votes—to back our candidate, Paul Löbe, and the chamber instead settles on the <span style="color: #000000;">Center</span>'s Thomas Eßer. ?]
+[? if largest_party != "NSDAP" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and kpd_relation >= 50)): 파울 레베가 다시 한번 제국의회 의장으로 선출되었습니다. 그는 공화국 존속 기간 대부분 동안 이 직책을 맡아왔습니다. ?][? if not (largest_party != "NSDAP" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and kpd_relation >= 50))): 불행히도 다른 정당들 중 우리 후보인 파울 레베를 지지할 의향이 있거나 표를 가진 정당은 거의 없었고, 의회는 대신 <span style="color: #000000;">중앙당</span>의 토마스 에서를 선택했습니다. ?]
 
-However, the Reichstag agenda committee, over our objections, has voted for a two-week adjournment with the support of the parties to our right.
+그러나 제국의회 의제 위원회는 우리의 반대에도 불구하고, 우리보다 우파인 정당들의 지지로 2주간의 휴회를 의결했습니다.

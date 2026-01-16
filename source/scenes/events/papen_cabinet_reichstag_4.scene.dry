@@ -1,5 +1,5 @@
-title: Papen Faces a Vote of No Confidence!
-subtitle: His first test of strength before the Reichstag.
+title: 파펜이 불신임 투표에 직면하다!
+subtitle: 제국의회 앞에서의 첫 번째 힘의 시험.
 view-if: chancellor = "Papen" and papen_time and next_reichstag_time == rubicon_time and next_reichstag_time > 0 and papen_back
 on-arrival: reichstag_rubicon = 1
 new-page: true
@@ -18,18 +18,18 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Vote of No Confidence
+= 불신임 투표
 
-Papen once again faces the Reichstag, unfortunate to have taken power just a day before its scheduled reconvocation. It remains unclear whether he has secured a decree authorizing the Reichstag’s dissolution, as he may still be banking on the <span style="color: #7A3C00;">**NSDAP**</span>’s toleration. One thing, however, is certain: Papen has grown disillusioned with the prospect of a [+ nsdap_chancellor +] chancellorship, and now that he holds power again, he has no intention of giving it up on their terms.
+파펜은 예정된 재소집 하루 전에 권력을 잡는 불운을 겪으며 다시 한번 제국의회와 마주합니다. 그가 여전히 <span style="color: #7A3C00;">**NSDAP**</span>의 묵인에 기대를 걸고 있을 수도 있기에, 제국의회 해산을 승인하는 법령을 확보했는지는 불분명합니다. 그러나 한 가지는 확실합니다. 파펜은 [+ nsdap_chancellor +] 총리직 전망에 환멸을 느꼈고, 이제 다시 권력을 잡은 이상 그들의 조건에 맞춰 권력을 포기할 생각은 없습니다.
 
-However, Papen, and President Hindenburg himself, believe that a forced adjournment of the Reichstag may be necessary, with it only reconvening if a parliamentary majority could agree on a constructive course. This is only a bit less provocative than outright postponing elections, and a threat of civil war is omnipresent.
+그러나 파펜과 힌덴부르크 대통령은 제국의회의 강제 휴회가 필요할 수도 있다고 믿고 있으며, 의회 과반수가 건설적인 과정에 동의할 때만 다시 소집하려 합니다. 이는 선거를 완전히 연기하는 것보다 조금 덜 도발적일 뿐이며, 내전의 위협은 언제나 도사리고 있습니다.
 
 # TODO
 
 - @reichstag
 
 @reichstag
-title: The Reichstag goes into session.
+title: 제국의회가 개회하다.
 on-arrival: {!
 const contentElement = document.getElementById('content');
 contentElement.style.backgroundColor = '#0A0A08';
@@ -43,42 +43,42 @@ const header = document.querySelector('header');
 header.style.color = '#ffffff';
 !}
 
-The Reichstag is forcibly adjourned! Police officers and Reichswehr soldiers prevent parliamentarians from entering the building, and fierce riots emerge across the country as news of this unconstitutional act reaches all corners of the nation. The <span style="color: #7A3C00;">**NSDAP**</span>, now convinced that this is all an elaborate plot by Papen to get back into power, firmly breaks with him and any chance of them entering government.
+제국의회가 강제로 휴회되었습니다! 경찰과 국방군 병사들이 의원들의 등원을 막고, 이 위헌적인 행위가 전국에 알려지자 격렬한 폭동이 발생했습니다. 이제 이것이 파펜이 권력을 되찾기 위한 정교한 음모라고 확신한 <span style="color: #7A3C00;">**NSDAP**</span>는 그와, 그리고 정부 참여의 모든 가능성과 단호히 결별합니다.
 
-However, this time, the Reichswehr is much better equipped, internal conflict plagues the <span style="color: #7A3C00;">**SA**</span>, and Hugenberg, now friendly with Papen once more pressures the <span style="color: #3E88B3;">**Stahlhelm**</span> to fight against leftists instead of the government. 
+그러나 이번에는 국방군이 훨씬 더 잘 무장되어 있고, <span style="color: #7A3C00;">**SA**</span>는 내부 갈등에 시달리고 있으며, 파펜과 다시 친해진 후겐베르크는 <span style="color: #3E88B3;">**철모단**</span>이 정부 대신 좌파와 싸우도록 압력을 가하고 있습니다.
 
-Now, it's on us. Shall we mobilize the Reichsbanner?
+이제 우리에게 달렸습니다. 국기단을 동원해야 할까요?
 
 - @reichstag_2
 - @reichstag_3
 
 @reichstag_2
-title: We know Papen's intentions, we must not allow him to consolidate! We must take to the barricades to stop Papen from ending democracy.
+title: 우리는 파펜의 의도를 알고 있다. 그가 권력을 공고히 하도록 둬선 안 된다! 파펜이 민주주의를 끝장내는 것을 막기 위해 바리케이드로 가야 한다.
 
-Do we realize that this means civil war, against the full force of the state?
+이것이 국가의 모든 공권력에 맞서는 내전을 의미한다는 것을 깨닫고 있습니까?
 
-- @papen_civil_war: Yes.
-- @reichstag_3: We are not ready for war. We must bide our time.
+- @papen_civil_war: 그래.
+- @reichstag_3: 우리는 전쟁 준비가 되어 있지 않다. 때를 기다려야 한다.
 
 @reichstag_3
-title: Bide our time.
+title: 때를 기다린다.
 on-arrival: workers_spd -= 5; new_middle_spd -= 5; unemployed_spd -= 5; pro_republic -= 15; rb_strength -= 500; rb_militancy *= 0.7; sa_strength += 50; rfb_strength += 200; rfb_militancy += 0.1; left_dissent += 60; center_dissent += 50; reformist_dissent += 40; labor_dissent += 40; neorevisionist_dissent += 40
 
-The <span style="color: #c00000;">**SPD**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized Reichsbanner and party officials defeat to the <span style="color: #700000;">**Communists**</span> and the <span style="color: #700000;">**RFB**</span>, vowing to fight against Papen regardless of our instructions.
+<span style="color: #c00000;">**SPD**</span>는 우리의 결정에 충격을 받았습니다! 어떻게 헌법에 대한 그러한 노골적인 위반을 그냥 넘길 수 있습니까? 많은 급진화된 국기단원과 당 간부들은 우리의 지시와 상관없이 파펜과 싸우겠다고 맹세하며 <span style="color: #700000;">**KPD**</span>와 <span style="color: #700000;">**RFB**</span>로 전향합니다.
 
 - @reichstag_4
 - @papen_civil_war_2
 
 @papen_civil_war_2
-title: The government cannot adequately suppress unrest, civil war is inevitable.
-subtitle: We will fight, whether we choose to or not.
+title: 정부는 소요 사태를 적절히 진압할 수 없으며, 내전은 불가피합니다.
+subtitle: 우리는 선택하든 안 하든 싸워야 합니다.
 go-to: papen_civil_war
 
 @reichstag_4
-title: Martial law is declared. The Reichswehr quells pockets of unrest.
+title: 계엄령이 선포되다. 국방군은 소요가 일어난 지역들을 진압한다.
 on-arrival: marburg_time = 0; marburg_trigger = 1; rb_strength -= 500; rb_militancy *= 0.7; sa_strength *= 0.5; rfb_strength *= 0.5; workers_kpd -= 5; unemployed_kpd -= 5; workers_nsdap -= 5; new_middle_nsdap -= 5; old_middle_nsdap -= 5; rural_nsdap -= 5; catholics_nsdap -= 5; unemployed_nsdap -= 5; unemployed += 2; economic_growth -= 1.5; pro_republic = 0
 view-if: reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty) >= (sa_strength*sa_militancy + rfb_strength*rfb_militancy + unemployed_nsdap_normalized + unemployed_kpd_normalized + workers_kpd_normalized + unemployed_kpd_normalized)
 
-The disorganized <span style="color: #7A3C00;">**SA**</span> and <span style="color: #700000;">**RFB**</span> have failed to spark a mass uprising, and a civil war is averted. A widespread crackdown on paramilitaries have begun, with the Reichsbanner not even being spared. 
+조직되지 않은 <span style="color: #7A3C00;">**SA**</span>와 <span style="color: #700000;">**RFB**</span>는 대중 봉기를 일으키는 데 실패했고, 내전은 피했습니다. 준군사조직들에 대한 대대적인 단속이 시작되었으며, 국기단조차 예외는 아니었습니다.
 
-- @root: Papen lives?
+- @root: 파펜이 살아남다?

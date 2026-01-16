@@ -1,5 +1,5 @@
-title: Papen Resigns!
-subtitle: The failure of the *Preußenschlag* has compelled him to resign.
+title: 파펜이 사임하다!
+subtitle: *프로이센 쿠데타*의 실패로 그는 사임할 수밖에 없었습니다.
 view-if: chancellor = "Papen" and prussia_coup_win
 on-arrival: papen_explode = 1
 new-page: true
@@ -7,8 +7,8 @@ tags: event
 max-visits: 1
 face-image: img/portraits/PapenFranz.jpg
 
-= Papen Resigns
+= 파펜의 사임
 
-Following the disastrous failure of the Prussian <i>Reichsexekution</i>, Papen has lost the support of Hindenburg and his camarilla, making his position untenable. It's expected that General Schleicher would be the successor to Papen, however, being the Defense Minister and mastermind of the failed coup has severely damaged his standing as well. With new elections coming up soon, Hindenburg may choose to keep Papen in office, until a successor can be found with a new, more right-wing Reichstag.
+프로이센 <i>제국 집행</i>의 재앙적인 실패에 이어, 파펜은 힌덴부르크와 그의 측근들의 지지를 잃어 더 이상 자리를 지킬 수 없게 되었습니다. 슐라이허 장군이 파펜의 후계자가 될 것으로 예상되지만, 국방장관이자 실패한 쿠데타의 주모자라는 점은 그의 입지 또한 심각하게 손상시켰습니다. 새로운 선거가 곧 다가옴에 따라, 힌덴부르크는 더 우파적인 제국의회가 구성되어 후임자를 찾을 수 있을 때까지 파펜을 직무에 유지하기로 결정할 수도 있습니다.
 
 # TODO

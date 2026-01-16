@@ -1,5 +1,5 @@
-title: The Papen Cabinet Resigns!
-subtitle: Symbolic if anything, he remains as a caretaker.
+title: 파펜 내각이 사임하다!
+subtitle: 상징적인 조치일 뿐, 그는 관리 내각으로 남습니다.
 view-if: chancellor = "Papen" and papen_time == 23 and papen_post_2
 new-page: true
 tags: event
@@ -7,8 +7,8 @@ max-visits: 1
 face-image: img/weimar_constitution.jpg
 on-arrival: pro_republic += 3; schleicher_papen_r -= 1
 
-= Papen's Resignation
+= 파펜의 사임
 
-With no progress made on securing <span style="color: #7A3C00;">Nazi</span> toleration of the cabinet, and Papen still unable to survive a Reichstag vote when the chamber reconvenes, Schleicher has advised the chancellor to resign in order to calm the national mood. This would allow the President to seek a broader base of support without Papen at the helm.
+내각에 대한 <span style="color: #7A3C00;">나치</span>의 묵인을 얻어내는 데 진전이 없고, 의회가 재소집될 때 파펜이 불신임 투표에서 살아남을 가능성이 전무한 상황에서, 슐라이허는 국가적 혼란을 진정시키기 위해 총리에게 사임을 권고했습니다. 이는 대통령이 파펜을 제외한 상태에서 더 넓은 지지 기반을 모색할 수 있게 할 것입니다.
 
-However, Papen’s cabinet continues to function in a caretaker role, and little has changed fundamentally. As Papen has stated to his cabinet, none of this matters, as Hindenburg remains "firmly resolved to take all measures that might become necessary" to support him.
+그러나 파펜 내각은 관리 내각으로서 계속 기능할 것이며, 근본적으로 변한 것은 거의 없습니다. 파펜이 내각에 밝혔듯이, 힌덴부르크가 그를 지지하기 위해 "필요하다면 모든 조치를 취할 것을 확고히 결심한" 상태이므로, 이 모든 것은 중요하지 않습니다.

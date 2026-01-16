@@ -1,5 +1,5 @@
-title: Papen Faces a Vote of No Confidence!
-subtitle: His first test of strength before the Reichstag.
+title: 파펜이 불신임 투표에 직면하다!
+subtitle: 제국의회 앞에서의 첫 번째 힘의 시험.
 view-if: chancellor = "Papen" and papen_time and next_reichstag_time == rubicon_time and next_reichstag_time > 0 and reichstag_decree_rubicon
 on-arrival: reichstag_rubicon = 1
 new-page: true
@@ -18,18 +18,18 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Vote of No Confidence
+= 불신임 투표
 
-The Reichstag has reconvened after its brief adjournment, prepared to address the issue of the Papen cabinet. Von Papen has lost all hope of gaining the <span style="color: #7A3C00;">**NSDAP**</span>'s toleration, especially after their stubborn insistence on making [+ nsdap_chancellor +] chancellor. All parties, except for the [? if not true_christian_democracy: <span style="color: #3E88B3;">**DNVP**</span>?][? if not true_christian_democracy and dnvp_ideology == "Moderate":, and?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>,?][? if dvp_exist and not lvp_formed:&nbsp;and <span style="color: #C0A054;">**DVP**</span>,?] have made their opposition to Papen clear, making his dismissal nearly certain.
+제국의회가 짧은 휴회 후 다시 소집되어 파펜 내각의 문제를 다룰 준비를 마쳤습니다. 폰 파펜은 특히 [+ nsdap_chancellor +]를 총리로 만들어야 한다는 그들의 완고한 고집 이후, <span style="color: #7A3C00;">**NSDAP**</span>의 묵인을 얻을 모든 희망을 잃었습니다. [? if not true_christian_democracy: <span style="color: #3E88B3;">**DNVP**</span>?][? if not true_christian_democracy and dnvp_ideology == "Moderate":, 그리고?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>,?][? if dvp_exist and not lvp_formed:&nbsp;그리고 <span style="color: #C0A054;">**DVP**</span>,?]를 제외한 모든 정당들은 파펜에 대한 반대 입장을 분명히 했으며, 그의 해임은 거의 확실해 보입니다.
 
-Yet, von Papen holds a card up his sleeve. Hindenburg has already secured a decree allowing him to suspend elections beyond the constitutionally mandated 60 days. All he needs now is to present it to the Reichstag before the vote of no confidence begins.
+그러나 폰 파펜은 비장의 카드를 쥐고 있습니다. 힌덴부르크는 이미 그가 헌법이 규정한 60일을 넘겨 선거를 중단할 수 있도록 허용하는 법령을 승인했습니다. 이제 그에게 필요한 것은 불신임 투표가 시작되기 전에 이를 제국의회에 제출하는 것뿐입니다.
 
 # TODO
 
 - @reichstag
 
 @reichstag
-title: The Reichstag goes into session.
+title: 제국의회가 개회하다.
 on-arrival: {!
 Q.papen_votes = 0;
 Q.anti_papen_votes = 0;
@@ -106,11 +106,11 @@ go-to: reichstag_1 if papen_votes < 14; reichstag_1_alt if papen_votes >= 14
 
 @reichstag_1
 
-As expected, the <span style="color: #700000;">**Communists**</span> have secured unanimous approval for a change in the order of business to allow an immediate vote on a motion of no confidence against Papen, and not even the <span style="color: #3E88B3;">**DNVP**</span> was willing to lift a finger to prevent this. 
+예상대로 <span style="color: #700000;">**KPD**</span>는 파펜에 대한 불신임 결의안을 즉각 표결에 부치기 위한 의사 일정 변경 승인을 만장일치로 확보했으며, 심지어 <span style="color: #3E88B3;">**DNVP**</span>조차 이를 막기 위해 손가락 하나 까딱하지 않았습니다.
 
-With no objection, the vote was to begin just as Chancellor von Papen has arrived inside the Reichstag to present his emergency decree to the chamber, disrupting his plans to present both decrees at once. He had placed the folder on Reichstag President [? if reichstag_president == "Göring": Hermann Göring?][? if reichstag_president == "Löbe": Paul Löbe?][? if reichstag_president == "Eßer": Thomas Eßer?]'s desk, and demanded him to read it to the floor. However, [+ reichstag_president +] has trick up his sleeve: he could pretend he didn't see it and proceed with the no confidence motion anyway.
+반대 없이 투표가 시작되려던 찰나, 폰 파펜 총리가 긴급 명령을 제출하기 위해 제국의회장에 도착하여 두 법령을 한 번에 제출하려던 계획이 틀어졌습니다. 그는 서류철을 제국의회 의장 [? if reichstag_president == "Göring": 헤르만 괴링?][? if reichstag_president == "Löbe": 파울 레베?][? if reichstag_president == "Eßer": 토마스 에서?]의 책상 위에 놓고 낭독을 요구했습니다. 그러나 [+ reichstag_president +]에게는 묘수가 있었습니다. 그는 서류를 보지 못한 척하고 불신임 결의안을 강행할 수 있습니다.
 
-In the end, Papen is defeated by a humiliating margin with [+ anti_papen_votes +]% of the Reichstag voting against him, only supported by the [? if dnvp_papen or dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if (dnvp_ideology == "Moderate" and dnvp_papen) or kvp_papen:, ?][? if dnvp_ideology == "Moderate":<span style="color: #003755;">**DNF**</span>?][? if kvp_papen: <span style="color: #0087DC;">**KVP**</span>?][? if hugenberg_dvp:&nbsp;and <span style="color: #C0A054;">**DVP**</span>?]. They're expected to benefit from disillusioned conservative <span style="color: #7A3C00;">Nazi</span> voters, who had backed them under the impression they would support the Papen cabinet.
+결국 파펜은 제국의회의 [+ anti_papen_votes +]%가 반대표를 던짐으로써 굴욕적인 차이로 패배했습니다. 오직 [? if dnvp_papen or dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if (dnvp_ideology == "Moderate" and dnvp_papen) or kvp_papen:, ?][? if dnvp_ideology == "Moderate":<span style="color: #003755;">**DNF**</span>?][? if kvp_papen: <span style="color: #0087DC;">**KVP**</span>?][? if hugenberg_dvp:&nbsp;그리고 <span style="color: #C0A054;">**DVP**</span>?]만이 그를 지지했습니다. 이들은 파펜 내각을 지지할 것이라는 믿음 하에 그들을 지지했던, 환멸을 느낀 보수적인 <span style="color: #7A3C00;">나치</span> 유권자들로부터 이득을 볼 것으로 예상됩니다.
 
 - @reichstag_2
 
@@ -141,17 +141,17 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, the <span style="color: #700000;">**Communists**</span> have attempted to secure approval for a change in the order of business to allow an immediate vote on a motion of no confidence against Papen, but however, the [? if dnvp_papen: <span style="color: #3E88B3;">**DNVP**</span>?][? if not dnvp_papen and dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?][? if not dnvp_papen and dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] had objected to the motion, delaying it.
+예상대로 <span style="color: #700000;">**KPD**</span>는 파펜에 대한 불신임 결의안을 즉각 표결에 부치기 위한 의사 일정 변경 승인을 확보하려 했으나, [? if dnvp_papen: <span style="color: #3E88B3;">**DNVP**</span>?][? if not dnvp_papen and dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?][? if not dnvp_papen and dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?]이 결의안에 반대하며 이를 지연시켰습니다.
 
-Before the vote was to begin, Chancellor von Papen has arrived inside the Reichstag to present his emergency decree to the chamber, one to dissolve it and one to postpone future elections. He had placed the folder on Reichstag President [? if reichstag_president == "Göring": Hermann Göring?][? if reichstag_president == "Löbe": Paul Löbe?][? if reichstag_president == "Eßer": Thomas Eßer?]'s desk, who read it to the floor. The chamber erupted in uproar, prompting police on standby to detain numerous Reichstag members involved in the violence, primarily from the <span style="color: #700000;">**Communists**</span>.
+투표가 시작되기 전, 폰 파펜 총리는 긴급 명령을 제출하기 위해 제국의회장에 도착했습니다. 하나는 의회 해산, 다른 하나는 선거 연기 명령이었습니다. 그는 서류철을 제국의회 의장 [? if reichstag_president == "Göring": 헤르만 괴링?][? if reichstag_president == "Löbe": 파울 레베?][? if reichstag_president == "Eßer": 토마스 에서?]의 책상 위에 놓았고, 의장은 이를 낭독했습니다. 의회는 아수라장이 되었고, 대기 중이던 경찰이 폭력 사태에 연루된 수많은 의원들을 구금했는데, 이들은 주로 <span style="color: #700000;">**KPD**</span> 소속이었습니다.
 
-News has quickly spread, and Papen has only narrowly escaped from the area before violent mobs assembled all across Berlin were formed to protest the violation of the constitution. Brüning and the <span style="color: #000000;">Center Party</span> vow to impeach President Hindenburg, if the Reichstag ever convenes. Germany's in for a violent civil war, and Papen shows no sign of backing down.
+소식은 빠르게 퍼져나갔고, 헌법 위반에 항의하는 폭력적인 군중이 베를린 전역에 집결하기 직전 파펜은 간신히 현장을 탈출했습니다. 브뤼닝과 <span style="color: #000000;">중앙당</span>은 제국의회가 다시 소집된다면 힌덴부르크 대통령을 탄핵하겠다고 맹세했습니다. 독일은 폭력적인 내전의 위기에 처해 있으며, 파펜은 물러설 기미를 보이지 않습니다.
 
 - @reichstag_2_alt
 
 @reichstag_2
-title: The Reichstag is dissolved for new elections.
-subtitle: The cabinet can still sign the decree though...
+title: 제국의회가 새로운 선거를 위해 해산되다.
+subtitle: 내각은 여전히 법령에 서명할 수 있지만...
 on-arrival: {!
 Q.papen_explode = 1;
 Q.papen_goal = "Rule in a presidential government";
@@ -175,13 +175,13 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-With the vulnerability and widespread opposition to the Papen cabinet now fully exposed in parliament, Schleicher’s plan for Papen to sign the decree postponing elections indefinitely has been put on hold. The <span style="color: #000000;">Center Party</span> has also threatened to impeach Hindenburg should he proceed with such an action.
+파펜 내각의 취약성과 광범위한 반대가 의회에서 완전히 드러나자, 파펜이 선거를 무기한 연기하는 법령에 서명하게 하려던 슐라이허의 계획은 보류되었습니다. <span style="color: #000000;">중앙당</span> 또한 그가 그러한 조치를 강행한다면 힌덴부르크를 탄핵하겠다고 위협했습니다.
 
-The time is not yet right for the government to openly violate the constitution, and doing so could spark a civil war. The Reichswehr would not be able to withstand the opposition of 90% of the nation.
+정부가 공개적으로 헌법을 위반하기에는 아직 시기가 적절치 않으며, 이를 강행할 경우 내전을 촉발할 수 있습니다. 국방군은 국민 90%의 반대를 감당할 수 없을 것입니다.
 
-A minor constitutional crisis erupts when Reichstag President [+ reichstag_president +] disputes the validity of Papen's dissolution decree. [+ reichstag_president +] argues that the Reichstag remains in session, contending that the decree is invalid as it was countersigned by a government that had just been overthrown by a vote of no confidence. [+ reichstag_president +] ultimately concedes the issue before the courts were to decide, and new Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+제국의회 의장 [+ reichstag_president +]가 파펜의 해산 명령 유효성에 이의를 제기하면서 사소한 헌법적 위기가 발생했습니다. [+ reichstag_president +]는 제국의회가 회기 중이라고 주장하며, 해당 명령은 방금 불신임 투표로 전복된 정부가 서명한 것이므로 무효라고 주장했습니다. [+ reichstag_president +]는 결국 법원의 결정이 내려지기 전에 문제를 인정했고, 새로운 제국의회 선거가 [+ next_election_year +]년 [+ next_election_month : month +], [+ next_election_week +]주차로 예정되었습니다.
 
 @reichstag_2_alt
-title: The government cannot adequately suppress unrest, civil war is inevitable.
-subtitle: We will fight, whether we choose to or not.
+title: 정부는 소요 사태를 적절히 진압할 수 없으며, 내전은 불가피하다.
+subtitle: 우리는 선택하든 안 하든 싸워야 합니다.
 go-to: papen_civil_war

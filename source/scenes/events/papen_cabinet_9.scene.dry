@@ -1,13 +1,13 @@
-title: Papen Drafts Sweeping Amendments to the Constitution!
-subtitle: Despite his extreme unpopularity, the chancellor has ordered his cabinet to begin drafting sweeping constitutional amendments.
+title: 파펜이 헌법에 대한 전면적인 수정안을 기초하다!
+subtitle: 극심한 인기 하락에도 불구하고, 총리는 내각에 전면적인 헌법 수정안 기초를 지시했습니다.
 view-if: chancellor = "Papen" and papen_time and papen_post_2
 new-page: true
 tags: event
 max-visits: 1
 face-image: img/weimar_constitution.jpg
 
-= Constitutional Amendment
+= 헌법 수정
 
-As part of Papen’s previously announced ambition to create a “New State”—a reform of the constitution aimed at transforming Germany into a dictatorship reminiscent of the former <span class="tooltip-text" title="good mod">Kaiserreich</span>—the continued political deadlock has led him to pursue changes to the system itself. Lacking both popular support and a parliamentary majority, it's unclear how Papen would institute such changes. Nonetheless, such a move would almost certainly provoke civil war—one the Reichswehr is in no position to easily win.
+"새로운 국가"—독일을 과거 <span class="tooltip-text" title="good mod">카이저라이히</span>를 연상시키는 독재 국가로 변모시키려는 헌법 개혁—를 건설하겠다는 파펜의 야망은 지속된 정치적 교착 상태로 인해 체제 자체의 변화를 추구하는 방향으로 이어졌습니다. 대중적 지지와 의회 과반수 모두가 결여된 상황에서 파펜이 어떻게 이러한 변화를 도입할지는 불분명합니다. 그럼에도 불구하고, 그러한 움직임은 거의 확실하게 내전을 촉발할 것이며, 국방군은 이 내전에서 쉽게 승리할 수 있는 위치에 있지 않습니다.
 
-Papen's increasing independence and assertiveness, distancing himself from Schleicher's control, has alarmed the latter, who had previously sought to manipulate him. His open calls for dictatorship, along with the risks involved in keeping such an unpopular chancellor by circumventing the constitution, would unite the legions of organized labor against the government—something Schleicher is anxious to avoid. After all, a civil war would severely impede Germany's rearmament.
+슐라이허의 통제에서 벗어나 점점 더 독자적인 행보를 보이는 파펜의 모습은, 이전에 그를 조종하려 했던 슐라이허를 경악하게 만들었습니다. 독재에 대한 파펜의 공개적인 요구와 헌법을 우회하여 인기 없는 총리를 유지하려는 위험성은 조직화된 노동 세력을 정부에 대항하여 단결시킬 것입니다. 이는 슐라이허가 필사적으로 피하고자 하는 상황입니다. 결국 내전은 독일의 재무장을 심각하게 저해할 것이기 때문입니다.
