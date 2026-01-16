@@ -1,5 +1,5 @@
-title: Schleicher's Betrayal
-subtitle: Wilhelm Groener, long-time Defense Minister and Brüning's strongest ally, is forced to resign...
+title: 슐라이허의 배신
+subtitle: 빌헬름 그뢰너, 오랜 국방장관이자 브뤼닝의 가장 강력한 동맹이 사임을 강요받다...
 view-if: year == 1932 and month == 5 and sa_nationwide_ban and groener_death and president == "Hindenburg" and bruning_time
 priority: 3
 tags: event
@@ -8,23 +8,23 @@ on-arrival: groener_explode = 1
 max-visits: 1
 face-image: img/portraits/groener.jpg
 
-= Schleicher's Betrayal
+= 슐라이허의 배신
 
-Schleicher’s unwavering belief in his "<span class="tooltip-text" title="Coined by conservative elites like Schleicher and Papen, this strategy aims to control the dynamic Nazi movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Nazis, transforming them into a constructive component of the state.">taming strategy</span>," which involves bringing the <span style="color: #7A3C00;">**NSDAP**</span> into the government, led him to successfully orchestrate the removal of Wilhelm Groener as Minister of Defense for enforcing the ban on the <span style="color: #7A3C00;">**SA**</span>.
+<span style="color: #7A3C00;">**NSDAP**</span>를 내각에 참여시키는 슐라이허의 "<span class="tooltip-text" title="슐라이허나 파펜 같은 보수 엘리트들이 만든 용어로, 이 전략은 역동적인 나치 운동을 통제하고 당을 정부에 참여시킴으로써 국가 체제 안으로 통합하는 것을 목표로 합니다. 그들의 관점에서 이는 나치를 온건화하여 국가의 건설적인 구성 요소로 탈바꿈시킬 것입니다.">길들이기 전략</span>"에 대한 확고한 신념은, 그가 <span style="color: #7A3C00;">**SA**</span> 금지령을 집행한 빌헬름 그뢰너를 국방장관직에서 축출하는 공작을 성공적으로 주도하게 만들었습니다.
 
-Groener, unable to believe that Schleicher—his friend, protégé, and "adoptive son"—would betray him, became increasingly uncertain in his role, particularly in his dealings with Hindenburg and the Reichswehr leadership.
+자신의 친구이자 피후견인, 그리고 "양아들"이나 다름없던 슐라이허가 자신을 배신하리라고는 믿을 수 없었던 그뢰너는, 자신의 역할, 특히 힌덴부르크 및 국방군 수뇌부와의 관계에서 점점 더 입지가 불안해졌습니다.
 
-Once Hindenburg was convinced that the Reichsbanner posed a greater threat than the <span style="color: #7A3C00;">**SA**</span>, Schleicher seized the opportunity to push for Groener’s removal. Already plagued by self-doubt, Groener delivered an embarrassingly poor speech in the Reichstag defending the ban, effectively sealing his fate. Schleicher then forced the issue by threatening to resign alongside Chief of the Army Kurt von Hammerstein if Groener remained in office. Under mounting pressure and faced with Hindenburg’s anger, Groener ultimately resigned.
+힌덴부르크가 국기단이 <span style="color: #7A3C00;">**SA**</span>보다 더 큰 위협이라고 확신하게 되자, 슐라이허는 이 기회를 틈타 그뢰너의 해임을 밀어붙였습니다. 이미 자기 회의에 빠져 있던 그뢰너는 제국의회에서 금지령을 옹호하는 연설을 당혹스러울 정도로 형편없이 마쳤고, 이는 사실상 그의 운명을 결정지었습니다. 그러자 슐라이허는 그뢰너가 장관직을 유지한다면 육군 참모총장 쿠르트 폰 함머슈타인과 함께 사임하겠다고 위협하며 쐐기를 박았습니다. 가중되는 압박과 힌덴부르크의 분노에 직면한 그뢰너는 결국 사임했습니다.
 
-We strongly suspect that Schleicher is in contact with the <span style="color: #7A3C00;">**NSDAP**</span> and that this maneuver is merely a precondition for securing their support for a new right-wing government.
+우리는 슐라이허가 <span style="color: #7A3C00;">**NSDAP**</span>와 내통하고 있으며, 이 책략은 단지 새로운 우파 정부에 대한 그들의 지지를 확보하기 위한 전제 조건일 뿐이라고 강력히 의심하고 있습니다.
 
-- @bruning_explode: The Brüning government is critically weakened and is set to become the next victim of Schleicher's schemes.
+- @bruning_explode: 브뤼닝 정부는 치명적으로 약화되었으며 슐라이허의 계략에 의한 다음 희생양이 될 것입니다.
 
 @bruning_explode
 on-arrival: groener_dead = 1; hindenburg_angry_bruning += 35
 
-Groener, one of Brüning’s longest-standing and most loyal allies, is now out of the equation. Brüning, deeply loyal to him, was fully prepared to resign the chancellorship if Groener was forced out of the cabinet. However, unwilling to let Brüning risk his own position on his behalf, Groener chose to step down.
+브뤼닝의 가장 오래되고 충성스러운 동맹 중 한 명인 그뢰너가 이제 정계에서 축출되었습니다. 그에게 깊은 충성심을 가졌던 브뤼닝은 그뢰너가 내각에서 쫓겨난다면 총리직을 사임할 각오가 되어 있었습니다. 그러나 브뤼닝이 자신을 위해 총리직을 거는 위험을 감수하는 것을 원치 않았던 그뢰너는 스스로 물러나는 길을 택했습니다.
 
-His resignation as Minister of Defense has dealt a severe blow to the Brüning cabinet, further diminishing its chances of surviving the deepening political crisis triggered by the fallout from the local elections. Among Hindenburg’s inner circle of advisors, no one had been more steadfast in supporting Brüning than Groener. His departure has severely weakened the chancellor’s standing with the Reich President, leaving him fully exposed to the machinations of Schleicher and his entourage.
+그의 국방장관직 사임은 브뤼닝 내각에 심각한 타격을 입혔으며, 지방 선거의 여파로 촉발된 심화되는 정치적 위기에서 내각이 생존할 가능성을 더욱 희박하게 만들었습니다. 힌덴부르크의 측근 고문들 중 그뢰너만큼 브뤼닝을 확고히 지지했던 사람은 없었습니다. 그의 퇴장은 제국 대통령에 대한 총리의 입지를 심각하게 약화시켰고, 브뤼닝은 슐라이허와 그 측근들의 음모에 완전히 무방비로 노출되었습니다.
 
-With Groener gone, Schleicher is now free from external restraints to pursue his strategy of taming the <span style="color: #7A3C00;">Nazis</span>, answerable only to Hindenburg. Sensing that Brüning has been fatally weakened, the <span style="color: #7A3C00;">Nazis</span> have intensified their attacks on his government, seeking to bring it down once and for all.
+그뢰너가 사라지자, 슐라이허는 이제 외부의 제약 없이 오직 힌덴부르크에게만 책임을 지며 <span style="color: #7A3C00;">나치</span>를 길들이는 전략을 추진할 자유를 얻었습니다. 브뤼닝이 치명적으로 약화되었음을 감지한 <span style="color: #7A3C00;">나치</span>는 정부에 대한 공세를 강화하며, 내각을 완전히 무너뜨리려 하고 있습니다.

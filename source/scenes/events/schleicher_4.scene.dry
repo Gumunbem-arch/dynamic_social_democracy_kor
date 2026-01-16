@@ -1,5 +1,5 @@
-title: Schleicher and the Reichsbanner
-subtitle: It's time to decide our stance on the *Reichskuratorium*.
+title: 슐라이허와 국기단
+subtitle: *제국 이사회*에 대한 우리의 입장을 결정할 때입니다.
 view-if: chancellor = "Schleicher" and schleicher_reichsbanner_wait
 new-page: true
 tags: event
@@ -17,31 +17,31 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher and the Reichsbanner
+= 슐라이허와 국기단
 
-Weeks ago, Schleicher reached out to the <span style="color: #c00000;">socialist</span> youth organizations and the Reichsbanner to gauge their interest in participating in the Reich Institute to Promote Youth Fitness. The program, led by retired Reichswehr officers, aims to teach "military sports" to young workers.
+몇 주 전, 슐라이허는 <span style="color: #c00000;">사회주의</span> 청년 조직들과 국기단에 연락하여 청소년 체력 증진을 위한 제국 연구소 참여에 대한 관심을 타진했습니다. 퇴역 국방군 장교들이 이끄는 이 프로그램은 젊은 노동자들에게 "군사 스포츠"를 가르치는 것을 목표로 합니다.
 
-We've taken a non-committal stance, putting off the issue until after the elections, and now, the General himself is chancellor. 
+우리는 확답을 하지 않는 입장을 취하며 선거 이후로 문제를 미루어 왔는데, 이제 장군 본인이 총리가 되었습니다.
 
-We can either build goodwill and strengthen the Reichsbanner through our participation, or maintain our total opposition against the presidential cabinets and boycott it.
+우리는 참여를 통해 호의를 쌓고 국기단을 강화하거나, 대통령 내각에 대한 전면적인 반대를 유지하며 이를 보이콧할 수 있습니다.
 
 - @yay
 - @nay
 
 @yay
-title: Approve the participation of the Reichsbanner and our youth organizations in the *Reichskuratorium*.
-unavailable-subtitle: The party is too distrustful of Schleicher to allow this.
+title: *제국 이사회*에 국기단과 우리 청년 조직의 참여를 승인한다.
+unavailable-subtitle: 당은 슐라이허를 너무 불신하여 이것을 허용할 수 없습니다.
 choose-if: schleicher_spd_support >= 4 or neorevisionist_strength >= center_strength
 on-arrival: schleicher_spd_support += 2; schleicher_spd_r += 1; rb_militancy += 0.04; rb_strength += 125; workers_spd -= 4; unemployed_spd -= 4; nationalism += 10
 
-The Reichsbanner is now officially participating in the Reich Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. Reichsbanner youth are the primary recipients of specialized instruction from former and decommissioned Reichswehr officers, and we have secured considerable influence within the institute’s leadership.
+국기단은 이제 공식적으로 청소년 체력 증진을 위한 제국 연구소에 참여하고 있습니다. 우리의 의견이 반영된 그들의 이사회는 신속하게 전국의 보병 및 해군 훈련 학교를 설립했습니다. 국기단 청년들은 전직 및 퇴역 국방군 장교들로부터 전문적인 지도를 받는 주요 수혜자이며, 우리는 연구소 지도부 내에서 상당한 영향력을 확보했습니다.
 
-This program has strengthened the Reichsbanner and improved our relations with von Schleicher. However, our collaboration with an initiative authorized by the deeply unpopular [+ chancellor +] government has cost us support—many have defected to the <span style="color: #700000;">**Communists**</span>.
+이 프로그램은 국기단을 강화하고 폰 슐라이허와의 관계를 개선했습니다. 그러나 매우 인기 없는 [+ chancellor +] 정부가 승인한 이니셔티브와의 협력은 우리에게 지지를 잃게 했습니다—많은 사람들이 <span style="color: #700000;">**KPD**</span>로 전향했습니다.
 
 @nay
-title: We need the sharpest opposition to the new Schleicher cabinet. Order the ADGB and Reichsbanner to boycott the Institute for Youth Fitness. 
+title: 우리는 새로운 슐라이허 내각에 대한 가장 날카로운 반대가 필요하다. ADGB와 국기단에 청소년 체력 연구소를 보이콧하도록 명령한다.
 on-arrival: schleicher_spd_r -= 1; schleicher_spd_support -= 2; labor_dissent += 10; neorevisionist_dissent += 10
 
-Our explicit rejection of Reichsbanner participation in the program has caused discontent within both the ADGB and the Reichsbanner, who have nonetheless reluctantly yielded to the party leadership’s decision. 
+프로그램에 대한 국기단 참여를 명시적으로 거부한 우리의 결정은 ADGB와 국기단 내에서 불만을 야기했지만, 그들은 그럼에도 불구하고 마지못해 당 지도부의 결정에 따랐습니다.
 
-As a <span style="color: #c00000;">socialist</span> party, we cannot lend our support to what is, in essence, a thinly veiled rearmament scheme.
+<span style="color: #c00000;">사회주의</span> 정당으로서, 우리는 본질적으로 얄팍하게 가려진 재무장 계획인 것에 우리의 지지를 보낼 수 없습니다.

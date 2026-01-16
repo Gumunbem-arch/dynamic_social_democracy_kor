@@ -1,27 +1,27 @@
-title: Schleicher and the Trade Unions
-subtitle: The General meets with the ADGB once more.
+title: 슐라이허와 노동조합
+subtitle: 장군이 ADGB와 한 번 더 만납니다.
 view-if: chancellor == "Papen" and papen_time == 24 and papen_post_2 and red_general_unlock
 new-page: true
 tags: event
 max-visits: 1
 face-image: img/portraits/schleicher.jpg
 
-= Schleicher and the Trade Unions
+= 슐라이허와 노동조합
 
-A few months back, a line of communication was opened between the General and the ADGB's leadership, with the understanding of further meetings.
+몇 달 전, 장군과 ADGB 지도부 사이에 연락 채널이 열렸고, 추가적인 만남에 대한 양해가 있었습니다.
 
-Following the results of the last election, von Schleicher has reached out to the various <span style="color: #000000;">Christian</span> and <span style="color: #c00000;">socialist</span> unions once again, presumably in an attempt to broker a political truce.
+지난 선거 결과에 따라, 폰 슐라이허는 다양한 <span style="color: #000000;">기독교</span> 및 <span style="color: #c00000;">사회주의</span> 노조에 다시 한번 손을 내밀었으며, 아마도 정치적 휴전을 중재하려는 시도로 보입니다.
 
 - @schleicher
 
 @schleicher
-title: Hear what the general has to say.
+title: 장군이 무슨 말을 하는지 들어본다.
 on-arrival: schleicher_spd_support += 2; schleicher_spd_r += 1
 
-ADGB leaders Theodor Leipart and Wilhelm Eggert have met with Chancellor-designate Schleicher, who promised to rescind Papen’s most offensive emergency wage decrees, launch a public works program, and abandon the former chancellor’s plans to impose his “New State” via presidential decree.
+ADGB 지도자 테오도어 라이파르트와 빌헬름 에거트는 총리 지명자 슐라이허를 만났고, 그는 파펜의 가장 불쾌한 긴급 임금 법령을 철회하고, 공공 사업 프로그램을 시작하며, 대통령령을 통해 "새로운 국가"를 강요하려던 전임 총리의 계획을 포기하겠다고 약속했습니다.
 
-We are pleasantly surprised by these concessions, and Schleicher has earned some goodwill among the union leadership. Still, deep distrust remains—after all, he was the one controlling Papen when those very decrees and the unconstitutional postponement of elections were proposed.
+우리는 이러한 양보에 기분 좋게 놀랐으며, 슐라이허는 노조 지도부 사이에서 어느 정도 호의를 얻었습니다. 여전히 깊은 불신은 남아 있습니다—결국 바로 그 법령들과 위헌적인 선거 연기가 제안되었을 때 파펜을 조종하던 사람이 그였기 때문입니다.
 
-> *"Republic or monarchy is not the question now, but rather what should this republic look like."*
+> *"공화국이냐 군주제냐는 지금 문제가 아니며, 오히려 이 공화국이 어떤 모습이어야 하는가입니다."*
 
- - Kurt von Schleicher
+ - 쿠르트 폰 슐라이허

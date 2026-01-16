@@ -1,5 +1,5 @@
-title: The Free Unions and Schleicher
-subtitle: A meeting, initiated by the unions this time.
+title: 자유 노조와 슐라이허
+subtitle: 이번에는 노조가 주도한 만남입니다.
 view-if: chancellor = "Schleicher" and schleicher_time == 7 and schleicher_spd_r < 3
 new-page: true
 priority: 1
@@ -7,12 +7,12 @@ tags: event
 max-visits: 1
 face-image: img/portraits/schleicher.jpg
 
-= The Free Unions and Schleicher
+= 자유 노조와 슐라이허
 
-Theodor Leipart and the ADGB's vice chairmen have requested a meeting with Chancellor von Schleicher to discuss the funding of Schleicher's planned public works program, which Gereke has almost finished despite Schleicher unwilling to cut through red tape to speed up the process for him. 
+테오도어 라이파르트와 ADGB 부의장들은 슐라이허가 계획한 공공 사업 프로그램의 자금 조달을 논의하기 위해 폰 슐라이허 총리와의 만남을 요청했습니다. 게레케는 슐라이허가 그를 위해 절차를 가속화하기 위해 관료주의를 타파하려 하지 않음에도 불구하고 거의 완료했습니다.
 
-However, Schleicher has used this meeting to discuss the possibility of the ADGB endorsing his planned postponement of new elections, which the organization denounced any potential breach of the constitution. [? if prussia_leader == "Schleicher": "Anti-Schleicher sentiment has grown so much in the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties, that Otto Braun reversed his earlier willingness to join with the chancellor in asking the president to postpone elections unconstitutionally. ?]
+그러나 슐라이허는 이 만남을 이용하여 ADGB가 그의 계획된 새로운 선거 연기를 지지할 가능성을 논의했고, 이 조직은 헌법 위반 가능성을 비난했습니다. [? if prussia_leader == "Schleicher": "<span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">파</span> 정당들 내에서 반 슐라이허 정서가 너무 커져서, 오토 브라운은 대통령에게 위헌적으로 선거를 연기해 달라고 요청하는 데 총리와 함께하려던 이전의 의지를 뒤집었습니다. ?]
 
-However, the obsession of the <span style="color: #c00000;">**SPD**</span> and <span style="color: #000000;">Center Party</span> to prevent a breach of the constitution by Schleicher or Papen at all costs has caused many leaders, with the possible exception of Braun, to lose sight of the real peril: [+ nsdap_chancellor +]'s appointment to the chancellorship.
+그러나 슐라이허나 파펜에 의한 헌법 위반을 어떤 대가를 치르더라도 막으려는 <span style="color: #c00000;">**SPD**</span>와 <span style="color: #000000;">Zentrum</span>의 집착은, 아마도 브라운을 제외한 많은 지도자들이 진짜 위험을 보지 못하게 만들었습니다: [+ nsdap_chancellor +]의 총리 임명 말입니다.
 
-- @root: Need not to worry, after all, Hindenburg will never appoint [+ nsdap_chancellor +]!
+- @root: 걱정할 필요 없다, 어쨌든 힌덴부르크는 절대 [+ nsdap_chancellor +]를 임명하지 않을 것이다!

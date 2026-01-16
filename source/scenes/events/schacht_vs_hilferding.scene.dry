@@ -1,37 +1,37 @@
-title: Hjalmar Schacht against Hilferding
+title: 힐퍼딩에 맞서는 얄마르 샤흐트
 new-page: true
 view-if: year = 1929 and month >= 11 and spd_in_government = 1 and finance_minister = "Hilferding" and finance_minister_party = "SPD"
 tags: event
 max-visits: 1
 face-image: img/portraits/SchachtHjalmar.jpg
 
-= Schacht against Hilferding
+= 힐퍼딩에 맞서는 샤흐트
 
-Reichsbank president Hjalmar Schacht has criticized Finance Minister Hilferding of the <span style="color: #c00000;">**SPD**</span> for his budget, which he claims is unbalanced and contains too much social welfare and not enough tax cuts for top earners and businesses. More importantly, he is refusing to release loans necessary for the functioning of the government unless Hilferding either massively changes his budget or resigns.
+제국은행 총재 얄마르 샤흐트는 <span style="color: #c00000;">**SPD**</span> 소속 재무장관 힐퍼딩의 예산안에 대해 균형이 잡히지 않았으며, 사회 복지 지출은 너무 많고 고소득자와 기업에 대한 세금 감면은 충분하지 않다고 비판했습니다. 더 중요한 것은, 힐퍼딩이 예산을 대폭 수정하거나 사임하지 않는 한 정부 운영에 필요한 대출 승인을 거부하고 있다는 점입니다.
 
-Of course, this criticism is unfounded, but the bourgeois establishment does not care.
+물론 이 비판은 근거가 없지만, 부르주아 기득권층은 아랑곳하지 않습니다.
 
-- @expose_him: Expose his <span style="color: #7A3C00;">reactionary</span> dealings!
-- @work_with: Work with him to shape the budget.
-- @hilferding_resign: Hilferding must resign.
+- @expose_him: 그의 <span style="color: #7A3C00;">반동적인</span> 거래를 폭로한다!
+- @work_with: 예산안 작성을 위해 그와 협력한다.
+- @hilferding_resign: 힐퍼딩은 사임해야 한다.
 
 @expose_him
 on-arrival: schacht_exposed = 1
 view-if: investigate_far_right >= 1
 
-We expose to the public Schacht's dealings with the <span style="color: #7A3C00;">Nazis</span>. For better or worse, he is cowed, and refrains from taking further actions against us.
+우리는 대중에게 샤흐트가 <span style="color: #7A3C00;">나치</span>와 맺은 거래를 폭로합니다. 좋든 나쁘든, 그는 위축되었고 우리에 대해 추가적인 조치를 취하는 것을 삼가고 있습니다.
 
 
 @work_with
 
-After a second budget proposal, Schacht still considers Hilferding's budget to be unacceptable, despite more regressive taxes and expenditure cuts.
+두 번째 예산안 제안 후에도, 샤흐트는 더 역진적인 세금과 지출 삭감에도 불구하고 여전히 힐퍼딩의 예산안을 받아들일 수 없다고 판단합니다.
 
-- @hilferding_resign: Hilferding must resign.
+- @hilferding_resign: 힐퍼딩은 사임해야 한다.
 
 
 @hilferding_resign
 on-arrival: finance_minister_party = "DVP" if in_grand_coalition; finance_minister_party = "LVP" if (in_grand_coalition or in_weimar_coalition) and lvp_formed; finance_minister_party = "I" if (in_weimar_coalition and not lvp_formed) or in_popular_front or in_left_front; finance_minister = "Moldenhauer"; finance_minister = "Köhler" if (in_weimar_coalition and not lvp_formed) or in_popular_front; economic_minister_granted = 1 if economic_minister_party != "SPD"; economic_minister_party = "SPD" if economic_minister_party != "SPD"; economic_minister = "Schmidt" if economic_minister_party = "SPD"
 
-With no other choice, Hilferding has resigned as Finance Minister, to be replaced by a [? if (in_grand_coalition or (in_weimar_coalition and lvp_formed)): center-right ?][? if not in_grand_coalition: technocratic ?] candidate.
+다른 선택의 여지가 없어, 힐퍼딩은 재무장관직을 사임했고, [? if (in_grand_coalition or (in_weimar_coalition and lvp_formed)): 중도 우파 ?][? if not in_grand_coalition: 기술 관료 ?] 후보로 대체되었습니다.
 
-[? if economic_minister_granted = 1: Our coalition partners have granted us the Economic Ministry to compensate. ?]
+[? if economic_minister_granted = 1: 우리의 연정 파트너들은 보상으로 우리에게 경제부를 넘겨주었습니다. ?]

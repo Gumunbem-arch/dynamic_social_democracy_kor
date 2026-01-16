@@ -1,30 +1,30 @@
-title: Braun Meets With Schleicher
-subtitle: An unauthorized meeting, but perhaps a welcome one?
+title: 브라운이 슐라이허와 만나다
+subtitle: 승인되지 않은 만남이지만, 어쩌면 환영할 만한 것일까요?
 view-if: chancellor = "Schleicher" and schleicher_time == 4 and prussia_leader == "Schleicher"
 new-page: true
 tags: event
 max-visits: 1
 face-image: img/portraits/schleicher_pro.jpg
 
-= Braun Meets With Schleicher
+= 브라운이 슐라이허와 만나다
 
-Otto Braun, former Minister-President of Prussia and leader of our reformist wing, has—without informing the <span style="color: #c00000;">**SPD**</span> leadership—met privately with Chancellor von Schleicher. Braun proposed cooperation, on the condition that Schleicher relinquish federal control over Prussia and restore him to office with full authority, including the power to dissolve the Landtag. Braun suggested that, together, they could rule by decree and wage a determined campaign against the <span style="color: #7A3C00;">Nazis</span>.
+전 프로이센 주총리이자 우리 개혁파의 지도자인 오토 브라운은—<span style="color: #c00000;">**SPD**</span> 지도부에 알리지 않고—슐라이허 총리와 사적으로 만났습니다. 브라운은 슐라이허가 프로이센에 대한 연방 통제를 포기하고 주의회를 해산할 권한을 포함한 완전한 권한으로 그를 공직에 복귀시키는 조건으로 협력을 제안했습니다. 브라운은 그들이 함께 법령으로 통치하고 <span style="color: #7A3C00;">나치</span>에 대항하여 단호한 캠페인을 벌일 수 있다고 제안했습니다.
 
-Schleicher, however, was unenthusiastic. Having led the Prussian coup himself, he is reluctant to undo the federal consolidation of power. More importantly, unlike Braun, he is not committed to weakening the <span style="color: #7A3C00;">**NSDAP**</span>; he still views them as a potential source of support for his cabinet—admiring the <span style="color: #7A3C00;">**SA**</span>’s militarism and the <span style="color: #7A3C00;">**NSDAP**</span>’s fanatical discipline as traits to be co-opted into the state.
+그러나 슐라이허는 열정적이지 않았습니다. 프로이센 쿠데타를 직접 주도한 그는 연방의 권력 통합을 되돌리는 것을 꺼립니다. 더 중요한 것은, 브라운과 달리 그는 <span style="color: #7A3C00;">**NSDAP**</span>를 약화시키는 데 전념하지 않습니다; 그는 여전히 그들을 자신의 내각을 위한 잠재적인 지지 원천으로 보고 있으며—<span style="color: #7A3C00;">**SA**</span>의 군국주의와 <span style="color: #7A3C00;">**NSDAP**</span>의 광신적인 규율을 국가로 흡수해야 할 특성으로 존경합니다.
 
 - @yay
 - @nay
 
 @yay
-title: Perhaps he can still be convinced?
-unavailable-subtitle: Schleicher is committed to his taming strategy.
+title: 어쩌면 그를 여전히 설득할 수 있을까?
+unavailable-subtitle: 슐라이허는 자신의 길들이기 전략에 전념하고 있습니다.
 choose-if: super_secret_mode == 1
 on-arrival: schleicher_would_never_do_this_he_is_literally_hitler = 1
 
 # TODO
 
 @nay
-title: As we thought.
+title: 우리가 생각했던 대로다.
 on-arrival: schleicher_spd_support += 1; schleicher_spd_support += 1 if reformist_strength >= center_strength
 
-Nothing ultimately comes of the meeting. However, Braun becomes the first major political figure outside the unions to openly signal willingness to strike a deal with the chancellor.
+결국 회담에서는 아무런 성과도 나오지 않았습니다. 그러나 브라운은 노조 외부에서 총리와 거래를 맺을 의사가 있음을 공개적으로 알린 최초의 주요 정치 인물이 되었습니다.
