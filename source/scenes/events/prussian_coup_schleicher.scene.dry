@@ -1,5 +1,5 @@
-title: Coup in Prussia
-subtitle: The Chancellor attempts to overthrow the Prussian government.
+title: 프로이센의 쿠데타
+subtitle: 총리가 프로이센 정부를 전복하려고 시도합니다.
 view-if: chancellor == "Schleicher" and no_majority_elections_prussia_schleicher and not presidential_powers
 on-arrival: schleicher_spd_r -= 2; schleicher_spd_support -= 4; schleicher_spd_influence -= 2;
 new-page: true
@@ -7,19 +7,19 @@ new-page: true
 max-visits: 1
 face-image: img/Reichswehr.jpg
 
-= Coup in Prussia
+= 프로이센의 쿠데타
 
-President Hindenburg and Chancellor Schleicher have grown fed up with the political deadlock in Prussia and move to dismiss its government, replacing it with a <i>Reichskommissar</i>—likely one of their allies or another <span style="color: #808080;">reactionary</span> figure.
+힌덴부르크 대통령과 슐라이허 총리는 프로이센의 정치적 교착 상태에 지쳐 정부를 해산하고 <i>국가판무관</i>—아마도 그들의 동맹 중 한 명이나 다른 <span style="color: #808080;">반동적</span> 인물—으로 교체하려고 움직입니다.
 
-The move carries plausible justification, with Hindenburg citing Prussia's "ungovernable" state, brought on by repeated failures to form a stable government and escalating clashes between state forces and paramilitaries in these troubled times.
+이 움직임은 힌덴부르크가 프로이센의 "통치 불가능한" 상태를 인용하며 그럴듯한 정당성을 지니고 있는데, 이는 안정적인 정부 구성의 반복된 실패와 이 어려운 시기에 주 병력과 준군사조직 간의 충돌 고조로 인해 초래되었습니다.
 
 - @surrender
 
 @surrender
-title: There is nothing we can do.
-subtitle: This isn't worth dying over.
+title: 우리가 할 수 있는 일은 아무것도 없다.
+subtitle: 이것은 목숨을 걸 가치가 없다.
 on-arrival: in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; prussia_leader = "Goerdeler"; workers_spd -= 3; workers_kpd -= 3; unemployed_kpd -= 3; unemployed_spd -= 3; left_dissent += 5; labor_dissent += 5; rb_militancy = rb_militancy/1.5; rb_strength -= 300; rfb_banned = 1; rfb_strength -= 100; rfb_militancy -= 0.1; prussian_reichsexekution_timer = 12; next_election_time_prussia = time + 48; next_election_year_prussia = year + 4
 
-[? if not dsu_in_gov: Hindenburg appoints the <span style="color: #3E88B3;">nationalist</span> Carl Friedrich Goerdeler—who renounces his party affiliation—to rule Prussia as <i>Reichskommissar</i>, tasked with dismantling the democratic systems we fought to build. ?][? if dsu_in_gov: Hindenburg appoints the <span style="color: #6A1E1E;">**DSU**</span>'s Gregor Strasser to rule Prussia as <i>Reichskommissar</i>, charged with ruthlessly tearing down the democratic structures we struggled to establish. On top of this, Frick is made Prussian Interior Minister. ?]
+[? if not dsu_in_gov: 힌덴부르크는 <span style="color: #3E88B3;">민족주의자</span> 카를 프리드리히 괴르델러—그는 자신의 당적을 포기했습니다—를 프로이센을 통치할 <i>국가판무관</i>으로 임명하여, 우리가 건설하기 위해 싸웠던 민주적 시스템을 해체하는 임무를 맡깁니다. ?][? if dsu_in_gov: 힌덴부르크는 <span style="color: #6A1E1E;">**DSU**</span>의 그레고어 슈트라서에게 프로이센을 <i>국가판무관</i>으로서 통치하도록 임명하여, 우리가 확립하기 위해 애썼던 민주적 구조를 무자비하게 허물어뜨리는 책임을 맡깁니다. 게다가, 프릭은 프로이센 내무부 장관이 됩니다. ?]
 
-Future state elections have been postponed indefinitely, to be held only when the situation is deemed "stable enough."
+미래의 주 선거는 무기한 연기되었으며, 상황이 "충분히 안정적"이라고 간주될 때만 열릴 것입니다.

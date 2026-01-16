@@ -1,18 +1,18 @@
-title: New State Consolidation
-subtitle: Goerdeler resigns the position to Papen.
+title: 새로운 국가 통합
+subtitle: 괴르델러는 파펜에게 직위를 사임합니다.
 view-if: chancellor == "Papen" and papen_time == 7 and prussia_leader == "Goerdeler"
 new-page: true
 tags: event
 max-visits: 1
 face-image: img/portraits/goerdeler.jpg
 
-= New State Consolidation
+= 새로운 국가 통합
 
-Goerdeler, the <i>Reichskommissar</i> of Prussia, has announced his resignation in favor of Chancellor Papen, likely under pressure from both the chancellor and Schleicher as they move to consolidate power into the chancellery. Goerdeler, ever the conservative, sympathizes with these goals and steps down before Hindenburg can force the issue.
+프로이센의 <i>국가판무관</i>인 괴르델러는 총리 파펜을 위해 사임을 발표했는데, 아마도 권력을 총리실로 통합하려는 총리와 슐라이허 양쪽의 압력을 받았을 것입니다. 언제나 보수적인 괴르델러는 이러한 목표에 공감하며 힌덴부르크가 문제를 강제하기 전에 물러납니다.
 
-It is clear this is part of Papen’s wider plan for a "New State"—a centralized, anti-democratic regime ruled by aristocrats and the rich. The upcoming Prussian elections have now been postponed indefinitely.
+이것이 귀족과 부자들이 통치하는 중앙 집권적이고 반민주적인 정권인 "새로운 국가"를 위한 파펜의 더 넓은 계획의 일부임이 분명합니다. 다가오는 프로이센 선거는 이제 무기한 연기되었습니다.
 
-- @surrender: How blatant can Papen be!?
+- @surrender: 파펜은 얼마나 노골적일 수 있는가!?
 
 @surrender
 on-arrival: prussia_leader = "Papen"; workers_spd -= 2; unemployed_spd -= 2; rb_militancy *= 0.95; rb_strength -= 100; prussian_police_loyalty -= 0.1; next_election_time_prussia = time + 48; next_election_year_prussia = year + 4; papen_strength += 1

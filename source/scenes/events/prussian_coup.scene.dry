@@ -1,5 +1,5 @@
-title: Coup in Prussia
-subtitle: The Chancellor attempts to overthrow the Prussian government.
+title: 프로이센의 쿠데타
+subtitle: 총리는 프로이센 정부를 전복하려고 시도합니다.
 view-if: chancellor == "Papen" and altona_seen and spd_prussia and not presidential_powers and not prussian_reichsexekution
 on-arrival: prussian_coup_seen = 1; otl_prussian_coup_seen = 1; strife += 2; schleicher_spd_r -= 1; schleicher_spd_support -= 1
 new-page: true
@@ -7,29 +7,29 @@ tags: event
 max-visits: 1
 face-image: img/Reichswehr.jpg
 
-= Coup in Prussia
+= 프로이센의 쿠데타
 
-A crisis! Chancellor [+ chancellor +] has ordered the dismissal of the Prussian government through a procedure known as the <i>Reichsexekution</i>. He claims the state government can no longer maintain order amid escalating street battles between the <span style="color: #7A3C00;">**SA**</span>, Reichsbanner, and other paramilitary groups—despite his own administration having legalized them.
+위기입니다! [+ chancellor +] 총리는 <i>연방 집행</i>으로 알려진 절차를 통해 프로이센 정부의 해산을 명령했습니다. 그는 자신의 행정부가 그들을 합법화했음에도 불구하고, <span style="color: #7A3C00;">**SA**</span>, 국기단, 그리고 다른 준군사조직 그룹 간의 거리 전투가 고조되는 가운데 주 정부가 더 이상 질서를 유지할 수 없다고 주장합니다.
 
-[? if not altona_good: The recent clashes in Altona have handed him the pretext to depose the Prussian government?][? if altona_good: The surge in politically motivated violence has given Papen the pretext to depose the Prussian government?]. [? if prussia_leader == "Braun": With Otto Braun still abroad on convalescent leave following the heartbreaking events of the past few months?][? if prussia_leader != "Braun": With Minister-President [+ prussia_leader +] unwilling to risk a civil war to defend his administration?], Papen is moving to seize control. If this coup is successful, Papen will transfer control of Prussia to a <span style="color: #808080;">reactionary</span> <i>Reichskommissar</i>, a calculated move to win over the <span style="color: #7A3C00;">**NSDAP**</span> by granting the <span style="color: #7A3C00;">**SA**</span> free rein in the state. We suspect Defense Minister Schleicher to be the mastermind behind this scheme—another step in advancing his <span class="tooltip-text" title="Coined by conservative elites like Schleicher and Papen, this strategy aims to control the dynamic Nazi movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Nazis, transforming them into a constructive component of the state.">taming strategy</span>.
+[? if not altona_good: 알토나에서의 최근 충돌은 그에게 프로이센 정부를 축출할 구실을 주었습니다?][? if altona_good: 정치적 동기의 폭력 급증은 파펜에게 프로이센 정부를 축출할 구실을 주었습니다?]. [? if prussia_leader == "Braun": 오토 브라운이 지난 몇 달간의 가슴 아픈 사건들 이후 요양 휴가로 여전히 해외에 있는 상황에서?][? if prussia_leader != "Braun": 주 총리 [+ prussia_leader +]가 자신의 행정부를 방어하기 위해 내전의 위험을 감수하려 하지 않는 상황에서?], 파펜은 통제권을 장악하기 위해 움직이고 있습니다. 만약 이 쿠데타가 성공한다면, 파펜은 프로이센의 통제권을 <span style="color: #808080;">반동적</span> <i>연방 판무관</i>에게 이양할 것이며, 이는 <span style="color: #7A3C00;">**SA**</span>에게 주 내에서 자유로운 활동을 허용함으로써 <span style="color: #7A3C00;">**NSDAP**</span>를 포섭하려는 계산된 움직임입니다. 우리는 국방부 장관 슐라이허가 이 계획의 배후에 있는 주동자라고 의심합니다—그의 <span class="tooltip-text" title="슐라이허와 파펜 같은 보수 엘리트들이 만든 이 전략은 역동적인 나치 운동을 통제하고 당을 정부에 도입함으로써 국가에 통합하는 것을 목표로 합니다. 그들의 눈에는 이것이 나치를 온건하게 만들어 국가의 건설적인 구성 요소로 변화시킬 것입니다.">길들이기 전략</span>을 진전시키는 또 다른 단계입니다.
 
-The legality of this action is dubious. Severing has responded that he'll only yield to force. Many of our members are prepared to resist.
+이 조치의 합법성은 의심스럽습니다. 제베링은 오직 힘에만 굴복할 것이라고 응답했습니다. 우리 당원 중 많은 이들이 저항할 준비가 되어 있습니다.
 
 - @defend
 - @surrender
 
 @defend
-title: Fight against the overthrow attempt!
-subtitle: Labor will call a general strike. The Reichsbanner and the loyal elements of the Prussian police will resist the coup.
-unavailable-subtitle: We do not have the forces to resist.
+title: 전복 시도에 맞서 싸운다!
+subtitle: 노동계는 총파업을 소집할 것이다. 국기단과 프로이센 경찰의 충성스러운 요소들은 쿠데타에 저항할 것이다.
+unavailable-subtitle: 우리는 저항할 병력이 없습니다.
 choose-if: democracy_force >= 35
 
-[? if prussia_leader == "Stegerwald" or prussia_leader == "Brüning": A potential roadblock to armed resistance is the unwillingness of Minister President [+ prussia_leader +] to do so, [? if not rb_stay:as a result, they've overruled Severing's call to resist the coup and has made the whole situation a mess. ?][? if rb_stay:however, the <span style="color: #000000;">Center</span>'s decision to remain in a militarized Reichsbanner has rallied the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition parties to the defense of the republic they helped create. ?] ?]
+[? if prussia_leader == "Stegerwald" or prussia_leader == "Brüning": 무장 저항의 잠재적 장애물은 주 총리 [+ prussia_leader +]가 그렇게 하기를 꺼린다는 점이며, [? if not rb_stay:결과적으로, 그들은 쿠데타에 저항하라는 제베링의 소집을 기각했고 전체 상황을 엉망으로 만들었습니다. ?][? if rb_stay:그러나, 군사화된 국기단에 남기로 한 <span style="color: #000000;">중앙당</span>의 결정은 <span style="color: #000000;">바</span><span style="color: #DD0000;">이마</span><span style="color: #FFCC00;">르</span> 연정 당들을 그들이 만드는 것을 도운 공화국의 방어로 결집시켰습니다. ?] ?]
 
-The Reichswehr are already on the streets of Berlin, with a national force of a hundred thousand men on standby, ready to crush any resistance. The <span style="color: #3E88B3;">**Stahlhelm**</span> and the recently legalized <span style="color: #7A3C00;">**SA**</span> are poised to back them. The Reichsbanner simply cannot match the small, but well-trained and heavily armed Reichswehr. If we resist, we face the very real prospect of civil war. We understand the gravity of this, don’t we?
+국방군은 이미 베를린 거리에 있으며, 10만 명의 국가 병력이 대기하고 있어 어떤 저항도 분쇄할 준비가 되어 있습니다. <span style="color: #3E88B3;">**철모단**</span>과 최근 합법화된 <span style="color: #7A3C00;">**SA**</span>는 그들을 지원할 태세를 갖추고 있습니다. 국기단은 작지만 잘 훈련되고 중무장한 국방군을 상대할 수 없습니다. 만약 우리가 저항한다면, 우리는 내전이라는 매우 현실적인 전망에 직면하게 됩니다. 우리는 이것의 심각성을 이해하고 있죠, 그렇지 않습니까?
 
-- @defend_2: We will fight, even if it leads to a civil war.
-- @defend_3: We will fight, even if it leads to a civil war.
+- @defend_2: 우리는 내전으로 이어지더라도 싸울 것이다.
+- @defend_3: 우리는 내전으로 이어지더라도 싸울 것이다.
 - @surrender
 
 @defend_2
@@ -70,9 +70,9 @@ on-arrival: prussia_coup_win = 1; sa_strength *= 0.75; sh_strength *= 0.75; pro_
 achievement: bollwerk_der_demokratie
 go-to: defend_2_victory_2
 
-Our forces confront the government troops and their <span style="color: #808080;">reactionary</span> auxiliaries on their way to seize government offices, and somehow, our enemies retreat without a fight! They were overwhelmed by our display of strength, and have chosen to slink away. Chancellor [+ chancellor +] withdraws the dismissal of the Prussian government, at least for now.
+우리 병력은 정부 청사를 장악하러 가는 정부군과 그들의 <span style="color: #808080;">반동적</span> 보조군과 맞서고, 어떻게든, 우리의 적들은 싸우지 않고 후퇴합니다! 그들은 우리의 힘의 과시에 압도당했고, 슬그머니 물러나는 것을 선택했습니다. [+ chancellor +] 총리는 적어도 당분간은 프로이센 정부의 해산을 철회합니다.
 
-The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**SPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>. It’s anticipated that Chancellor Papen will either resign or be deposed by the Camarilla for his embarrassing failure, as Hindenburg’s confidence in him has been utterly shattered.
+무력 시위는 공화국과 <span style="color: #c00000;">**SPD**</span>에 대한 지지를 다시 활기차게 했고, <span style="color: #7A3C00;">파시스트</span>들을 약화시켰습니다. 파펜 총리는 사임하거나 그의 당혹스러운 실패로 인해 카마릴라에 의해 축출될 것으로 예상되는데, 힌덴부르크의 그에 대한 신뢰가 완전히 산산조각 났기 때문입니다.
 
 @defend_2_victory_2
 achievement: drei_pfeile
@@ -80,26 +80,26 @@ achievement: drei_pfeile
 
 @defend_2_civil_war
 
-Our forces confront the government troops and their supporters on the streets of Berlin, and armed fighting erupts. The <span style="color: #808080;">reactionaries</span> do not budge from their positions. We are caught at a disadvantage.
+우리 병력은 베를린 거리에서 정부군과 그들의 지지자들과 맞서고, 무력 충돌이 발생합니다. <span style="color: #808080;">반동주의자들</span>은 그들의 위치에서 꿈쩍도 하지 않습니다. 우리는 불리한 상황에 처했습니다.
 
-- @civil_war: It is a civil war.
+- @civil_war: 이젠 내전이다.
 
 @defend_3
 view-if: not ((nsdap_votes >= 25 or rb_militancy < 0.2) and ((reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty)) >= rb_strength*rb_militancy) and (spd_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3)
 on-arrival: papen_strength -= 1; hindenburg_papen_r -= 1; pro_republic += 5
 achievement: bollwerk_der_demokratie
 
-Papen has backed down without a fight! With Severing and the Prussian government standing firm, declaring they would only respond to force, Papen has refused to press ahead with his plan, unwilling to risk civil war. Hindenburg is reportedly displeased with Papen's weakness but believes another opportunity will come soon.
+파펜은 싸우지 않고 물러났습니다! 제베링과 프로이센 정부가 확고히 서서 오직 힘에만 대응하겠다고 선언하자, 파펜은 내전의 위험을 감수하고 싶지 않아 자신의 계획을 밀고 나가는 것을 거부했습니다. 힌덴부르크는 파펜의 나약함에 불쾌해한다고 전해지지만 곧 다른 기회가 올 것이라고 믿습니다.
 
-For now, we remain in control of the democratic bulwark.
+당분간, 우리는 민주주의의 보루를 통제하고 있습니다.
 
 @surrender
-title: Give up on the Prussian government.
-subtitle: We will attempt to fight this out legally.
+title: 프로이센 정부를 포기한다.
+subtitle: 우리는 이것을 법적으로 해결하려고 시도할 것이다.
 on-arrival: older_prussia_leader = prussia_leader; prussia_coup_lose = 1; pre_in_weimar_coalition_prussia = 1 if ((in_weimar_coalition_prussia == 1 or in_minority_weimar_coalition_prussia == 1) or (in_grand_coalition_prussia == 1 and lvp_formed)); pre_in_grand_coalition_prussia = 1 if (in_grand_coalition_prussia == 1 or in_minority_grand_coalition_prussia == 1); in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; prussia_leader = "Papen"; workers_spd -= 5; new_middle_spd -= 5; new_middle_ddp -= 3; unemployed_spd -= 3; left_dissent += 10; labor_dissent += 10; neorevisionist_dissent += 20; rb_militancy *= 0.8; rb_strength -= 200; prussian_police_loyalty -= 0.5; next_election_time_prussia = time + 48; next_election_year_prussia = year + 4; papen_strength += 1
 
-On the morning of the coup, the decree is presented to the Prussian government. Despite fierce objections to its constitutionality—and Severing’s vow to yield only to force—a hundred thousand Reichswehr troops occupy key government buildings in Berlin. One by one, Severing and the police chiefs allow themselves to be removed without resistance.
+쿠데타 당일 아침, 법령이 프로이센 정부에 제시됩니다. 그 합헌성에 대한 격렬한 반대에도 불구하고—그리고 오직 힘에만 굴복하겠다는 제베링의 맹세에도 불구하고—10만 명의 국방군 병력이 베를린의 주요 정부 건물을 점거합니다. 하나둘씩, 제베링과 경찰 서장들은 저항 없이 제거되는 것을 허용합니다.
 
-A pall of hopelessness and despair descends over <span style="color: #c00000;">Social Democracy</span>. We have failed. Many in the Reichsbanner simply quit, demoralized by their leaders' lack of a call to action. 
+절망과 체념의 장막이 <span style="color: #c00000;">사회민주주의</span> 위로 내려앉습니다. 우리는 실패했습니다. 국기단의 많은 이들은 지도자들의 행동 소집 부족에 사기를 잃고 단순히 그만둡니다.
 
-President Hindenburg appoints the <span style="color: #808080;">reactionary</span> Franz von Papen as <i>Reichskommissar</i> of Prussia, tasked with dismantling the democratic structures we fought to preserve. This furthers Papen’s ambition for a “New State”—one that unites the chancellorship and the Prussian premiership under a single authoritarian hand.
+힌덴부르크 대통령은 <span style="color: #808080;">반동적</span> 프란츠 폰 파펜을 프로이센의 <i>국가판무관</i>으로 임명하여, 우리가 보존하기 위해 싸웠던 민주적 구조를 해체하는 임무를 맡깁니다. 이것은 총리직과 프로이센 주 총리직을 하나의 권위주의적 손 아래 통합하려는 "새로운 국가"에 대한 파펜의 야망을 더욱 발전시킵니다.
