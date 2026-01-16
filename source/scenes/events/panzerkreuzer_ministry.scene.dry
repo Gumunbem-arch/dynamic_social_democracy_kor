@@ -1,5 +1,5 @@
-title: Panzerkreuzer A
-subtitle: A political question
+title: 장갑순양함 A
+subtitle: 정치적 문제
 tags: event, govt_affairs
 is-card: true
 on-arrival: panzerkreuzer_seen = 1
@@ -7,23 +7,23 @@ view-if: panzerkreuzer_seen = 0 and year = 1928 and month >= 8 and reichswehr_mi
 new-page: true
 face-image: img/panzerkreuzer.jpg
 
-= Panzerkreuzer
+= 장갑순양함
 
-Navy leaders are asking for the construction of a new battlecruiser, as promised by the previous government. Since we control the Reichswehr ministry, it is our decision as to whether to build the battlecruiser or not.
+해군 수뇌부가 이전 정부의 약속대로 신형 순양전함 건조를 요청하고 있습니다. 우리가 국방부를 통제하고 있으므로, 순양전함 건조 여부는 우리의 결정에 달려 있습니다.
 
-- @vote_yes: Build the battlecruiser.
-- @vote_no: Do not build the battlecruiser.
+- @vote_yes: 순양전함을 건조한다.
+- @vote_no: 순양전함을 건조하지 않는다.
 
 @vote_yes
 on-arrival: left_dissent += 10; labor_dissent += 10; center_dissent += 5; reformist_dissent += 5; neorevisionist_dissent += 5; workers_spd -= 4 if panzerkreuzer_campaign; unemployed_spd -= 2 if panzerkreuzer_campaign; reichswehr_loyalty += 0.1; panzerkreuzer_funded = 1; dvp_left += 1; ddp_right += 1; ddp_cohesion -= 1; lvp_left += 0.5; goal_spd_cancel += 1; hindenburg_angry -= 5
 
-We have pleased the military by supporting the construction of the battlecruiser. However, our grassroots party members are shocked by our intransigence! Many party branches have begun agitating against the Reichstag delegation. 
+우리는 순양전함 건조를 승인하여 군부의 비위를 맞췄습니다. 하지만 평당원들은 우리의 변절에 큰 충격을 받았습니다! 많은 당 지부들이 제국의회 의원단을 상대로 선동을 시작했습니다.
 
-[? if panzerkreuzer_campaign: Our working-class base feels betrayed—we had promised to block the ship’s construction and fund children’s meals instead. ?]
+[? if panzerkreuzer_campaign: 우리의 노동자 계급 지지 기반은 배신감을 느끼고 있습니다. 우리는 함선 건조를 막고 그 돈으로 아이들에게 음식을 제공하겠다고 약속했었기 때문입니다. ?]
 
 @vote_no
 on-arrival: coalition_dissent += 1; reichswehr_loyalty -= 0.05; left_dissent -= 10; labor_dissent -= 10; center_dissent -= 5; reformist_dissent -= 5; neorevisionist_dissent -= 5; nationalism -= 6; pacifism += 2; z_relation -= 5; dvp_relation -= 5; lvp_relation -= 3; kpd_relation += 5; workers_spd += 5*(1-dissent); ddp_left += 1; panzerkreuzer_failed = 1; dvp_right += 1; ddp_left += 2; ddp_cohesion += 1; lvp_right += 1; reichswehr_goal_spd += 1; hindenburg_angry += 10; coup_progress += 1
 
-Military leaders are upset at the Ministry's decision to not construct the battlecruiser, and they have taken the complaints to our coalition partners and President Hindenburg. However, there is not much they can do to force the construction, as we have control over the Reichswehr ministry.
+군 수뇌부는 순양전함 건조를 불허한 국방부의 결정에 격분하여 연정 파트너들과 힌덴부르크 대통령에게 불만을 토로했습니다. 하지만 우리가 국방부를 장악하고 있는 이상, 그들이 건조를 강행할 방법은 마땅치 않습니다.
 
-No matter what, the battlecruiser will not be built. We have fulfilled one of our campaign promises, and our supporters are pleased. Pacifism is starting to find support in the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
+어쨌든 순양전함은 건조되지 않을 것입니다. 우리는 선거 공약 중 하나를 이행했고, 지지자들은 기뻐하고 있습니다. [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] 내에서도 평화주의가 지지를 얻기 시작했습니다.
