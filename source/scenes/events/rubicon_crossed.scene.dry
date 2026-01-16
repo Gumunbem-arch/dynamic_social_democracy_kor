@@ -1,5 +1,5 @@
-title: The Rubicon is Crossed
-subtitle: The fate of Germany rests in President Hindenburg.
+title: 루비콘 강을 건너다
+subtitle: 독일의 운명은 힌덴부르크 대통령에게 달려 있습니다.
 view-if: chancellor = "Papen" and president == "Hindenburg" and papen_time == 1
 priority: 3
 new-page: true
@@ -115,13 +115,13 @@ audio: music/1930_1933/Backroom_Deal.ogg
 achievement: sturm_und_drang
 go-to: rubicon_crossing
 
-= The Rubicon is Crossed
+= 루비콘 강을 건너다
 
-With the dismissal of Brüning’s government—despite its parliamentary majority—the foundations of democracy are crumbling before our eyes.
+의회 과반수를 확보하고 있었음에도 불구하고 브뤼닝 정부가 해임되면서, 민주주의의 토대가 우리 눈앞에서 무너져 내리고 있습니다.
 
-Whatever path Hindenburg takes now will be chosen not by the people, but by those who whisper in his ear.
+힌덴부르크가 이제 어떤 길을 택하든, 그것은 국민이 아니라 그의 귀에 속삭이는 자들에 의해 결정될 것입니다.
 
-Time slows. We enter the week-by-week struggle.
+시간이 느리게 흐릅니다. 우리는 매주 이어지는 투쟁의 시간으로 들어갑니다.
 
 @rubicon_crossing
 audio: shuffle music/1930_1933/Nation_building.mp3 music/1930_1933/Ugly_American.mp3 music/1930_1933/Exhausted.ogg

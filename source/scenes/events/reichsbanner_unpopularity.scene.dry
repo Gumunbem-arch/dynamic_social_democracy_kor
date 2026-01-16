@@ -1,5 +1,5 @@
-title: Reichsbanner Membership Dwindles
-subtitle: Our unpopularity has impaired the Reichsbanner's recruitment ability.
+title: 국기단 회원 수 감소
+subtitle: 우리의 인기 하락이 국기단의 모병 능력에 타격을 입혔습니다.
 view-if: rb_militancy >= 0.1 and workers_spd_normalized + unemployed_spd_normalized < (workers_kpd_normalized + workers_nsdap_normalized + workers_dnvp_normalized + (rb_militancy*100)) and time >= reichsbanner_unpopularity_time
 new-page: true
 tags: event
@@ -17,13 +17,13 @@ on-display: {!
 !}
 on-arrival: reichsbanner_unpopularity_time = time + 6
 
-= Reichsbanner Membership Dwindles
+= 국기단 회원 수 감소
 
-Unfortunately, the Reichsbanner's effectiveness is dragged down by the <span style="color: #c00000;">**SPD**</span>'s unpopularity, as the workers aren't particularly enthusiastic about joining. [? if left_strength >= 40: However, more militant members from our left wing have largely remained. ?] [? if spd_votes >= 29: Furthermore, we are unable to recruit significant amount of supporters from non-worker demographics. ?]
+불행히도, 노동자들이 가입에 별다른 열의를 보이지 않으면서 국기단의 효율성은 <span style="color: #c00000;">**SPD**</span>의 인기 하락으로 인해 떨어지고 있습니다. [? if left_strength >= 40: 하지만, 우리 당 좌파의 더 전투적인 구성원들은 대부분 잔류했습니다. ?] [? if spd_votes >= 29: 게다가, 우리는 노동자가 아닌 계층에서 의미 있는 수의 지지자를 모집하지 못하고 있습니다. ?]
 
-- @reichsbanner_joever: Unfortunate.
+- @reichsbanner_joever: 유감이다.
 
 @reichsbanner_joever
 on-arrival: rb_strength *= 0.9; rb_militancy *= 0.8 if left_strength < 40; rb_militancy *= 0.9 if left_strength >= 40
 
-This will continue to be a problem if our popularity continues to flag.
+우리의 인기가 계속 떨어진다면 이 문제는 지속될 것입니다.

@@ -1,5 +1,5 @@
-title: Excessive Militarization of the Reichsbanner
-subtitle: Many argue that its militarization is no longer necessary now that we have established dominance over the streets.
+title: 국기단의 과도한 군사화
+subtitle: 많은 이들은 우리가 거리를 장악한 지금, 더 이상의 군사화는 불필요하다고 주장합니다.
 view-if: rb_militancy >= 0.15 and democracy_paramilitary_highest and year >= 1931 and not rb_massive
 new-page: true
 tags: event
@@ -16,30 +16,30 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Excessive Militarization of the Reichsbanner
+= 국기단의 과도한 군사화
 
-The argument that the militarization of the Reichsbanner is necessary to defend against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Stahlhelm**</span> no longer holds, given our dominance of the streets. With the threat now eliminated, the bourgeois parties fear it may instead function as a <span style="color: #c00000;">socialist</span> militia.
+<span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span> <span style="color: #7A3C00;">**SA**</span>와 <span style="color: #3E88B3;">**철모단**</span>에 맞서기 위해 국기단을 무장시켜야 한다는 주장은, 우리가 거리에 대한 지배력을 확보한 상황에서 더 이상 설득력이 없습니다. 위협이 제거된 지금, 부르주아 정당들은 국기단이 <span style="color: #c00000;">사회주의</span> 민병대로 변질될까 우려하고 있습니다.
 
-[? if not rb_exit: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] [? if not lvp_formed:and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>&nbsp;?][? if not lvp_leave_reichsbanner and lvp_formed:and <span style="color: #FFCC00;">**LVP**</span>&nbsp;?]have threatened drastic consequences if the Reichsbanner isn't disarmed.?]
-[? if rb_exit and not cvp_formed: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?][? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_reichsbanner and lvp_formed: and <span style="color: #FFCC00;">**LVP**</span>?] have condemned the organization as nothing more than a <span style="color: #c00000;">socialist</span> militia and have abandoned their strong opposition to the <span style="color: #3E88B3;">**Stahlhelm**</span>.?][? if (rb_exit or cvp_leave_reichsbanner) and cvp_formed: The <span style="color: #000000;">**CVP**</span> [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_reichsbanner and lvp_formed: and <span style="color: #FFCC00;">**LVP**</span>?] have condemned the organization as nothing more than a <span style="color: #c00000;">socialist</span> militia and are getting noticeably friendly with the <span style="color: #3E88B3;">**Stahlhelm**</span>.?]
+[? if not rb_exit: [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] [? if not lvp_formed:및 <span style="color: #D3C24D;">**[+ ddp_name +]**</span>&nbsp;?][? if not lvp_leave_reichsbanner and lvp_formed:및 <span style="color: #FFCC00;">**LVP**</span>&nbsp;?]은 국기단이 무장 해제되지 않는다면 극단적인 조치를 취하겠다고 위협했습니다.?]
+[? if rb_exit and not cvp_formed: [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?][? if not lvp_formed: 및 <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_reichsbanner and lvp_formed: 및 <span style="color: #FFCC00;">**LVP**</span>?]은 이 조직이 <span style="color: #c00000;">사회주의</span> 민병대에 불과하다고 비난하며 <span style="color: #3E88B3;">**철모단**</span>에 대한 강경한 반대 입장을 철회했습니다.?][? if (rb_exit or cvp_leave_reichsbanner) and cvp_formed: <span style="color: #000000;">**CVP**</span> [? if not lvp_formed: 및 <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_reichsbanner and lvp_formed: 및 <span style="color: #FFCC00;">**LVP**</span>?]는 이 조직이 <span style="color: #c00000;">사회주의</span> 민병대에 불과하다고 비난하며 <span style="color: #3E88B3;">**철모단**</span>과 눈에 띄게 가까워지고 있습니다.?]
 
-If no action is taken, we risk permanently alienating the bourgeois parties.
+만약 아무런 조치도 취하지 않는다면, 우리는 부르주아 정당들을 영원히 적으로 돌릴 위험이 있습니다.
 
-- @let_go: Refuse to take any action, keeping the Reichsbanner the way it is.
-- @lower_militancy: We must lower the Reichsbanner's militancy.
+- @let_go: 국기단을 현 상태로 유지하며, 어떠한 조치도 거부한다.
+- @lower_militancy: 국기단의 군사화를 낮춰야 한다.
 
 @let_go
-subtitle: The Reichsbanner is still needed, as the police cannot be trusted to do their job. [? if president == "Hindenburg" and spd_in_government: Hindenburg has threatened to sack our government if no action is taken. ?][? if spd_in_government and not in_left_front and not in_spd_majority: Our coalition partners will call a vote of no confidence. ?] The bourgeois parties will be forever antagonistic.
-unavailable-subtitle: The reformist wing of the party is able to dissuade the party from endorsing this option.
+subtitle: 경찰이 제 역할을 하리라 믿을 수 없기에 국기단은 여전히 필요합니다. [? if president == "Hindenburg" and spd_in_government: 힌덴부르크는 조치가 취해지지 않으면 우리 정부를 해임하겠다고 위협했습니다. ?][? if spd_in_government and not in_left_front and not in_spd_majority: 우리의 연정 파트너들은 불신임 투표를 소집할 것입니다. ?] 부르주아 정당들은 영원히 적대적으로 돌아설 것입니다.
+unavailable-subtitle: 당내 개혁주의 파벌이 당이 이 선택을 하지 않도록 만류하는 데 성공했습니다.
 choose-if: left_strength + neorevisionist_strength >= reformist_strength
 on-arrival: rb_strength *= 0.8; z_relation -= 20; ddp_relation -= 20; lvp_relation -= 20; rb_exit = 1; left_strength += 10*(1-dissent); neorevisionist_strength += 20*(1-dissent); ddp_right += 8; lvp_right += 10; dvp_right += 10; ddp_cohesion -= 5; pro_republic -= 10; coalition_dissent += 5; rb_massive = 1; hindenburg_angry += 100
 
-We must not let our guard down; the Reichsbanner must remain militarized. Whether they like it or not, paramilitaries are here to stay.
+우리는 경계를 늦춰서는 안 됩니다. 국기단은 무장 상태를 유지해야 합니다. 그들이 좋아하든 싫어하든, 준군사조직은 이제 현실의 일부입니다.
 
-Unfortunately, the bourgeois parties[? if president == "Hindenburg":, and especially President Hindenburg?] now plainly see the Reichsbanner for what it is: our <span style="color: #c00000;">socialist</span> militia. Non-<span style="color: #c00000;">socialist</span> members of the paramilitary leave en masse, and the political establishment will be forever antagonistic to us.
+불행히도, 부르주아 정당들은[? if president == "Hindenburg":, 그리고 특히 힌덴부르크 대통령은?] 이제 국기단을 있는 그대로, 즉 우리의 <span style="color: #c00000;">사회주의</span> 민병대로 인식하고 있습니다. 준군사조직의 비<span style="color: #c00000;">사회주의</span> 구성원들은 대거 이탈하고 있으며, 기성 정치권은 우리에게 영원히 적대적인 태도를 보일 것입니다.
 
 @lower_militancy
-subtitle: The necessity for paramilitaries is over; we can now let the Prussian police do its job.
+subtitle: 준군사조직의 필요성은 끝났습니다. 이제 프로이센 경찰이 임무를 수행하도록 맡길 수 있습니다.
 on-arrival: rb_militancy *= 0.5
 
-Bowing to the other parties' demands, we reduce the Reichsbanner's military training, thus inducing them to stay.
+다른 정당들의 요구에 굴복하여, 우리는 국기단의 군사 훈련을 축소하고 그들이 잔류하도록 유도합니다.

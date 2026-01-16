@@ -1,5 +1,5 @@
-title: The <span style="color: #FFCC00;">**LVP**</span> and the Reichsbanner
-subtitle: Due to its militarization, the <span style="color: #FFCC00;">liberals</span> are leaving the Reichsbanner.
+title: <span style="color: #FFCC00;">**LVP**</span>와 국기단
+subtitle: 국기단의 군사화로 인해, <span style="color: #FFCC00;">자유주의자들</span>이 조직을 떠나고 있습니다.
 view-if: rb_militancy >= 0.04 and not rb_exit and not rb_stay and lvp_formed and lvp_ideology != "Left"
 new-page: true
 tags: event
@@ -17,18 +17,18 @@ on-display: {!
 !}
 max-visits: 1
 
-= The <span style="color: #FFCC00;">**LVP**</span> and the Reichsbanner
+= <span style="color: #FFCC00;">**LVP**</span>와 국기단
 
-The Reichsbanner has increasingly militarized, acquiring arms, conducting paramilitary training, and attracting a stream of <span style="color: #9B0000;">radicalized</span> <span style="color: #c00000;">**SPD**</span> members. The <span style="color: #FFCC00;">**LVP**</span> in particular is offended by this, as many of its members originate from the semi-monarchist <span style="color: #C0A054;">**DVP**</span> and even have <span style="color: #3E88B3;">**Stahlhelm**</span> memberships. The organization's militarization has provided them with a pretext to sever formal ties with this <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization.
+국기단은 점점 더 군사화되어 무기를 획득하고 준군사 훈련을 실시하며, <span style="color: #9B0000;">급진화된</span> <span style="color: #c00000;">**SPD**</span> 당원들의 유입을 끌어들이고 있습니다. 특히 <span style="color: #FFCC00;">**LVP**</span>는 이에 불쾌해하고 있는데, 그들 중 다수가 준왕정주의적인 <span style="color: #C0A054;">**DVP**</span> 출신이거나 심지어 <span style="color: #3E88B3;">**철모단**</span> 당적을 가지고 있기 때문입니다. 조직의 군사화는 그들에게 이 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 조직과의 공식적인 관계를 끊을 구실을 제공했습니다.
 
-- @let_go: Let the <span style="color: #FFCC00;">liberals</span> go.
-- @lower_militancy: We must lower the Reichsbanner's militancy.
-- @keep_them: Can we convince them that a militant Reichsbanner is necessary for defending the Republic?
+- @let_go: <span style="color: #FFCC00;">자유주의자들</span>을 보내준다.
+- @lower_militancy: 국기단의 군사화를 낮춰야 한다.
+- @keep_them: 군사적인 국기단이 공화국 수호에 필수적이라고 그들을 설득할 수 있을까?
 
 @let_go
 on-arrival: rb_strength *= 0.95; z_relation -= 3; lvp_relation -= 5; lvp_right += 3; pro_republic -= 3; lvp_leave_reichsbanner = 1
 
-We have judged that the Reichsbanner's militancy is more important than maintaining a coalition with the <span style="color: #FFCC00;">**LVP**</span>. The Reichsbanner members affiliated with the <span style="color: #FFCC00;">liberals</span> leave, and this may inspire the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to follow suit.
+우리는 국기단의 전투력이 <span style="color: #FFCC00;">**LVP**</span>와의 연정을 유지하는 것보다 더 중요하다고 판단했습니다. <span style="color: #FFCC00;">자유주의자들</span>과 제휴한 국기단원들은 떠났고, 이는 [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]이 뒤따르는 계기가 될지도 모릅니다.
 
 # TODO: this should make it harder to form Weimar coalitions
 
@@ -36,12 +36,12 @@ We have judged that the Reichsbanner's militancy is more important than maintain
 @lower_militancy
 on-arrival: rb_militancy *= 0.5
 
-Bowing to the <span style="color: #FFCC00;">**LVP**</span>'s demands, we reduce the Reichsbanner's military training, thus inducing them to stay.
+<span style="color: #FFCC00;">**LVP**</span>의 요구에 굴복하여, 우리는 국기단의 군사 훈련을 축소하고 그들이 잔류하도록 유도합니다.
 
 
 @keep_them
-unavailable-subtitle: They are unable to be convinced at this time.
+unavailable-subtitle: 그들은 현시점에서 설득될 수 없습니다.
 choose-if: strife >= 3 and lvp_relation >= 55 and lvp_ideology != "Right"
 on-arrival: lvp_left += 3; lvp_relation += 3; old_middle_dnvp += 3; old_middle_lvp -= 3; pro_republic += 3
 
-Seeing the strife that has filled Germany's streets, the <span style="color: #FFCC00;">**LVP**</span> seem to be convinced that it is necessary for the Reichsbanner to be militarized, and will not leave the organization. Unfortunately, many die-hard <span style="color: #3E88B3;">**Stahlhelm**</span> members within the party are constantly pressing for a reversal of this policy.
+독일의 거리를 채운 분쟁을 목격한 <span style="color: #FFCC00;">**LVP**</span>는 국기단의 군사화가 필요하다고 확신하는 듯하며, 조직을 떠나지 않을 것입니다. 불행히도, 당내의 많은 골수 <span style="color: #3E88B3;">**철모단**</span> 출신들은 끊임없이 이 정책을 철회하라고 압박하고 있습니다.

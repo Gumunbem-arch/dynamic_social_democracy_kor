@@ -1,5 +1,5 @@
-title: <span style="color: #7A3C00;">**SA**</span> Leader Ernst Röhm's <span style="color: red;">Ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> Exposed
-subtitle: The Prussian Ministry of the Interior uncovers shocking revelations about the <span style="color: #7A3C00;">Nazi</span> leader...
+title: <span style="color: #7A3C00;">**SA**</span> 지도자 에른스트 룀의 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span> 폭로
+subtitle: 프로이센 내무부가 <span style="color: #7A3C00;">나치</span> 지도자에 대한 충격적인 사실을 밝혀냈습니다...
 view-if: year == 1932 and month == 3 and not hindenburg_term_extended and spd_prussia and not repealed_175
 priority: 3
 max-visits: 1
@@ -8,44 +8,44 @@ new-page: true
 on-arrival: nazi_urgency += 1
 face-image: img/portraits/rohm.jpg
 
-= <span style="color: #7A3C00;">**SA**</span> Leader Ernst Röhm's <span style="color: red;">Ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> Exposed
+= <span style="color: #7A3C00;">**SA**</span> 지도자 에른스트 룀의 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span> 폭로
 
-Wilhelm Abegg from the Prussian Ministry of the Interior has approached the <span style="color: #c00000;">**SPD**</span> and informed us about three letters written by <span style="color: #7A3C00;">**SA**</span> leader Ernst Röhm to Berlin nerve specialist Karl-Günther Heimsoth during his self-imposed exile in Bolivia. These letters, confiscated by the Prussian state police, are notable not for their political content but for Röhm’s candid discussions about his <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span>—potentially exposing him to legal action.
+프로이센 내무부의 빌헬름 아베크가 <span style="color: #c00000;">**SPD**</span>에 접근하여, <span style="color: #7A3C00;">**SA**</span> 지도자 에른스트 룀이 볼리비아 망명 시절 베를린의 신경 전문의 카를 귄터 하임조트에게 보낸 세 통의 편지에 대해 알렸습니다. 프로이센 주 경찰이 압수한 이 편지들은 정치적 내용 때문이 아니라, 룀의 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span> 성향에 대한 솔직한 토로 때문에 주목받고 있으며, 이는 잠재적으로 그를 법적 처벌의 대상으로 만들 수 있습니다.
 
-Röhm has never concealed his <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span>, and Hitler has never taken offense at it. Despite Röhm facing multiple prosecutions under Paragraph 175 in the past, none have been successful. However, this time we now have definitive proof.
+룀은 자신의 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span> 성향을 숨긴 적이 없으며, 히틀러 또한 이를 문제 삼지 않았습니다. 룀이 과거 형법 175조 위반으로 여러 차례 기소되었음에도 불구하고, 유죄 판결을 받은 적은 없습니다. 하지만 이번에는 결정적인 증거를 확보했습니다.
 
-What shall be our next move regarding these letters?
+이 편지들에 대해 우리는 어떤 조치를 취해야 할까요?
 
-> *"We oppose the disgraceful Paragraph 175 wherever we can; therefore we must not join the choir of those among us who want to banish a man from society because he is homosexual".*
+> *"우리는 수치스러운 175조를 가능한 모든 곳에서 반대한다. 그러므로 우리는 그가 동성애자라는 이유로 한 남자를 사회에서 매장하려는 무리에 합류해서는 안 된다."*
 
- - Die Weltbühne, German weekly magazine
+ - 디 벨트뷔네, 독일 주간 잡지
 
-- @expose_rohm: We will publish the letters, as the revelation of such a high-ranking <span style="color: #7A3C00;">Nazi</span> official being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> will undoubtedly harm their appeal among core demographics.
-- @no_expose_rohm: The <span style="color: #c00000;">**SPD**</span> is nominally in favor of <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights, and it would be in poor taste to expose such a personal matter.
+- @expose_rohm: 편지를 공개한다. 고위 <span style="color: #7A3C00;">나치</span> 관리가 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span><span style="color: green;">자</span>라는 사실이 폭로되면 의심할 여지 없이 핵심 지지층에게 타격을 줄 것이다.
+- @no_expose_rohm: <span style="color: #c00000;">**SPD**</span>는 명목상 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span><span style="color: green;">자</span> 권리를 옹호하며, 그런 개인적인 문제를 폭로하는 것은 저급한 짓이다.
 
 @expose_rohm
 on-arrival: hindenburg_angry_bruning -= 10; old_middle_nsdap -= 2; rural_nsdap -= 2; catholics_nsdap -= 2; new_middle_spd -= 0.01; z_relation += 3; left_dissent += 5
 
-We have published the Röhm letters under the title *Der Fall Röhm* (The Röhm Affair), distributing the pamphlet across all corners of Germany. This has damaged the <span style="color: #7A3C00;">Nazi</span> Party’s appeal among its more socially reactionary supporters and has even sparked a plot among some <span style="color: #7A3C00;">Nazi</span> members to murder Röhm.
+우리는 룀의 편지를 *Der Fall Röhm* (룀 사건)이라는 제목으로 출판하고, 이 팸플릿을 독일 전역에 배포했습니다. 이는 사회적으로 보수적인 지지자들 사이에서 <span style="color: #7A3C00;">나치</span> 당의 매력을 떨어뜨렸고, 심지어 일부 <span style="color: #7A3C00;">나치</span> 당원들 사이에서 룀을 암살하려는 음모까지 촉발했습니다.
 
-The pamphlet argues that a party tolerating <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> at its highest levels must seek to "poison the people and destroy its moral strength." It warns that this would lead to Germany’s decline, akin to the fall of ancient Rome, and claims that by keeping Röhm in power, the Nazis are complicit in "knowingly and intentionally furthering the seduction of German youths into becoming <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> minions."
+이 팸플릿은 최고위층의 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span>를 용인하는 정당은 "국민을 중독시키고 도덕적 힘을 파괴하는 것"을 추구함에 틀림없다고 주장합니다. 또한 이것이 고대 로마의 몰락과 유사하게 독일의 쇠퇴로 이어질 것이라고 경고하며, 룀을 권력의 자리에 둠으로써 나치들이 "독일 청년들을 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span><span style="color: green;">자</span> 하수인으로 타락시키는 것을 고의로, 그리고 의도적으로 조장하는 것"에 공모하고 있다고 주장합니다.
 
-Despite this, Hitler has swiftly come to Röhm’s defense, publicly reaffirming his position as leader of the <span style="color: #7A3C00;">**SA**</span>. The electoral performance of the <span style="color: #7A3C00;">Nazis</span> remains largely unaffected, but the impression this controversy leaves on President Hindenburg may yet prove significant.
+그럼에도 불구하고, 히틀러는 신속하게 룀을 옹호하고 나섰으며, 공개적으로 <span style="color: #7A3C00;">**SA**</span> 지도자로서의 그의 지위를 재확인했습니다. <span style="color: #7A3C00;">나치</span>의 선거 성과는 대체로 영향을 받지 않았지만, 이 논란이 힌덴부르크 대통령에게 남긴 인상은 훗날 중요하게 작용할지도 모릅니다.
 
-Meanwhile, the pamphlet’s publisher, Helmuth Klotz, has been brutally beaten by <span style="color: #7A3C00;">Nazi</span> deputies inside the Reichstag building as an act of revenge—an event that has overshadowed the scandal itself.
+한편, 팸플릿의 발행인 헬무트 클로츠는 보복으로 제국의회 건물 안에서 <span style="color: #7A3C00;">나치</span> 의원들에게 잔인하게 구타당했습니다. 이 사건은 스캔들 자체를 덮어버릴 만큼 큰 충격을 주었습니다.
 
-- @persecute_rohm: Attempt to persecute Röhm! <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> acts are prohibited by Paragraph 175, allowing us to open up legal action against him.
+- @persecute_rohm: 룀을 기소하라! <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span> 행위는 175조에 의해 금지되어 있으므로, 그에 대한 법적 조치를 취할 수 있다.
 
 @no_expose_rohm
 on-arrival: old_middle_nsdap -= 2; left_dissent -= 5; wholesome_point += 1; rohm_join_rb_time = time + 6
 
-It would be in poor taste for a party advocating for <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights to attack someone for being gay. We’ve taken the high road, but many within our party feel we’ve missed an opportunity.
+<span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span><span style="color: green;">자</span> 권리를 옹호하는 정당이 게이라는 이유로 누군가를 공격하는 것은 저급한 행동일 것입니다. 우리는 도덕적 우위를 지켰지만, 당내 많은 이들은 우리가 기회를 놓쳤다고 생각합니다.
 
 @persecute_rohm
-unavailable-subtitle: Despite the widespread distaste for <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, the judiciary is too reactionary to be able to convict a top <span style="color: #7A3C00;">Nazi</span>.
+unavailable-subtitle: <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span><span style="color: green;">자</span>에 대한 광범위한 혐오에도 불구하고, 사법부는 최고위 <span style="color: #7A3C00;">나치</span> 인사를 유죄 판결하기에는 너무 반동적입니다.
 choose-if: judicial_reform >= 3
 on-arrival: rohm_explode = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 4; rural_nsdap -= 2; catholics_nsdap -= 4; left_dissent += 3; sa_strength *= 0.9; hindenburg_angry_bruning -= 10
 
-With definitive proof of Röhm violating Paragraph 175, the law criminalizing <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> acts, we have been able to initiate legal action against him once more. Röhm is unable to deny the authenticity of the letters, and many have taken that as confirmation of their legitimacy.
+룀이 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span> 행위를 범죄화하는 형법 175조를 위반했다는 결정적인 증거를 확보함에 따라, 우리는 그에 대한 법적 조치를 다시 한번 시작할 수 있었습니다. 룀은 편지의 진위 여부를 부인할 수 없었고, 많은 이들은 이를 사실 확인으로 받아들였습니다.
 
-In the end, Röhm has been convicted under Paragraph 175 and sentenced to one year in prison. This has brought the scandal back into the spotlight, severely damaging the public perception of the <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #7A3C00;">**SA**</span>.
+결국, 룀은 175조 위반으로 유죄 판결을 받아 징역 1년을 선고받았습니다. 이는 스캔들을 다시금 주목받게 했으며, <span style="color: #7A3C00;">**NSDAP**</span>와 <span style="color: #7A3C00;">**SA**</span>에 대한 대중의 인식을 심각하게 훼손했습니다.
