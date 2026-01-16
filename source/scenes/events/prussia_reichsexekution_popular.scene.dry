@@ -1,5 +1,5 @@
-title: Coup in Prussia
-subtitle: The President attempts to overthrow the Prussian government.
+title: 프로이센 쿠데타
+subtitle: 대통령이 프로이센 정부 전복을 시도합니다.
 view-if: president = "Hindenburg" and in_popular_front_prussia and reichsexekution >= 3 and not presidential_powers and prussian_coup_seen = 0 and prussian_reichsexekution = 0
 on-arrival: prussian_reichsexekution = 1; strife += 2; hindenburg_angry += 15
 new-page: true
@@ -7,23 +7,23 @@ tags: event
 max-visits: 1
 face-image: img/Reichswehr.jpg
 
-= Coup in Prussia
+= 프로이센 쿠데타
 
-A crisis! President [+ president +] has invoked the <i>Reichsexekution</i> to dismiss the Prussian government, citing its "inability to maintain order" amidst escalating clashes between the <span style="color: #7A3C00;">**SA**</span>, Reichsbanner, and the increasingly militant <span style="color: #700000;">**RFB**</span>. However, the true motivation is clear: the left-wing coalition governing Prussia poses a direct threat to the conservative and nationalist establishment in Germany.
+위기입니다! [+ president +] 대통령은 <span style="color: #7A3C00;">**SA**</span>, 국기단, 그리고 점점 더 과격해지는 <span style="color: #700000;">**RFB**</span> 간의 충돌이 격화되는 가운데 "질서 유지 능력 상실"을 구실로 <i>제국집행</i>을 발동하여 프로이센 정부를 해임하려 합니다. 그러나 진정한 동기는 명백합니다. 프로이센을 통치하는 좌파 연합이 독일의 보수적이고 민족주의적인 기득권층에게 직접적인 위협이 되기 때문입니다.
 
-The legality of this action remains highly questionable. The left-wing coalition has vowed to resist, while the streets are descending into chaos with mass protests and rising political violence.
+이 조치의 적법성은 여전히 의문의 여지가 많습니다. 좌파 연합은 저항을 맹세했고, 거리는 대규모 시위와 증가하는 정치적 폭력으로 혼란에 빠져들고 있습니다.
 
 - @defend
 - @surrender
 
 
 @defend
-title: Fight against the overthrow attempt!
-subtitle: Labor will call a general strike. The Reichsbanner and the loyal elements of the Prussian police will resist the coup. The <span style="color: #700000;">**KPD**</span> remains unwavering in its support.
+title: 전복 시도에 맞서 싸운다!
+subtitle: 노동계는 총파업을 소집할 것입니다. 국기단과 프로이센 경찰 내 충성파들은 쿠데타에 저항할 것입니다. <span style="color: #700000;">**공산당**</span>의 지지는 확고합니다.
 
-The Reichswehr and <span style="color: #3E88B3;">**Stahlhelm**</span> are already surrounding Berlin, and the <span style="color: #7A3C00;">**SA**</span> is supporting them. This could be civil war. We do realize that, correct? 
+제국군과 <span style="color: #3E88B3;">**철모단**</span>은 이미 베를린을 포위하고 있으며, <span style="color: #7A3C00;">**SA**</span>가 그들을 지원하고 있습니다. 이것은 내전으로 번질 수 있습니다. 우리도 그 사실을 인지하고 있는 것 맞습니까?
 
-- @defend_2: We will fight, even if it leads to a civil war.
+- @defend_2: 내전으로 이어지더라도 우리는 싸울 것이다.
 - @surrender
 
 @defend_2
@@ -35,9 +35,9 @@ on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; pro_republic += 6; workers_s
 achievement: bollwerk_der_demokratie
 go-to: defend_2_victory_2
 
-Our combined forces confront the government troops and their <span style="color: #808080;">reactionary</span> auxiliaries, and somehow, our enemies retreat without a fight! They were overwhelmed by our display of strength, and have chosen to slink away. President [+ president +] withdraws the dismissal of the Prussian government, at least for now.
+우리의 연합군은 정부군 및 그들의 <span style="color: #808080;">반동적인</span> 보조병들과 대치했고, 놀랍게도 적들은 싸우지 않고 후퇴했습니다! 그들은 우리의 무력 과시에 압도당해 슬그머니 물러나는 길을 택했습니다. [+ president +] 대통령은 적어도 지금은 프로이센 정부 해임 명령을 철회했습니다.
 
-The show of force has reinvigorated support for the <span style="color: #c00000;">**SPD**</span> and <span style="color: #700000;">**KPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
+이 무력 시위는 <span style="color: #c00000;">**SPD**</span>과 <span style="color: #700000;">**KPD**</span>에 대한 지지를 다시금 불러일으켰고, <span style="color: #7A3C00;">파시스트들</span>의 기세를 꺾어놓았습니다.
 
 @defend_2_victory_2
 achievement: drei_pfeile
@@ -45,18 +45,18 @@ achievement: drei_pfeile
 
 @defend_2_civil_war
 
-Our forces confront the government troops and their supporters on the streets of Berlin, and armed fighting erupts. The <span style="color: #808080;">reactionaries</span> do not budge from their positions. We are caught at a disadvantage.
+우리 병력은 베를린 거리에서 정부군 및 그들의 지지자들과 맞서고, 무력 충돌이 발발합니다. <span style="color: #808080;">반동세력</span>은 한 발자국도 물러서지 않습니다. 우리는 불리한 상황에 처했습니다.
 
-- @civil_war: It is a civil war.
+- @civil_war: 이것은 내전이다.
 
 
 
 
 @surrender
-title: Give up on the Prussian government.
-subtitle: The <span style="color: #700000;">**RFB**</span> will fight alone.
+title: 프로이센 정부를 포기한다.
+subtitle: <span style="color: #700000;">**RFB**</span>은 홀로 싸울 것이다.
 on-arrival: in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; prussia_leader = "Goerdeler"; workers_spd -= 5; workers_kpd -= 5; unemployed_kpd -= 5; unemployed_spd -= 5; left_dissent += 10; labor_dissent += 10; rb_militancy = rb_militancy/2; rb_strength -= 1000; rfb_banned = 1; rfb_strength -= 200; rfb_militancy -= 0.25; kpd_relation -= 30; communist_coalition -= 3; next_election_time_prussia = time + 48; next_election_year_prussia = year + 4
 
-The <span style="color: #700000;">communists</span> who resist are brutally suppressed, and without the support of the Reichsbanner, we are forced to surrender the Prussian government to the <span style="color: #808080;">reactionaries</span>. A pall of hopelessness and despair descends over <span style="color: #c00000;">Social Democracy</span>. We have failed. The <span style="color: #700000;">**KPD**</span> will never trust us again. Many in the Reichsbanner simply quit, demoralized by their leaders' lack of a call to action.
+끝까지 저항하던 <span style="color: #700000;">공산주의자들</span>은 잔혹하게 진압당했고, 국기단의 지원 없이는 프로이센 정부를 <span style="color: #808080;">반동세력</span>에게 넘겨줄 수밖에 없습니다. 절망과 체념의 장막이 <span style="color: #c00000;">사회민주주의</span> 진영을 뒤덮습니다. 우리는 실패했습니다. <span style="color: #700000;">**공산당**</span>은 다시는 우리를 신뢰하지 않을 것입니다. 국기단의 많은 대원들은 지도부의 행동 부재에 실망하여 사기를 잃고 조직을 떠나고 있습니다.
 
-Hindenburg appoints the <span style="color: #3E88B3;">nationalist</span> Carl Friedrich Goerdeler, who renounces his party affiliation, to govern over Prussia as a <i>Reichskommissar</i>, charged with dismantling the democratic systems we worked hard to build.
+힌덴부르크는 당적을 포기한 <span style="color: #3E88B3;">민족주의자</span> 카를 프리드리히 괴르델러를 프로이센을 통치할 <i>제국판무관</i>으로 임명했습니다. 그는 우리가 힘들게 구축한 민주적 시스템을 해체할 임무를 맡게 되었습니다.

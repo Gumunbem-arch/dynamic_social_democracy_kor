@@ -1,5 +1,5 @@
-title: *Prussia v. Reich*
-subtitle: Oral proceedings begin in the legal challenge against Papen’s <i>Reichsexekution</i>.
+title: *프로이센 대 제국*
+subtitle: 파펜의 <i>제국집행</i>에 대한 위헌 소송 구두 변론이 시작된다.
 view-if: chancellor = "Papen" and prussia_leader == "Papen" and papen_time == 20 and otl_prussian_coup_seen
 new-page: true
 tags: event
@@ -17,29 +17,29 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Prussia v. Reich
+= 프로이센 대 제국
 
-The time has finally come for us, along with the <span style="color: #000000;">Center Party</span>, and the state governments of Bavaria and Baden, to argue for the unconstitutionality of the Prussian <i>Reichsexekution</i>. However, the leader of the state court, and president of the supreme court, is Erwin Bumke, a known <span style="color: #808080;">reactionary</span> and former <span style="color: #3E88B3;">**DNVP**</span> member before taking his job. 
+우리와 <span style="color: #000000;">중앙당</span>, 그리고 바이에른과 바덴 주 정부가 프로이센 <i>제국집행</i>의 위헌성을 주장할 때가 마침내 왔습니다. 그러나, 국사법원의 수장이자 대법원장인 에르빈 붐케는 널리 알려진 <span style="color: #808080;">반동주의자</span>이며 임명 전에는 <span style="color: #3E88B3;">**DNVP**</span> 당원이었습니다.
 
-The main conditions under examination are whether the Prussian government failed to fulfill its constitutional obligations in maintaining public order and security, and whether the federal government had the constitutional right to intervene and appoint a Reich Commissioner to take over governance in Prussia indefinitely.
+심리 중인 주요 쟁점은 프로이센 정부가 공공 질서와 안보를 유지하는 헌법적 의무를 이행하는 데 실패했는지 여부, 그리고 연방 정부가 개입하여 제국판무관을 임명해 프로이센의 통치권을 무기한 인수할 헌법적 권한이 있는지 여부입니다.
 
 - @papen
 - @papen_2
 
 @papen
-title: We await the final verdict.
+title: 우리는 최종 판결을 기다린다.
 view-if: (judicial_reform < 4 and not altona_good) or (judicial_reform < 2 and altona_good)
 on-arrival: pro_republic -= 3
 
-The State Court has ruled that the Prussian government did not fail in its duties, meaning the use of force against a state refusing to follow the constitution was unlawful and the application of the <i>Reichsexekution</i> was unjustified. However, the court did affirm that the government could still appoint a Reich Commissioner and temporarily assume control of Prussia due to a perceived threat to public safety and order.
+법원은 프로이센 정부가 의무를 다하지 않은 것이 아니라고 판결했습니다. 이는 헌법을 따르지 않는 주에 대한 무력 사용은 불법이며 <i>제국집행</i>의 적용은 정당하지 않았음을 의미합니다. 그러나 법원은 공공 안전과 질서에 대한 위협이 인지될 경우 정부가 여전히 제국판무관을 임명하고 일시적으로 프로이센의 통제권을 행사할 수 있음을 확인했습니다.
 
-Additionally, the court declared that the dismissal of the Prussian government was illegal and that Prussia’s representation in the Reichsrat must be restored. While acknowledging that the Prussian government remains legally intact, the judicial system’s <span style="color: #808080;">reactionary</span> nature meant that no practical change was enforced. The court’s ruling did not explicitly demand the reinstatement of the Prussian government, and the [+ chancellor +] government has ignored the decision. Holding the government accountable for this violation would require accusing President Hindenburg of breaching the law by signing the decree—an action the conservative judges find politically unacceptable.
+게다가 법원은 프로이센 정부의 해임이 불법이었으며 제국참의원에서의 프로이센 대표권이 복구되어야 한다고 선언했습니다. 프로이센 정부가 법적으로 건재함을 인정했음에도 불구하고, 사법 시스템의 <span style="color: #808080;">반동적인</span> 본질 탓에 실질적인 변화는 강제되지 않았습니다. 법원의 판결은 프로이센 정부의 복직을 명시적으로 요구하지 않았으며, [+ chancellor +] 정부는 그 결정을 무시했습니다. 이 위반에 대해 정부에 책임을 묻으려면 힌덴부르크 대통령이 법령에 서명함으로써 법을 위반했다고 고발해야 하는데, 이는 보수적인 판사들이 정치적으로 받아들일 수 없는 행동입니다.
 
 @papen_2
-title: We await the final verdict.
+title: 우리는 최종 판결을 기다린다.
 view-if: (judicial_reform >= 4 and not altona_good) or (judicial_reform >= 2 and altona_good)
 on-arrival: prussia_returned = 1; prussia_leader = older_prussia_leader; in_weimar_coalition_prussia = 1 if pre_in_weimar_coalition_prussia; in_grand_coalition_prussia = 1 if pre_in_grand_coalition_prussia; in_minority_weimar_coalition_prussia = 1 if in_weimar_coalition_prussia and weimar_coalition_prussia < 50; in_minority_grand_coalition_prussia = 1 if in_grand_coalition_prussia and grand_coalition_prussia < 50; pro_republic += 8; workers_spd += 5; new_middle_spd += 5; unemployed_spd += 3; new_middle_ddp += 3; labor_dissent -= 15; reformist_dissent -= 15; left_dissent -= 15; prussian_police_loyalty += 0.3; rb_strength *= 1.1; rb_militancy *= 1.1; papen_strength -= 1; hindenburg_papen_r -= 1
 
-The State Court has ruled that the Prussian government did not fail in its duties, declaring that the use of force against a state obeying the constitution was unlawful, and that the application of the <i>Reichsexekution</i> was unjustified. The court has ordered the federal government to relinquish control over Prussia's ministries and to restore its representation in the Reichsrat.
+법원은 프로이센 정부가 의무를 다하지 않은 것이 아니라고 판결하며, 헌법을 준수하는 주에 대한 무력 사용은 불법이었고 <i>제국집행</i>의 적용은 정당하지 않았다고 선언했습니다. 법원은 연방 정부에게 프로이센 부처들에 대한 통제권을 포기하고 제국참의원에서의 대표권을 복구할 것을 명령했습니다.
 
-Papen complies with the ruling and reinstates the Prussian government under [+ prussia_leader +]. Unfortunately, they remain powerless against Hindenburg and Papen, who signed the decree in the first place.
+파펜은 판결을 따르고 [+ prussia_leader +] 하의 프로이센 정부를 복직시킵니다. 불행히도, 그들은 애초에 법령에 서명한 힌덴부르크와 파펜에 대항할 힘이 없는 상태입니다.

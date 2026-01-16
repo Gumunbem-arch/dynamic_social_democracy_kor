@@ -1,21 +1,21 @@
-title: Prussian Elections Restored?
-subtitle: [+ prussia_leader +]'s time is up.
+title: 프로이센 선거 재개?
+subtitle: [+ prussia_leader +]의 시간은 끝났습니다.
 view-if: no_majority_reichsexekution = 1 and prussian_reichsexekution_timer = 0 and not rubicon
 new-page: true
 tags: event
 max-visits: 1
 face-image: img/prussia_flag_old.png
 
-= Prussian Elections Restored?
+= 프로이센 선거 재개?
 
-It has been a year since President Hindenburg dismissed the Prussian government, and hopefully the situation is stable enough for new elections to be called. 
+힌덴부르크 대통령이 프로이센 정부를 해임한 지 1년이 지났습니다. 부디 상황이 안정되어 새로운 선거를 소집할 수 있기를 바랍니다.
 
 - @elections
 
 @elections
-title: We await the decision.
+title: 우리는 결정을 기다린다.
 call: set_next_election_time_prussia
 
-As expected, the democratic process returns to the state of Prussia and [+ prussia_leader +] has called new elections.
+예상대로, 프로이센 주에 민주적 절차가 돌아왔고 [+ prussia_leader +]는 새로운 선거를 소집했습니다.
 
-New Prussian elections have been set for [+ next_election_month_prussia : month +] [+ next_election_year_prussia +].
+새로운 프로이센 선거는 [+ next_election_year_prussia +]년 [+ next_election_month_prussia : month +]로 예정되었습니다.
