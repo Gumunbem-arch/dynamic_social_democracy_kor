@@ -1,5 +1,5 @@
-title: Prussian Police Dissolved
-subtitle: The <i>Staatsschutzamt</i> is formed in its stead.
+title: 프로이센 경찰이 해산되다
+subtitle: 대신 <i>국가보안국</i>이 창설됩니다.
 view-if: chancellor == "Schleicher" and (dsu_in_gov or dsu_was_gov) and ((reichstag_joever_time >= 6 and not schleicher_post_protests) or (reichstag_joever_time >= 16 and schleicher_post_protests)) and not schleicher_rights and prussia_leader == "Strasser"
 max-visits: 1
 new-page: true
@@ -18,16 +18,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Prussian Police Dissolved
+= 프로이센 경찰이 해산되다
 
-Frick, the <span style="color: #6A1E1E;">**DSU**</span>, and Schleicher have been coordinating closely to smooth Germany’s transition into a more authoritarian system. The Prussian police, still riddled with <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sympathizers, remains a key obstacle—too entrenched to purge outright without crippling the force.
+프릭, <span style="color: #6A1E1E;">**DSU**</span>, 그리고 슐라이허는 독일을 더 권위주의적인 체제로 원활하게 전환하기 위해 긴밀히 협력해 왔습니다. 여전히 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 동조자들로 가득한 프로이센 경찰은 주요 장애물로 남아있습니다. 경찰력을 마비시키지 않고는 즉각적으로 숙청하기 어려울 만큼 깊이 뿌리박혀 있기 때문입니다.
 
-But with the Reichswehr’s militia now patrolling the streets under Frick and Strasser’s oversight, there is no longer any need for this relic of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic. In its place, the <i>Staatsschutzamt</i> (State Security Office) has been created, staffed by [? if dsu_in_gov: <span style="color: #7A3C00;">Nazis</span> and?] Schleicher loyalists.
+하지만 이제 프릭과 슈트라서의 감독 하에 국방군의 민병대가 거리를 순찰하게 되면서, <span style="color: #000000;">바</span><span style="color: #DD0000;">이</span><span style="color: #FFCC00;">마르</span> 공화국의 이 유물은 더 이상 필요하지 않게 되었습니다. 그 자리에 <i>Staatsschutzamt</i> (국가보안국)이 창설되었고, [? if dsu_in_gov: <span style="color: #7A3C00;">나치들</span>과?] 슐라이허 충성파들로 채워졌습니다.
 
 - @gestapo
 
 @gestapo
-title: Big brother watches.
+title: 빅 브라더가 지켜보고 있다.
 on-arrival: {!
 Q.state_police = 1;
 Q.pro_republic -= 5;
@@ -69,6 +69,6 @@ Q.catholics_dnef += 6;
 Q.unemployed_dnef += 8;
 !}
 
-For now, the organization remains confined to Prussia, but its presence is felt everywhere. Local party members whisper that their phones are tapped, and troublesome politicians vanish—never to be seen again. With the police now firmly under government control, they decide which crimes to overlook and coordinate raids hand-in-hand with the Reichswehr.
+현재로서는 이 조직이 프로이센에 국한되어 있지만, 그 존재감은 어디에서나 느껴집니다. 지역 당원들은 전화가 도청되고 있다고 수군거리며, 골치 아픈 정치인들은 사라져 다시는 나타나지 않습니다. 경찰이 이제 확고하게 정부의 통제 하에 놓이면서, 그들은 어떤 범죄를 눈감아줄지 결정하고 국방군과 협력하여 급습을 조정합니다.
 
-Yet, their reach still depends on the willingness of people to betray their comrades by reporting them to the police.
+하지만 그들의 손길이 닿는 범위는 여전히 동료를 경찰에 밀고하여 배신하려는 사람들의 의지에 달려 있습니다.

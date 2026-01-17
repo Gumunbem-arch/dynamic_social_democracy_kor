@@ -1,5 +1,5 @@
-title: Schleicher's Health Deteriorates
-subtitle: The chancellor only has a few months left.
+title: 슐라이허의 건강이 악화되다
+subtitle: 총리의 수명이 이제 몇 달밖에 남지 않았습니다.
 view-if: year >= 1934 and month >= 2 and chancellor == "Schleicher" and schleicher_post
 on-arrival: schleicher_dead = 1; schleicher_successor_time = rubicon_time + 1
 max-visits: 1
@@ -7,19 +7,19 @@ new-page: true
 tags: event
 face-image: img/portraits/schleicher_stare.jpg
 
-= Schleicher's Health Deteriorates
+= 슐라이허의 건강이 악화되다
 
-Unbeknownst to the public, Schleicher has been suffering from pernicious anemia for several years. As early as 1930, his family doctor warned him that, given the stress and heavy responsibilities of his career, he likely had no more than six years to live. Now, with the added strain of the chancellorship, those who interact with him have begun to notice his steady decline into lethargy. He may only have a few months left.
+대중에게는 알려지지 않았지만, 슐라이허는 수년 동안 악성 빈혈을 앓아왔습니다. 1930년 초, 주치의는 그에게 업무 스트레스와 막중한 책임을 고려할 때 살 날이 6년도 채 남지 않았다고 경고했습니다. 이제 총리직의 부담까지 더해지면서, 그와 접촉하는 사람들은 그가 점차 무기력해져 가는 것을 눈치채기 시작했습니다. 그에게 남은 시간은 고작 몇 달일지도 모릅니다.
 
-In a public announcement, Schleicher announces his resignation, stating that he will soon handpick a successor to be appointed by Hindenburg. He never truly enjoyed the role, and in recent months has quietly delegated his duties to trusted allies in the Reichswehr, grooming them to take his place.
+공개 성명을 통해 슐라이허는 사임을 발표하며, 힌덴부르크가 임명할 후계자를 곧 직접 지명하겠다고 밝혔습니다. 그는 총리직을 진정으로 즐긴 적이 없으며, 최근 몇 달 동안은 국방군 내의 신뢰하는 동맹들에게 조용히 업무를 위임하고 그들이 자신의 자리를 대신할 수 있도록 준비시켜 왔습니다.
 
-The question now: who will carry forward Schleicher's legacy?
+이제 남은 문제는 하나입니다. 누가 슐라이허의 유산을 이어받을 것인가?
 
 - @schleicher_dead
 
 @schleicher_dead
-title: Schleicher isn't the only one in bad health.
-subtitle: President Hindenburg will not survive the year as well.
+title: 건강이 나쁜 것은 슐라이허뿐만이 아니다.
+subtitle: 힌덴부르크 대통령 또한 올해를 넘기지 못할 것입니다.
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  
@@ -33,8 +33,8 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-President Hindenburg, now 86, is reportedly stricken with numerous ailments—bladder cancer, heart disease, and other suspected conditions kept from the public eye. Bedridden at his Neudeck estate, he requires constant care.
+올해 86세인 힌덴부르크 대통령은 방광암, 심장병, 그리고 대중에게 숨겨진 여러 의심 증상 등 수많은 질병에 시달리고 있다고 전해집니다. 노이데크 영지에서 병상에 누운 그는 지속적인 간호를 필요로 합니다.
 
-Two men of a fading generation are nearing their end.
+저물어가는 세대의 두 남자가 종말을 향해 가고 있습니다.
 
-- @root: Hooray...?
+- @root: 만세...?

@@ -1,24 +1,24 @@
-title: The <span style="color: #BFC8CC;">**DNEF**</span> Falls Apart!
-subtitle: Without Schleicher, the <span style="color: #BFC8CC;">**DNEF**</span> is nothing.
+title: <span style="color: #BFC8CC;">**DNEF**</span>의 붕괴!
+subtitle: 슐라이허가 없다면 <span style="color: #BFC8CC;">**DNEF**</span>는 아무것도 아닙니다.
 view-if: chancellor == "Treviranus" and dnef_formed
 max-visits: 1
 new-page: true
 tags: event
 
-= The <span style="color: #BFC8CC;">**DNEF**</span> Falls Apart!
+= <span style="color: #BFC8CC;">**DNEF**</span>의 붕괴!
 
-With Schleicher resigning in shame, the <span style="color: #BFC8CC;">**DNEF**</span> no longer has a god-like figure to rally around. The factions and politicians once held together by his influence have now decided it is best to go their separate ways.
+슐라이허가 불명예스럽게 사임함에 따라, <span style="color: #BFC8CC;">**DNEF**</span>는 더 이상 구심점이 되어줄 신과 같은 인물을 잃었습니다. 한때 그의 영향력 아래 묶여 있던 파벌들과 정치인들은 이제 각자의 길을 가는 것이 최선이라 판단했습니다.
 
-The <i>Blocparteis</i> are freed, and the bulk of the organization — those not drawn from their ranks — has splintered off in different directions. The right-wing, more nationalist section has salvaged the party's national structures and will continue on by merging into the [? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?], now rallying behind Treviranus.
+<i>블록정당</i>들은 해방되었고, 그 출신이 아닌 조직의 주류 세력은 여러 방향으로 흩어졌습니다. 우파이자 더 민족주의적인 세력은 당의 전국 조직을 수습하여 트레비라누스를 중심으로 결집했고, [? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**국가인민당**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?]에 합류하여 명맥을 이어나갈 것입니다.
 
-The more left-leaning—and quite frankly, eccentric—elements of the movement have formed a new <span style="color: #fe9e00;">Old Social Democratic Party</span> (<span style="color: #fe9e00;">**ASPD**</span>), grounded in class collaboration, nationalism, and laborism. They call for a "Volksocialism", whatever that means.
+운동 내의 더 좌파 성향인—솔직히 말해 기이한—세력들은 계급 협력, 민족주의, 노동주의에 기반을 둔 새로운 <span style="color: #fe9e00;">구사회민주당</span>(<span style="color: #fe9e00;">**ASPD**</span>)을 창당했습니다. 그들은 "민족사회주의"라는 것을 주창하고 있는데, 도대체 무슨 의미인지는 알 수 없습니다.
 
-We cannot expect much cooperation from this group. Yet, oddly enough, the two splinter factions have found common ground—agreeing to tolerate, and even participate in, the Treviranus cabinet.
+이 집단에게서 많은 협력을 기대할 수는 없습니다. 하지만 기묘하게도, 갈라져 나간 두 파벌은 트레비라누스 내각을 묵인하고 심지어 참여하기로 합의함으로써 공통점을 찾아냈습니다.
 
 - @dnef_collapse
 
 @dnef_collapse
-title: This calls for celebration!
+title: 축하할 일이다!
 on-arrival: {!
 Q.dnef_collapse = 1;
 Q.dnef_formed = 0;

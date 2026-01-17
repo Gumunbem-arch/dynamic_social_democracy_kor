@@ -1,22 +1,22 @@
-title: Schleicher Resigns!
-subtitle: Hindenburg is dissatisfied with the chancellor.
+title: 슐라이허가 사임하다!
+subtitle: 힌덴부르크는 총리에 불만을 품고 있습니다.
 view-if: chancellor == "Schleicher" and schleicher_post and schleicher_pause
 face-image: img/portraits/schleicher_stare.jpg
 max-visits: 1
 new-page: true
 tags: event
 
-= Schleicher Resigns!
+= 슐라이허가 사임하다!
 
-Hindenburg is beyond furious that Schleicher—head of the Reichswehr and the man who repeatedly assured the President of the army's power to crush any threat from the <span style="color: #700000;">**Communists**</span>—has now capitulated to our demands to lift the ban on the <span style="color: #700000;">**KPD**</span>.
+힌덴부르크는 국방군의 수장이자 <span style="color: #700000;">**공산주의자들**</span>의 어떤 위협도 짓밟을 수 있다고 대통령에게 거듭 확언했던 슐라이허가, 이제 <span style="color: #700000;">**KPD**</span> 금지 해제라는 우리의 요구에 굴복했다는 사실에 격분했습니다.
 
-With his faith in the Reichswehr shattered, he has turned back to his old allies among the <span style="color: #3E88B3;">nationalists</span>. And with the bar set so low, perhaps this is a blessing to us. Though they remain our enemies, as they were in the days of normalcy, whoever Hindenburg selects now is likely to be preferable to Schleicher’s continued hold on office.
+국방군에 대한 신뢰가 산산조각 난 그는 <span style="color: #3E88B3;">민족주의자들</span> 사이의 옛 동맹들에게로 돌아갔습니다. 기준이 워낙 낮아진 탓에, 어쩌면 이것은 우리에게 축복일지도 모릅니다. 비록 그들이 평온했던 시절과 마찬가지로 여전히 우리의 적이지만, 힌덴부르크가 지금 누구를 선택하든 슐라이허가 계속 집권하는 것보다는 나을 가능성이 높습니다.
 
 - @treviranus
 
 @treviranus
-title: Kuno von Westarp -[? if dnvp_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**DNVP**</span>
-subtitle: Hindenburg's preferred choice once again, and [? if dnvp_leader != "Westarp":former?] <span style="color: #3E88B3;">**DNVP**</span> party leader.
+title: 쿠노 폰 베스타르프 -[? if dnvp_ideology == "Radical":&nbsp;전?] <span style="color: #3E88B3;">**DNVP**</span>
+subtitle: 힌덴부르크가 다시 한번 선호한 선택, 그리고 [? if dnvp_leader != "Westarp":전?] <span style="color: #3E88B3;">**DNVP**</span> 당 대표.
 face-image: img/portraits/Treviranus.jpg
 on-arrival: {!
 Q.chancellor = "Treviranus";
@@ -37,8 +37,8 @@ Q.schleicher_spd_influence -= 4;
 Q.schleicher_spd_support -= 5;
 !}
 
-Westarp, despite being once again begged by an older and increasingly sick Hindenburg, has declined the offer. Instead, he recommends the appointment of rising star and <span style="color: #0087DC;">Volkskonservativ</span> leader Gottfried Treviranus. With deep ties to German industry, the Right, and a pseudo-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> veneer, Treviranus is a candidate aimed at stabilizing Germany’s worsening crisis.
+베스타르프는 늙고 병색이 짙어진 힌덴부르크의 간청을 다시 한번 받았음에도 불구하고 제안을 거절했습니다. 대신 그는 떠오르는 별이자 <span style="color: #0087DC;">국민보수주의</span> 지도자인 고트프리트 트레비라누스를 추천했습니다. 독일 산업계, 우파와 깊은 유대를 맺고 있으며 사이비 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주의</span><span style="color: #FFCC00;">적</span> 겉치레를 갖춘 트레비라누스는 독일의 악화되는 위기를 안정시키기 위한 후보입니다.
 
-Much like Papen’s dismissal in favor of Schleicher, the political class breathes yet another sigh of relief. Even within the <span style="color: #c00000;">**SPD**</span>, many find it easier to confront the devil they know rather than face Schleicher’s dynamic and unpredictable rule.
+슐라이허를 위해 파펜이 해임되었을 때와 마찬가지로, 정치권은 또 한 번 안도의 한숨을 내쉽니다. 심지어 <span style="color: #c00000;">**SPD**</span> 내에서도 많은 이들이 슐라이허의 역동적이고 예측 불가능한 통치보다는 차라리 '아는 악마'를 상대하는 편이 낫다고 생각합니다.
 
-Treviranus will seek to construct a working majority via parliament.
+트레비라누스는 의회를 통해 작동 가능한 과반수를 구성하려 할 것입니다.

@@ -1,5 +1,5 @@
-title: Free Speech Curtailed
-subtitle: Certain "problematic" newspapers are taken over by the state.
+title: 언론의 자유가 축소되다
+subtitle: 특정 "문제 있는" 신문들이 국가에 의해 인수됩니다.
 view-if: chancellor == "Schleicher" and (dsu_in_gov or dsu_was_gov) and dsu_policy and ((reichstag_joever_time >= 2 and not schleicher_post_protests) or (reichstag_joever_time >= 6 and schleicher_post_protests)) and not schleicher_rights
 max-visits: 1
 new-page: true
@@ -18,16 +18,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Free Speech Curtailed
+= 언론의 자유가 축소되다
 
-In the aftermath of the crackdown against the <span style="color: #700000;">**Communists**</span>, Schleicher has since moved on to crack down on the free German press, which have been dominated by anti-Schleicher <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>, <span style="color: #FFCC00;">liberals</span>, or the hated Hugenberg. The chancellor claims that the press is undermining the state and aiding the <span style="color: #700000;">revolutionaries</span> in its biases and fake news.
+<span style="color: #700000;">**공산주의자들**</span>에 대한 탄압의 여파가 가시기도 전에, 슐라이허는 자유로운 독일 언론을 탄압하기 시작했습니다. 이 언론들은 반-슐라이허 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주의</span><span style="color: #FFCC00;">자들</span>, <span style="color: #FFCC00;">자유주의자들</span>, 혹은 증오받는 후겐베르크에 의해 주도되어 왔습니다. 총리는 언론이 편향된 보도와 가짜 뉴스로 국가를 약화시키고 <span style="color: #700000;">혁명가들</span>을 돕고 있다고 주장합니다.
 
-We know all of this is nonsense, but Schleicher has slowly taken steps toward the <i>Gleichschaltung</i> (synchronization) of his regime, having recently established the "Ministry of National Guidance" in the decree in which he banned the <span style="color: #700000;">**KPD**</span>, to "fight against <span style="color: #700000;">Bolshevism</span>". 
+우리는 이 모든 것이 헛소리라는 것을 알지만, 슐라이허는 자신의 정권을 <i>획일화</i>하기 위한 조치를 서서히 취해왔습니다. 최근에는 <span style="color: #700000;">볼셰비즘</span>에 맞서 싸운다는 명목으로 <span style="color: #700000;">**KPD**</span>를 금지하는 법령을 통해 "국민 계도부"를 설립했습니다.
 
 - @press_censorship
 
 @press_censorship
-title: Hopefully nothing happens to Vorwärts.
+title: 포르배르츠에는 아무 일도 없기를 바란다.
 on-arrival: {!
 Q.press_censorship = 1;
 Q.schleicher_approval += 2;
@@ -121,8 +121,8 @@ if (Q.dnef_formed) {
 }
 !}
 
-With the powers Schleicher has handed to the new Ministry of National Guidance, fresh directives are now issued to editors, dictating what to print and what to suppress. It is censorship in all but name. Non-compliance brings swift consequences.
+슐라이허가 새로운 국민 계도부에 부여한 권한으로, 이제 편집자들에게 무엇을 인쇄하고 무엇을 보도하지 말아야 할지 지시하는 새로운 지침들이 하달됩니다. 이름만 아닐 뿐 사실상의 검열입니다. 이를 따르지 않으면 즉각적인 대가가 따릅니다.
 
-We have already seen this unfold. The <span style="color: #BFC8CC;">**DNEF**</span> has been "acquiring" private newspapers and filling their offices with government loyalists, turning them into little more than state mouthpieces. Many other editors have been forced out of their posts—some for no reason other than being <span style="color: #005EB8;">Jewish</span>.
+우리는 이미 이런 일이 벌어지는 것을 목격했습니다. <span style="color: #BFC8CC;">**DNEF**</span>는 민간 신문사들을 "인수"하여 사무실을 정부 충성파들로 채웠고, 그들을 국가의 대변인에 불과한 존재로 전락시켰습니다. 많은 편집자들이 자리에서 쫓겨났는데, 일부는 단지 <span style="color: #005EB8;">유대인</span>이라는 이유만으로 해고되었습니다.
 
-[? if schleicher_spd_r >= 5: Schleicher, however, has been notably lenient with Vorwärts. Perhaps he is grateful for our past support—or perhaps he is simply waiting until we are too weak to resist. Collaboration, it seems, pays off? ?][? if schleicher_spd_influence >= 6 and schleicher_spd_r < 5: Using his growing influence over the <span style="color: #c00000;">**SPD**</span>, Schleicher has even managed to install some of his own supporters to quietly "edit" the paper. It's jarring to see our supposed "newfound support" for rearmament—framed as a noble way to provide jobs—splashed across the front page. ?][? if schleicher_spd_influence < 6 and schleicher_spd_r < 5: It seems even our newspaper, Vorwärts, hasn't been spared from the crackdown. The offices are raided, staff arrested on dubious charges, and we can't even broadcast the truth for the workers to hear. ?] Stampfer hasn't been seen at his desk for some time now. Must be a long vacation.
+[? if schleicher_spd_r >= 5: 하지만 슐라이허는 포르배르츠에 대해서는 눈에 띄게 관대했습니다. 어쩌면 그는 우리의 과거 지지에 감사하고 있는지도 모릅니다. 아니면 단순히 우리가 저항할 힘을 잃을 때까지 기다리고 있는 것일지도 모릅니다. 협력이 보상을 주는 것일까요? ?][? if schleicher_spd_influence >= 6 and schleicher_spd_r < 5: <span style="color: #c00000;">**SPD**</span>에 대한 커지는 영향력을 이용하여, 슐라이허는 심지어 신문을 조용히 "편집"하기 위해 자신의 지지자들을 심어놓는 데 성공했습니다. 일자리 창출을 위한 고귀한 수단으로 포장된 재무장에 대한 우리의 소위 "새로운 지지"가 1면을 장식하는 것을 보는 것은 참으로 거슬리는 일입니다. ?][? if schleicher_spd_influence < 6 and schleicher_spd_r < 5: 심지어 우리의 신문, 포르배르츠조차 탄압을 피하지 못한 것 같습니다. 사무실은 급습당했고, 직원들은 의심스러운 혐의로 체포되었으며, 우리는 노동자들에게 진실을 알릴 수조차 없게 되었습니다. ?] 슈탐퍼는 꽤 오랫동안 자리를 비우고 있습니다. 긴 휴가를 떠난 것이 틀림없습니다.

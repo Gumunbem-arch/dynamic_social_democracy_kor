@@ -1,25 +1,25 @@
-title: The Grandest of Coalitions
-subtitle: The Reichstag Reconvenes.
+title: 가장 위대한 연정
+subtitle: 제국의회가 재소집되었습다.
 view-if: chancellor == "Treviranus" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: pro_republic += 8
 max-visits: 1
 new-page: true
 tags: event
 
-= The Reichstag Reconvenes
+= 제국의회가 재소집되다
 
-With Hindenburg making it clear that he expects a parliamentary cabinet from Treviranus, the Chancellor has moved to significantly broaden the governing coalition—reaching well to the left. The biggest surprise is the return of Brüning as Foreign Minister.
+힌덴부르크가 트레비라누스에게 의회 내각 구성을 기대한다고 분명히 밝힘에 따라, 총리는 통치 연정을 대폭 확장하여 좌파 세력까지 손을 뻗었습니다. 가장 큰 놀라움은 브뤼닝이 외무장관으로 복귀한 것입니다.
 
-Though Treviranus and his allies are interested in taming the <span style="color: #7A3C00;">Nazis</span>, the <span style="color: #6A1E1E;">**DSU**</span> has no interest in becoming a junior partner in a partisan conservative government.
+비록 트레비라누스와 그의 동맹들이 <span style="color: #7A3C00;">나치</span>를 길들이는 데 관심이 있다 해도, <span style="color: #6A1E1E;">**DSU**</span>는 당파적 보수 정부의 2중대가 되는 데는 관심이 없습니다.
 
-Treviranus inaugurated his new cabinet within the last week, drawing ministers from the <span style="color: #fe9e00;">**ASPD**</span> on the left to his own party on the right. Still, this patchwork coalition is unlikely to command a majority—and a vote of no confidence looms.
+트레비라누스는 지난주 좌측의 <span style="color: #fe9e00;">**ASPD**</span>부터 우측의 자당에 이르기까지 다양한 장관들을 기용하여 새 내각을 출범시켰습니다. 하지만 이 누더기 연정이 과반수를 확보할 가능성은 낮으며, 불신임 투표의 그림자가 드리우고 있습니다.
 
 - @reichstag_yay
 - @reichstag_nay
 
 @reichstag_yay
-title: Vote for the motion of no confidence, forcing new elections to be called.
-subtitle: New elections again?
+title: 불신임안에 찬성 투표하여, 새로운 선거가 소집되도록 강제한다.
+subtitle: 또 새로운 선거라고?
 on-arrival: {!
 if (Q.prussia_leader == "Strasser") Q.prussia_leader = "Goerdeler";
 if (Q.vice_chancellor == "Strasser") Q.vice_chancellor = "Stegerwald";
@@ -41,14 +41,14 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, Treviranus isn't able to conjure up a majority without the <span style="color: #c00000;">**SPD**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
+예상대로 트레비라누스는 <span style="color: #c00000;">**SPD**</span>나 <span style="color: #6A1E1E;">**DSU**</span> 없이는 과반수를 만들어낼 수 없습니다. 그의 정부는 당분간 과도 내각으로 남게 됩니다.
 
-New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+새로운 제국의회 선거는 [+ next_election_year +]년 [+ next_election_month : month +], [+ next_election_week +]주차로 예정되어 있습니다.
 
 @reichstag_nay
-title: Vote against the motion of no confidence, and tolerate the cabinet.
-subtitle: The German parliamentary system desperately needs legitimacy. Forcing new elections now risks driving voters further into the extremes.
+title: 불신임안에 반대 투표하고, 내각을 묵인한다.
+subtitle: 독일 의회 시스템은 정당성을 절실히 필요로 합니다. 지금 새로운 선거를 강제하는 것은 유권자들을 극단으로 더 몰아넣을 위험이 있습니다.
 choose-if: super_secret_mode
-unavailable-subtitle: Our parliamentary delegation won't listen to us anyway.
+unavailable-subtitle: 우리의 의회 대표단은 어차피 우리 말을 듣지 않을 것입니다.
 
-Damn.
+젠장.

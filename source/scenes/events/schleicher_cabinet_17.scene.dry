@@ -1,5 +1,5 @@
-title: Streetfighting Comes to an End
-subtitle: Paramilitaries are a thing of the past.
+title: 시가전이 막을 내리다
+subtitle: 준군사조직은 이제 과거의 유물입니다.
 view-if: chancellor == "Schleicher" and schleicher_post_time >= 10 and state_force >= 70
 max-visits: 1
 new-page: true
@@ -17,16 +17,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Streetfighting Over
+= 시가전이 막을 내리다
 
-With the Reichswehr being deployed to quell political violence, streetfighting between the rivaling paramilitaries have died down in intensity, and the situation is effectively resolved.
+국방군이 정치적 폭력을 진압하기 위해 배치되면서, 라이벌 준군사조직 간의 시가전은 그 강도가 약해졌고 상황은 사실상 해결되었습니다.
 
-The mechanic is disabled.
+메커니즘이 비활성화됩니다.
 
 - @streetfighting_joever
 
 @streetfighting_joever
-title: Hooray?
+title: 만세?
 on-arrival: {!
 Q.streetfighting_joever = 1;
 
