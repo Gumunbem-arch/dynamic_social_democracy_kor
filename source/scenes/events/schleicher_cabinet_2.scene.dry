@@ -1,5 +1,5 @@
-title: Schleicher and the <span style="color: #385A38;">Agrarians</span>
-subtitle: The RLB is disappointed in Schleicher's agricultural policy.
+title: 슐라이허와 <span style="color: #385A38;">농본주의 세력</span>
+subtitle: RLB는 슐라이허의 농업 정책에 실망했습니다.
 view-if: chancellor = "Schleicher" and schleicher_time == 5 and eastern_aid and dnvp_ideology == "Radical" and rlb_nazi
 new-page: true
 tags: event
@@ -18,25 +18,25 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher and the <span style="color: #385A38;">Agrarians</span>
+= S슐라이허와 <span style="color: #385A38;">농본주의자</span>
 
-Schleicher’s economic and agricultural ministers remain locked in a bitter struggle over tariffs—part of the broader conflict between industrialists and agrarians. Schleicher has refused to take a side, maintaining a façade of unity for the public. However, his failure to uphold a promise to continue Papen’s protectionist policies—meant to shield German farm products from cheap foreign imports—has led the increasingly right-wing National Rural League (RLB) to turn against him.
+슐라이허의 경제 및 농업 장관들은 관세를 두고 치열한 다툼을 벌이고 있습니다—이는 산업가들과 농본주의자 사이의 더 넓은 갈등의 일부입니다. 슐라이허는 대중에게 단결된 모습을 보이기 위해 어느 한쪽 편을 들기를 거부했습니다. 그러나 값싼 외국 수입품으로부터 독일 농산물을 보호하기 위한 파펜의 보호무역 정책을 계승하겠다는 약속을 지키지 못한 것은, 점점 더 우익화되는 전국농촌연맹(RLB)이 그에게 등을 돌리게 만들었습니다.
 
-President Hindenburg, like many conservative Germans of his generation, viewed agriculture as the bedrock of national life—a source of tradition and moral strength. It was he who, of his own accord, summoned the economic and agricultural ministers, along with Schleicher, to a meeting with the RLB. The cabinet temporarily mollified the situation by promising future action.
+힌덴부르크 대통령은, 그 세대의 많은 보수적인 독일인들처럼, 농업을 국가 생활의 기반이자 전통과 도덕적 힘의 원천으로 보았습니다. 경제 및 농업 장관들과 슐라이허를 RLB와의 회의에 소집한 것은 바로 그 자신이었습니다. 내각은 미래의 조치를 약속함으로써 상황을 일시적으로 무마했습니다.
 
-Yet Hindenburg and the RLB remained dissatisfied, particularly over the government’s failure to renew a decree shielding bankrupt farmers from foreclosure. In truth, however, the RLB had long since become a political instrument of the <span style="color: #7A3C00;">**NSDAP**</span>, more interested in toppling Schleicher than securing concessions. Despite the earlier agreement, they publicly attacked the chancellor—prompting an angry Schleicher to break off further talks. Hindenburg, under the influence of his *Junker* friends, voiced his disapproval.
+그러나 힌덴부르크와 RLB는 여전히 불만족스러웠고, 특히 파산한 농부들을 압류로부터 보호하는 법령을 갱신하지 못한 정부의 실패에 대해 더욱 그러했습니다. 사실, RLB는 오래전에 <span style="color: #7A3C00;">**NSDAP**</span>의 정치적 도구가 되었고, 양보를 얻어내는 것보다 슐라이허를 무너뜨리는 데 더 혈안이 되어 있었습니다. 이전의 합의에도 불구하고, 그들은 공개적으로 총리를 공격했고, 이에 격분한 슐라이허는 추가 대화를 중단했습니다. 힌덴부르크는 그의 *융커* 친구들의 영향 아래서 불쾌감을 드러냈습니다.
 
-Eventually, Schleicher relented and agreed to issue a new measure protecting bankrupt farmers from foreclosure.
+결국, 슐라이허는 한발 물러서서 파산한 농부들을 압류로부터 보호하는 새로운 조치를 발표하기로 동의했습니다.
 
 - @schleicher
 
 @schleicher
-title: Eastern Aid Scandal Revealed!
-subtitle: Accusations of *Junker* misuse of government aid funds.
+title: 동방 원조 스캔들 폭로!
+subtitle: 정부 원조 자금의 *융커* 오용에 대한 비난.
 on-arrival: workers_spd += 2; workers_kpd += 1; workers_z += 1; hindenburg_hitler_r += 1; hindenburg_schleicher_r -= 1; schleicher_approval -= 1
 
-Although not directly related to recent negotiations, a scandal was revealed during a session of the Reichstag’s budget committee: a <span style="color: #000000;">Center Party</span> member leveled sweeping accusations of fraud against beneficiaries of the Eastern Aid program. Meant to rescue bankrupt estates, the funds were allegedly used instead for racehorses, luxury cars, and lavish holidays—at a time when millions of Germans were living in poverty.
+최근 협상들과 직접 관련은 없지만, 제국의회 예산 위원회 회의 중에 스캔들이 터졌습니다. 한 <span style="color: #000000;">중앙당</span> 의원이 동방 원조 프로그램의 수혜자들에 대해 광범위한 사기 혐의를 제기한 것입니다. 파산한 영지들을 구제하기 위한 그 자금들은 대신 경주마, 호화 자동차, 그리고 사치스러운 휴가에 사용되었다고 주장되었습니다—수백만의 독일인들이 빈곤에 허덕이는 시기에 말입니다.
 
-President Hindenburg himself has been implicated. His *Neudeck* estate—a gift from right-wing industrialists and the RLB in 1927—was transferred into his son Oskar’s name to avoid taxes. Though not legally contestable, the revelation that many of Hindenburg’s close friends also benefited has deeply unsettled the President, who is now inundated with complaints from his old allies.
+힌덴부르크 대통령 본인도 연루되었습니다. 1927년 우익 산업가들과 RLB로부터 선물 받은 그의 *노이데크* 영지는 상속세를 피하기 위해 그의 아들 오스카의 명의로 이전되었습니다. 법적으로 문제가 되는 것은 아니지만, 힌덴부르크의 많은 절친한 친구들도 혜택을 받았다는 폭로는 대통령을 깊이 불안하게 만들었고, 그는 이제 그의 옛 동맹들로부터 쏟아지는 불평에 시달리고 있습니다.
 
-Given Schleicher’s reputation for shadowy political maneuvering, and the fact that these revelations surfaced just a day after his break with the RLB, many suspect that he orchestrated the leak as an act of revenge.
+슐라이허의 은밀한 정치적 공작에 대한 평판과, 이 폭로들이 그가 RLB와 결별한 바로 다음 날 터져 나왔다는 사실을 고려할 때, 많은 사람들은 그가 보복 차원에서 정보 유출을 지시했다고 의심합니다.

@@ -1,5 +1,5 @@
-title: Reichswehr Militia Deployed!
-subtitle: Schleicher moves to end streetfighting.
+title: 국방군 민병대 배치!
+subtitle: 슐라이허가 시가전 종식에 나서다.
 view-if: chancellor == "Schleicher" and (schleicher_time == 11 and prussia_leader == "Schleicher") or (schleicher_post_time >= 4 and prussia_leader != "Braun" and prussia_leader != "Rosenfeld")
 on-arrival: {!
 Q.reichsbanner_disarm_cost = Math.round(Q.rb_militancy * 15);
@@ -24,28 +24,28 @@ max-visits: 1
 tags: event
 face-image: img/Reichswehr.jpg
 
-= Reichswehr Militia Deployed!
+= R국방군 민병대 배치!
 
-The <span style="color: #7A3C00;">**SA**</span>'s dramatic escalation of seemingly pointless violence has gripped the streets, with many innocent civilians caught in the crossfire. Their increasingly open clashes with leftist groups, driven by frustration and insubordination, have spiraled out of control.
+<span style="color: #7A3C00;">**SA**</span>가 저지르는 무의미해 보이는 폭력이 극적으로 고조되며 거리를 장악했고, 수많은 무고한 시민들이 십자포화에 휘말렸습니다. 좌절감과 불복종으로 추동된 이들과 좌파 단체 간의 충돌은 점점 더 노골화되어 통제 불능 상태로 치달았습니다.
 
-Although Schleicher admires the patriotic militarism of the <span style="color: #7A3C00;">**SA**</span>, he now dismisses it as little more than Röhm's tool for a <span style="color: #c00000;">socialistic</span> "national revolution"—a gang of thugs turning their violence against ordinary citizens. Röhm's open agitation for such a revolution has left Schleicher no choice but to ban the organization outright.
+슐라이허는 <span style="color: #7A3C00;">**SA**</span>의 애국적 군국주의를 높이 평가하긴 하지만, 이제는 그들을 룀이 주도하는 <span style="color: #c00000;">사회주의적</span> "민족 혁명"의 도구이자 평범한 시민들에게 폭력을 휘두르는 깡패 무리에 불과하다고 일축하고 있습니다. 룀이 그러한 혁명을 공개적으로 선동함에 따라, 슐라이허는 해당 조직을 전면 금지하는 것 외에는 선택의 여지가 없었습니다.
 
-But Schleicher's objective is already achieved: former "desirable" <span style="color: #7A3C00;">**SA**</span> fighters have been integrated into a newly built militia attached to the Reichswehr, composed of ex-fighters and the unemployed. This force has been deployed to maintain order in the streets, working alongside the local police. However, they remain lenient toward their former comrades and display significant bias against the Reichsbanner and <span style="color: #700000;">**RFB**</span>.
+하지만 슐라이허의 목표는 이미 달성되었습니다. 이전의 "바람직한" <span style="color: #7A3C00;">**돌격대**</span> 대원들은 전직 전투원 및 실업자들과 함께 국방군 산하에 신설된 민병대로 통합되었습니다. 이 병력은 지역 경찰과 협력하여 거리의 질서를 유지하기 위해 배치되었습니다. 그러나 그들은 옛 동지들에게는 여전히 관대한 태도를 보이는 반면, 국기단과 <span style="color: #700000;">**RFB**</span>에 대해서는 상당한 편견을 드러내고 있습니다.
 
-Nonetheless, this has succeeded in shifting public opinion toward the "law and order" chancellor, and further against the parliamentary system that failed to protect them.
+그럼에도 불구하고, 이러한 조치는 여론을 "법과 질서"를 내세우는 총리 쪽으로, 그리고 시민들을 보호하지 못한 의회 체제에 반대하는 쪽으로 돌리는 데 성공했습니다.
 
 - @schleicher_2
 - @schleicher_3
 
 @schleicher_2
-title: Maintain the funding of the Reichsbanner.
+title: 국기단에 대한 자금 지원을 유지한다.
 
-It's good to maintain our own self-defense organization, just in case.
+만약을 대비해 우리만의 자위 조직을 유지하는 편이 좋습니다.
 
 @schleicher_3
-title: Defund the Reichsbanner; the threat is no longer present.
-subtitle: +[+ reichsbanner_disarm_cost +] resources
+title: 국기단에 대한 자금 지원을 중단한다. 위협은 사라졌다.
+subtitle: +[+ reichsbanner_disarm_cost +] 자원
 view-if: reichsbanner_disarm_cost > 0
 on-arrival: rb_militancy *= 0.5; rb_strength -= 400; resources += reichsbanner_disarm_cost; unemployed_spd -= 4; unemployed_kpd += 2; rfb_strength += 100
 
-With the Reichswehr keeping order in the streets, we have no further need for the Reichsbanner's self-defense role. Better to spend our scarce funds on electoral propaganda rather than weapons.
+국방군이 거리의 질서를 유지하고 있으니, 국기단의 자위 역할은 더 이상 필요하지 않습니다. 부족한 자금을 무기보다는 선거 선전에 쓰는 것이 낫습니다.

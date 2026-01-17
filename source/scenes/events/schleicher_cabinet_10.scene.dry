@@ -1,5 +1,5 @@
-title: The <span style="color: #000000;">Center Party</span> Enters Government
-subtitle: Promises of a <i>Reichskonkordat</i> lures them into cooperation.
+title: <span style="color: #000000;">중앙당</span>의 정부 참여
+subtitle: <i>제국종교협약</i>의 약속이 그들을 협력으로 이끌었습니다.
 view-if: chancellor == "Schleicher" and dsu_in_gov and not dsu_was_gov and not z_in_gov and z_relation < 70 and z_leader == "Kaas" and schleicher_post_time >= 2
 max-visits: 1
 new-page: true
@@ -17,20 +17,20 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #000000;">Center Party</span> Enters Government
+= <span style="color: #000000;">중앙당</span>의 정부 참여
 
-Schleicher has concluded that he needs broader popular and parliamentary support beyond the <span style="color: #6A1E1E;">**DSU**</span>, and has opened talks with Ludwig Kaas to secure the backing of the <span style="color: #000000;">Center Party</span>. Kaas has proven far more willing to cooperate with Schleicher than he ever was with Papen, and the party itself is eager to return to government.
+슐라이허는 <span style="color: #6A1E1E;">**DSU**</span>를 넘어 더 광범위한 대중적, 의회적 지지가 필요하다고 판단하여, <span style="color: #000000;">중앙당</span>의 지지를 확보하기 위해 루트비히 카스와 회담을 시작했습니다. 카스는 파펜 시절보다 슐라이허와 협력하는 데 훨씬 더 적극적이며, 당 자체도 정부 복귀를 열망하고 있습니다.
 
-The main obstacle, however, is the <span style="color: #000000;">Center Party</span>’s deep reservations about sharing a cabinet with the <span style="color: #7A3C00;">Nazis</span>. To overcome this, Schleicher and the <span style="color: #6A1E1E;">**DSU**</span> have signaled their readiness to fast-track a <i>Reichskonkordat</i> with the Vatican—an offer that Kaas, a longtime advocate of such, finds difficult to refuse.
+그러나 주요 걸림돌은 <span style="color: #7A3C00;">나치</span>와 내각을 공유하는 것에 대한 <span style="color: #000000;">중앙당</span>의 깊은 거부감입니다. 이를 극복하기 위해, 슐라이허와 <span style="color: #6A1E1E;">**DSU**</span>는 바티칸과의 <i>제국종교협약</i> 체결을 신속히 추진할 준비가 되어 있다는 신호를 보냈습니다. 이는 오랫동안 협약을 주창해 온 카스로서는 거절하기 힘든 제안입니다.
 
 - @z_in_gov
 
 @z_in_gov
-title: Schleicher has found a new puppet in Kaas.
+title: 슐라이허는 카스라는 새로운 꼭두각시를 얻었다.
 on-arrival: kaas_puppet = 1; z_in_gov = 1; z_relation -= 20; pro_republic -= 5; schleicher_approval += 1; hindenburg_schleicher_r += 1
 
-The <span style="color: #000000;">Center Party</span> claims its ministerial positions, with Adam Stegerwald securing the Labor Ministry, and other members taking the Transport and Justice portfolios. The <span style="color: #000000;">Center Party</span> also brings the <span style="color: #A2D8E0;">**BVP**</span> into the fold, which is granted the Postal Ministry.
+<span style="color: #000000;">중앙당</span>은 장관직을 요구하여, 아담 슈테거발트가 노동부를 확보하고 다른 당원들이 교통부 및 법무부 장관직을 맡게 되었습니다. 또한 <span style="color: #000000;">중앙당</span>은 <span style="color: #A2D8E0;">**BVP**</span>을 끌어들여 우편부 장관직을 배정받게 했습니다.
 
-With Ludwig Kaas’s connections in Rome, the negotiation of a <i>Reichskonkordat</i> is fast-tracked and set to be ready for signing in a few weeks.
+루트비히 카스의 로마 인맥 덕분에 <i>제국종교협약</i> 협상은 급물살을 탔고, 몇 주 안에 서명할 준비가 될 예정입니다.
 
-However, their entry into government has strained our relations, as they had previously stood in united opposition with us.
+그러나 그들의 정부 참여는 우리와의 관계를 경색시켰습니다. 이전까지 그들은 우리와 연대하여 야당의 입장에 서 있었기 때문입니다.

@@ -1,5 +1,5 @@
-title: The <span style="color: #6A1E1E;">**DSU**</span> Breaks with Schleicher!
-subtitle: Strasser realizes he has fallen into Schleicher’s trap.
+title: <span style="color: #6A1E1E;">**DSU**</span>, 슐라이허와 결별!
+subtitle: 슈트라서는 자신이 슐라이허의 함정에 빠졌음을 깨닫습니다.
 view-if: chancellor = "Schleicher" and dsu_policy >= 4 and dnef_formed and kpd_explode and dnef_total_votes >= 30
 new-page: true
 priority: 1
@@ -7,15 +7,15 @@ tags: event
 max-visits: 1
 face-image: img/portraits/strasser.jpg
 
-= <span style="color: #6A1E1E;">**DSU**</span> Breaks with Schleicher
+= <<span style="color: #6A1E1E;">**DSU**</span>, 슐라이허와 결별
 
-Despite their pragmatism, the <span style="color: #6A1E1E;">**DSU**</span> are still <span style="color: #7A3C00;">Nazis</span> at heart, clinging fully to their wicked ideology. Fortunately, despite entering government, they’ve found no path to revive their own party, nor a chance to strike at the <span style="color: #005EB8;">Jews</span> they claim hoard the nation’s wealth, or the capitalist system they rail against.
+그들이 실용주의를 표방함에도 불구하고, <span style="color: #6A1E1E;">**DSU**</span>는 여전히 본질적으로 <span style="color: #7A3C00;">나치</span>이며, 그들의 비뚤어진 이념에 완전히 매몰되어 있습니다. 다행히도, 정부에 입각했음에도 불구하고 그들은 당을 재건할 길을 찾지 못했고, 그들이 국가의 부를 독점한다고 주장하는 <span style="color: #005EB8;">유대인들</span>이나 그들이 맹비난하는 자본주의 시스템을 타격할 기회도 잡지 못했습니다.
 
-Now, a bitter realization dawns on Strasser and his top <span style="color: #7A3C00;">Nazi</span> lieutenants: they’ve been used. Schleicher has no intention of letting them control anything beyond the Interior Ministry. Worse, their party has been bleeding support in local elections, punished for failing to deliver on its grand promises.
+이제, 슈트라서와 그의 고위 <span style="color: #7A3C00;">나치</span> 부관들에게 뼈아픈 깨달음이 찾아옵니다. 그들은 철저히 이용당했습니다. 슐라이허는 그들에게 내무부 이외의 어떤 통제권도 넘겨줄 생각이 없습니다. 설상가상으로, 그들의 당은 지방 선거에서 지지율이 급락하고 있으며, 거창한 약속을 이행하지 못한 대가를 치르고 있습니다.
 
-After all, it’s Schleicher the people thank for their jobs—not the <span style="color: #6A1E1E;">**DSU**</span>, whose fights with the <span style="color: #700000;">Bolsheviks</span> do little to put food on the table for their electoral base. The formation of the <span style="color: #BFC8CC;">**DNEF**</span> has only deepened the wound, as many of their former voters flock to this new pole of order and stability.
+결국, 사람들이 일자리에 대해 감사하는 대상은 슐라이허이지—<span style="color: #700000;">볼셰비키</span>와의 싸움이 지지 기반의 식탁에 빵 한 조각 올려주지 못하는 <span style="color: #6A1E1E;">**DSU**</span>가 아닙니다. <span style="color: #BFC8CC;">**DNEF**</span>의 결성은 상처를 더욱 깊게 만들었을 뿐이며, 그들의 이전 유권자 중 다수가 이 새로운 질서와 안정의 구심점으로 몰려들고 있습니다.
 
-- @schleicher_2: Out of funds, out of followers, out of luck.
+- @schleicher_2: 자금도, 추종자도, 운도 다했다.
 
 @schleicher_2
 on-arrival: {!
@@ -64,13 +64,13 @@ on-display: {!
 !}
 go-to: new_reichstag
 
-The various <span style="color: #7A3C00;">Nazi</span> splinter parties that have emerged are now beginning to collapse entirely. Burdening such a dynamic, revolutionary movement with the compromises of government—and failing to deliver real solutions to their base’s hardships—has sapped their morale and dried up donations.
+우후죽순 생겨났던 다양한 <span style="color: #7A3C00;">나치</span> 분파 정당들은 이제 완전히 붕괴하기 시작했습니다. 그렇게 역동적이고 혁명적인 운동에 정부 내 타협이라는 짐을 지우고—지지 기반의 고난에 대한 실질적인 해결책을 내놓지 못한 것은—그들의 사기를 꺾고 후원금을 말라버리게 했습니다.
 
-Overcome with resignation, Strasser announces his withdrawal from political life, intending to return to his old profession as a local pharmacist. Many other top <span style="color: #7A3C00;">Nazi</span> figures follow suit, as [+ nsdap_leader +] remains too paranoid and vengeful to allow any splitters back into the <span style="color: #7A3C00;">**NSDAP**</span>.
+체념에 빠진 슈트라서는 정계 은퇴를 선언하고, 지역 약사로서의 생업으로 돌아가려 합니다. 많은 다른 고위 <span style="color: #7A3C00;">나치</span> 인물들이 그 뒤를 따르는데, [+ nsdap_leader +]가 너무 편집증적이고 복수심에 불타서 어떤 배신자도 <span style="color: #7A3C00;">**NSDAP**</span>로 다시 받아들이지 않기 때문입니다.
 
-The <span style="color: #6A1E1E;">**DSU**</span> has since fallen under the control of a radical clique of self-styled "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolsheviks</span>" surrounding Gregor Strasser’s more extreme brother, Otto Strasser. 
+<span style="color: #6A1E1E;">**DSU**</span>는 이후 그레고어 슈트라서의 더 극단적인 형제인 오토 슈트라서를 중심으로 한 자칭 "<span style="color: #7A3C00;">민족</span> <span style="color: #700000;">볼셰비키</span>" 급진 파벌의 손에 넘어갔습니다.
 
-Yet only a handful of fanatics remain in this rump organization, while the "tamed" <span style="color: #7A3C00;">Nazis</span> drift into the ranks of the <span style="color: #BFC8CC;">**DNEF**</span>, including most of its parliamentary delegation.
+그러나 오직 소수의 광신자들만이 이 잔존 조직에 남아 있으며, 반면 "길들여진" <span style="color: #7A3C00;">나치들</span>은 의회 대표단의 대부분을 포함하여 <span style="color: #BFC8CC;">**DNEF**</span>의 대열로 흡수되었습니다.
 
 @new_reichstag
 on-arrival: {!
@@ -287,7 +287,7 @@ if (d3 && window) {
 }
 !}
 
-= Reichstag composition
+= 제국의회 구성
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
@@ -305,7 +305,7 @@ if (d3 && window) {
 
 [? if not lvp_formed and dvp_exist and dvp_dnef: {!<tr><td><div class="box2" style='background-color:#AA861F'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!} ?]
 
-[? if other_dnef: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} Others: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
+[? if other_dnef: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} 기타: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
 
 [? if kvp_formed and not cvp_kvp_formed and kvp_dnef: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r +]% {!</td></tr>!} ?]
 
@@ -331,7 +331,7 @@ if (d3 && window) {
 
 [? if not lvp_formed and dvp_exist and not dvp_dnef: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!} ?]
 
-[? if not other_dnef: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
+[? if not other_dnef: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} 기타 정당들: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
 
 [? if kvp_formed and not cvp_kvp_formed and not kvp_dnef: {!<tr><td><div class="box" style='background-color:#0087DC'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r +]% {!</td></tr>!} ?]
 
@@ -347,4 +347,4 @@ if (d3 && window) {
 [? if nvf_exist and not nvf_dnef: {!<tr><td><div class="box" style='background-color:#142e20'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r +]% {!</td></tr>!} ?]
 {!</table>!}
 
-The Interior Ministry returns to Schleicher loyalist Franz Bracht, while Hjalmar Schacht retains his position as Economic Minister. <span style="color: #7A3C00;">Nazis</span> who have chosen to join the <span style="color: #BFC8CC;">**DNEF**</span> are generously rewarded with government positions.
+내무부는 슐라이허 충성파 프란츠 브라흐트에게 돌아가고, 얄마르 샤흐트는 경제부 장관직을 유임합니다. <span style="color: #BFC8CC;">**DNEF**</span>에 합류하기로 선택한 <span style="color: #7A3C00;">나치들</span>은 정부 요직으로 후하게 보상받습니다.

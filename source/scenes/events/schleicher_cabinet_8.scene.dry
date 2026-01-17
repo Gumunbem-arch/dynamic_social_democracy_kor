@@ -1,5 +1,5 @@
-title: <span style="color: #6A1E1E;">**DSU**</span> Policy
-subtitle: The <span style="color: #7A3C00;">Nazi</span> ministers are carrying out their own policies. 
+title: <span style="color: #6A1E1E;">**DSU**</span> 정책
+subtitle: <span style="color: #7A3C00;">나치</span> 장관들이 독자적인 정책을 수행합니다.
 view-if: chancellor == "Schleicher" and dsu_in_gov and dsu_policy_timer <= 0
 on-arrival: {!
 Q.dsu_policy_timer += 4;
@@ -21,17 +21,17 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= <span style="color: #6A1E1E;">**DSU**</span> Policy
+= <span style="color: #6A1E1E;">**DSU**</span> 정책
 
-With the <span style="color: #7A3C00;">Nazis</span> in government, they seek to pursue their policy course. 
+<span style="color: #7A3C00;">나치</span>가 정부에 입각함에 따라, 그들은 자신들의 정책 노선을 추진하려 합니다.
 
 - @interior
 - @works
 - @works_alt
 
 @interior
-title: The <span style="color: #7A3C00;">Nazis</span> crack down on the Reichsbanner and <span style="color: #700000;">**RFB**</span>!
-subtitle: Ordered by Wilhelm Frick of the Interior Ministry.
+title: <span style="color: #7A3C00;">나치</span>가 국기단과 <span style="color: #700000;">**RFB**</span>을 탄압하다!
+subtitle: 내무부 장관 빌헬름 프릭의 명령.
 on-arrival: {!
 Q.schleicher_spd_r -= 1;
 Q.schleicher_spd_support -= 2;
@@ -71,17 +71,17 @@ face-image: img/portraits/frick.jpg
 
 @interior_1
 
-With the <span style="color: #7A3C00;">Nazis</span> now controlling the Interior Ministry, they hold jurisdiction over the federal police. [? if prussia_leader != "Strasser": Without control of the Prussian Interior Ministry, their reach is limited—though they have already begun turning the federal police into a force loyal to the <span style="color: #7A3C00;">Nazis</span>. ?][? if prussia_leader == "Strasser": The Prussian Interior Ministry, however, is the real prize—its police force now answers entirely to them, with widespread purges of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> officials taking place. ?]Fortunately, Schleicher has barred <span style="color: #7A3C00;">Nazi</span> Party members from joining the police, maintaining the same restriction already enforced in the Reichswehr.
+<span style="color: #7A3C00;">나치</span>가 내무부를 장악함에 따라, 그들은 연방 경찰에 대한 관할권을 손에 넣었습니다. [? if prussia_leader != "Strasser": 프로이센 내무부에 대한 통제권이 없다면 그들의 영향력은 제한적입니다. 비록 그들이 이미 연방 경찰을 <span style="color: #7A3C00;">나치</span>에 충성하는 조직으로 변모시키기 시작했지만 말입니다. ?][? if prussia_leader == "Strasser": 그러나 진짜 전리품은 프로이센 내무부입니다. 그곳의 경찰력은 이제 전적으로 그들의 명령에 따르고 있으며, <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">파</span> 관리들에 대한 대대적인 숙청이 자행되고 있습니다. ?]다행히도 슐라이허는 국방군에서 시행 중인 것과 동일한 규정을 적용하여, <span style="color: #7A3C00;">나치</span> 당원의 경찰 가입을 금지했습니다.
 
-Lately, we have observed the police exclusively targeting Reichsbanner and <span style="color: #700000;">**RFB**</span> fighters, while openly shielding <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> demonstrations from our protests. They have even persuaded Schleicher to transfer command of the Reichswehr's militia to the Interior Ministry, citing the need for centralized control.
+최근 경찰이 오직 국기단과 <span style="color: #700000;">**RFB**</span> 대원들만을 표적으로 삼는 반면, 우리의 시위로부터 <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span> 시위대는 노골적으로 보호하는 모습이 목격되었습니다. 심지어 그들은 중앙집권적 통제의 필요성을 구실로 슐라이허를 설득해 국방군 민병대의 지휘권을 내무부로 이관시키기까지 했습니다.
 
 @interior_2
 
-The <span style="color: #7A3C00;">Nazis</span> have continued cracking down on even lawful <span style="color: #c00000;">leftist</span> activity, on bogus claims of "inciting violence." It seems Frick is doing Schleicher's dirty work for him—cracking down on democrats and all, while Schleicher is still viewed highly in the eyes of many workers.
+<span style="color: #7A3C00;">나치</span>는 "폭력을 선동한다"는 터무니없는 주장을 내세워 합법적인 <span style="color: #c00000;">좌파</span> 활동조차 지속적으로 탄압하고 있습니다. 프릭이 슐라이허를 대신해 더러운 일을 처리해 주는 모양새입니다. 민주주의자들을 비롯한 반대파를 탄압하는 동안에도, 슐라이허는 여전히 많은 노동자들에게 높이 평가받고 있으니 말입니다.
 
 @works
-title: "MEFO Bills"
-subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
+title: "MEFO 어음"
+subtitle: 경제부 장관 얄마르 샤흐트의 명령.
 view-if: dsu_policy == 2 and not mefo_bills_alt
 on-arrival: {!
 Q.schleicher_spd_r -= 1;
@@ -101,35 +101,35 @@ Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
 
-Despite Hjalmar Schacht not being a Keynesian, he understands that large scale public works and state funded projected are the way out of Germany's slump, and for Germany to retake its great power status on the international stage. He believes that, since <span style="color: #002654;">France</span> and <span style="color: #C8102E;">Britain</span> are preoccupied with their own economic woes, the time is right for a mass industrialization and rearmament program.
+얄마르 샤흐트는 케인스주의자가 아님에도 불구하고, 대규모 공공사업과 국책 프로젝트가 독일이 불황에서 벗어나 국제 무대에서 강대국의 지위를 되찾는 길임을 이해하고 있습니다. 그는 <span style="color: #002654;">프랑스</span>와 <span style="color: #C8102E;">영국</span>이 자국의 경제 문제에 몰두해 있는 지금이야말로 대규모 산업화와 재무장 프로그램을 추진할 적기라고 믿습니다.
 
-The construction of the "Autobahn", a new nationwide highway system, by poorly paid workers has begun, as an expansion of Schleicher's public works plans. A new innovative method for disguising rearmament has also been devised, a "MEFO bill", a system of promissory notes issued through a dummy company to secretly fund arms production while keeping the spending off the official government budget. However, he insists that a revival of Germany's economy should take precedent over rearmament.
+저임금 노동자들을 동원한 새로운 전국 고속도로망인 "아우토반" 건설이 슐라이허의 공공사업 계획의 확장판으로 시작되었습니다. 또한 재무장을 은폐하기 위한 혁신적인 방법도 고안되었습니다. 바로 "메포 어음"으로, 유령 회사를 통해 약속 어음을 발행하여 공식 정부 예산에 기록을 남기지 않고 비밀리에 무기 생산 자금을 조달하는 시스템입니다. 그러나 그는 독일 경제의 회복이 재무장보다 우선되어야 한다고 주장합니다.
 
 - @reichsbank
 
 @reichsbank
-title: What will the Reichsbank say?
-subtitle: Reichsbank President - [? if luther_reichsbank: Hans Luther?][? if not luther_reichsbank: Friedrich Dreyse?]
+title: 제국은행의 반응은?
+subtitle: 제국은행 총재 - [? if luther_reichsbank: 한스 루터?][? if not luther_reichsbank: 프리드리히 드라이제?]
 go-to: reichsbank_luther if luther_reichsbank; reichsbank_dreyse if not luther_reichsbank
 
 
 @reichsbank_luther
 face-image: img/portraits/luther.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+엄격한 재정 보수주의와 강박적일 정도의 반인플레이션 기조로 유명한 제국 은행은 이미 슐라이허의 초기 공공사업 법령 예산을 15%나 삭감한 바 있습니다. 따라서 정부 지출을 더욱 늘린다는 소식에 그들이 난색을 표한 것은 놀라운 일이 아니었습니다.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan.
+하지만 존경받는 은행가이자 초인플레이션을 종식시킨 주역으로 인정받는 전 제국 은행 총재, 얄마르 샤흐트가 이 캠페인을 지지하고 나선 것은 재계를 안심시키는 데 큰 역할을 했습니다. 정부의 압박에 밀린 제국 은행는 결국 계획을 지지할 수밖에 없었습니다.
 
 @reichsbank_dreyse
 face-image: img/portraits/dreyse.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+엄격한 재정 보수주의와 강박적일 정도의 반인플레이션 기조로 유명한 제국 은행은 이미 슐라이허의 초기 공공사업 법령 예산을 15%나 삭감한 바 있습니다. 따라서 정부 지출을 더욱 늘린다는 소식에 그들이 난색을 표한 것은 놀라운 일이 아니었습니다.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan.
+하지만 존경받는 은행가이자 초인플레이션을 종식시킨 주역으로 인정받는 전 제국 은행 총재, 얄마르 샤흐트가 이 캠페인을 지지하고 나선 것은 재계를 안심시키는 데 큰 역할을 했습니다. 정부의 압박에 밀린 제국 은행는 결국 계획을 지지할 수밖에 없었습니다.
 
 @works_alt
-title: "MEFO Bills"
-subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
+title: "MEFO 어음"
+subtitle: 경제부 장관 얄마르 샤흐트의 명령.
 view-if: dsu_policy == 2 and mefo_bills_alt
 on-arrival: {!
 Q.schleicher_spd_r -= 2;
@@ -151,6 +151,6 @@ Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
 
-Despite the public works campaign being expanded before Hjalmar Schacht took office as Economic Minister, he now seeks to build upon it—transforming it into a mass industrialization and rearmament program, more closely aligned with Schleicher's ambitions. Only then, he argues, can Germany hope to rival the major powers.
+얄마르 샤흐트가 경제부 장관으로 취임하기 전에 이미 공공사업 캠페인이 확장되었지만, 그는 이제 이를 기반으로 사업을 더욱 키우려 합니다. 이를 슐라이허의 야망에 더 부합하는 대규모 산업화 및 재무장 프로그램으로 변모시키려는 것입니다. 그래야만 독일이 주요 열강들과 경쟁할 수 있다고 그는 주장합니다.
 
-An innovative new method for disguising rearmament has also been devised: the "MEFO bill," a system of promissory notes issued through a dummy company to secretly finance arms production while keeping the spending off the official government books. Nevertheless, Schacht insists that reviving Germany's economy must take precedence over rearmament—for now.
+재무장을 은폐하기 위한 혁신적인 방법 또한 고안되었습니다. 바로 "메포 어음"으로, 유령 회사를 통해 약속 어음을 발행하여 공식 정부 장부에 기록을 남기지 않고 비밀리에 무기 생산 자금을 조달하는 시스템입니다. 그럼에도 불구하고 샤흐트는 독일 경제 회복이 재무장보다 우선되어야 한다고 주장합니다—적어도 당분간은 말입니다.

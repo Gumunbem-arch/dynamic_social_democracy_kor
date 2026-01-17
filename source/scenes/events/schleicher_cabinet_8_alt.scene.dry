@@ -1,5 +1,5 @@
-title: An Expansion of Public Works
-subtitle: Additional funding is granted.
+title: 공공사업의 확대
+subtitle: 추가 자금 지원이 승인되었습니다.
 view-if: chancellor == "Schleicher" and not dsu_in_gov and not dsu_was_gov and schleicher_post_time >= 4
 max-visits: 1
 new-page: true
@@ -18,19 +18,19 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Expansion of Public Works
+= 공공사업의 확대
 
-Adam Stegerwald at the Labor Ministry, working closely with Günther Gereke, has been formulating a massive billion-mark public works program to expand on Schleicher’s previously modest efforts. They recognize that large-scale public projects and state spending are Germany’s path out of the slump—and Schleicher is eager to approve more to propel the nation back to great power status.
+노동부 장관 아담 슈테거발트는 귄터 게레케와 긴밀히 협력하여, 슐라이허의 기존의 소극적인 노력을 확장하는 10억 마르크 규모의 대규모 공공사업 프로그램을 입안해 왔습니다. 그들은 대규모 공공 프로젝트와 국가 지출만이 독일이 불황에서 탈출할 길임을 인식하고 있으며, 슐라이허 역시 조국을 다시 강대국의 반열에 올리기 위해 더 많은 승인을 내리기를 열망하고 있습니다.
 
-However, the chancellor has been persistently pressing his ministers to focus on rearmament and infrastructure that would support it—such as the construction of the Autobahn, a new nationwide highway system, and state funding for armament companies. To Schleicher’s frustration, however, most of the funds will still be directed toward civilian development.
+그러나 총리는 장관들에게 재무장과 이를 뒷받침할 인프라—아우토반 건설, 새로운 전국 고속도로망, 군수 기업에 대한 국고 지원 등—에 집중할 것을 집요하게 요구해 왔습니다. 하지만 슐라이허에게는 실망스럽게도, 자금의 대부분은 여전히 민간 개발 부문에 투입될 것입니다.
 
-Nonetheless, the economic recovery continues.
+그럼에도 불구하고, 경제 회복은 계속되고 있습니다.
 
 - @reichsbank
 
 @reichsbank
-title: The cabinet still requires the Reichsbank’s approval, however.
-subtitle: Reichsbank President - [? if luther_reichsbank: Hans Luther?][? if not luther_reichsbank: Friedrich Dreyse?]
+title: 그러나 내각은 여전히 제국 은행의 승인을 필요로 한다.
+subtitle: 제국 은행 총재 - [? if luther_reichsbank: 한스 루터?][? if not luther_reichsbank: 프리드리히 드라이제?]
 go-to: reichsbank_luther if luther_reichsbank; reichsbank_dreyse if not luther_reichsbank
 
 @reichsbank_luther
@@ -47,9 +47,9 @@ Q.mefo_bills_alt = 1;
 !}
 face-image: img/portraits/luther.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+엄격한 재정 보수주의와 강박적일 정도의 반인플레이션 기조로 유명한 제국 은행은 이미 슐라이허의 초기 공공사업 법령 예산을 15%나 삭감한 바 있습니다. 따라서 정부 지출을 더욱 늘린다는 소식에 그들이 난색을 표한 것은 놀라운 일이 아니었습니다.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and recently retired Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan, though not without forcing another 20% cut in funding.
+하지만 존경받는 은행가이자 초인플레이션을 종식시킨 주역으로 인정받는 전 제국 은행 총재, 얄마르 샤흐트가 이 캠페인을 지지하고 나선 것은 재계를 안심시키는 데 큰 역할을 했습니다. 정부의 압박에 밀린 제국 은행는 결국 계획을 지지할 수밖에 없었지만, 끝내 자금의 20%를 추가로 삭감시키고 나서야 동의했습니다.
 
 @reichsbank_dreyse
 on-arrival: {!
@@ -65,6 +65,6 @@ Q.mefo_bills_alt = 1;
 !}
 face-image: img/portraits/dreyse.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+엄격한 재정 보수주의와 강박적일 정도의 반인플레이션 기조로 유명한 제국 은행은 이미 슐라이허의 초기 공공사업 법령 예산을 15%나 삭감한 바 있습니다. 따라서 정부 지출을 더욱 늘린다는 소식에 그들이 난색을 표한 것은 놀라운 일이 아니었습니다.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and recently retired Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan, though not without forcing another 20% cut in funding.
+하지만 존경받는 은행가이자 초인플레이션을 종식시킨 주역으로 인정받는 전 제국 은행 총재, 얄마르 샤흐트가 이 캠페인을 지지하고 나선 것은 재계를 안심시키는 데 큰 역할을 했습니다. 정부의 압박에 밀린 제국 은행는 결국 계획을 지지할 수밖에 없었지만, 끝내 자금의 20%를 추가로 삭감시키고 나서야 동의했습니다.

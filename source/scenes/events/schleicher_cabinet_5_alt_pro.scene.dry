@@ -1,5 +1,5 @@
-title: Schleicher Public Works
-subtitle: The plan is working!
+title: 슐라이허 공공 사업
+subtitle: 계획이 효과를 보고 있습니다!
 view-if: chancellor = "Schleicher" and schleicher_time == 8 and not schleicher_economy_time
 new-page: true
 tags: event
@@ -18,20 +18,20 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher Public Works
+= 슐라이허 공공 사업
 
-Schleicher, having survived Papen's schemes for the meantime, is now set to receive the political benefits of getting the German people back to work. Schleicher was essentially seen as a dead man to the German public, lacking confidence of the people and Hindenburg's inner circle—but's that's now set to change.
+당분간 파펜의 흉계에서 살아남은 슐라이허는 이제 독일 국민을 다시 일터로 돌려보내는 것의 정치적 혜택을 누릴 준비가 되었습니다. 슐라이허는 본질적으로 독일 대중에게 죽은 사람이나 다름없었고, 국민과 힌덴부르크 측근들의 신뢰가 부족했습니다—하지만 그것은 이제 바뀔 것입니다.
 
-The trade unions are ecstatic, and projected decreases in unemployment—combined with the global economic recovery, is expected to garner much public support for the Schleicher cabinet and a deradicalization of the party landscape, taking away the fuel the <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #700000;">**KPD**</span> thrives on.
+노동조합들은 열광하고 있으며, 실업률 감소 예상은—세계 경제 회복과 맞물려—슐라이허 내각에 대한 많은 대중적 지지와 정당 지형의 탈급진화를 이끌어낼 것으로 예상되며, <span style="color: #7A3C00;">**NSDAP**</span>와 <span style="color: #700000;">**KPD**</span>가 번성하는 동력을 빼앗을 것입니다.
 
-For Schleicher, the plan serves a dual purpose: to revitalize Germany’s economy in preparation for rearmament and a return to power on the world stage, and to pressure the <span style="color: #7A3C00;">**NSDAP**</span> into cooperating with his cabinet before their electoral prospects decline as their base returns to work.
+슐라이허에게, 이 계획은 두 가지 목적을 가집니다. 재무장과 세계 무대에서의 권력 복귀를 준비하기 위해 독일 경제를 활성화하는 것, 그리고 <span style="color: #7A3C00;">**NSDAP**</span>의 지지 기반이 일터로 돌아감에 따라 그들의 선거 전망이 어두워지기 전에 그들이 내각과 협력하도록 압박하는 것입니다.
 
 - @schleicher_2
 
 @schleicher_2
-title: Land in sight!
+title: 육지가 보인다!
 on-arrival: schleicher_economy_time = rubicon_time + 24; schleicher_approval += 3; papen_economy_time = 0; schleicher_victory += 1; workers_nsdap -= 3; workers_kpd -= 5; unemployed_kpd -= 5; unemployed_nsdap -= 3; pro_republic += 8; hindenburg_schleicher_r += 2; schleicher_strength += 2; papen_strength -= 1; hindenburg_hitler_r -= 3; dvp_left += 5; ddp_left += 3; ddp_cohesion += 3; lvp_left += 5; schleicher_spd_influence += 1; schleicher_spd_influence += 1 if wtb_adopted; schleicher_spd_influence += 1 if schleicher_spd_r >= 4; schleicher_spd_r += 1; schleicher_spd_r += 1 if wtb_adopted; schleicher_spd_support += 4; schleicher_spd_support += 2 if wtb_adopted
 
-With Schleicher delivering on a widely popular promise and the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties beginning to soften their stance toward the government, positive reports about him from across the political spectrum have begun to reach Hindenburg.
+슐라이허가 널리 인기 있는 약속을 이행하고 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 정당들이 정부에 대한 태도를 누그러뜨리기 시작하면서, 정치 스펙트럼 전반에 걸쳐 그에 대한 긍정적인 보고들이 힌덴부르크에게 들어가기 시작했습니다.
 
-This early victory for the Schleicher cabinet has dealt a significant blow to Papen’s schemes. The President is now more inclined to view Schleicher favorably, reducing the perceived need to bring the <span style="color: #7A3C00;">**NSDAP**</span> into government.
+슐라이허 내각의 이 초기 승리는 파펜의 계획에 상당한 타격을 입혔습니다. 대통령은 이제 슐라이허를 호의적으로 볼 의향이 더 커졌고, <span style="color: #7A3C00;">**NSDAP**</span>를 정부로 끌어들여야 할 필요성을 덜 느끼게 되었습니다.

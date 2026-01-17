@@ -1,5 +1,5 @@
-title: The <i>Reichskonkordat</i> Is Signed!
-subtitle: Catholic rights across Germany are now formally guaranteed.
+title: <i>제국종교협약</i> 체결!
+subtitle: 독일 전역에서 가톨릭의 권리가 공식적으로 보장되다.
 view-if: chancellor == "Schleicher" and z_in_gov and z_in_gov_time >= 6 and z_leader == "Kaas" 
 max-visits: 1
 new-page: true
@@ -17,14 +17,14 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Reichskonkordat Signing
+=  제국종교협약 체결
 
-During weeks of intense negotiations in Rome headed by Ludwig Kaas, the <i>Reichskonkordat</i> has officially been signed between Germany and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the German state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in Germany are pleased, as are their representatives in the <span style="color: #000000;">Center Party</span>.
+루트비히 카스가 이끄는 로마에서의 수주간의 치열한 협상 끝에, 독일과 로마 가톨릭 교회 간에 <i>제국종교협약</i>이 공식적으로 체결되었습니다. 이 조약은 교회와 독일 국가 간의 공식적인 관계를 규정하며, 가톨릭 신자들의 예배의 자유와 교회의 성직자 임명권을 보장합니다. 독일의 가톨릭 신자들은 기뻐하고 있으며, <span style="color: #000000;">중앙당</span> 내의 대표들 또한 마찬가지입니다.
 
 - @reichskonkordat
 
 @reichskonkordat
-title: What will happen to the <span style="color: #000000;">Center Party</span>?
+title: <span style="color: #000000;">중앙당</span>의 행방은?
 on-arrival: {!
 Q.schleicher_approval += 1;
 Q.reichskonkordat = 1;
@@ -73,33 +73,33 @@ Q.bracht_points += Q.catholics_z_normalized / 10;
 !}
 face-image: img/portraits/KaasLudwig.jpg
 
-= Center Party Conference
+= 중앙당 전당대회
 
-Having achieved his lifelong goal, Kaas sees little reason to remain as leader of the <span style="color: #000000;">Center Party</span>—a position he had long described as a burden and expressed displeasure with. As a result, a new leadership race is set to take place within the party, with Schleicher able to influence the outcome through his connections with Kaas and the <span style="color: #000000;">Christian</span> Trade Unions.
+평생의 숙원을 달성한 카스는 <span style="color: #000000;">중앙당</span> 당수직에 남아있을 이유를 찾지 못하고 있습니다. 그는 오랫동안 그 자리를 짐으로 여기며 불만을 표해왔습니다. 그 결과 당내에서 새로운 지도부 경선이 열리게 되었고, 슐라이허는 카스 및 <span style="color: #000000;">기독교</span> 노동조합과의 인맥을 통해 결과에 영향력을 행사할 수 있게 되었습니다.
 
-The candidate backed by the <span style="color: #000000;">Christian</span> unions and those advocating for a more interconfessional <span style="color: #000000;">Center Party</span> rallies around Stegerwald.
+<span style="color: #000000;">기독교</span> 노조와 더 초교파적인 <span style="color: #000000;">중앙당</span>을 지향하는 이들은 슈테거발트를 중심으로 결집하고 있습니다.
 
-Franz Bracht, Schleicher's [? if not dsu_in_gov: former ?]Interior Minister[? if prussia_coup_lose:&nbsp;of Prussia and the Reich?], has rejoined the party and is Schleicher’s preferred candidate. Bracht is a true believer in Schleicher's vision for a new Germany—one less entangled in parliamentarianism—and aligns with the <span style="color: #000000;">Center</span>'s right wing, though not as far right as Papen. However, due to his lack of influence within the party and limited prior experience, having served only as Mayor of Essen for eight years, it is Schleicher's backing that remains the key to elevating him to leadership.
+슐라이허의 [? if not dsu_in_gov: 전 ?]내무부 장관[? if prussia_coup_lose:&nbsp;이자 프로이센 및 제국의 내무 장관이었던?], 프란츠 브라흐트가 당에 복귀했으며 그는 슐라이허가 선호하는 후보입니다. 브라흐트는 의회주의에 덜 얽매인 새로운 독일에 대한 슐라이허의 비전을 진심으로 믿고 있으며, 파펜만큼 극우는 아니지만 <span style="color: #000000;">중앙당</span>의 우파와 뜻을 같이합니다. 그러나 당내 기반이 약하고 8년간 에센 시장으로 재직한 것 외에는 경력이 일천하기 때문에, 그를 당수 자리에 앉히기 위해서는 슐라이허의 후원이 필수적입니다.
 
 - @bracht
 - @stegerwald
 
 @bracht
-title: Franz Bracht is installed as the <span style="color: #000000;">Center Party</span>'s new chairman.
-unavailable-subtitle: The <span style="color: #000000;">Center Party</span> is still rooted in <span style="color: #000000;">repub</span><span style="color: #DD0000;">lica</span><span style="color: #FFCC00;">nism</span>.
+title: 프란츠 브라흐트가 <span style="color: #000000;">중앙당</span>의 새로운 당수로 취임한다.
+unavailable-subtitle: <span style="color: #000000;">중앙당</span>은 여전히 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주</span><span style="color: #FFCC00;">의</span>에 뿌리를 두고 있습니다.
 choose-if: bracht_points > stegerwald_points
 on-arrival: z_leader = "Bracht"; workers_z -= 4; unemployed_z -= 2; new_middle_z -= 2; old_middle_z += 4; rural_z += 4; z_relation -= 15
 
-Undoubtedly thanks to Schleicher's meddling, Franz Bracht has been elected chairman of the <span style="color: #000000;">Center Party</span>. With Kaas’s endorsement and Schleicher's ability to "persuade" key party members to switch their votes, Bracht narrowly defeats Stegerwald and his more <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> support base.
+의심할 여지 없이 슐라이허의 개입 덕분에, 프란츠 브라흐트가 <span style="color: #000000;">중앙당</span> 당수로 선출되었습니다. 카스의 지지와 주요 당원들을 "설득"하여 표심을 돌려놓은 슐라이허의 능력 덕분에, 브라흐트는 슈테거발트와 그의 더 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주</span><span style="color: #FFCC00;">의</span>적인 지지 기반을 간발의 차로 누를 수 있었습니다.
 
-The internal reaction has been surprisingly muted. Perhaps the <span style="color: #000000;">Center Party</span>’s gradual shift to the right has made a <span style="color: #808080;">reactionary</span> like Bracht finally acceptable—or perhaps other forces are quietly at work.
+내부 반응은 놀라울 정도로 잠잠합니다. 아마도 <span style="color: #000000;">중앙당</span>의 점진적인 우경화가 브라흐트 같은 <span style="color: #808080;">반동주의자</span>를 마침내 받아들일 수 있게 만들었거나—아니면 다른 세력이 조용히 작동하고 있는지도 모릅니다.
 
 @stegerwald
-title: Stegerwald wins the leadership vote!
-unavailable-subtitle: Stegerwald is unavailable.
+title: 슈테거발트가 지도부 투표에서 승리한다!
+unavailable-subtitle: 슈테거발트는 선택할 수 없습니다.
 choose-if: stegerwald_points >= bracht_points
 on-arrival: z_leader = "Stegerwald"; catholics_z -= 8; catholics_spd += 2; catholics_dnvp += 2; catholics -= 5; workers_z += 4; new_middle_z += 2; old_middle_z += 2; rural_z += 2; z_relation -= 5
 
-Stegerwald has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Bracht from seizing control of the <span style="color: #000000;">Center Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Christian</span> unions, who continue to resist Schleicher's growing influence.
+슈테거발트가 지도부 투표에서 승리했습니다! <span style="color: #000000;">공화</span><span style="color: #DD0000;">주의</span><span style="color: #FFCC00;">자들</span>을 결집시킴으로써, 그는 브라흐트가 <span style="color: #000000;">중앙당</span>의 통제권을 장악하는 것을 성공적으로 막아냈습니다. 그러한 우파 보수주의자를 지지하는 것은 슐라이허의 커지는 영향력에 계속 저항하는 <span style="color: #000000;">기독교</span> 노조에게 용납될 수 없는 일이었습니다.
 
-Although Stegerwald favors immediately opening the <span style="color: #000000;">Center Party</span> to Protestants, the party simply lacks the funds to establish regional branches across Protestant Germany, with recent elections having already exhausted its resources.
+비록 슈테거발트는 개신교도들에게 <span style="color: #000000;">중앙당</span>을 즉시 개방하는 것을 선호하지만, 당은 최근 선거로 이미 자원을 소진하여 개신교 지역에 지부를 설립할 자금이 부족할 따름입니다.

@@ -1,5 +1,5 @@
-title: Schleicher Concedes
-subtitle: The chancellor has all but given up attempts to stay in power.
+title: 슐라이허, 패배 인정
+subtitle: 총리는 권력을 유지하려는 시도를 거의 포기했습니다.
 view-if: chancellor = "Schleicher" and schleicher_time == 7 and schleicher_explode and not constructive_schleicher
 new-page: true
 tags: event
@@ -18,47 +18,47 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher Concedes
+= 슐라이허, 패배 인정
 
-Schleicher, having willfully avoided any serious effort to preserve his chancellorship—for reasons known only to himself—has now resigned himself to the inevitable loss of a position he never truly desired.
+슐라이허는, 자신의 총리직을 보존하려는 어떤 진지한 노력도 의도적으로 피했기에—그 자신만이 아는 이유로—이제 그가 진정으로 원하지 않았던 지위의 상실이 불가피함을 체념하고 받아들였습니다.
 
-In what is likely his final cabinet meeting, he informs his ministers that he will request a decree to dissolve the Reichstag, as a no-confidence vote is now inevitable. He fully expects his request to be denied and is prepared to submit both his and the cabinet's resignation.
+아마도 그의 마지막이 될 내각 회의에서, 그는 불신임 투표가 이제 불가피하므로 제국의회를 해산하는 법령을 요청할 것이라고 장관들에게 알립니다. 그는 자신의 요청이 거부될 것을 완전히 예상하고 있으며 그와 내각의 사직서를 제출할 준비가 되어 있습니다.
 
-In his final days, he turns his focus to opposing a Papen restoration, even going so far as to express a preference for a [+ nsdap_chancellor +] government—believing, perhaps naively, that he might retain his post as Defense Minister under such an arrangement.
+그의 마지막 날들에, 그는 파펜의 복귀를 막는 데 집중했고, 심지어 [+ nsdap_chancellor +] 정부에 대한 선호를 표현하기까지 했습니다—아마도 순진하게도, 그가 그러한 합의 하에서 국방장관으로서의 직책을 유지할 수 있을 것이라고 믿으면서 말입니다.
 
-- @schleicher_2: Schleicher meets with President Hindenburg, perhaps for the last time.
+- @schleicher_2: 슐라이허가 힌덴부르크 대통령과 만난다, 아마도 마지막으로.
 
 @schleicher_2
 
-Schleicher lays out four scenarios before the President:
+슐라이허는 대통령 앞에 네 가지 시나리오를 제시합니다:
 
-1. A [+ nsdap_chancellor +] cabinet supported by the Reichstag—unlikely.
+1. 제국의회의 지지를 받는 [+ nsdap_chancellor +] 내각—가능성 없음.
 
-2. A presidential cabinet led by [+ nsdap_chancellor +]—even more implausible.
+2. [+ nsdap_chancellor +]가 이끄는 대통령 내각—훨씬 더 현실성 없음.
 
-3. His own cabinet continuing under presidential emergency powers—his recommendation.
+3. 대통령 긴급 권한 하에 지속되는 그 자신의 내각—그의 추천안.
 
-4. A disastrous cabinet led by Papen and Hugenberg—likely to provoke civil war.
+4. 파펜과 후겐베르크가 이끄는 재앙적인 내각—내전을 유발할 가능성 있음.
 
-He does not request a postponement of elections this time—only a commitment from Hindenburg to dissolve the chamber upon reconvening.
+그는 이번에는 선거 연기를 요청하지 않습니다—오직 재소집 시 의회를 해산하겠다는 힌덴부르크의 확약만을 요청합니다.
 
-He is denied. Hindenburg acknowledges Schleicher’s efforts to win over the <span style="color: #7A3C00;">Nazis</span>, but with that effort having failed, the President declares it time to explore “another possibility.”
+그는 거부당합니다. 힌덴부르크는 <span style="color: #7A3C00;">나치</span>를 포섭하려는 슐라이허의 노력을 인정하지만, 그 노력이 실패했으므로, 대통령은 "다른 가능성"을 모색할 때라고 선언합니다.
 
 - @schleicher_3
 
 @schleicher_3
-title: Schleicher resigns.
+title: 슐라이허 사임.
 
-Schleicher returns to his waiting ministers and relays the outcome. An announcement of his resignation—prepared weeks in advance—is released to the press.
+슐라이허는 기다리고 있는 장관들에게 돌아와 결과를 전달합니다. 몇 주 전부터 준비된 그의 사임 발표가 언론에 배포됩니다.
 
-At this stage, the options have narrowed to two: a return of Papen, or the ascension of [+ nsdap_chancellor +]. Both promise disaster for Germany—and the latter, disaster for all of humanity.
+이 단계에서, 선택지는 두 가지로 좁혀졌습니다. 파펜의 귀환, 또는 [+ nsdap_chancellor +]의 등극. 둘 다 독일에게 재앙을 예고합니다—그리고 후자는, 전 인류에게 재앙을 예고합니다.
 
 - @schleicher_4
 
 @schleicher_4
-title: The cabinet's last order of business.
+title: 내각의 마지막 업무.
 on-arrival: unemployed -= 2; economic_growth += 1; inflation += 2; schleicher_approval += 1
 
-After weeks of delay, Gereke finally presents his public works program to the cabinet. Though too late to save Schleicher’s tenure, it is approved by the chancellor and signed by Hindenburg without objection. The plan allocates half a billion marks to infrastructure projects across the Reich.
+몇 주간의 지연 끝에, 게레케는 마침내 그의 공공 사업 프로그램을 내각에 제출합니다. 슐라이허의 임기를 구하기에는 너무 늦었지만, 그것은 총리에 의해 승인되고 힌덴부르크에 의해 이의 없이 서명됩니다. 이 계획은 제국 전역의 인프라 프로젝트에 5억 마르크를 할당합니다.
 
-In the coming months, as millions of unemployed Germans return to work, it is not Schleicher, but his successor, who will reap the political rewards.
+다가오는 몇 달 안에, 수백만의 실업 상태인 독일인들이 일터로 돌아감에 따라, 그 정치적 과실을 따먹는 것은 슐라이허가 아니라, 그의 후임자일 것입니다.

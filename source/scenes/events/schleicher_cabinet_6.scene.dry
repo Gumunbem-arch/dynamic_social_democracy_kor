@@ -1,5 +1,5 @@
-title: Schleicher and [+ nsdap_leader +]
-subtitle: Schleicher offers his support to the <span style="color: #7A3C00;">Nazi</span> leader.
+title: 슐라이허와 [+ nsdap_leader +]
+subtitle: 슐라이허는 <span style="color: #7A3C00;">나치</span> 지도자에게 지지를 제안합니다.
 view-if: started and schleicher_explode and not constructive_schleicher
 new-page: true
 priority: -1
@@ -17,26 +17,26 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher and [+ nsdap_leader +]
+= 슐라이허와 [+ nsdap_leader +]
 
-In a meeting at the Defense Ministry following Schleicher's resignation, one general proposed resorting to force to prevent a Papen cabinet. Schleicher, however, strongly rejected defying the president, with his military training ruling out any such insubordination: “I am a general, Hindenburg is field marshal. I have been taught obedience.”
+슐라이허의 사임에 이은 국방부에서의 회의에서, 한 장군은 파펜 내각을 막기 위해 무력에 의존할 것을 제안했습니다. 그러나 슐라이허는 대통령에게 반항하는 것을 강력히 거부했고, 그의 군사 훈련은 그러한 불복종을 용납하지 않았습니다. "나는 장군이고, 힌덴부르크는 원수다. 나는 복종을 배웠다."
 
-Nonetheless, Schleicher set up a meeting between his confidants, General Kurt von Hammerstein, and [+ nsdap_leader +], offering the military’s support on behalf of his candidacy for the chancellorship. He also inquired about whether he could stay on as Defense Minister. Keeping his options open, [+ nsdap_leader +] agreed to keep Schleicher as minister and lied about the current state of progress with negotiations.
+그럼에도 불구하고, 슐라이허는 그의 측근인 쿠르트 폰 함머슈타인 장군과 [+ nsdap_leader +] 사이의 회의를 주선하여, 총리직에 대한 그의 입후보를 위해 군의 지지를 제안했습니다. 그는 또한 자신이 국방장관으로 남을 수 있는지 타진했습니다. 선택지를 열어두면서, [+ nsdap_leader +]는 슐라이허를 장관으로 유임시키는 것에 동의했고 협상의 현재 진행 상태에 대해 거짓말했습니다.
 
 - @schleicher_2
-- @schleicher_4: Schleicher remains as a caretaker chancellor for the meantime.
+- @schleicher_4: 슐라이허는 당분간 관리 총리로 남는다.
 
 @schleicher_2
-title: A putsch!
-subtitle: An unfounded rumor, that Schleicher will attempt to maintain his power at all costs.
+title: 쿠데타설!
+subtitle: 슐라이허가 어떤 대가를 치르더라도 권력을 유지하려 한다는 근거 없는 소문.
 view-if: ((reichswehr_strength*reichswehr_militancy)*2 > total_force and prussia_leader != "Schleicher") or ((reichswehr_strength*reichswehr_militancy + prussian_police_strength*prussian_police_militancy)*2 > total_force and prussia_leader == "Schleicher")
 on-arrival: schleicher_coup = 1; schleicher_approval -= 1
 
-The day after, Schleicher sent a conservative with <span style="color: #7A3C00;">Nazi</span> connections to extract more details from [+ nsdap_leader +]. Unfortunately for Schleicher, the person he sent boasted that the army command stood ready to intervene if a new cabinet didn't conform to its wishes. The <span style="color: #7A3C00;">Nazi</span> leaders became fearful of a possible military putsch aimed at thwarting [+ nsdap_chancellor +]'s appointment.
+그 다음 날, 슐라이허는 [+ nsdap_leader +]로부터 더 많은 세부 사항을 알아내기 위해 <span style="color: #7A3C00;">나치</span>와 연줄이 있는 보수주의자를 보냈습니다. 슐라이허에게 불행하게도, 그가 보낸 사람은 만약 새 내각이 그들의 소망을 따르지 않는다면 군 사령부가 개입할 준비가 되어 있다고 떠벌렸습니다. <span style="color: #7A3C00;">나치</span> 지도자들은 [+ nsdap_chancellor +]의 임명을 좌절시키려는 군사 쿠데타 가능성을 두려워하게 되었습니다.
 
-Talk of a putsch quickly gave rise to a rapidly spreading, but unfounded rumor that Schleicher planned to depose Hindenburg and take the presidency for himself. Through Meissner and Papen, the news reached Hindenburg, giving a sense of urgency to replace Schleicher.
+쿠데타에 대한 이야기는 슐라이허가 힌덴부르크를 폐위시키고 대통령직을 스스로 차지할 계획이라는, 빠르게 퍼지는 근거 없는 소문을 낳았습니다. 마이스너와 파펜을 통해, 그 뉴스는 힌덴부르크에게 들어갔고, 슐라이허를 교체해야 한다는 긴박감을 주었습니다.
 
-- @schleicher_3: An unfortunate series of events.
+- @schleicher_3: 불행한 일련의 사건들.
 
 @schleicher_3
 go-to: nazi_16.nazi_3

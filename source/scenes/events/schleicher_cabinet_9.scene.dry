@@ -1,5 +1,5 @@
-title: Schleicher Enacts Concessions to Labor!
-subtitle: The <span style="color: #000000;">Christian</span> and <span style="color: #c00000;">Free Unions</span> are ecstatic!
+title: 슐라이허, 노동자 유화책 시행!
+subtitle: <span style="color: #000000;">기독교 노조</span>와 <span style="color: #c00000;">자유 노조</span>가 열광하다!
 view-if: chancellor == "Schleicher" and schleicher_post and not schleicher_labor and next_reichstag_time == (rubicon_time + 1) and next_reichstag_time > 0
 max-visits: 1
 new-page: true
@@ -18,18 +18,18 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher Enacts Concessions to Labor!
+= 슐라이허, 노동자 유화책 시행!
 
-Presumably aiming to win over the unions' affiliated parties—the <span style="color: #000000;">Center Party</span> and the <span style="color: #c00000;">SPD</span>—and to bolster public confidence in his leadership at the grassroots level, Schleicher has enacted a new decree.
+노조와 연계된 정당들—<span style="color: #000000;">중앙당</span>과 <span style="color: #c00000;">SPD</span>—을 포섭하고 풀뿌리 수준에서 자신의 리더십에 대한 대중의 신뢰를 강화하려는 의도로, 슐라이허는 새로운 법령을 시행했습니다.
 
-An eight-hour workday is now mandated across most industries, intended to "spread out" employment among more workers. The means test for unemployment insurance has been abolished, and welfare funding has been increased to offset years of austerity.
+대부분의 산업 분야에서 8시간 근무제가 의무화되었으며, 이는 일자리를 더 많은 노동자에게 "분산"시키기 위한 조치입니다. 실업 보험 수급을 위한 자산 조사가 폐지되었고, 수년간의 긴축 재정을 상쇄하기 위해 복지 예산이 증액되었습니다.
 
-The <span style="color: #c00000;">Social</span> General has lived up to his nickname. Yet, cynically, the cost is clear—Schleicher now wields significant leverage over the unions, and many workers are beginning to shift their loyalty toward the chancellor, who delivers results, rather than the opposition parties. His image as a strongman, standing above the old parties, is slowly conditioning the workers to accept a more authoritarian system.
+<span style="color: #c00000;">사회적</span> 장군이라는 별명에 걸맞은 행보입니다. 그러나 냉소적으로 보자면 그 대가는 분명합니다. 슐라이허는 이제 노조에 대해 상당한 영향력을 행사하게 되었고, 많은 노동자들이 야당보다는 실질적인 결과를 만들어내는 총리에게 충성심을 보이기 시작했습니다. 구태 정당들을 초월한 강력한 지도자로서의 이미지는 노동자들이 더 권위주의적인 체제를 받아들이도록 서서히 길들이고 있습니다.
 
 - @labor
 
 @labor
-title: The decree is signed into law.
+title: 법령이 서명되어 발효된다.
 on-arrival: {!
 Q.schleicher_labor = 1; 
 Q.schleicher_spd_influence += 3; 
@@ -63,6 +63,6 @@ Q.social_patriot_dissent += 20;
 Q.labor_strength += 5; 
 !}
 
-With Schleicher granting concessions to the workers on his own initiative—rather than under pressure from the <span style="color: #c00000;">SPD</span>—he alone reaps the political rewards. Even some radicalized <span style="color: #700000;">Communist</span> workers begin to drift away, as the less ideological and politically disengaged prioritize their livelihoods over loyalty to their traditional parties.
+슐라이허가 <span style="color: #c00000;">SPD</span>의 압력 때문이 아니라 자신의 주도로 노동자들에게 양보를 제공함으로써, 정치적 이득을 독차지하고 있습니다. 심지어 일부 급진화된 <span style="color: #700000;">KPD</span> 노동자들조차 이탈하기 시작했습니다. 이념이 덜 투철하고 정치에 무관심한 이들이 기존 정당에 대한 충성심보다 당장의 생계를 우선시하기 때문입니다.
 
-But hey, at least the workers aren’t suffering as much anymore. This alone has led the ADGB to adopt a friendlier stance toward the chancellor, giving Schleicher growing influence within our party, using the unions as his middleman.
+하지만 뭐, 적어도 노동자들의 고통은 줄어들었습니다. 이 사실만으로도 독일노동조합총연맹(ADGB)은 총리에 대해 더 우호적인 태도를 취하게 되었고, 슐라이허는 노조를 매개로 우리 당 내에서 자신의 영향력을 키워가고 있습니다.
