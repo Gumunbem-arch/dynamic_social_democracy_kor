@@ -275,7 +275,7 @@ Q.sa_strength_2 = Q.sa_strength.toFixed(1);
 
 <span style="color: #7A3C00;">**SA**</span> 전투력: [+ sa_militancy : militancy +]
 
-[? if year >= 1930 and not streetfighting_joever: <h1>Distribution of Power</h1> ?]
+[? if year >= 1930 and not streetfighting_joever: <h1>세력 균형</h1> ?]
 
 [? if year >= 1930 and not streetfighting_joever: <h4>[? if not kpd_truce: <span style="color: #000000;">민</span><span style="color: #DD0000;">주</span><span style="color: #FFCC00;">주의</span>?][? if kpd_truce: 반-<span style="color: #7A3C00;">파시스트</span>?] 세력: [+ democracy_force +]%</h4>?]
 
