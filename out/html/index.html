@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta prefix="ifiction: http://babel.ifarchive.org/protocol/iFiction/"
         property="ifiction:ifid" content="7FCDF039-2B77-4179-B795-CBAFA65253AA">
-    <title>Dynamic Social Democracy</title>
+    <title>다이나믹 사회민주주의</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src="jquery-1.11.1.min.js"></script>
@@ -27,16 +27,16 @@
             <table>
                 <tr>
                     <td>
-                        Backgrounds:
+                        배경:
                     </td>
                     <td>
-                        <label for="backgrounds_yes">On</label>
+                        <label for="backgrounds_yes">켜기</label>
                     </td>
                     <td>
                         <input type="radio" id="backgrounds_yes" name="backgrounds" value="1" onclick="window.enableBg();">
                     </td>
                     <td>
-                        <label for="backgrounds_no">Off</label>
+                        <label for="backgrounds_no">끄기</label>
                     </td>
                     <td>
                         <input type="radio" id="backgrounds_no" name="backgrounds" value="0" onclick="window.disableBg();">
@@ -47,15 +47,15 @@
                 </tr>
                 <tr>
                     <td>
-                        Event images:
+                        이벤트 이미지:
                     <td>
-                        <label for="images_yes">On</label>
+                        <label for="images_yes">켜기</label>
                     </td>
                     <td>
                         <input type="radio" id="images_yes" name="images" value="1" onclick="window.enableImages();">
                     </td>
                     <td>
-                        <label for="images_no">Off</label>
+                        <label for="images_no">끄기</label>
                     </td>
                     <td>
                         <input type="radio" id="images_no" name="images" value="0" onclick="window.disableImages();">
@@ -67,16 +67,16 @@
  
                 <tr>
                     <td>
-                        Animations:
+                        애니메이션:
                     </td>
                     <td>
-                        <label for="animate_yes">On</label>
+                        <label for="animate_yes">켜기</label>
                     </td>
                     <td>
                         <input type="radio" id="animate_yes" name="animate" value="1" onclick="window.enableAnimate();">
                     </td>
                     <td>
-                        <label for="animate_no">Off</label>
+                        <label for="animate_no">끄기</label>
                     </td>
                     <td>
                         <input type="radio" id="animate_no" name="animate" value="0" onclick="window.disableAnimate();">
@@ -87,16 +87,16 @@
                 </tr>
                 <tr>
                     <td>
-                        Music:
+                        음악:
                     </td>
                     <td>
-                        <label for="audio_yes">On</label>
+                        <label for="audio_yes">켜기</label>
                     </td>
                     <td>
                         <input type="radio" id="audio_yes" name="audio" value="1" onclick="window.enableAudio();">
                     </td>
                     <td>
-                        <label for="audio_no">Off</label>
+                        <label for="audio_no">끄기</label>
                     </td>
                     <td>
                         <input type="radio" id="audio_no" name="audio" value="0" onclick="window.disableAudio();">
@@ -107,16 +107,16 @@
                 </tr>
                 <tr>
                     <td>
-                        Color scheme:
+                        배색:
                     </td>
                     <td>
-                        <label for="light_mode">Light mode</label>
+                        <label for="light_mode">밝은 모드</label>
                     </td>
                     <td>
                         <input type="radio" id="light_mode" name="ld_mode" value="1" onclick="window.enableLightMode();">
                     </td>
                     <td>
-                        <label for="dark_mode">Dark mode</label>
+                        <label for="dark_mode">어두운 모드</label>
                     </td>
                     <td>
                         <input type="radio" id="dark_mode" name="ld_mode" value="0" onclick="window.enableDarkMode();">
@@ -127,16 +127,16 @@
                 </tr>
                 <tr>
                     <td>
-                        Colored text:
+                        색상 텍스트:
                     </td>
                     <td>
-                        <label for="gray_on">Disable</label>
+                        <label for="gray_on">비활성화</label>
                     </td>
                     <td>
                         <input type="radio" id="gray_on" name="gray_mode" value="0" onclick="window.enableGrayMode();">
                     </td>
                     <td>
-                        <label for="gray_no">Enable</label>
+                        <label for="gray_no">활성화</label>
                     </td>
                     <td>
                         <input type="radio" id="gray_no" name="gray_mode" value="1" onclick="window.disableGrayMode();">
@@ -151,7 +151,7 @@
                     <td></td>
                     <td></td>
                    <td>
-                        <button onclick="window.showMods();">Mods</button>
+                        <button onclick="window.showMods();">모드</button>
                     </td>
 
                 </tr>
@@ -164,142 +164,142 @@
             <tr>
                 <td>Auto-0</td>
                 <td>
-                    <button class="b save_button" id="save_button_a0">Save</button>
+                    <button class="b save_button" id="save_button_a0">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_a0">Delete</button>
+                    <button class="b delete_button" id="delete_button_a0">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_a0"></td>
                 <td>
-                    <button class="b export_button" id="export_button_a0">Export</button>
+                    <button class="b export_button" id="export_button_a0">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>Auto-1</td>
                 <td>
-                    <button class="b save_button" id="save_button_a1">Save</button>
+                    <button class="b save_button" id="save_button_a1">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_a1">Delete</button>
+                    <button class="b delete_button" id="delete_button_a1">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_a1"></td>
                 <td>
-                    <button class="b export_button" id="export_button_a1">Export</button>
+                    <button class="b export_button" id="export_button_a1">내보내기</button>
                 </td>
             </tr>
             
             <tr>
                 <td>0</td>
                 <td>
-                    <button class="b save_button" id="save_button_0">Save</button>
+                    <button class="b save_button" id="save_button_0">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_0">Delete</button>
+                    <button class="b delete_button" id="delete_button_0">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_0"></td>
                 <td>
-                    <button class="b export_button" id="export_button_0">Export</button>
+                    <button class="b export_button" id="export_button_0">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>
-                    <button class="b save_button" id="save_button_1">Save</button>
+                    <button class="b save_button" id="save_button_1">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_1">Delete</button>
+                    <button class="b delete_button" id="delete_button_1">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_1"></td>
                 <td>
-                    <button class="b export_button" id="export_button_1">Export</button>
+                    <button class="b export_button" id="export_button_1">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>
-                    <button class="b save_button" id="save_button_2">Save</button>
+                    <button class="b save_button" id="save_button_2">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_2">Delete</button>
+                    <button class="b delete_button" id="delete_button_2">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_2"></td>
                 <td>
-                    <button class="b export_button" id="export_button_2">Export</button>
+                    <button class="b export_button" id="export_button_2">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>
-                    <button class="b save_button" id="save_button_3">Save</button>
+                    <button class="b save_button" id="save_button_3">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_3">Delete</button>
+                    <button class="b delete_button" id="delete_button_3">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_3"></td>
                 <td>
-                    <button class="b export_button" id="export_button_3">Export</button>
+                    <button class="b export_button" id="export_button_3">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>
-                    <button class="b save_button" id="save_button_4">Save</button>
+                    <button class="b save_button" id="save_button_4">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_4">Delete</button>
+                    <button class="b delete_button" id="delete_button_4">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_4"></td>
                 <td>
-                    <button class="b export_button" id="export_button_4">Export</button>
+                    <button class="b export_button" id="export_button_4">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>
-                    <button class="b save_button" id="save_button_5">Save</button>
+                    <button class="b save_button" id="save_button_5">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_5">Delete</button>
+                    <button class="b delete_button" id="delete_button_5">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_5"></td>
                 <td>
-                    <button class="b export_button" id="export_button_5">Export</button>
+                    <button class="b export_button" id="export_button_5">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>
-                    <button class="b save_button" id="save_button_6">Save</button>
+                    <button class="b save_button" id="save_button_6">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_6">Delete</button>
+                    <button class="b delete_button" id="delete_button_6">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_6"></td>
                 <td>
-                    <button class="b export_button" id="export_button_6">Export</button>
+                    <button class="b export_button" id="export_button_6">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>
-                    <button class="b save_button" id="save_button_7">Save</button>
+                    <button class="b save_button" id="save_button_7">저장</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_7">Delete</button>
+                    <button class="b delete_button" id="delete_button_7">삭제</button>
                 </td>
                 <td class="save_info" id="save_info_7"></td>
                 <td>
-                    <button class="b export_button" id="export_button_7">Export</button>
+                    <button class="b export_button" id="export_button_7">내보내기</button>
                 </td>
             </tr>
             <tr>
                 <td colspan="5">
-                    <label for="import_save">Import save file:</label> <input type="file" id="import_save" onchange="dendryUI.importSave('import_save');"></input>
+                    <label for="import_save">세이브 파일 집어넣기:</label> <input type="file" id="import_save" onchange="dendryUI.importSave('import_save');"></input>
                 </td>
             </tr> 
             <tr>
                 <td>
-                    <button onclick="dendryUI.hideSaveSlots();">Close</button>
+                    <button onclick="dendryUI.hideSaveSlots();">닫기</button>
                 </td>
             </tr>
         </table>
@@ -317,23 +317,23 @@
     <div id='page'>
         <div id="mid_panel">
             <header>
-                <h1 id="game-title">Dynamic Social Democracy: An Alternate History</h1>
+                <h1 id="game-title">다이나믹 사회민주주의: 대체역사</h1>
                 <h2 id="game-author">Autumn Chen, modded by originn0</h2>
 
                 <div id="header-links">
-                    <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
-                    <a onclick="dendryUI.showSaveSlots();" href="#">Save/Load</a>
-                    <a onclick="window.showOptions();" href="#">Options</a>
+                    <a id="stats-link" onclick="window.showStats();" href="#">도서관</a>
+                    <a onclick="dendryUI.showSaveSlots();" href="#">저장/불러오기</a>
+                    <a onclick="window.showOptions();" href="#">설정</a>
                 </div>
             </header>
             <div id="tools_wrapper">
                 <div id='stats_sidebar' class='tools left'>
                     <div class="tab_container">
-                        <button class="tab_button" id="emergency_tab" onclick="window.changeTab('status.emergency', 'emergency_tab');" style="display: none;">Emergency Status</button>
-                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
-                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
-                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
-                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
+                        <button class="tab_button" id="emergency_tab" onclick="window.changeTab('status.emergency', 'emergency_tab');" style="display: none;">비상 상황</button>
+                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">주요 현황</button>
+                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">정치</button>
+                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">방위</button>
+                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">투표</button>
                     </div>
                     <div id="qualities">
                     </div>
