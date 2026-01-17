@@ -1,5 +1,5 @@
-title: Schleicher and the <span style="color: #3E88B3;">**Stahlhelm**</span>
-subtitle: The veterans organization is integrated into the state.
+title: 슐라이허와 <span style="color: #3E88B3;">**철모단**</span>
+subtitle: 재향군인 조직이 국가로 통합됩니다.
 view-if: chancellor = "Schleicher" and dnef_formed and (nationalists_schleicher >= 10 and (dnvp_dnef or dnvp_dnef_alt)) and schleicher_post_time >= 6
 new-page: true
 priority: 2
@@ -18,13 +18,13 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher and the <span style="color: #3E88B3;">**Stahlhelm**</span>
+= 슐라이허와 <span style="color: #3E88B3;">**철모단**</span>
 
-The <span style="color: #3E88B3;">**Stahlhelm**</span>, a veterans' and paramilitary organization that shares much of Schleicher's worldview and commands his respect, has long been courted by the chancellor for cooperation with the Reichswehr. To this end, Schleicher plans to subsidize the organization with state funds, gradually making it dependent on the state and available for use. Still, the general is irritated that its military exercises often overshadow the numerically inferior Reichswehr.
+슐라이허의 세계관을 공유하고 그의 존경을 받는 재향군인 및 준군사 조직인 <span style="color: #3E88B3;">**철모단**</span>은 오랫동안 국방군과의 협력을 위해 총리의 구애를 받아왔습니다. 이를 위해, 슐라이허는 국고로 조직에 보조금을 지급하여 점차 국가에 의존하게 만들고 필요할 때 동원할 수 있게 만들 계획입니다. 여전히, 장군은 그들의 군사 훈련이 종종 수적으로 열세인 국방군을 초라하게 만든다는 점에 심기가 불편합니다.
 
-Despite their shared views, <span style="color: #3E88B3;">**Stahlhelm**</span> leaders Franz Seldte and Theodor Duesterberg remain wary of Schleicher’s encroachments on their independence. But with the <span style="color: #3E88B3;">**DNVP**</span> now folded into the <span style="color: #BFC8CC;">**DNEF**</span>, the organization finds itself politically isolated, as even its rank-and-file begin to drift into subordination.
+공유된 견해에도 불구하고, <span style="color: #3E88B3;">**철모단**</span> 지도자 프란츠 젤테와 테오도어 뒤스터베르크는 그들의 독립성에 대한 슐라이허의 침해를 경계하고 있습니다. 그러나 <span style="color: #3E88B3;">**DNVP**</span>가 이제 <span style="color: #BFC8CC;">**DNEF**</span>로 흡수되면서, 조직은 정치적으로 고립되었고, 심지어 평단원들조차 종속되는 방향으로 기울기 시작했습니다.
 
-- @schleicher_2: The <span style="color: #3E88B3;">**Stahlhelm**</span> is integrated into the state.
+- @schleicher_2: <span style="color: #3E88B3;">**철모단**</span>이 국가로 통합된다.
 
 @schleicher_2
 on-arrival: {!
@@ -48,6 +48,6 @@ Q.schleicher_spd_r -= 1;
 Q.schleicher_spd_support -= 2;
 !}
 
-Subordination is the last thing a self-proud veterans' organization like the <span style="color: #3E88B3;">**Stahlhelm**</span> would accept—but attempts by its leaders to resist have only backfired. At a leadership conference between national and local chapters, they conceded that the era of paramilitaries and political maneuvering is over, and agreed to align the organization with the state in service of the national interest.
+자존심 강한 재향군인 조직인 <span style="color: #3E88B3;">**철모단**</span>이 가장 피하고 싶었던 것은 종속이었습니다—하지만 저항하려는 지도자들의 시도는 역효과만 냈습니다. 중앙과 지역 지부 간의 지도부 회의에서, 그들은 사설 준군사조직과 정치 공작의 시대는 끝났음을 인정하고, 국가 이익을 위해 조직을 국가와 연계하기로 합의했습니다.
 
-In return, the <span style="color: #3E88B3;">**Stahlhelm**</span> is granted official status as a veterans' association, while sympathetic leaders are rewarded with government posts. Many of its seasoned fighters and officers are absorbed into the Reichswehr, where they will be tasked with training the next generation of recruits.
+그 대가로, <span style="color: #3E88B3;">**철모단**</span>은 재향군인 협회로서의 공식 지위를 부여받고, 협조적인 지도자들은 정부 요직으로 보상받습니다. 많은 노련한 전사들과 장교들이 국방군으로 흡수되어, 그곳에서 다음 세대의 신병들을 훈련시키는 임무를 맡게 될 것입니다.

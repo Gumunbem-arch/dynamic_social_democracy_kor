@@ -1,5 +1,5 @@
-title: Schleicher and Röhm?
-subtitle: A deal is struck.
+title: 슐라이허와 룀?
+subtitle: 거래가 성사되었습니다.
 view-if: chancellor = "Schleicher" and reichstag_joever_time >= 3 and dnef_formed and nvf_exist
 new-page: true
 priority: 1
@@ -7,16 +7,15 @@ tags: event
 max-visits: 1
 face-image: img/portraits/rohm.jpg
 
-= Schleicher and Röhm
+= 슐라이허와 룀
 
-Ernst Röhm has found little success in his efforts to rebuild the <span style="color: #7A3C00;">**SA**</span>, and in maintaining its new political organization, the 
-<span style="color: #142e20;">**NVF**</span>. There are simply not enough funds to go around, as demoralized <span style="color: #7A3C00;">Nazis</span> stopped contributing a while ago. Röhm's plan to wait for an opportune moment for his "national revolution" is no longer tenable, and a new approach has to be taken.
+에른스트 룀은 <span style="color: #7A3C00;">**SA**</span>를 재건하고, 새로운 정치 조직인 <span style="color: #142e20;">**NVF**</span>를 유지하려는 노력에서 별다른 성과를 거두지 못했습니다. 사기가 꺾인 <span style="color: #7A3C00;">나치</span>들이 얼마 전부터 기부를 중단했기 때문에 자금난에 시달리고 있습니다. "민족 혁명"을 위한 적절한 순간을 기다리겠다는 룀의 계획은 더 이상 유지될 수 없으며, 새로운 접근 방식이 필요해졌습니다.
 
-Schleicher and Röhm goes years back, with the two becoming best friends near the turn of the decade, to the paranoia of Hitler. The two have very distinct political views however, and their cooperation only goes as far as a secret agreement promising that the <span style="color: #7A3C00;">**SA**</span> would mobilize and fight along with the Reichswehr if Germany was attacked by a foreign invader. 
+슐라이허와 룀의 인연은 수년 전으로 거슬러 올라가며, 두 사람은 1930년대 전후로 히틀러의 의심을 사면서 절친한 사이가 되었습니다. 그러나 두 사람은 매우 뚜렷한 정치적 견해 차이를 보이며, 그들의 협력은 독일이 외국의 침략을 받을 경우 <span style="color: #7A3C00;">**SA**</span>가 동원되어 국방군과 함께 싸울 것이라는 비밀 합의 정도에 그쳤습니다.
 
-Now, the two aim to rekindle this bond, and Röhm has officially attached the <span style="color: #7A3C00;">**SA**</span> to be subordinate to the Reichswehr, in exchange for more authority over its operations. The <span style="color: #142e20;">**NVF**</span> has since been attached to the <span style="color: #BFC8CC;">**DNEF**</span> as well.
+이제 두 사람은 이 유대를 다시 불지피려 하고 있습니다. 룀은 운영에 대한 더 많은 권한을 대가로 <span style="color: #7A3C00;">**SA**</span>를 국방군 산하에 두기로 공식 합의했습니다. <span style="color: #142e20;">**NVF**</span> 또한 <span style="color: #BFC8CC;">**DNEF**</span>에 편입되었습니다.
 
-- @schleicher_2: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its new member.
+- @schleicher_2: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 새로운 구성원을 환영한다.
 
 @schleicher_2
 on-arrival: {!
@@ -37,7 +36,7 @@ Q.nvf_r = 0;
 
 God knows what Röhm might do with an official government position. Fortunately, everyone, including President Hindenburg, are intensely distrustful of Röhm's <span style="color: #700000;">revolutionary</span> views. 
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -45,13 +44,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 
@@ -59,4 +58,4 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if nvf_dnef: - <span style="color: #142e20;">**NVF**</span> ?]
 
-- @root: Röhm is unreliable, he will soon split.
+- @root: 룀은 신뢰할 수 없다, 그는 곧 갈라설 것이다.

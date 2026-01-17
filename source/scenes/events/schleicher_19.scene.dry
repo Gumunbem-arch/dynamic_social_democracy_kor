@@ -1,5 +1,5 @@
-title: German Labor Front Formed
-subtitle: A state-controlled labor organization is established.
+title: 독일 노동 전선이 결성되다
+subtitle: 국가가 통제하는 노동 조직이 설립됩니다.
 view-if: chancellor = "Schleicher" and dnef_formed and ((workers_schleicher >= 10 and (rb_force < 30 or unions_independent or labor_dissent >= 40)) or schleicher_spd_labor) and schleicher_post_time >= 14 and z_relation < 50 and not schleicher_pause
 on-arrival: {!
 Q.workers_schleicher_bonus += 2;
@@ -13,17 +13,17 @@ tags: event
 max-visits: 1
 face-image: img/beauty_of_labor.jpg
 
-= German Labor Front
+= 독일 노동 전선
 
-Schleicher has been working intensively over the past weeks to forge a formal alliance between the trade unions and the state, focusing his efforts on the <span style="color: #000000;">Christian</span> associations. Their negotiations have now "succeeded"—with heavy doses of state intimidation and interference ensuring they accepted an offer that would have been unthinkable under normal circumstances.
+슐라이허는 지난 몇 주 동안 노동조합과 국가 간의 공식적인 동맹을 구축하기 위해 집중적으로 노력해 왔으며, 특히 <span style="color: #000000;">기독교</span> 노조들에 공을 들였습니다. 그들의 협상은 이제 "성공"했습니다—국가의 심한 협박과 간섭 덕분에 그들은 정상적인 상황에서는 상상도 할 수 없었던 제안을 받아들여야 했습니다.
 
-Under this agreement, the blue-collar <span style="color: #D3C24D;">Hirsch-Duncker</span>, <span style="color: #000000;">Christian</span>, and the Strasserist <span style="color: #7A3C00;">**NSBO**</span> unions are merged into the new German Labor Front (DAF). White-collar and civil servant unions, including the DHV, are folded into their own section within the Front. The right to strike is curtailed, and all members are made to pledge full loyalty to the so-called "national interest"—however the state chooses to define it.
+이 합의에 따라, 블루칼라 <span style="color: #D3C24D;">히르슈-둥커</span>, <span style="color: #000000;">기독교</span>, 그리고 슈트라서주의 <span style="color: #7A3C00;">**NSBO**</span> 노조들은 새로운 독일 노동 전선(DAF)으로 통합됩니다. DHV를 포함한 화이트칼라 및 공무원 노조들은 전선 내의 별도 부서로 편입됩니다. 파업권은 박탈되고, 모든 구성원은 소위 "국가 이익"—국가가 어떻게 정의하든 간에—에 대한 완전한 충성을 맹세해야 합니다.
 
-Local union leaders who refuse to join are having their offices raided, their funds confiscated, and themselves imprisoned. While membership in the German Labor Front is technically voluntary, access to benefits—and even basic protections—is now locked behind it, making participation all but mandatory. Furthermore, a new department is established in the DAF, tasked solely with spreading state propaganda and binding the workers more tightly into the <i>Volksgemeinschaft</i>.
+가입을 거부하는 지역 노조 지도자들은 사무실을 급습당하고, 자금을 몰수당하며, 투옥되고 있습니다. 독일 노동 전선 가입은 명목상으로는 자발적이지만, 복지 혜택에 대한 접근—심지어 기본적인 법적 보호조차—이제 그 가입 여부에 달려 있어, 참여는 사실상 강제나 다름없습니다. 게다가, DAF 내에 새로운 부서가 설립되어, 오로지 국가 선전을 전파하고 노동자들을 *민족 공동체*에 더 단단히 결속시키는 임무를 맡았습니다.
 
-The chancellor is also able to palate the industrialists, by placing their power significantly above that of labor in the newly established corporatist framework.
+총리는 또한 새로 설립된 조합주의 체제 내에서 산업가들의 권력을 노동계보다 훨씬 우위에 둠으로써 그들의 비위를 맞출 수 있게 되었습니다.
 
-- @schleicher_2: What about the ADGB?
+- @schleicher_2: ADGB는 어떻게 되지?
 
 @schleicher_2
 go-to: schleicher_adgb_influence if schleicher_spd_influence >= 8; schleicher_adgb_choice if schleicher_spd_influence < 6 and schleicher_spd_r >= 5; schleicher_adgb_joever if schleicher_spd_influence < 6 and schleicher_spd_r < 5
@@ -49,25 +49,25 @@ Q.schleicher_spd_r -= 2;
 Q.schleicher_spd_support -= 5;
 !}
 
-Schleicher now wields extensive influence over the <span style="color: #c00000;">**SPD**</span>, and even greater sway within our affiliated trade union, the ADGB. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Reichswehr militia, which threatens action if no decision is made before the deadline—Schleicher forces their submission to the German Labor Front—soon to be integrated.
+슐라이허는 이제 <span style="color: #c00000;">**SPD**</span>에 대해 막대한 영향력을 행사하며, 우리의 산하 노동조합인 ADGB 내에서는 더 큰 영향력을 휘두릅니다. 이 장악력을 이용하여—평조합원들을 상대로 한 끊임없는 심리전과, 마감 시한 전에 결정이 내려지지 않으면 행동을 취하겠다고 위협하는 국방군 민병대의 공개적인 협박을 통해—슐라이허는 그들이 독일 노동 전선에 복종하도록 강요합니다—곧 통합될 운명입니다.
 
-The new ADGB chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**SPD**</span> members are purged without ceremony.
+새로운 ADGB 의장들은 지체 없이 정당과의 모든 유대를 끊고 오직 국가에 대한 충성만을 맹세합니다. <span style="color: #9B0000;">마르크스주의</span> 교리는 폐기되고, 급진적인 <span style="color: #c00000;">**SPD**</span> 당원들은 즉결 숙청됩니다.
 
-The fall of the ADGB marks the beginning of the end. If even the workers no longer stand with us—what power do we really have left?
+ADGB의 몰락은 끝의 시작을 알립니다. 노동자들조차 더 이상 우리와 함께하지 않는다면—우리에게 정말 무슨 힘이 남아 있습니까?
 
 @schleicher_adgb_choice
 
-Schleicher lacks the full leverage to force a <i>fait accompli</i> over the ADGB—at least for now. But we remain cornered, with few good options left. A sizable minority, perhaps even a plurality, of unionists have already fallen under his sway. And his threat is clear: the Reichswehr’s militia stands ready to act if no decision is reached before the deadline.
+슐라이허는 ADGB에 대해 *기정사실*을 강요할 완전한 힘은 부족합니다—적어도 지금은요. 하지만 우리는 구석에 몰려 있고, 좋은 선택지는 거의 남아 있지 않습니다. 상당한 소수, 어쩌면 다수의 조합원들이 이미 그의 영향력 아래 들어갔습니다. 그리고 그의 위협은 명확합니다. 마감 시한 전에 합의에 도달하지 못하면 국방군의 민병대가 행동할 준비가 되어 있습니다.
 
-Our good relations have kept him from forcing the issue—so far—but his patience is running out.
+우리의 좋은 관계 덕분에 그가 무력을 행사하는 것은 막아왔습니다—지금까지는요—하지만 그의 인내심은 바닥나고 있습니다.
 
-What shall we do?
+우리는 무엇을 해야 합니까?
 
 - @schleicher_adgb_choice_1
 - @schleicher_adgb_choice_2
 
 @schleicher_adgb_choice_1
-title: Approve the ADGB's entry into the DAF.
+title: ADGB의 DAF 가입을 승인한다.
 on-arrival: {!
 Q.unions_independent = 1;
 Q.unions_independent_schleicher = 1;
@@ -90,20 +90,20 @@ Q.schleicher_spd_r -= 2;
 Q.schleicher_spd_support -= 4;
 !}
 
-The ADGB is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**SPD**</span> elements are purged without ceremony.
+ADGB는 이제 DAF로 흡수되고 있으며, 새로운 의장들은 지체 없이 정당과의 모든 유대를 끊고 오직 국가에 대한 충성만을 맹세합니다. <span style="color: #9B0000;">마르크스주의</span> 교리는 폐기되고, 급진적인 <span style="color: #c00000;">**SPD**</span> 요소들은 즉결 숙청됩니다.
 
-The fall of the ADGB marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
+ADGB의 몰락은 끝의 시작을 알립니다. 노동자들마저 우리를 버렸다면—우리에게 무슨 힘이 남아 있습니까?
 
 @schleicher_adgb_choice_2
-title: We will refuse.
+title: 우리는 거부할 것이다.
 
-Are you sure? We have lost our opportunity a long time ago, resistance at this point will be frivolous.
+확실합니까? 우리는 오래전에 기회를 잃었고, 이 시점에서의 저항은 무모할 뿐입니다.
 
 - @schleicher_adgb_choice_1
 - @schleicher_adgb_choice_2_pro
 
 @schleicher_adgb_choice_2_pro
-title: We are sure.
+title: 우리는 확실하다.
 on-arrival: {!
 Q.schleicher_points = 0;
 Q.spd_points = 0;
@@ -166,13 +166,13 @@ Q.schleicher_fight = 1;
 
 !}
 
-We are alone. Nonetheless, we will do everything in our power to launch a general strike and fill the street with protesters. 
+우리는 고립되었습니다. 그럼에도 불구하고, 우리는 총파업을 일으키고 거리를 시위대로 채우기 위해 우리가 할 수 있는 모든 것을 할 것입니다.
 
 - @spd_med
 - @spd_lose
 
 @spd_med
-title: Schleicher attempts to negotiate with us.
+title: 슐라이허가 우리와 협상을 시도한다.
 on-arrival: {!
 Q.schleicher_spd_influence = 0;
 Q.schleicher_spd_r = 0;
@@ -208,29 +208,29 @@ Q.labor_dissent -= 10;
 !}
 view-if: spd_med
 
-The nationwide general strike against Schleicher's authoritarian regime has brought the country to a standstill. The chancellor could unleash the Reichswehr and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries to brutally crush the protests—but for now, that remains a last resort. Instead, Schleicher has chosen to open negotiations with the opposition.
+슐라이허의 권위주의 정권에 대항하는 전국적인 총파업은 나라를 마비시켰습니다. 총리는 국방군과 <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span> 준군사조직을 풀어 시위를 잔인하게 진압할 수도 있었지만—지금으로서는, 그것은 최후의 수단으로 미뤄두었습니다. 대신, 슐라이허는 야당과 협상을 시작하기로 했습니다.
 
-Meanwhile, in defiance of the indefinite adjournment of the Reichstag, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties have banded together to unofficially reconvene the chamber at a separate location, openly challenging federal authority.
+한편, 제국의회의 무기한 휴회에 반발하여, <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 정당들은 뭉쳐서 별도의 장소에서 비공식적으로 의회를 다시 소집했고, 연방 당국에 공개적으로 도전했습니다.
 
-However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Schleicher’s sympathizers embedded within the unions themselves.
+그러나, 어쩌면 우리는 우리의 힘을 과대평가했을지도 모릅니다—실업률이 이렇게 높은 상황에서 파업은 오래 지속되기 힘들며, 특히 슐라이허의 동조자들이 노조 내부에 깊숙이 박혀 있는 경우에는 더욱 그렇습니다.
 
 - @schleicher_cabinet_13_pre
 
 @schleicher_cabinet_13_pre
-title: Schleicher's Turn to Play
-subtitle: Will the general hold firm?
+title: 슐라이허가 움직일 차례
+subtitle: 장군이 굳건히 버틸까요?
 go-to: schleicher_cabinet_13
 
 @spd_lose
-title: Our protests are ineffective.
+title: 우리의 시위는 효과가 없다.
 view-if: spd_lose
 on-arrival: hammerstein_win = 1
 
-The general strike proves short-lived. An endless supply of unemployed strikebreakers and Schleicher's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The Reichsbanner is no match for the Reichswehr.
+총파업은 오래가지 못했습니다. 실업자들로 넘쳐나는 대체 인력 공급과 노조 내 슐라이허 동조자들은 파업을 무력화시켰습니다. 시위자들은 총에 맞았고, 민간인들은 살해당했습니다. 국기단은 국방군의 상대가 되지 않았습니다.
 
-Seizing the moment, Schleicher expands his crackdown, accusing the <span style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
+기회를 포착한 슐라이허는 탄압을 확대하고, <span style="color: #c00000;">**SPD**</span>가 <span style="color: #700000;">**공산주의자들**</span>과 공모하여 혁명을 선동했다고 비난합니다.
 
-Germany is lost.
+독일은 끝났습니다.
 
 - @game_over
 
@@ -263,8 +263,8 @@ Q.schleicher_spd_r -= 3;
 Q.schleicher_spd_support -= 5;
 !}
 
-With Schleicher lacking the influence to influence the ADGB chairmen personally, or having the adequate relations with us to negotiate a more peaceful solution, violence is the only option.
+슐라이허가 ADGB 의장들을 개인적으로 회유할 영향력이 부족하거나, 더 평화로운 해결책을 협상하기 위해 우리와 충분한 관계를 맺지 못한 상황에서, 폭력만이 유일한 선택지입니다.
 
-Across the country, ADGB offices are ransacked by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries and the Reichswehr, arresting leaders, confiscating funds, and repurposing offices to be used for the DAF.
+전국적으로, ADGB 사무실들은 <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span> 준군사조직과 국방군에 의해 약탈당하고, 지도자들은 체포되며, 자금은 몰수되고, 사무실은 DAF 용도로 변경됩니다.
 
-The fall of the ADGB marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
+ADGB의 몰락은 끝의 시작을 알립니다. 노동자들마저 우리를 버렸다면—우리에게 무슨 힘이 남아 있습니까?

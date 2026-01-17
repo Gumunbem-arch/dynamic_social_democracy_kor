@@ -1,22 +1,22 @@
-title: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
-subtitle: The miniscule party can no longer survive on its own.
+title: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
+subtitle: 이 군소 정당은 더 이상 홀로 생존할 수 없습니다.
 view-if: chancellor = "Schleicher" and schleicher_time >= 35 and republicans_schleicher >= 12 and not lvp_formed and ddp_r < 2 and dnef_formed
 new-page: true
 priority: 1
 tags: event
 max-visits: 1
 
-= <span style="color: #D3C24D;">**[+ ddp_name +]**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
+= <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
 
-With the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> effectively dead as a political force, many former politicians—especially on its right wing—have long advocated for its self-dissolution, believing only then could a new, unified force rise from its ashes.
+<span style="color: #D3C24D;">**[+ ddp_name +]**</span>가 정치 세력으로서 사실상 사망 선고를 받으면서, 많은 전직 정치인들—특히 우파 인사들—은 오직 자진 해산만이 잿더미 속에서 새롭고 통합된 세력을 일으킬 수 있다며 이를 오랫동안 주장해 왔습니다.
 
-That belief has only strengthened with the rise of the <span style="color: #BFC8CC;">**DNEF**</span>. Now, more party members are calling for a formal merger into Schleicher's organization. His appeals to national unity have struck a psychological blow to the rank and file of a party that always championed the welfare and unity of the nation as a whole above all.
+그 믿음은 <span style="color: #BFC8CC;">**DNEF**</span>의 부상과 함께 더욱 확고해졌습니다. 이제 더 많은 당원이 슐라이허의 조직으로의 공식 합병을 요구하고 있습니다. 민족 통합에 대한 그의 호소는 무엇보다도 전체 국가의 복지와 통합을 최우선으로 여겼던 당의 평당원들에게 심리적으로 큰 울림을 주었습니다.
 
-Old-line <span style="color: #D3C24D;">democrats</span> like Dietrich and Heuss remain the most resistant, committed <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> to the core. But figures like Lemmer and the party’s left wing are proving more susceptible to Schleicher’s calls for national unity.
+디트리히와 호이스 같은 구세대 <span style="color: #D3C24D;">민주주의자</span>들은 뼈속까지 헌신적인 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의자</span>로서 가장 강력히 저항하고 있습니다. 그러나 레머와 같은 인물들과 당내 좌파는 민족 통합에 대한 슐라이허의 요구에 더 쉽게 흔들리고 있습니다.
 
-Nonetheless, a vote is conducted, and the opposition wins.
+결국 투표가 실시되었고, 합병 찬성파가 승리했습니다.
 
-- @schleicher_2: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its new member.
+- @schleicher_2: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 새로운 구성원을 환영한다.
 
 @schleicher_2
 on-arrival: {!
@@ -36,9 +36,9 @@ Q.old_ddp_name = Q.ddp_name;
 Q.ddp_name = "DStP";
 !}
 
-Schleicher sees keeping the <span style="color: #D3C24D;">**[+ old_ddp_name +]**</span> as a separate but closely tied <i>Blocpartei</i> as more effective in attracting voters, and for now, maintains their nominal independence[? if not dstp_formed:, though under a new name to shed the old and ironic "Democratic" label?]. [+ ddp_leader +] has since been installed as leader of the now <i>Blocpartei</i>-aligned <span style="color: #D3C24D;">[+ ddp_name +]</span>.
+슐라이허는 <span style="color: #D3C24D;">**[+ old_ddp_name +]**</span>를 별개이지만 밀접하게 연결된 *블록 정당*으로 유지하는 것이 유권자를 끌어들이는 데 더 효과적이라고 보고, 당분간 그들의 명목상 독립성을 유지시킵니다[? if not dstp_formed:, 비록 낡고 아이러니한 "민주"라는 꼬리표를 떼어내기 위해 새로운 이름으로 바꾸긴 했지만 말입니다?]. [+ ddp_leader +]는 이후 이제 *블록 정당*이 된 <span style="color: #D3C24D;">[+ ddp_name +]</span>의 지도자로 취임했습니다.
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -46,13 +46,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 

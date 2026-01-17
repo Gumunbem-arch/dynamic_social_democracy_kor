@@ -1,18 +1,18 @@
-title: The <span style="color: #3E88B3;">**DNVP**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
-subtitle: Lambach forces the party into the front.
+title: <span style="color: #3E88B3;">**DNVP**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
+subtitle: 람바흐가 당을 전선으로 밀어 넣습니다.
 view-if: chancellor = "Schleicher" and nationalists_schleicher >= 8 and dnef_formed and dnvp_leader == "Lambach"
 new-page: true
 priority: 3
 tags: event
 max-visits: 1
 
-= <span style="color: #3E88B3;">**DNVP**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
+= <span style="color: #3E88B3;">**DNVP**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
 
-Walther Lambach and the <span style="color: #6D5298;">Christian Socials</span> have long championed a presidential government and the vision of a non-partisan strongman ruling above political factions. That strongman is Schleicher. With the formation of the <span style="color: #BFC8CC;">**DNEF**</span>, he sees little remaining reason to maintain the <span style="color: #3E88B3;">**DNVP**</span> as a political force.
+발터 람바흐와 <span style="color: #6D5298;">기독교 사회주의자들</span>은 오랫동안 대통령제 정부와 정치 파벌 위에서 통치하는 초당파적 지도자의 비전을 옹호해 왔습니다. 그 지도자가 바로 슐라이허입니다. <span style="color: #BFC8CC;">**DNEF**</span>의 결성으로, 그는 <span style="color: #3E88B3;">**DNVP**</span>를 별도의 정치 세력으로 유지할 이유가 거의 없다고 봅니다.
 
-He has urged his movement to merge into the <span style="color: #BFC8CC;">German National Unity Front</span>, pointing to their shared goal of a <i>Volksgemeinschaft</i> that includes the workers and their common desire to cast off the chains of Versailles. Lambach and Treviranus, over the objections of old guard figures like Westarp and Hergt, have pushed the party at an emergency congress to vote for immediate dissolution—a vote that passes once a "monetary incentive" is offered to on the fence lower-level members by Schleicher himself.
+그는 노동자를 포용하는 *민족 공동체*라는 공유된 목표와 베르사유의 사슬을 끊어버리려는 공통된 열망을 강조하며 자신의 운동이 <span style="color: #BFC8CC;">독일 국가 통일 전선</span>에 합류할 것을 촉구했습니다. 람바흐와 트레비라누스는 베스타르프와 헤르크트 같은 구세대 인물들의 반대에도 불구하고 비상 전당대회에서 즉각적인 해산을 투표하도록 당을 밀어붙였고—이 투표는 슐라이허 본인이 망설이는 하급 당원들에게 "금전적 인센티브"를 제공하자 통과되었습니다.
 
-- @schleicher_2: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its new member.
+- @schleicher_2: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 새로운 구성원을 환영한다.
 
 @schleicher_2
 on-arrival: {!
@@ -29,7 +29,7 @@ Q.dnvp_r = 0;
 !}
 
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -37,13 +37,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 

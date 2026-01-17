@@ -1,5 +1,5 @@
-title: Hugenberg Ousted!
-subtitle: Not even his blindly loyal party stands by him now.
+title: 후겐베르크 축출!
+subtitle: 맹목적인 충성을 바치던 당조차 이제는 그를 외면합니다.
 view-if: chancellor = "Schleicher" and dnef_formed and ((nationalists_schleicher >= 10 and industrialists_schleicher >= 8 and not press_censorship) or (nationalists_schleicher >= 8 and industrialists_schleicher >= 6 and press_censorship))
 new-page: true
 priority: 1
@@ -19,34 +19,34 @@ on-display: {!
 !}
 go-to: hugenberg_dnvp if dnvp_ideology == "Radical"; hugenberg_dnf if dnvp_ideology == "Moderate"
 
-= Hugenberg Ousted
+= 후겐베르크 축출
 
 @hugenberg_dnvp
 
-Initially, Hugenberg and his <span style="color: #3E88B3;">**DNVP**</span> initially stood to gain the most by backing the <span style="color: #808080;">reactionary</span> Papen cabinet. However, relations soured with the chancellery after Schleicher refused to grant him full control over the agricultural and economic ministries. His uncompromising opposition to Schleicher has sparked widespread discontent within the <span style="color: #3E88B3;">**DNVP**</span>, eroding Hugenberg’s once unchallenged authority among both party leaders and the rank-and-file.
+처음에 후겐베르크와 그의 <span style="color: #3E88B3;">**DNVP**</span>는 <span style="color: #808080;">반동적인</span> 파펜 내각을 지지함으로써 가장 큰 이득을 볼 위치에 있었습니다. 그러나 슐라이허가 농업 및 경제 부처에 대한 전권을 달라는 그의 요구를 거부하면서 총리실과의 관계가 틀어졌습니다. 슐라이허에 대한 그의 타협 없는 반대는 <span style="color: #3E88B3;">**DNVP**</span> 내에서 광범위한 불만을 불러일으켰고, 당 지도부와 평당원 모두에게서 절대적이었던 후겐베르크의 권위를 무너뜨렸습니다.
 
-Many find it bewildering that Hugenberg would oppose a fellow <span style="color: #808080;">reactionary</span>, especially one presumably sharing his goal of steering Germany toward authoritarian rule.
+많은 이들은 후겐베르크가 동료 <span style="color: #808080;">반동주의자</span>, 특히 독일을 권위주의 통치로 이끌려는 목표를 공유하는 것으로 보이는 인물에게 반기를 드는 것을 당혹스러워합니다.
 
-With internal party democracy long dead—party congresses stacked with loyalists serving as mere rubber stamps—dissenters have little choice. Now, the majority within the party are seizing Schleicher’s lifeline: the absorption of friendly <span style="color: #3E88B3;">nationalists</span> into the <span style="color: #BFC8CC;">German National Unity Front</span>, where they hope to finally gain a hand in shaping the chancellor's future policies.
+당내 민주주의가 죽은 지 오래고—당 대회는 단순히 거수기 역할만 하는 충성파들로 채워져 있어—반대파들에게는 선택의 여지가 거의 없습니다. 이제 당내 다수는 슐라이허가 내민 구명줄을 잡으려 합니다. 바로 우호적인 <span style="color: #3E88B3;">민족주의자들</span>을 <span style="color: #BFC8CC;">독일 국가 통일 전선</span>으로 흡수시키는 것인데, 그들은 그곳에서 마침내 총리의 미래 정책을 결정하는 데 한몫할 수 있기를 희망합니다.
 
-- @schleicher_2_dnvp: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its new members.
+- @schleicher_2_dnvp: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 새로운 구성원을 환영한다.
 
 @hugenberg_dnf
 
-Hugenberg and the <span style="color: #003755;">**DNF**</span>, once buoyed by their early popularity as one of the few parties to unconditionally back Papen, have since soured their relations with the chancellery. Hugenberg's demand for full control over the agricultural and economic ministries has strained ties, and his uncompromising opposition to Schleicher has sparked discontent within the <span style="color: #003755;">**DNF**</span>—a party once built entirely from his loyalists.
+후겐베르크와 <span style="color: #003755;">**DNF**</span>는 한때 파펜을 무조건적으로 지지한 몇 안 되는 정당 중 하나로서 초기 인기에 고무되었으나, 이후 총리실과의 관계를 망쳤습니다. 농업 및 경제 부처에 대한 전권을 달라는 후겐베르크의 요구는 관계를 악화시켰고, 슐라이허에 대한 그의 타협 없는 반대는 한때 전적으로 그의 충성파들로만 구성되었던 정당인 <span style="color: #003755;">**DNF**</span> 내에서 불만을 촉발했습니다.
 
-Many of his former allies are now bewildered that Hugenberg would turn against a fellow <span style="color: #808080;">reactionary</span>, especially one who ostensibly shares his vision of steering Germany toward authoritarian rule.
+그의 전 동맹들 중 많은 이들은 후겐베르크가 동료 <span style="color: #808080;">반동주의자</span>, 특히 겉으로는 독일을 권위주의 통치로 이끌려는 비전을 공유하는 인물에게 등을 돌린다는 것에 당혹스러워하고 있습니다.
 
-With Hugenberg’s personal fortune—once sustained by his media empire—running dry, and industrial backers remaining firmly opposed to his leadership, frustrated members and former confidants are abandoning ship. They now flock to the <span style="color: #BFC8CC;">German National Unity Front</span>, preferring to back Schleicher directly without Hugenberg standing in their way.
+한때 그의 미디어 제국이 지탱해주던 후겐베르크의 개인 재산이 바닥나고, 산업계 후원자들이 그의 리더십에 확고하게 반대하는 상황에서, 실망한 당원들과 전 측근들은 배를 버리고 떠나고 있습니다. 그들은 이제 후겐베르크의 방해 없이 슐라이허를 직접 지지하는 쪽을 택하며 <span style="color: #BFC8CC;">독일 국가 통일 전선</span>으로 몰려들고 있습니다.
 
-- @schleicher_2_dnf: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its new members.
+- @schleicher_2_dnf: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 새로운 구성원을 환영한다.
 
 @schleicher_2_dnvp
 go-to: schleicher_2_dnvp_post
 
-With Schleicher’s backing, the dissident factions have been absorbed into the [? if not kvp_formed: newly revived <span style="color: #0087DC;">**KVP**</span>, which, at the chancellor’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and kvp_dnef: <span style="color: #0087DC;">**KVP**</span>, which, at Schleicher’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and not kvp_dnef: <span style="color: #0087DC;">**KVP**</span>, which has also been strong-armed into joining the <span style="color: #BFC8CC;">German National Unity Front</span>. ?]
+슐라이허의 지원을 등에 업고, 반대 파벌들은 [? if not kvp_formed: 새롭게 부활한 <span style="color: #0087DC;">**KVP**</span>로 흡수되었는데, 이 당은 총리의 종용으로 모든 <span style="color: #3E88B3;">민족주의자들</span>이 결집할 수 있는 *우파 블록*이 되었습니다. ?][? if kvp_formed and kvp_dnef: <span style="color: #0087DC;">**KVP**</span>로 흡수되었는데, 이 당은 슐라이허의 종용으로 모든 <span style="color: #3E88B3;">민족주의자들</span>이 결집할 수 있는 *우파 블록*이 되었습니다. ?][? if kvp_formed and not kvp_dnef: <span style="color: #0087DC;">**KVP**</span>로 흡수되었는데, 이 당 또한 강압에 못 이겨 <span style="color: #BFC8CC;">독일 국가 통일 전선</span>에 가입하게 되었습니다. ?]
 
-What’s left of Hugenberg’s <span style="color: #3E88B3;">**DNVP**</span> is a shadow of its former self, and his sway on the national stage has all but vanished. But that man never gives up. [? if kvp_leader != "Treviranus": Treviranus has since been installed as leader of the now <i>Blocpartei</i>-aligned <span style="color: #0087DC;">**KVP**</span>. ?]
+후겐베르크의 <span style="color: #3E88B3;">**DNVP**</span>에 남은 것은 과거의 영광의 그림자일 뿐이며, 전국 무대에서 그의 영향력은 거의 사라졌습니다. 하지만 그 남자는 절대 포기하지 않습니다. [? if kvp_leader != "Treviranus": 트레비라누스는 이후 이제 *블록 정당*이 된 <span style="color: #0087DC;">**KVP**</span>의 지도자로 취임했습니다. ?]
 
 @schleicher_2_dnvp_post
 on-arrival: {!
@@ -116,7 +116,7 @@ Q.kvp_r = 0;
 Q.kvp_leader = "Treviranus";
 !}
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -124,13 +124,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 
@@ -141,9 +141,9 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 @schleicher_2_dnf
 go-to: schleicher_2_dnf_post
 
-With Schleicher’s backing, the dissident factions have been absorbed into the <span style="color: #3E88B3;">**DNVP**</span>, which has been "encouraged" to reform itself into a <i>Rechtsblock</i>[? if not dnvp_dnef:, and strong-armed into joining the <span style="color: #BFC8CC;">German National Unity Front</span> as well?], firmly aligned with the Schleicher government.
+슐라이허의 지원을 등에 업고, 반대 파벌들은 <span style="color: #3E88B3;">**DNVP**</span>로 흡수되었는데, 이 당은 *우파 블록*으로 개편하도록 "권장"받았으며[? if not dnvp_dnef:, 또한 강압에 못 이겨 <span style="color: #BFC8CC;">독일 국가 통일 전선</span>에도 가입하게 되었습니다?], 슐라이허 정부와 확고하게 연대했습니다.
 
-Hugenberg is now left with his tiny <span style="color: #003755;">**DNF**</span>—no friends, no funds, and no influence on the national stage. There’s a strong chance he’ll give up entirely. But for now, he stubbornly clings on onto whatever influence he has left in his media empire. [? if dnvp_leader != "Treviranus" and dnvp_leader != "Lambach": Treviranus has since been installed as leader of the now <i>Blocpartei</i>-aligned <span style="color: #3E88B3;">**DNVP**</span>. ?]
+후겐베르크는 이제 친구도, 자금도, 전국 무대에서의 영향력도 없는 초라한 <span style="color: #003755;">**DNF**</span>와 함께 남겨졌습니다. 그가 완전히 정계를 떠날 가능성이 큽니다. 하지만 지금으로서는, 미디어 제국에 남은 영향력이 무엇이든 간에 고집스럽게 매달리고 있습니다. [? if dnvp_leader != "Treviranus" and dnvp_leader != "Lambach": 트레비라누스는 이후 이제 *블록 정당*이 된 <span style="color: #3E88B3;">**DNVP**</span>의 지도자로 취임했습니다. ?]
 
 @schleicher_2_dnf_post
 on-arrival: {!
@@ -181,7 +181,7 @@ Q.dnvp_r = 0;
 if (Q.dnvp_leader != "Lambach") Q.dnvp_leader = "Treviranus";
 !}
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -189,13 +189,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 

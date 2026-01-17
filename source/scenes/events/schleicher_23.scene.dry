@@ -1,5 +1,5 @@
-title: "Social Patriotism" Emerges
-subtitle: A new faction takes shape within the <span style="color: #c00000;">**SPD**</span>...
+title: "사회애국주의"가 등장하다
+subtitle: 새로운 파벌이 <span style="color: #c00000;">**SPD**</span> 내에서 구체화됩니다...
 view-if: chancellor = "Schleicher" and dnef_total_votes >= 20 and schleicher_spd_influence >= 6
 new-page: true
 priority: 1
@@ -7,14 +7,14 @@ tags: event
 max-visits: 1
 face-image: img/portraits/erdmann.jpg
 
-= Social Patriotism Emerges
+= 사회애국주의 등장
 
-A newer faction of young and old <span style="color: #f0456a;">socialists</span>, led by ADGB unionist Lothar Erdmann, is rallying under the banner of "Social Patriotism." This group calls for a renewed bond between the workers, <span style="color: #c00000;">socialism</span>, and the nation. Erdmann is the architect of the ADGB's nationalist shift in recent years, including its sharpened rhetoric against the Treaty of Versailles.
+ADGB 노조원 로타르 에르트만이 이끄는 신구 양쪽 모두의 <span style="color: #f0456a;">사회주의자들</span>의 새로운 파벌이 "사회애국주의"라는 기치 아래 결집하고 있습니다. 이 그룹은 노동자, <span style="color: #c00000;">사회주의</span>, 그리고 국가 간의 새로운 유대를 요구합니다. 에르트만은 베르사유 조약에 대한 날 선 비판을 포함하여 최근 몇 년간 ADGB의 민족주의적 변화를 주도한 인물입니다.
 
-This is plainly Schleicher’s handiwork—yet this emerging faction now holds real sway within our party, given the Chancellor’s grip on our more "patriotic" and loosely <span style="color: #9B0000;">Marxist</span> trade unions.
+이것은 명백히 슐라이허의 공작입니다—그러나 이 떠오르는 파벌은 이제 우리 당 내에서 실질적인 영향력을 행사하고 있습니다. 우리의 더 "애국적"이고 <span style="color: #9B0000;">마르크스주의</span> 색채가 옅은 노동조합들에 대한 총리의 장악력을 고려할 때 말입니다.
 
-- @socpat_pro: Who said patriotism and <span style="color: #c00000;">socialism</span> aren't compatible?
-- @socpat_against: There's no war but the class war.
+- @socpat_pro: 애국주의와 <span style="color: #c00000;">사회주의</span>가 양립할 수 없다고 누가 그랬나?
+- @socpat_against: 계급 투쟁 외에 전쟁은 없다.
 
 @socpat_pro
 on-arrival: {!
@@ -44,9 +44,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-The Social Patriots advocate full support for Schleicher’s chancellorship and his rearmament program, believing that only through strength can Germany break free from the chains of Versailles and reclaim its rightful lands.
+사회애국자들은 슐라이허의 총리직과 그의 재무장 프로그램을 전폭적으로 지지하며, 오직 힘을 통해서만 독일이 베르사유의 사슬을 끊고 정당한 영토를 되찾을 수 있다고 믿습니다.
 
-Schleicher, predictably, is pleased with our acceptance of this new political current—but his influence within our party is growing alarmingly fast. Perhaps too fast.
+슐라이허는, 예상대로, 우리가 이 새로운 정치적 흐름을 받아들이는 것에 흡족해합니다—하지만 우리 당 내에서 그의 영향력은 놀라울 정도로 빠르게 커지고 있습니다. 어쩌면 너무 빠를지도 모릅니다.
 
 @socpat_against
 on-arrival: {!
@@ -76,6 +76,6 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-The Social Patriots advocate full support for Schleicher’s chancellorship and his rearmament program, believing that only through strength can Germany break free from the chains of Versailles and reclaim its rightful lands.
+사회애국자들은 슐라이허의 총리직과 그의 재무장 프로그램을 전폭적으로 지지하며, 오직 힘을 통해서만 독일이 베르사유의 사슬을 끊고 정당한 영토를 되찾을 수 있다고 믿습니다.
 
-Schleicher is displeased with our moves to curb the influence of his loyalists within the <span style="color: #c00000;">**SPD**</span> — but for now, this ideology remains far from our party’s leadership. For now.
+슐라이허는 <span style="color: #c00000;">**SPD**</span> 내에서 그의 충성파들의 영향력을 억제하려는 우리의 움직임에 불쾌해합니다—하지만 지금으로서는, 이 이념은 우리 당의 지도부로부터 멀리 떨어져 있습니다. 아직까지는 말입니다.

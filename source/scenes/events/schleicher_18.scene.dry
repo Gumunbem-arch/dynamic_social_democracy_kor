@@ -1,5 +1,5 @@
-title: Organized Labor Under Threat
-subtitle: Proposal for a united labor front between the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> unions.
+title: 위협받는 조직화된 노동계
+subtitle: <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 노조들 간의 통합 노동 전선 제안.
 view-if: chancellor = "Schleicher" and dnef_formed and schleicher_post_time >= 6
 new-page: true
 priority: 2
@@ -7,29 +7,29 @@ tags: event
 max-visits: 1
 face-image: img/beauty_of_labor.jpg
 
-= Organized Labor Under Threat
+= 위협받는 조직화된 노동계
 
-We have observed extensive infiltration of Schleicher's supporters into the leadership of the ADGB, the <span style="color: #000000;">Christian</span>, and <span style="color: #D3C24D;">liberal</span> trade unions—with the rank-and-file of all three even more inclined to back him.
+우리는 ADGB, <span style="color: #000000;">기독교</span>, 그리고 <span style="color: #D3C24D;">자유주의</span> 노동조합의 지도부에 슐라이허의 지지자들이 광범위하게 침투한 것을 목격했습니다—세 곳 모두의 평조합원들은 그를 지지하는 경향이 훨씬 더 강합니다.
 
-In response, a proposal for a united labor front—bringing together our ADGB, the <span style="color: #000000;">Christian</span> GcG formerly led by Stegerwald, and the <span style="color: #D3C24D;">Hirsch-Duncker</span> liberal unions under Ernst Lemmer—has been floated by figures like our Wilhelm Leuschner and the <span style="color: #000000;">Center</span>'s Jakob Kaiser.
+이에 대응하여, 우리의 ADGB, 이전에 슈테거발트가 이끌었던 <span style="color: #000000;">기독교</span> GcG, 그리고 에른스트 레머 하의 <span style="color: #D3C24D;">히르슈-둥커</span> 자유주의 노조를 하나로 규합하는 통합 노동 전선에 대한 제안이 우리의 빌헬름 로이슈너와 <span style="color: #000000;">중앙당</span>의 야코프 카이저 같은 인물들에 의해 제기되었습니다.
 
-The hope is that such unity will allow organized labor to resist coercion from Schleicher’s government and secure a stronger position within the corporatist order he has been promoting, should it come to that.
+그러한 단결이 조직화된 노동계가 슐라이허 정부의 강압에 저항하고, 만약 그런 상황이 온다면 그가 추진해 온 조합주의 질서 내에서 더 강력한 위치를 확보할 수 있게 해줄 것이라는 희망입니다.
 
-- @schleicher_2: A united labor front is formed!
-- @schleicher_3: Negotiations stall.
+- @schleicher_2: 통합 노동 전선이 결성되다!
+- @schleicher_3: 협상이 교착 상태에 빠지다.
 
 @schleicher_2
-unavailable-subtitle: [? if schleicher_spd_influence >= 6: Schleicher uses his influence within the ADGB to block further negotiations. ?][? if labor_dissent >= 40 or unions_independent: Labor dissent is too high. ?][? if z_relation < 40 or (z_relation < 60 and z_in_gov): We lack the adequate relations with the <span style="color: #000000;">Center Party</span>. ?]
+unavailable-subtitle: [? if schleicher_spd_influence >= 6: 슐라이허는 추가 협상을 막기 위해 ADGB 내에서 그의 영향력을 행사합니다. ?][? if labor_dissent >= 40 or unions_independent: 노동계 불만이 너무 높습니다. ?][? if z_relation < 40 or (z_relation < 60 and z_in_gov): 우리는 <span style="color: #000000;">중앙당</span>과 충분한 관계를 맺지 못했습니다. ?]
 choose-if: schleicher_spd_influence < 6 and (z_relation >= 40 or (z_relation >= 60 and z_in_gov)) and labor_dissent < 40 and not unions_independent
 
-Negotiations have progressed, but one major obstacle remains: the ADGB’s continued commitment to <span style="color: #9B0000;">Marxism</span>, setting it apart from the other unions that now advocate for class collaboration. The question stands—do we stay silent on this point, for the sake of unity?
+협상은 진전되었지만, 하나의 주요 장애물이 남아 있습니다. 바로 ADGB가 고수하는 <span style="color: #9B0000;">마르크스주의</span> 노선인데, 이는 이제 계급 협력을 옹호하는 다른 노조들과 구별되는 점입니다. 문제는 여전합니다—우리가 단결을 위해 이 점을 묵인해야 합니까?
 
 - @schleicher_2_pro
-- @schleicher_3: Negotiations stall.
+- @schleicher_3: 협상이 교착 상태에 빠지다.
 
 @schleicher_2_pro
-title: Go along with the <span style="color: #000000;">Center</span>'s proposal.
-unavailable-subtitle: Our party doesn't support this course of action.
+title: <span style="color: #000000;">중앙당</span>의 제안을 따른다.
+unavailable-subtitle: 우리 당은 이 행동 방침을 지지하지 않습니다.
 choose-if: labor_strength >= center_strength + left_strength
 on-arrival: {!
 Q.united_labor = 1
@@ -56,7 +56,7 @@ Q.unemployed_dnef -= 6;
 Q.unemployed_spd += 6;
 !}
 
-The unification of the labor unions has complicated Schleicher's efforts to divide and conquer, depriving him of the option to play the more moderate unions against the ADGB. We have also agreed to coordinate unified action in response to any offensive measures his government may attempt in the coming months.
+노동조합의 통합은 슐라이허의 분할 통치 전략을 복잡하게 만들었고, 그가 더 온건한 노조들을 이용해 ADGB를 견제할 수 있는 선택지를 없애버렸습니다. 우리는 또한 그의 정부가 다가오는 달에 시도할 수 있는 어떤 공세적인 조치에도 대응하여 통일된 행동을 취하기로 합의했습니다.
 
 @schleicher_3
 on-arrival: {!
@@ -66,8 +66,8 @@ Q.workers_z -= 2;
 Q.workers_dnef += 2;
 !}
 
-Without coordination among the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> unions, Schleicher has moved quickly to strike separate deals with the more right-leaning organizations. The DHV, the conservative white-collar union, has been the first to pledge loyalty to the "new state," joined by the <span style="color: #D3C24D;">Hirsch-Duncker</span> unions—too marginal to wield real leverage anyway.
+<span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 노조들 간의 공조가 없는 틈을 타, 슐라이허는 더 우파 성향의 조직들과 개별적인 거래를 성사시키기 위해 발 빠르게 움직였습니다. 보수적인 화이트칼라 노조인 DHV가 "새로운 국가"에 충성을 맹세한 첫 번째가 되었고, <span style="color: #D3C24D;">히르슈-둥커</span> 노조가 그 뒤를 따랐습니다—어차피 실질적인 영향력을 행사하기에는 너무 미미한 세력이긴 합니다.
 
-The <span style="color: #000000;">Christian</span> unions have been cozying up to Schleicher for months[? if z_in_gov:, and Stegerwald's entry into government has only accelerated these talks of cooperation between his cabinet and the unionists.?][? if not z_in_gov:, though they remain broadly wary of Schleicher and his true intentions.?] Their advocacy for a "pluralistic" model, where unions retain formal autonomy within a corporatist Germany, has only made Schleicher’s task easier.
+<span style="color: #000000;">기독교</span> 노조들은 수개월 동안 슐라이허와 밀월 관계를 유지해 왔습니다[? if z_in_gov:, 그리고 슈테거발트의 입각은 그의 내각과 노조원들 사이의 협력 논의를 가속화했을 뿐입니다.?][? if not z_in_gov:, 비록 그들이 슐라이허와 그의 진짜 의도를 대체로 경계하고 있음에도 불구하고 말입니다.?]. 조합주의 독일 내에서 노조가 공식적인 자율성을 유지하는 "다원적" 모델에 대한 그들의 옹호는 슐라이허의 작업을 더 수월하게 만들었을 뿐입니다.
 
-[? if schleicher_spd_influence >= 6: Schleicher has also been quietly cultivating allies within the ADGB itself. Voices calling for the rejection of <span style="color: #9B0000;">Marxism</span> and a break with the <span style="color: #c00000;">**SPD**</span> are growing louder by the day. Damn it. ?]
+[? if schleicher_spd_influence >= 6: 슐라이허는 또한 ADGB 자체 내에서 조용히 동맹을 키워왔습니다. <span style="color: #9B0000;">마르크스주의</span>의 거부와 <span style="color: #c00000;">**SPD**</span>와의 결별을 요구하는 목소리가 날마다 커지고 있습니다. 제기랄. ?]

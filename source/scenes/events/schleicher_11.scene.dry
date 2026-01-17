@@ -1,5 +1,5 @@
-title: The <span style="color: #0087DC;">**KVP**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
-subtitle: The party attempts to secure government participation by merging into Schleicher's bloc.
+title: <span style="color: #0087DC;">**KVP**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
+subtitle: 당은 슐라이허의 블록으로 합병함으로써 정부 참여 지분을 확보하려 합니다.
 view-if: chancellor = "Schleicher" and schleicher_post and kvp_formed and not kvp_dnef and ((kvp_votes < 6 and not bourgeois_list_kvp) or kvp_leader == "Treviranus") and nationalists_schleicher >= 6 and dnef_formed and not schleicher_cabinet_weak
 new-page: true
 priority: 1
@@ -7,13 +7,13 @@ tags: event
 max-visits: 1
 face-image: img/portraits/schleicher.jpg
 
-= <span style="color: #0087DC;">**KVP**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
+= <span style="color: #0087DC;">**KVP**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
 
-Despite Schleicher opening his cabinet to members of mainstream political parties, the <span style="color: #0087DC;">**KVP**</span> has yet to receive such an invitation—this, despite their continued support for Schleicher and the close personal ties between him and many party members. Noticing this, Schleicher moves to offer them a deal they cannot refuse: two ministerial posts of their choosing and full integration into the <span style="color: #BFC8CC;">**DNEF**</span>.
+슐라이허가 기성 정당 인사들에게 내각을 개방했음에도 불구하고, <span style="color: #0087DC;">**KVP**</span>는 아직 초청받지 못했습니다. 슐라이허에 대한 지속적인 지지와 많은 당원이 그와 맺고 있는 긴밀한 개인적 친분에도 불구하고 말입니다. 이를 간파한 슐라이허는 그들이 거절할 수 없는 제안을 던집니다. 그들이 원하는 두 개의 장관직과 <span style="color: #BFC8CC;">**DNEF**</span>로의 완전한 통합입니다.
 
-While old-guard figures like Westarp voice serious concerns about sacrificing the party’s independence and ideology, Treviranus—armed with several hundred thousand Reichsmarks donated from Schleicher himself—succeeds in "convincing" the party to approve the merger.
+베스타르프와 같은 구세대 인물들은 당의 독립성과 이념을 희생하는 것에 대해 심각한 우려를 표명하지만, 트레비라누스는—슐라이허 본인으로부터 지원받은 수십만 라이히스마르크를 무기로—당이 합병을 승인하도록 "설득"하는 데 성공합니다.
 
-- @schleicher_2: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its newest member.
+- @schleicher_2: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 가장 최근의 구성원을 환영한다.
 
 @schleicher_2
 on-arrival: {!
@@ -29,9 +29,9 @@ Q.kvp_r = 0;
 Q.kvp_leader = "Treviranus";
 !}
 
-Treviranus has since been installed as leader of the now <i>Blocpartei</i>-aligned <span style="color: #0087DC;">**KVP**</span>.
+트레비라누스는 이후 이제 *블록 정당*이 된 <span style="color: #0087DC;">**KVP**</span>의 지도자로 취임했습니다.
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -39,13 +39,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 

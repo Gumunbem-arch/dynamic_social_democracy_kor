@@ -1,5 +1,5 @@
-title: The <span style="color: #C0A054;">**DVP**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
-subtitle: [? if dvp_votes < 4 and dvp_leader != "Glatzel": Struggling at the polls, the party tries to stay relevant by merging into a larger bloc?][? if dvp_leader == "Glatzel": Glatzel's views align closely with the chancellor's?].
+title: <span style="color: #C0A054;">**DVP**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
+subtitle: [? if dvp_votes < 4 and dvp_leader != "Glatzel": 지지율 고전에 시달리는 당이 더 큰 블록에 흡수됨으로써 생존을 모색합니다?][? if dvp_leader == "Glatzel": 글라첼의 견해는 총리의 생각과 밀접하게 일치합니다?].
 view-if: chancellor = "Schleicher" and schleicher_time >= 11 and not lvp_formed and dvp_exist and ((dvp_votes < 4 and not bourgeois_list) or dvp_leader == "Glatzel") and dnef_formed and next_election_time - time < 2 and dvp_ideology != "Left" and not dvp_r_alt
 new-page: true
 priority: 1
@@ -7,15 +7,15 @@ tags: event
 max-visits: 1
 face-image: img/portraits/schleicher.jpg
 
-= <span style="color: #C0A054;">**DVP**</span> joins the <span style="color: #BFC8CC;">**DNEF**</span>
+= <span style="color: #C0A054;">**DVP**</span>, <span style="color: #BFC8CC;">**DNEF**</span>에 합류
 
-[? if dvp_votes < 4 and dvp_leader != "Glatzel": The electoral decline of the <span style="color: #C0A054;">**DVP**</span> and the threat of being wiped out of parliament due to Germany's imperfect proportional system have forced the party to abandon its political independence and join Schleicher's <span style="color: #BFC8CC;">**DNEF**</span>. This decision has faced significant internal objections, as many still hope for an understanding with the bourgeois and right-wing parties to secure a place on their electoral list. ?]
-[? if dvp_leader == "Glatzel": Frank Glatzel, leader of the <span style="color: #C0A054;">**DVP**</span>, shares much ideological ground with Schleicher's new party—nationalism, corporatism, and the goal of a <i>Volksgemeinschaft</i>. A merger with the <span style="color: #BFC8CC;">German National Unity Front</span> has thus become inevitable. ?]
+[? if dvp_votes < 4 and dvp_leader != "Glatzel": <span style="color: #C0A054;">**DVP**</span>의 지지율 몰락과 독일의 불완전한 비례대표제로 인해 의회에서 소멸할 위기에 처하자, 당은 정치적 독자 노선을 포기하고 슐라이허의 <span style="color: #BFC8CC;">**DNEF**</span>에 합류할 수밖에 없었습니다. 이 결정은 여전히 선거 명부에 자리를 확보하기 위해 다른 부르주아 및 우파 정당들과의 연대를 바라는 많은 당원의 상당한 내부 반발에 직면했습니다. ?]
+[? if dvp_leader == "Glatzel": <span style="color: #C0A054;">**DVP**</span>의 지도자 프랑크 글라첼은 슐라이허의 신당과 많은 이념적 기반—민족주의, 조합주의, 그리고 *민족 공동체*라는 목표—을 공유합니다. 따라서 <span style="color: #BFC8CC;">독일 국가 통일 전선</span>과의 합병은 피할 수 없는 수순이었습니다. ?]
 
-[? if dvp_votes < 4 and dvp_leader != "Glatzel": Nonetheless, the <span style="color: #C0A054;">**DVP**</span> and its industrial backers will bolster the <span style="color: #BFC8CC;">**DNEF**</span> and legitimize it among the middle class, eliminating yet another option for non-<span style="color: #7A3C00;">Nazi</span> bourgeois voters. ?]
-[? if dvp_leader == "Glatzel": Glatzel's vision of a "new nationalism" will carry a sizable following into his new political home, along with his affiliated white-collar union, the DHV, which he is bringing into the <span style="color: #BFC8CC;">**DNEF**</span> as well. ?]
+[? if dvp_votes < 4 and dvp_leader != "Glatzel": 어쨌든 <span style="color: #C0A054;">**DVP**</span>와 그들의 산업계 후원자들은 <span style="color: #BFC8CC;">**DNEF**</span>의 세를 불리고 중산층 사이에서 정당성을 부여할 것이며, 이로써 비<span style="color: #7A3C00;">나치</span> 부르주아 유권자들의 선택지는 또 하나 사라지게 되었습니다. ?]
+[? if dvp_leader == "Glatzel": "새로운 민족주의"에 대한 글라첼의 비전은 상당한 추종자들을 그의 새로운 정치적 보금자리로 이끌 것이며, 그가 <span style="color: #BFC8CC;">**DNEF**</span>로 끌어들이고 있는 산하 사무직 노조인 DHV도 함께할 것입니다. ?]
 
-- @schleicher_2: The <span style="color: #BFC8CC;">German National Unity Front</span> welcomes its new member.
+- @schleicher_2: <span style="color: #BFC8CC;">독일 국가 통일 전선</span>은 새로운 구성원을 환영한다.
 
 @schleicher_2
 on-arrival: {!
@@ -30,7 +30,7 @@ Q.dvp_r = 0;
 !}
 
 
-Current composition of the <span style="color: #BFC8CC;">German National Unity Front</span>:
+<span style="color: #BFC8CC;">독일 국가 통일 전선</span>의 현재 구성:
 
 [? if dnef_formed: - <span style="color: #BFC8CC;">**DNEF**</span> ?]
 
@@ -38,13 +38,13 @@ Current composition of the <span style="color: #BFC8CC;">German National Unity F
 
 [? if lvp_dnef: - <span style="color: #FFCC00;">**LVP**</span> ?]
 
-[? if z_dnef: - <span style="color: #000000;">Center Party</span> ?]
+[? if z_dnef: - <span style="color: #000000;">중앙당</span> ?]
 
 [? if z_dnef: - <span style="color: #A2D8E0;">**BVP**</span> ?]
 
 [? if dvp_dnef: - <span style="color: #C0A054;">**DVP**</span> ?]
 
-[? if other_dnef: - **Others** ?]
+[? if other_dnef: - **기타** ?]
 
 [? if kvp_dnef: - <span style="color: #0087DC;">**KVP**</span> ?]
 

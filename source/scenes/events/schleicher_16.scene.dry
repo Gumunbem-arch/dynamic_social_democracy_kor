@@ -1,5 +1,5 @@
-title: Schleicher and the Industrialists
-subtitle: The most powerful men in Germany are brought into the fold.
+title: 슐라이허와 산업가들
+subtitle: 독일에서 가장 강력한 사람들이 조직으로 들어옵니다.
 view-if: chancellor = "Schleicher" and dnef_formed and industrialists_schleicher >= 10
 new-page: true
 priority: 2
@@ -18,13 +18,13 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher and the Industrialists
+= 슐라이허와 산업가들
 
-The German industrialists and big business leaders have maintained a friendly stance toward Schleicher, appreciating his prioritization of their interests over those of the agrarians and his efforts to stabilize the economy. However, concerns linger over his growing state intervention and the risk that his public works campaign could trigger runaway inflation.
+독일의 산업가들과 대기업 총수들은 농업인들의 이익보다 그들의 이익을 우선시하고 경제를 안정시키려는 노력을 높이 평가하며 슐라이허에 대해 우호적인 입장을 유지해 왔습니다. 그러나 그의 커지는 국가 개입과 공공 사업 캠페인이 걷잡을 수 없는 인플레이션을 유발할 수 있다는 우려가 여전히 남아 있습니다.
 
-To address this, Schleicher has summoned a secret meeting with his allies and Germany’s leading industrialists. He will offer sweeping concessions: a guarantee of capitalism’s preservation and their continued dominance over labor within a corporatist framework. In return, they are expected to pool their resources for unrestricted use by the <span style="color: #BFC8CC;">**DNEF**</span>.
+이를 해결하기 위해 슐라이허는 그의 동맹들 및 독일의 주요 산업가들과 비밀 회동을 가졌습니다. 그는 파격적인 양보를 제안할 것입니다. 자본주의 체제 보존에 대한 보장과 조합주의 틀 내에서 노동계에 대한 그들의 지속적인 우위를 약속하는 것입니다. 그 대가로, 그들은 <span style="color: #BFC8CC;">**DNEF**</span>가 제한 없이 사용할 수 있도록 자금을 모아줄 것으로 기대됩니다.
 
-- @schleicher_2: The <span style="color: #C0A054;">industrialists</span> are granted their place in the new order.
+- @schleicher_2: <span style="color: #C0A054;">산업가들</span>은 새로운 질서에서 그들의 자리를 보장받는다.
 
 @schleicher_2
 on-arrival: {!
@@ -43,4 +43,4 @@ Q.unemployed_dnef -= 4;
 Q.dnef_relation -= 10;
 !}
 
-Schleicher continues to walk a tightrope between appeasing organized labor and retaining the favor of Germany’s industrial elite. Nonetheless, the <span style="color: #BFC8CC;">**DNEF**</span> secures over five million marks in funding from a consortium of German businesses—chiefly those tied to rearmament, who see Schleicher’s survival as essential to their own profits.
+슐라이허는 조직화된 노동계를 달래는 것과 독일 산업 엘리트의 호의를 유지하는 것 사이에서 계속해서 아슬아슬한 줄타기를 하고 있습니다. 그럼에도 불구하고, <span style="color: #BFC8CC;">**DNEF**</span>는 독일 기업 컨소시엄—주로 재무장과 관련된 기업들—으로부터 500만 마르크 이상의 자금을 확보했습니다. 그들은 슐라이허의 생존을 자신의 이익에 필수적인 것으로 보고 있습니다.
