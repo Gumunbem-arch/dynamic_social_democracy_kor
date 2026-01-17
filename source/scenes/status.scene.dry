@@ -242,7 +242,7 @@ Q.pro_republic_disp = Math.round(Q.pro_republic);
 
 {!<span class="tooltip-text" title="좌파는 급진적이고 변혁적인 정책 및 KPD와의 협력에 관심을 둡니다.">좌파</span>!} 세력: [+ left_strength : strength +], 불만: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="중도파는 개혁과 혁명 사이에 위치한 중도 마르크스주의자들의 파벌입니다.">중도파</span>!} 세력: [+ center_strength : strength +], 불만: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="중앙파는 개혁과 혁명 사이에 위치한 중도 마르크스주의자들의 파벌입니다.">중앙파</span>!} 세력: [+ center_strength : strength +], 불만: [+ center_dissent : dissent +]
 
 {!<span class="tooltip-text" title="노동계의 목표는 경제 개혁과 조직된 노동자들을 위한 혜택입니다.">노동계</span>!} 세력: [+ labor_strength : strength +], 불만: [+ labor_dissent : dissent +]
 
