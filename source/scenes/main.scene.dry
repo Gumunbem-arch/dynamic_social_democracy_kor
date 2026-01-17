@@ -3,37 +3,37 @@ is-hand: true
 on-arrival: {!
 if (!Q.rubicon) {
     if (Q.advisor_action_timer <= 0) {
-        Q.pinnedCardsDescription = 'Advisors - an action is available';
+        Q.pinnedCardsDescription = '고문 - 행동이 가능합니다';
     } else if (Q.advisor_action_timer == 1) {
-        Q.pinnedCardsDescription = 'Advisors - next action available in 1 month';
+        Q.pinnedCardsDescription = '고문 - 다음달에 행동이 가능합니다';
     } else {
-        Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months';
+        Q.pinnedCardsDescription = '고문 - ' + Q.advisor_action_timer + ' 달 뒤에 행동이 가능합니다';
     }
 } else {
     if (Q.advisor_action_timer <= 0) {
-        Q.pinnedCardsDescription = 'Advisors - an action is available';
+        Q.pinnedCardsDescription = '고문 - 행동이 가능합니다';
     } else if (Q.advisor_action_timer == 1) {
-        Q.pinnedCardsDescription = 'Advisors - next action available in 1 week';
+        Q.pinnedCardsDescription = '고문 - 다음 주에 행동이 가능합니다';
     } else {
-        Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' weeks';
+        Q.pinnedCardsDescription = '고문 - ' + Q.advisor_action_timer + ' 주 뒤에 행동이 가능합니다';
     }
 }
 
 if (!Q.rubicon) {
     if (Q.shuffle_leadership_timer <= 0) {
-        Q.pinnedCardsDescription += '\n- a reshuffle is available.';
+        Q.pinnedCardsDescription += '\n- 교체가 가능합니다.';
     } else if (Q.shuffle_leadership_timer == 1) {
-        Q.pinnedCardsDescription += '\n- next reshuffle in 1 month';
+        Q.pinnedCardsDescription += '\n- 1달 뒤에 교체가 가능합니다.';
     } else {
-        Q.pinnedCardsDescription += '\n- next reshuffle in ' + Q.    shuffle_leadership_timer + ' months.';
+        Q.pinnedCardsDescription += '\n- ' + Q.    shuffle_leadership_timer + '달 뒤에 교체가 가능합니다';
     }
 } else if (Q.rubicon) {
     if (Q.shuffle_leadership_timer <= 0) {
-        Q.pinnedCardsDescription += '\n- a reshuffle is available.';
+        Q.pinnedCardsDescription += '\n- 교체가 가능합니다.';
     } else if (Q.shuffle_leadership_timer == 1) {
-        Q.pinnedCardsDescription += '\n- next reshuffle in 1 week';
+        Q.pinnedCardsDescription += '\n- 1주 뒤에 교체가 가능합니다.';
     } else {
-        Q.pinnedCardsDescription += '\n- next reshuffle in ' + Q.    shuffle_leadership_timer + ' weeks.';
+        Q.pinnedCardsDescription += '\n- ' + Q.    shuffle_leadership_timer + '주 뒤에 교체가 가능합니다.';
     }
 }
 
@@ -548,7 +548,7 @@ if (!document.getElementById('news_tab')) {
     button.style.backgroundColor = '#dddddd';
     button.className = 'tab_button';
     button.id = 'news_tab';
-    button.textContent = 'View Right-Wing News';
+    button.textContent = '우익 뉴스 보기';
     button.onclick = function () {
         toggleNews();
     };
@@ -1381,37 +1381,37 @@ is-hand: true
 on-arrival: {!
 if (!Q.rubicon) {
     if (Q.advisor_action_timer <= 0) {
-        Q.pinnedCardsDescription = 'Advisors - an action is available';
+        Q.pinnedCardsDescription = '고문 - 행동이 가능합니다';
     } else if (Q.advisor_action_timer == 1) {
-        Q.pinnedCardsDescription = 'Advisors - next action available in 1 month';
+        Q.pinnedCardsDescription = '고문 - 다음달에 행동이 가능합니다';
     } else {
-        Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months';
+        Q.pinnedCardsDescription = '고문 - ' + Q.advisor_action_timer + ' 달 뒤에 행동이 가능합니다개월';
     }
 } else {
     if (Q.advisor_action_timer <= 0) {
-        Q.pinnedCardsDescription = 'Advisors - an action is available';
+        Q.pinnedCardsDescription = '고문 - 행동이 가능합니다';
     } else if (Q.advisor_action_timer == 1) {
-        Q.pinnedCardsDescription = 'Advisors - next action available in 1 week';
+        Q.pinnedCardsDescription = '고문 - 다음 주에 행동이 가능합니다';
     } else {
-        Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' weeks';
+        Q.pinnedCardsDescription = '고문 - ' + Q.advisor_action_timer + ' 주 뒤에 행동이 가능합니다';
     }
 }
 
 if (!Q.rubicon) {
     if (Q.shuffle_leadership_timer <= 0) {
-        Q.pinnedCardsDescription += '\n- a reshuffle is available.';
+        Q.pinnedCardsDescription += '\n- 교체가 가능합니다.';
     } else if (Q.shuffle_leadership_timer == 1) {
-        Q.pinnedCardsDescription += '\n- next reshuffle in 1 month';
+        Q.pinnedCardsDescription += '\n- 1달 뒤에 교체가 가능합니다.';
     } else {
-        Q.pinnedCardsDescription += '\n- next reshuffle in ' + Q.    shuffle_leadership_timer + ' months.';
+        Q.pinnedCardsDescription += '\n- ' + Q.    shuffle_leadership_timer + '달 뒤에 교체가 가능합니다';
     }
 } else if (Q.rubicon) {
     if (Q.shuffle_leadership_timer <= 0) {
-        Q.pinnedCardsDescription += '\n- a reshuffle is available.';
+        Q.pinnedCardsDescription += '\n- 교체가 가능합니다.';
     } else if (Q.shuffle_leadership_timer == 1) {
-        Q.pinnedCardsDescription += '\n- next reshuffle in 1 week';
+        Q.pinnedCardsDescription += '\n- 1주 뒤에 교체가 가능합니다.';
     } else {
-        Q.pinnedCardsDescription += '\n- next reshuffle in ' + Q.    shuffle_leadership_timer + ' weeks.';
+        Q.pinnedCardsDescription += '\n- ' + Q.    shuffle_leadership_timer + '주 뒤에 교체가 가능합니다.';
     }
 }
 
@@ -1926,7 +1926,7 @@ if (!document.getElementById('news_tab')) {
     button.style.backgroundColor = '#dddddd';
     button.className = 'tab_button';
     button.id = 'news_tab';
-    button.textContent = 'View Right-Wing News';
+    button.textContent = '우익 뉴스 보기';
     button.onclick = function () {
         toggleNews();
     };
