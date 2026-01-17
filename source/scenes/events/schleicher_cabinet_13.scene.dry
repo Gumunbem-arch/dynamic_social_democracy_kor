@@ -1,5 +1,5 @@
-title: Schleicher's Turn to Play
-subtitle: Will the general hold firm?
+title: 슐라이허가 움직일 차례
+subtitle: 장군은 굳건히 버틸 것인가?
 view-if: chancellor == "Schleicher" and kpd_explode and schleicher_fight
 max-visits: 1
 new-page: true
@@ -8,7 +8,7 @@ tags: event
 face-image: img/portraits/schleicher_cool.jpg
 go-to: reichstag
 
-= Schleicher's Turn to Play
+= 슐라이허가 움직일 차례
 
 @reichstag
 on-arrival: {!
@@ -55,9 +55,9 @@ for (var party of Q.parties) {
 !}
 go-to: reichstag_diagram
 
-In defiance of the illegal adjournment of the Reichstag, an alternative assembly has been convened. The parties participating are determined by their ties to us and their role in the ongoing demonstrations.
+제국의회의 불법적인 휴회에 맞서 대안 의회가 소집되었습니다. 참여 정당은 우리와의 유대 관계 및 현재 진행 중인 시위에서의 역할에 따라 결정되었습니다.
 
-[? if kpd_r_alt: With most <span style="color: #700000;">**KPD**</span> deputies imprisoned, substitute representatives have been appointed to fill their seats. ?]
+[? if kpd_r_alt: 대부분의 <span style="color: #700000;">**KPD**</span> 의원들이 투옥된 상태이므로, 그들의 공석을 채우기 위해 대체 대표들이 임명되었습니다. ?]
 
 @reichstag_diagram
 on-display: {!
@@ -228,7 +228,7 @@ if (window && d3) {
 !}
 go-to: negotiation_menu_med if spd_med; negotiation_menu_win if spd_win
 
-= Reichstag composition
+= 제국의회 구성
 
 {!<svg id="alt_reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
@@ -244,7 +244,7 @@ go-to: negotiation_menu_med if spd_med; negotiation_menu_win if spd_win
 
 [? if not lvp_formed and dvp_exist and dvp_dnef and dvp_r_alt: {!<tr><td><div class="box2" style='background-color:#AA861F'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r_alt +]% {!</td></tr>!} ?]
 
-[? if other_dnef and other_r_alt: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} Others: {!</td><td>!} [+ other_r_alt +]% {!</td></tr>!} ?]
+[? if other_dnef and other_r_alt: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} 기타: {!</td><td>!} [+ other_r_alt +]% {!</td></tr>!} ?]
 
 [? if kvp_formed and not cvp_kvp_formed and kvp_dnef and kvp_r_alt: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r_alt +]% {!</td></tr>!} ?]
 
@@ -266,7 +266,7 @@ go-to: negotiation_menu_med if spd_med; negotiation_menu_win if spd_win
 
 [? if not lvp_formed and dvp_exist and not dvp_dnef and dvp_r_alt: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r_alt +]% {!</td></tr>!} ?]
 
-[? if not other_dnef and other_r_alt: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r_alt +]% {!</td></tr>!} ?]
+[? if not other_dnef and other_r_alt: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} 기타 정당: {!</td><td>!} [+ other_r_alt +]% {!</td></tr>!} ?]
 
 [? if kvp_formed and not cvp_kvp_formed and not kvp_dnef and kvp_r_alt: {!<tr><td><div class="box" style='background-color:#0087DC'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r_alt +]% {!</td></tr>!} ?]
 
@@ -283,16 +283,16 @@ go-to: negotiation_menu_med if spd_med; negotiation_menu_win if spd_win
 [? if nvf_exist and nvf_r_alt and not nvf_dnef: {!<tr><td><div class="box" style='background-color:#142e20'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r_alt +]% {!</td></tr>!} ?]
 {!</table>!}
 
-Total: [+ total_r_alt_2 +]% of the original Reichstag involved.
+합계: 기존 제국의회의 [+ total_r_alt_2 +]%가 참여함.
 
-We have leverage, and we should use it to extract concessions. No one wants civil war.
+우리에게는 영향력이 있으며, 이를 이용해 양보를 얻어내야 합니다. 아무도 내전을 원하지 않습니다.
 
 @negotiation_menu_med
 
 - @reichstag_reconvene
 - @rights
 - @schemes
-- @civil_war: Screw this! A civil war is necessary after all.
+- @civil_war: 집어치워! 결국 내전이 필요하다.
 
 @negotiation_menu_win
 
@@ -300,11 +300,11 @@ We have leverage, and we should use it to extract concessions. No one wants civi
 - @rights
 - @schemes
 - @democracy
-- @civil_war: Screw this! A civil war is necessary after all.
+- @civil_war: 집어치워! 결국 내전이 필요하다.
 
 @reichstag_reconvene
-title: Demand a reconvening of the Reichstag, with no dirty tricks this time.
-subtitle:[? if reichstag_fire_decree_schleicher: Different building, of course.?]
+title: 제국의회 재소집을 요구한다. 이번에는 더러운 속임수 없이.
+subtitle:[? if reichstag_fire_decree_schleicher: 물론, 다른 건물에서.?]
 on-arrival: {!
 Q.schleicher_post_protests = 1;
 Q.reichstag_break = 0;
@@ -336,15 +336,15 @@ if (Q.pro_republic < 20) Q.pro_republic = 20;
 Q.pro_republic += 10;
 !}
 
-With our limited leverage, we are only able to negotiate the reconvening of the Reichstag. Schleicher has promised not to impede the chamber's right to assemble when it sees fit. The emergency restrictions on the free press and some political meetings have been lifted.
+제한된 영향력 탓에 우리는 제국의회 재소집만을 협상할 수 있었습니다. 슐라이허는 의회가 필요하다고 판단할 때 소집할 권리를 방해하지 않겠다고 약속했습니다. 언론의 자유와 일부 정치 집회에 대한 비상 제한 조치들도 해제되었습니다.
 
-This is a disappointing outcome, but perhaps a vote of no confidence and new elections could turn the tide. After all, we will be able to harness the significant enthusiasm shown by the people in defiance of dictatorship.
+실망스러운 결과지만, 불신임 투표와 새로운 선거가 흐름을 바꿀 수도 있을 것입니다. 어쨌든 우리는 독재에 저항하며 국민들이 보여준 뜨거운 열기를 활용할 수 있을 테니까요.
 
-The Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+제국의회는 [+ next_reichstag_year +]년 [+ next_reichstag_month : month +], [+ next_reichstag_week +]주차에 소집될 것입니다.
 
 @rights
-title: Demand the above, and [? if not reichstag_fire_decree_schleicher: also guarantees for democratic rights?][? if reichstag_fire_decree_schleicher: a repeal of the Reichstag Fire Decree?].
-unavailable-subtitle: Not enough leverage.
+title: 위의 사항과 함께, [? if not reichstag_fire_decree_schleicher: 민주적 권리에 대한 보장도 요구한다?][? if reichstag_fire_decree_schleicher: 제국의회 의사당 방화 법령의 폐지도 요구한다?].
+unavailable-subtitle: 영향력이 충분하지 않다.
 choose-if: spd_win and total_r_alt_2 >= 35
 on-arrival: {!
 Q.schleicher_post_protests = 1;
@@ -405,16 +405,16 @@ Q.hindenburg_schleicher_r -= 1;
 Q.schleicher_strength -= 1;
 !}
 
-With our limited leverage, we have managed to negotiate the reconvening of the Reichstag, with Schleicher promising not to obstruct the chamber's right to assemble as it sees fit. Furthermore, we secured an agreement that his government will not infringe upon the people's right to organize peacefully or on the freedom of the press, with Schleicher lifting all emergency restrictions. [? if reichstag_fire_decree_schleicher: This includes the repeal of the Reichstag Fire Decree. ?]
+제한된 영향력으로나마 우리는 제국의회 재소집을 협상해냈고, 슐라이허는 의회의 소집 권한을 방해하지 않겠다고 약속했습니다. 더 나아가 우리는 정부가 국민의 평화로운 집회 결사의 자유와 언론의 자유를 침해하지 않겠다는 합의를 이끌어냈으며, 슐라이허는 모든 비상 제한 조치를 해제했습니다. [? if reichstag_fire_decree_schleicher: 여기에는 제국의회 의사당 방화 법령의 폐지도 포함됩니다. ?]
 
-This is a disappointing outcome for all our efforts, but perhaps a vote of no confidence and new elections could turn the tide. After all, we can harness the significant public enthusiasm shown in defiance of dictatorship, and we need not fear further democratic backsliding—so long as Schleicher keeps his word.
+우리의 모든 노력에 비하면 실망스러운 결과지만, 불신임 투표와 새로운 선거가 흐름을 바꿀 수도 있을 것입니다. 어쨌든 우리는 독재에 저항하며 보여준 대중의 뜨거운 열기를 활용할 수 있으며, 슐라이허가 약속을 지키는 한 더 이상의 민주적 퇴보를 두려워할 필요는 없습니다.
 
-The Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+제국의회는 [+ next_reichstag_year +]년 [+ next_reichstag_month : month +], [+ next_reichstag_week +]주차에 소집될 것입니다.
 
 @schemes
-title: Demand the above, and also guarantees for the continued independence of political organizations.
-subtitle: Including the <span style="color: #700000;">**KPD**</span>.
-unavailable-subtitle: [? if not spd_win or total_r_alt_2 < 50: Not enough leverage. ?][? if pro_republic < 50 and weimar_votes < 45 or reichstag_fire_decree_schleicher: Schleicher is dead-set on banning the <span style="color: #700000;">Communists</span>. ?]
+title: 위의 사항과 함께, 정치 조직들의 지속적인 독립성 보장을 요구한다.
+subtitle: <span style="color: #700000;">**KPD**</span>를 포함해서.
+unavailable-subtitle: [? if not spd_win or total_r_alt_2 < 50: 영향력이 충분하지 않다. ?][? if pro_republic < 50 and weimar_votes < 45 or reichstag_fire_decree_schleicher: 슐라이허는 <span style="color: #700000;">공산주의자들</span>을 금지하는 데 혈안이 되어 있다. ?]
 view-if: dnef_formed
 choose-if: spd_win and (pro_republic >= 50 or weimar_votes >= 45) and total_r_alt_2 >= 50 and not reichstag_fire_decree_schleicher
 on-arrival: {!
@@ -494,18 +494,18 @@ Q.schleicher_strength -= 1;
 !}
 achievement: getrennt_marschieren_vereint_schlagen
 
-With our leverage, we have negotiated the reconvening of the Reichstag, with Schleicher promising not to obstruct the chamber's right to assemble as it sees fit. Furthermore, we secured an agreement that his government will not infringe upon the people's right to organize peacefully or on the freedom of the press, with all emergency restrictions lifted.
+우리의 영향력을 바탕으로 제국의회 재소집을 협상했고, 슐라이허는 의회의 소집 권한을 방해하지 않겠다고 약속했습니다. 더 나아가 정부가 국민의 평화로운 집회 결사의 자유와 언론의 자유를 침해하지 않겠다는 합의를 이끌어냈으며, 모든 비상 제한 조치가 해제되었습니다.
 
-The most controversial concession was the lifting of the ban on the <span style="color: #700000;">**KPD**</span>[? if sapd_formed: and <span style="color: #9B0000;">**SAPD**</span>?], a major retreat and an open sign of Schleicher's defeat. Although expectedly, the <span style="color: #700000;">**RFB**</span> remains banned.
+가장 논란이 된 양보는 <span style="color: #700000;">**KPD**</span>[? if sapd_formed: 그리고 <span style="color: #9B0000;">**SAPD**</span>?]에 대한 금지 해제였는데, 이는 슐라이허의 중대한 후퇴이자 패배를 알리는 명백한 신호입니다. 비록 예상대로 <span style="color: #700000;">**RFB**</span>는 여전히 금지된 상태지만 말입니다.
 
-President Hindenburg, along with the <span style="color: #C0A054;">industrialists</span> and <span style="color: #3E88B3;">nationalists</span>, have now completely lost confidence in the chancellor. A vote of no confidence and new elections are expected. We can harness the significant public enthusiasm shown in defiance of dictatorship and need not fear further democratic backsliding—so long as Schleicher keeps his word.
+힌덴부르크 대통령은 <span style="color: #C0A054;">산업가들</span> 및 <span style="color: #3E88B3;">국가주의자들</span>과 함께 총리에 대한 신뢰를 완전히 거두었습니다. 불신임 투표와 새로운 선거가 예상됩니다. 우리는 독재에 저항하며 보여준 대중의 뜨거운 열기를 활용할 수 있으며, 슐라이허가 약속을 지키는 한 더 이상의 민주적 퇴보를 두려워할 필요는 없습니다.
 
-The Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+제국의회는 [+ next_reichstag_year +]년 [+ next_reichstag_month : month +], [+ next_reichstag_week +]주차에 소집될 것입니다.
 
 @democracy
-title: Demand the above, and Schleicher's resignation.
-unavailable-subtitle: Not enough leverage.
+title: 위의 사항과 함께, 슐라이허의 사임을 요구한다.
+unavailable-subtitle: 영향력이 충분하지 않다.
 choose-if: super_secret_mode
 on-arrival: dataminer_detected = 1; ip_grabber = 1
 
-Lol.
+ㅋㅋ.

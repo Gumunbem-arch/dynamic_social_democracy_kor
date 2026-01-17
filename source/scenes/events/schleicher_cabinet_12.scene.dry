@@ -1,5 +1,5 @@
-title: The <span style="color: #700000;">**KPD**</span> Is Banned!
-subtitle: The Interior Ministry discovers "alarming evidence" of a planned revolution.
+title: <span style="color: #700000;">**공산당**</span>이 금지되다!
+subtitle: 내무부가 계획된 혁명의 "충격적인 증거"를 발견했습니다.
 view-if: chancellor == "Schleicher" and dsu_in_gov and not dsu_was_gov and dsu_policy and reichstag_joever_time >= 1 and not kpd_explode
 on-arrival: kpd_relation = 40 if kpd_relation < 40
 max-visits: 1
@@ -19,18 +19,18 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #700000;">**KPD**</span> Is Banned!
+= <span style="color: #700000;">**공산당**</span>이 금지되다!
 
-Wilhelm Frick of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**KPD**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**RFB**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Communist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Soviet Germany</span>" in the aftermath of the revolt.
+내무부의 빌헬름 프리크는 <span style="color: #700000;">**적색전선전사동맹**</span>이 연루된 계획된 혁명의 증거—무기로 가득 찼다고 주장되는 여러 창고들을 포함하여—를 편리하게도 "발견"한 후, 사실상 <span style="color: #700000;">**공산당**</span>을 금지하는 긴급 조치를 발표했습니다. <span style="color: #700000;">**공산당**</span> 사무실에 대한 급습을 통해 반란 이후 새로운 "<span style="color: #750e0e;">소비에트 독일</span>"을 수립하려던 소위 '계획' 또한 확보했다고 합니다.
 
-According to the government, these plans were to be set in motion in protest against Schleicher's unconstitutional adjournment and the mass arrests of <span style="color: #700000;">**Communist**</span> deputies that followed. Only the state's last-minute intervention, they claim, has saved Germany from violent revolt.
+정부의 주장에 따르면, 이 계획들은 슐라이허의 위헌적인 의회 휴회와 뒤따른 <span style="color: #700000;">**공산당**</span> 의원들의 대량 체포에 항의하여 실행될 예정이었습니다. 그들은 오직 국가의 막판 개입만이 독일을 폭력적인 반란으로부터 구했다고 주장합니다.
 
-But Schleicher and the <span style="color: #7A3C00;">Nazis</span> cannot be trusted. They could just as easily have planted the evidence to manufacture a pretext for crushing the <span style="color: #700000;">**Communists**</span>.
+하지만 슐라이허와 <span style="color: #7A3C00;">나치</span>는 신뢰할 수 없습니다. 그들은 <span style="color: #700000;">**공산주의자**</span>들을 분쇄하기 위한 구실을 만들기 위해 증거를 조작했을 수도 있습니다.
 
 - @kpd_ban
 
 @kpd_ban
-title: President Hindenburg wastes no time signing all requested emergency powers.
+title: 힌덴부르크 대통령은 요청된 모든 비상 권한을 즉시 승인하다.
 on-arrival: {!
 Q.kpd_explode = 1;
 
@@ -90,20 +90,20 @@ if (Q.prussia_leader === "Strasser") {
 !}
 audio: music/1930_1933/Einheitsfrontlied.mp3
 
-All <span style="color: #700000;">**Communist**</span> Reichstag members who haven't fled to Moscow are arrested and thrown in forced labor camps, working over 14 hours a day to further public works projects, and more problematic <span style="color: #700000;">**RFB**</span> fighters are given the death penalty en masse, being prosecuted by special local courts. 
+모스크바로 망명하지 못한 모든 <span style="color: #700000;">**공산당**</span> 제국의회 의원들은 체포되어 강제 노동 수용소에 수감되었으며, 공공 사업 프로젝트를 위해 하루 14시간 이상 노동에 시달리고 있습니다. 더 위협적인 <span style="color: #700000;">**적색전선전사동맹**</span> 대원들은 특별 지방 법원에 기소되어 집단으로 사형을 선고받고 있습니다.
 
-<span style="color: #700000;">**Communist**</span> party offices are officially closed down, with the Reichswehr's militia quickly suppressing any public demonstration or attempted armed uprising against the ban. Local mayors belonging to the <span style="color: #700000;">**KPD**</span> are removed by force, and replaced with [? if dnef_formed: <span style="color: #BFC8CC;">**DNEF**</span>?][? if not dnef_formed: Schleicher?] loyalists.
+<span style="color: #700000;">**공산당**</span> 사무실들은 공식적으로 폐쇄되었으며, 국방군의 민병대는 금지 조치에 대한 그 어떤 공개적인 시위나 무장 봉기 시도도 빠르게 진압하고 있습니다. <span style="color: #700000;">**공산당**</span> 소속 지역 시장들은 무력으로 해임되고, [? if dnef_formed: <span style="color: #BFC8CC;">**DNEF**</span>?][? if not dnef_formed: 슐라이허?] 충성파로 교체되고 있습니다.
 
-[? if prussia_leader == "Strasser": Furthermore, Strasser has authorized an extensive crackdown on suspected <span style="color: #700000;">Communist</span> members using his authority as Minister-President of Prussia, even if said members don't pose a significant threat. ?]
+[? if prussia_leader == "Strasser": 게다가, 슈트라서(Strasser)는 프로이센 주총리로서의 권한을 이용하여, 비록 중대한 위협이 되지 않더라도 의심되는 <span style="color: #700000;">공산당</span> 당원들에 대한 광범위한 단속을 승인했습니다. ?]
 
-[? if sapd_formed: Along with the <span style="color: #700000;">**KPD**</span>, the <span style="color: #9B0000;">**SAPD**</span> is seen as complicit and has its members persecuted in the same fashion as the former. Are we really going to allow the government to throw our former party members and comrades into prisons? ?][? if not sapd_formed: Are we really going to allow the government to throw our comrades into prisons? ?]
+[? if sapd_formed: <span style="color: #700000;">**공산당**</span>과 더불어 <span style="color: #9B0000;">**사회주의 노동자당**</span> 또한 공범으로 간주되어 그 구성원들이 똑같은 방식으로 박해받고 있습니다. 정말로 정부가 우리의 옛 당원들과 동지들을 감옥에 처넣도록 허용할 것입니까? ?][? if not sapd_formed: 정말로 정부가 우리의 동지들을 감옥에 처넣도록 허용할 것입니까? ?]
 
 - @do_nothing
 - @fight_mild
 - @fight
 
 @do_nothing
-title: We should be grateful that nothing happened to us!
+title: 우리에게 아무 일도 일어나지 않은 것에 감사해야 한다!
 on-arrival: {!
 Q.z_minus_bvp_votes = parseFloat((Q.z_votes - Q.bvp_votes).toFixed(1));
 Q.z_minus_bvp_r = parseFloat((Q.z_r - Q.bvp_r).toFixed(1));
@@ -287,9 +287,9 @@ if (d3 && window) {
 }
 !}
 
-It must suck for those <span style="color: #700000;">**Communists**</span>, but they had it coming for them. Cynically, we could benefit electorally as the only legal <span style="color: #9B0000;">Marxist</span> party.
+그 <span style="color: #700000;">**공산주의자**</span>들에게는 안된 일이지만, 그들은 자초한 일입니다. 냉소적으로 보자면, 우리는 유일하게 합법적인 <span style="color: #9B0000;">마르크스주의</span> 정당으로서 선거에서 이득을 볼 수 있습니다.
 
-= Reichstag composition
+= 제국의회 구성
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
@@ -307,7 +307,7 @@ It must suck for those <span style="color: #700000;">**Communists**</span>, but 
 
 [? if not lvp_formed and dvp_exist and dvp_dnef: {!<tr><td><div class="box2" style='background-color:#AA861F'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!} ?]
 
-[? if other_dnef: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} Others: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
+[? if other_dnef: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} 기타: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
 
 [? if kvp_formed and not cvp_kvp_formed and kvp_dnef: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r +]% {!</td></tr>!} ?]
 
@@ -333,7 +333,7 @@ It must suck for those <span style="color: #700000;">**Communists**</span>, but 
 
 [? if not lvp_formed and dvp_exist and not dvp_dnef: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!} ?]
 
-[? if not other_dnef: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
+[? if not other_dnef: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} 기타 정당: {!</td><td>!} [+ other_r +]% {!</td></tr>!} ?]
 
 [? if kvp_formed and not cvp_kvp_formed and not kvp_dnef: {!<tr><td><div class="box" style='background-color:#0087DC'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r +]% {!</td></tr>!} ?]
 
@@ -352,31 +352,31 @@ It must suck for those <span style="color: #700000;">**Communists**</span>, but 
 - @soviet_union_aid
 
 @soviet_union_aid
-title: How will the <span style="color: #750e0e;">Soviet Union</span> respond?
-subtitle: The country ironically funding the Reichswehr's secret rearmament.
+title: <span style="color: #750e0e;">소련</span>은 어떻게 반응하겠습니까?
+subtitle: 아이러니하게도 국방군의 비밀 재무장에 자금을 대고 있는 나라 말입니다.
 
-Despite the <span style="color: #750e0e;">Soviet Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Communist**</span> brethren on the streets, many <span style="color: #750e0e;">Soviet</span> politicians are privately outraged as fleeing <span style="color: #700000;">**KPD**</span> politicians spread the news of their party's dissolution.
+<span style="color: #750e0e;">소련</span>이 거리에서 <span style="color: #700000;">**공산주의**</span> 형제들을 탄압하는 장교들을 훈련시킴으로써 간접적인 책임이 있음에도 불구하고, 많은 <span style="color: #750e0e;">소련</span> 정치인들은 망명한 <span style="color: #700000;">**공산당**</span> 정치인들이 당의 해산 소식을 전하자 사적으로 격분하고 있습니다.
 
-However, despite this, Stalin has adhered to his policy of secretly aiding Germany in its rearmament through officer training and supplying armament technology. Schleicher's fears have thus subsided for now, with Stalin having near complete control over his party.
+하지만, 그럼에도 불구하고 스탈린은 장교 훈련과 군사 기술 제공을 통해 독일의 재무장을 비밀리에 지원하는 정책을 고수했습니다. 스탈린이 당을 거의 완벽하게 장악하고 있기에, 슐라이허의 우려는 당분간 가라앉았습니다.
 
 @fight_mild
-title: We'll launch peaceful protests and a general strike. Schleicher can't rule without the people's support. 
-subtitle: But he may seize on this as a pretext to escalate the crackdown.
-unavailable-subtitle: Schleicher has too much influence over us.
+title: 평화적 시위와 총파업을 개시한다. 슐라이허는 국민의 지지 없이는 통치할 수 없다.
+subtitle: 하지만 그는 이것을 탄압을 확대하기 위한 구실로 삼을 수 있습니다.
+unavailable-subtitle: 슐라이허는 우리에게 너무 많은 영향력을 행사하고 있습니다.
 choose-if: schleicher_spd_influence < 6
 
-We are in no position to fight a civil war against the full force of the state, but we cannot let Schleicher live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the Reichsbanner as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**RFB**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
+우리는 국가의 총전력에 맞서 내전을 벌일 처지는 아니지만, 슐라이허가 아무런 대가 없이 넘어가게 둘 수는 없습니다. 우리에게는 사용할 수 있는 여러 선택지가 있습니다. [? if not unions_independent: 독일노동조합총연맹?][? if unions_independent: 노동자들?]은 총파업을 일으킬 수 있고, 만약 우리가 국기단의 힘을 유지했다면 그들을 지렛대로 사용할 수도 있습니다. 보편적으로 미움받는 <span style="color: #700000;">**적색전선전사동맹**</span>을 탄압하는 것과, 대중적인 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 운동을 탄압하는 것은 별개의 문제입니다.
 
-We don't know if Schleicher will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span style="color: #c00000;">**SPD**</span> to protest in solidarity with the <span style="color: #700000;">**Communists**</span>. 
+슐라이허가 물러설지는 알 수 없습니다. 우리의 이전 연정 파트너들과 당원들은 <span style="color: #700000;">**공산주의자**</span>들과의 연대 시위를 위해 <span style="color: #c00000;">**사회민주당**</span>의 생존을 잠재적으로 위험에 빠뜨리는 것에 회의적입니다.
 
-Do we continue to bide our time?
+계속해서 때를 기다려야 합니까?
 
 - @fight_mild_2
-- @do_nothing: This isn't our fight.
+- @do_nothing: 이것은 우리의 싸움이 아니다.
 
 @fight_mild_2
-title: The workers stopped the Kapp Putsch in 1920.
-subtitle: And we can do it again.
+title: 노동자들은 1920년 카프 반란을 막아냈었다.
+subtitle: 그리고 우리는 다시 해낼 수 있습니다.
 on-arrival: {!
 Q.schleicher_points = 0;
 Q.spd_points = 0;
@@ -450,20 +450,20 @@ Q.schleicher_fight = 1;
 
 !}
 
-We are not alone. [? if spd_alone: Well, we actually are, never mind. ?]
+우리는 혼자가 아닙니다. [? if spd_alone: 음, 사실 혼자입니다. 신경 쓰지 마십시오. ?]
 
-<span style="color: #000000;">[? if not stegerwald_path: Catholics?][? if stegerwald_path: Christians?]</span> - [? if z_against_schleicher: In Favor?][? if not z_against_schleicher: Political Neutrality?]
+<span style="color: #000000;">[? if not stegerwald_path: 가톨릭 교도들?][? if stegerwald_path: 기독교인들?]</span> - [? if z_against_schleicher: 찬성?][? if not z_against_schleicher: 정치적 중립?]
 
-<span style="color: #FFCC00;">Left Liberals</span> - [? if libs_against_schleicher: In Favor?][? if not libs_against_schleicher: Political Neutrality?]
+<span style="color: #FFCC00;">좌파 자유주의자들</span> - [? if libs_against_schleicher: 찬성?][? if not libs_against_schleicher: 정치적 중립?]
 
-[? if not spd_alone: The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition parties are nominally against such unconstitutional acts as well. While they may not have an armed self-defense militia, they have several hundred thousand employees in blue-collar and white-collar jobs, and could completely cripple the economy if they act alongside the <span style="color: #c00000;">socialist</span> Free Unions. ?]
+[? if not spd_alone: <span style="color: #000000;">바</span><span style="color: #DD0000;">이</span><span style="color: #FFCC00;">마르</span> 연정 정당들 또한 명목상으로는 이러한 위헌적 행위에 반대하고 있습니다. 그들에게 무장한 자위 민병대는 없을지 모르나, 육체노동직과 사무직에 종사하는 수십만 명의 당원을 보유하고 있으므로 <span style="color: #c00000;">사회주의</span> 자유 노조들과 함께 행동한다면 경제를 완전히 마비시킬 수 있습니다. ?]
 
 - @spd_win
 - @spd_med
 - @spd_lose
 
 @spd_win
-title: The government is paralyzed!
+title: 정부가 마비되다!
 on-arrival: {!
 Q.schleicher_spd_influence = 0;
 Q.schleicher_spd_r = 0;
@@ -503,17 +503,17 @@ Q.labor_dissent -= 20;
 !}
 view-if: spd_win
 
-The mass general strike has crippled the German economy, bringing the country to a complete standstill. With the Reichsbanner strong and organized, the government cannot simply crush the hundreds of thousands of <span style="color: #c00000;">socialist</span> protesters flooding the streets.
+대규모 총파업으로 독일 경제가 마비되었고, 국가는 완전히 멈춰 섰습니다.  국기단이 강력하게 조직되어 있기에, 정부는 거리를 가득 메운 수십만의 <span style="color: #c00000;">사회주의</span> 시위대를 단순히 무력으로 짓밟을 수 없습니다.
 
-Meanwhile, in defiance of the indefinite adjournment of the Reichstag, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties have banded together to unofficially reconvene the chamber at a separate location, openly challenging federal authority.
+한편, 제국의회의 무기한 휴회 조치에 저항하여 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 정당들이 뭉쳐 별도의 장소에서 비공식적으로 의회를 재소집했고, 연방 정부의 권위에 공개적으로 도전했습니다.
 
-The next few days will be chaotic—and decisive for Germany as a whole.
+앞으로 며칠은 혼란스러울 것이며, 독일 전체의 운명을 가를 결정적인 시기가 될 것입니다.
 
 - @z_break
 - @schleicher_cabinet_13_pre_pre
 
 @spd_med
-title: Schleicher attempts to negotiate with us.
+title: 슐라이허가 우리와 협상을 시도하다.
 on-arrival: {!
 Q.schleicher_spd_influence = 0;
 Q.schleicher_spd_r = 0;
@@ -549,79 +549,79 @@ Q.labor_dissent -= 10;
 !}
 view-if: spd_med
 
-The nationwide general strike against Schleicher's authoritarian regime has brought the country to a standstill. The chancellor could unleash the Reichswehr and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries to brutally crush the protests—but for now, that remains a last resort. Instead, Schleicher has chosen to open negotiations with the opposition.
+슐라이허의 권위주의 정권에 맞선 전국적인 총파업이 국가를 멈춰 세웠습니다. 총리는 국방군과 <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span> 준군사조직을 풀어 시위를 잔혹하게 진압할 수도 있었지만, 지금으로서는 최후의 수단으로 남겨두었습니다. 대신 슐라이허는 야당과의 협상을 선택했습니다.
 
-Meanwhile, in defiance of the indefinite adjournment of the Reichstag, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties have banded together to unofficially reconvene the chamber at a separate location, openly challenging federal authority.
+한편, 제국의회의 무기한 휴회 조치에 저항하여 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의</span> 정당들이 뭉쳐 별도의 장소에서 비공식적으로 의회를 재소집했고, 연방 정부의 권위에 공개적으로 도전했습니다.
 
-However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Schleicher’s sympathizers embedded within the unions themselves.
+하지만 우리가 힘을 과신했을지도 모릅니다. 실업률이 이토록 높은 상황에서 파업은 오래 지속되기 어려우며, 특히 노조 내부에 슐라이허의 동조자들이 암약하고 있는 상황에서는 더욱 그렇습니다.
 
 - @z_break
 - @schleicher_cabinet_13_pre_pre
 
 @spd_lose
-title: Our protests are ineffective.
+title: 우리의 시위는 효과가 없다.
 view-if: spd_lose
 on-arrival: hammerstein_win = 1
 
-The general strike proves short-lived. An endless supply of unemployed strikebreakers and Schleicher's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The Reichsbanner is no match for the Reichswehr.
+총파업은 단명하고 말았습니다. 실직한 파업 파괴자들의 끝없는 유입과 노조 내 슐라이허 동조자들로 인해 파업은 대체로 무력화되었습니다. 시위대는 총격을 받았고 민간인들이 희생되었습니다. 국기단은 국방군의 상대가 되지 못했습니다.
 
-Seizing the moment, Schleicher expands his crackdown, accusing the <span style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
+이 기회를 틈타 슐라이허는 탄압을 확대하며, <span style="color: #c00000;">**SPD**</span>가 혁명을 선동하기 위해 <span style="color: #700000;">**공산주의자들**</span>과 공모했다고 비난하고 있습니다.
 
-Germany is lost.
+독일은 끝장났습니다.
 
 - @game_over
 
 @z_break
-title: The <span style="color: #000000;">Center Party</span> breaks with Schleicher!
-subtitle: The house of cards is falling apart.
+title: <span style="color: #000000;">중앙당</span>이 슐라이허와 결별하다!
+subtitle: 사상누각이 무너지고 있습니다.
 view-if: z_against_schleicher
 go-to: z_break_gov if z_in_gov; z_break_oppo if not z_in_gov
 
 @z_break_gov
 on-arrival: hindenburg_schleicher_r -= 2; republicans_schleicher_bonus -= 4; z_in_gov = 0; catholics_dnef -= 10; catholics_dnef_bonus -= 8; catholics_z -= 4; catholics_dnvp += 2 if not kvp_formed; catholics_kvp += 2; catholics_dvp += 2
 
-= The <span style="color: #000000;">Center Party</span> exits cabinet
+= <span style="color: #000000;">중앙당</span>이 내각을 떠나다
 
-With the <span style="color: #000000;">Center Party</span> already on the verge of breaking with Schleicher's cabinet after the unconstitutional adjournment of the chamber, this latest undemocratic act has convinced its leaders that only a united <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> front can restore Germany to normalcy.
+의회의 위헌적인 휴회 조치 이후 이미 슐라이허 내각과의 결별 직전에 있던 <span style="color: #000000;">중앙당</span> 지도부는, 이번의 비민주적인 행태를 보며 오직 통합된 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">파</span> 전선만이 독일을 정상화할 수 있다는 확신을 갖게 되었습니다.
 
-Schleicher’s presidential cabinet now stands deeply delegitimized and increasingly unpopular in the eyes of the public, effectively ending his hopes of manipulating the party’s internal politics or using them to maintain even a façade of parliamentary democracy going forward.
+슐라이허의 대통령 내각은 이제 정당성을 크게 상실했고 대중의 인기도 잃었으며, 당내 정치를 조종하거나 의회 민주주의의 껍데기라도 유지하려던 그의 희망은 사실상 끝났습니다.
 
 - @schleicher_cabinet_13_pre
 
 @z_break_oppo
 on-arrival: hindenburg_schleicher_r -= 1; republicans_schleicher_bonus -= 2; catholics_dnef -= 6; catholics_dnef_bonus -= 4; catholics_z -= 2; catholics_dnvp += 2 if not kvp_formed; catholics_kvp += 2
 
-= The <span style="color: #000000;">Center Party</span> cuts all ties
+= <span style="color: #000000;">중앙당</span>이 모든 관계를 끊다
 
-The ongoing negotiations to bring the <span style="color: #000000;">Center Party</span> into Schleicher's cabinet have collapsed entirely, with the party now in full opposition to President Hindenburg and the government he supports.
+<span style="color: #000000;">중앙당</span>을 슐라이허 내각에 참여시키려던 협상은 완전히 결렬되었고, 당은 이제 힌덴부르크 대통령과 그가 지지하는 정부에 대해 전면적인 반대 입장을 취하고 있습니다.
 
 - @schleicher_cabinet_13_pre
 
 
 @schleicher_cabinet_13_pre
-title: Schleicher's Turn to Play
-subtitle: Will the general hold firm?
+title: 슐라이허가 움직일 차례
+subtitle: 장군은 굳건히 버틸 것인가?
 go-to: schleicher_cabinet_13
 
 
 @schleicher_cabinet_13_pre_pre
-title: Schleicher's Turn to Play
-subtitle: Will the general hold firm?
+title: 슐라이허가 움직일 차례
+subtitle: 장군은 굳건히 버틸 것인가?
 view-if: not z_against_schleicher
 go-to: schleicher_cabinet_13
 
 
 @fight
-title: Revolt! This is Schleicher's second step toward dictatorship!
-unavailable-subtitle: Schleicher has too much influence over us.
+title: 봉기하라! 이것은 독재를 향한 슐라이허의 두 번째 발걸음이다!
+unavailable-subtitle: 슐라이허는 우리에게 너무 강한 영향력을 행사하고 있습니다.
 choose-if: schleicher_spd_influence < 4
 
-Schleicher has no intention of relinquishing power once stability is restored—his paranoia (not entirely unfounded) tells him that the moment we return to office democratically, we’ll undo all the progress made toward rearmament, especially with Hindenburg not expected to live much longer.
+슐라이허는 안정이 회복되더라도 권력을 내려놓을 생각이 없습니다. 그의 편집증(완전히 근거 없는 것은 아니지만)은 우리가 민주적으로 집권하는 순간, 특히 힌덴부르크의 여생이 얼마 남지 않은 상황에서 재무장을 위해 이룩한 모든 진전을 되돌릴 것이라고 속삭이고 있습니다.
 
-This, combined with his blatant constitutional breach just a week ago, has finally galvanized the remaining <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> against the Chancellor.
+이러한 사실은 불과 일주일 전 그가 저지른 노골적인 헌법 위반과 맞물려, 마침내 남아있는 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주의</span><span style="color: #FFCC00;">자들</span>을 총리에 맞서도록 자극했습니다.
 
-Perhaps its our time to strike?
+이제 우리가 반격할 때가 아닐까요?
 
-- @civil_war: The <span style="color: #c00000;">**SPD**</span> stands with the <span style="color: #700000;">**Communists**</span>.
+- @civil_war: <span style="color: #c00000;">**SPD**</span>는 <span style="color: #700000;">**공산주의자들**</span>과 함께한다.
 - @fight_mild
-- @do_nothing: This isn't our fight.
+- @do_nothing: 이것은 우리의 싸움이 아니다.
