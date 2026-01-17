@@ -1,5 +1,5 @@
-title: The Reichstag Reconvenes
-subtitle: The Reichstag hesitates to confront Schleicher and trigger yet another round of elections.
+title: 제국의회가 다시 소집되다
+subtitle: 제국의회는 슐라이허와 대결하여 또 다른 선거를 촉발하는 것을 주저하고 있습니다.
 view-if: chancellor = "Schleicher" and schleicher_time and schleicher_post and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: reichstag_rubicon = 1
 new-page: true
@@ -19,16 +19,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Reichstag Reconvenes
+= 제국의회가 다시 소집되다
 
-The Reichstag reconvenes under Schleicher, and nearly all parties present are unwilling to move against the popular chancellor on the chamber’s first day back. The opposition chooses to wait, looking for the inevitable misstep—a constitutional violation or a divisive policy—to use as a pretext and rallying point against him.
+슐라이허 총리 하에 제국의회가 다시 소집되었으나, 참석한 거의 모든 정당은 개원 첫날부터 인기 있는 총리를 상대로 움직이기를 꺼리고 있습니다. 야당은 헌법 위반이나 분열적인 정책 같은 필연적인 실책이 나오기를 기다리며, 이를 구실 삼아 그를 공격할 결집점으로 삼으려 합니다.
 
-Meanwhile, Schleicher shows little concern over the threat of a no-confidence vote. He makes his position clear: unless a united bloc emerges with a viable successor, he will continue governing as usual, backed by Hindenburg.
+한편 슐라이허는 불신임 투표의 위협에 대해 별다른 우려를 보이지 않습니다. 그는 입장을 분명히 했습니다. 실행 가능한 후임자를 중심으로 단합된 블록이 나타나지 않는 한, 힌덴부르크의 지지를 등에 업고 평소처럼 국정을 운영하겠다는 것입니다.
 
 - @reichstag
 
 @reichstag
-title: The <span style="color: #700000;">**Communists**</span> put forth a motion of no confidence.
+title: <span style="color: #700000;">**공산당**</span>이 불신임 결의안을 제출한다.
 on-arrival: {!
 Q.pro_republic += 5;
 
@@ -56,6 +56,6 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-As before, the motion to place a vote of no confidence on the agenda is defeated—thanks to support from elements of the <span style="color: #7A3C00;">Nazis</span>, the <span style="color: #000000;">Center Party</span>, and various right-wing and bourgeois factions.
+이전과 마찬가지로 불신임 투표를 의제에 올리려는 발의안은 부결되었습니다. <span style="color: #7A3C00;">나치</span>의 일부 세력, <span style="color: #000000;">중앙당</span>, 그리고 다양한 우익 및 부르주아 파벌들의 지지 덕분입니다.
 
-With only a handful of bills scheduled, the agenda committee successfully pushes through a thirty-day adjournment, with the option for extension.
+단 몇 건의 법안만 예정된 상태에서, 의사일정 위원회는 연장 옵션을 포함한 30일간의 휴회안을 성공적으로 통과시켰습니다.

@@ -1,5 +1,5 @@
-title: Reichstag Reconvenes
-subtitle: Schleicher has a decree to present.
+title: 제국의회가 다시 소집되다
+subtitle: 슐라이허가 긴급령을 준비했습니다.
 view-if: chancellor = "Schleicher" and schleicher_time and schleicher_post_reichstag and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: reichstag_rubicon = 1
 new-page: true
@@ -19,16 +19,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Reichstag Reconvenes
+= 제국의회가 다시 소집되다
 
-After the break cut short by Schleicher's insistence, the Reichstag is back in session. Reportedly, Schleicher has obtained Hindenburg's authorization for an unconstitutional decree, presumably in the vein of forcing the Reichstag's adjournment or cancelling new elections.
+슐라이허의 고집으로 짧게 단축된 휴식 후, 제국의회가 다시 회기에 들어갔습니다. 보도에 따르면 슐라이허는 힌덴부르크의 승인을 얻어 위헌적인 긴급령을 확보했다고 합니다. 아마도 제국의회 휴회를 강제하거나 새로운 선거를 취소하는 내용일 것입니다.
 
-However, the situation has changed, Schleicher is much more popular and its expected that the backlash to an unconstitutional act will be more limited, and not be to the degree that it would provoke a civil war. 
+그러나 상황은 변했습니다. 슐라이허의 인기는 훨씬 높아졌고, 위헌적 조치에 대한 반발도 제한적일 것으로 예상되어 내전을 유발할 정도는 아닐 것으로 보입니다.
 
 - @reichstag
 
 @reichstag
-title: The Reichstag enters session.
+title: 제국의회가 개원하다.
 on-arrival: {!
 Q.pro_republic -= 20;
 
@@ -82,8 +82,8 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-Schleicher immediately issues his decree to unconstitutionally adjourn the Reichstag indefinitely, declaring that the chamber will remain closed until the parties prove they can govern constructively again. Reactions inside the chamber are mixed: Schleicher's supporters applaud the chancellor’s show of strong leadership, while the <span style="color: #700000;">**Communists**</span> ignite brawls that police are forced to break up.
+슐라이허는 즉시 제국의회를 무기한으로, 그리고 위헌적으로 휴회시키는 긴급령을 발동하며, 정당들이 건설적으로 국정을 운영할 수 있음을 증명할 때까지 의회 문을 닫겠다고 선언합니다. 의회 내부의 반응은 엇갈립니다. 슐라이허의 지지자들은 총리의 강력한 리더십에 박수를 보내는 반면, <span style="color: #700000;">**KPD**</span>는 난투극을 벌여 경찰이 개입해 해산시켜야 했습니다.
 
-In the following days, civil demonstrations are violently suppressed. Police disperse crowds with tear gas, street clashes erupt, and several civilians are killed. The strengthened Reichswehr and the divided stance of <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> make any serious rebellion futile. At least half of the <span style="color: #700000;">**Communist**</span> deputies in the Reichstag are arrested and sent to special courts for inciting violence.
+이어진 며칠 동안 시민들의 시위는 폭력적으로 진압되었습니다. 경찰은 최루탄으로 군중을 해산시켰고, 거리 곳곳에서 충돌이 발생해 민간인 사상자가 발생했습니다. 강화된 국방군과 <span style="color: #000000;">공</span><span style="color: #DD0000;">화</span><span style="color: #FFCC00;">주의자들</span>의 분열된 입장은 그 어떤 심각한 봉기도 무의미하게 만들었습니다. 제국의회 내 <span style="color: #700000;">**공산당**</span> 의원 중 최소 절반이 체포되어 폭동 선동 혐의로 특별 재판소에 넘겨졌습니다.
 
-The <span style="color: #c00000;">**SPD**</span> remains largely untouched[? if rb_militancy > 0.1:, though suspicious activity has been reported to be planned against the Reichsbanner?].
+<span style="color: #c00000;">**SPD**</span>는 대체로 무사한 상태입니다[? if rb_militancy > 0.1:, 비록 국기단을 겨냥한 의심스러운 계획이 보고되긴 했지만 말입니다?].

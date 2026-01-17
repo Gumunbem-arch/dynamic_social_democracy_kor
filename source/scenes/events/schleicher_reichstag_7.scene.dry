@@ -1,5 +1,5 @@
-title: Reichstag Reconvenes
-subtitle: Schleicher faces a vote of no confidence!
+title: 제국의회가 다시 소집되다
+subtitle: 슐라이허가 불신임 투표에 직면합니다!
 view-if: chancellor = "Schleicher" and schleicher_time and schleicher_post_protests and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: reichstag_rubicon = 1
 new-page: true
@@ -7,14 +7,14 @@ tags: event
 max-visits: 1
 priority: 2
 
-= Reichstag Reconvenes
+= 제국의회가 다시 소집되다
 
-Let's cut to the chase.
+본론으로 들어갑시다.
 
 - @reichstag
 
 @reichstag
-title: A vote of no confidence is introduced against Schleicher.
+title: 슐라이허에 대한 불신임안이 제출된다.
 on-arrival: {!
 Q.reichstag_rubicon = 0;
 
@@ -35,6 +35,6 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-It succeeds.
+가결되었습니다.
 
-New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+새로운 제국의회 선거는 [+ next_election_year +]년 [+ next_election_month : month +] [+ next_election_week +]주차로 예정되어 있습니다.

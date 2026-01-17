@@ -1,13 +1,13 @@
-title: Streetfighting
+title: 시가전
 new-page: true
 view-if: year >= 1930
 max-visits: 1
 tags: event
 
-= Streetfighting
+= 시가전
 
-Battles rage on the streets between the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span>, nationalist <span style="color: #3E88B3;">**Stahlhelm**</span>, communist <span style="color: #8B0000;">Rotfrontkämpferbund</span> (<span style="color: #8B0000;">**RFB**</span>), and our own Reichsbanner.
+<span style="color: #7A3C00;">나치</span> <span style="color: #7A3C00;">**SA**</span>, 민족주의 <span style="color: #3E88B3;">**철모단**</span>, 공산주의 <span style="color: #8B0000;">적색전선전사동맹</span> (<span style="color: #8B0000;">**RFB**</span>), 그리고 우리 (흑적금) 국기단 사이의 전투가 거리에서 맹렬히 벌어지고 있습니다.
 
-The economic crisis has radicalized many into joining the paramilitaries of the extremist parties. The Distribution of Power mechanic has been unlocked. Defense tab on the sidebar.
+경제 위기는 많은 사람들을 급진화하여 극단주의 정당들의 준군사조직에 가입하게 만들었습니다. '권력 분배' 메커니즘이 해제되었습니다. 사이드바의 방어 탭을 확인하십시오.
 
-- @root: Ok.
+- @root: 알겠다.

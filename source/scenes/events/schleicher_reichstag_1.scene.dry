@@ -1,5 +1,5 @@
-title: The Reichstag Reconvenes
-subtitle: Schleicher's first test has come.
+title: 제국의회가 다시 소집되다
+subtitle: 슐라이허의 첫 번째 시험대가 다가왔다.
 view-if: chancellor = "Schleicher" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: reichstag_rubicon = 1; reichstag_schleicher_seen = 1
 new-page: true
@@ -19,26 +19,26 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Reichstag Reconvenes
+= 제국의회가 다시 소집되다
 
-Schleicher’s first test with the Reichstag comes immediately after his appointment, and he's expected to lose by a wide margin. To head off defeat, he offered Gregor Strasser of the <span style="color: #7A3C00;">**NSDAP**</span> the vice chancellorship and control of Prussia, hoping Strasser could persuade the party to tolerate his government. However, [+ nsdap_leader +] would only accept the obedient Göring as leader.
+슐라이허가 총리에 임명된 직후 제국의회라는 첫 번째 시험대가 다가왔으며, 그는 큰 표 차이로 패배할 것으로 예상됩니다. 패배를 막기 위해 그는 <span style="color: #7A3C00;">**NSDAP**</span>의 그레고어 슈트라서에게 부총리직과 프로이센 통치권을 제안하며, 슈트라서가 당을 설득해 자신의 정부를 묵인하도록 만들기를 희망했습니다. 그러나 [+ nsdap_leader +]는 오직 자신에게 순종적인 괴링만을 지도자로 받아들이려 했습니다.
 
-Nonetheless, despite the <span style="color: #7A3C00;">**NSDAP**</span>’s uncompromising stance, they are seeking a respite—pushing for an early holiday recess and delaying any immediate showdown with the newly appointed cabinet.
+그럼에도 불구하고, <span style="color: #7A3C00;">**NSDAP**</span>는 타협하지 않는 태도를 보이면서도 한편으로는 휴식을 모색하고 있습니다. 그들은 조기 휴회를 추진하며 새로 임명된 내각과의 즉각적인 대결을 미루고 있습니다.
 
 - @reichstag
 
 @reichstag
-title: The <span style="color: #700000;">**Communists**</span> put forth a motion of no confidence.
+title: <span style="color: #700000;">**공산당**</span>이 불신임 결의안을 제출하다.
 on-arrival: pro_republic += 5
 
-The motion is defeated! In a surprise to the public, the <span style="color: #700000;">**Communist**</span> proposal to prioritize a no-confidence vote is voted down—thanks to support from the <span style="color: #7A3C00;">Nazis</span>. But this is no act of reconciliation; it’s certainly not the toleration Schleicher deludes himself into believing stems from his connections with Strasser.
+결의안이 부결되었습니다! 대중에게는 놀랍게도, 불신임 투표를 우선시하자는 <span style="color: #700000;">**공산당**</span>의 제안은 <span style="color: #7A3C00;">나치</span>의 반대 덕분에 부결되었습니다. 그러나 이것은 화해의 제스처가 아닙니다. 슐라이허가 슈트라서와의 연줄 덕분이라고 스스로를 속이고 있는 그 '묵인'과는 거리가 멉니다.
 
-In any case, after clearing a few remaining bills, the chamber agrees to a holiday recess of indefinite duration.
+어쨌든, 남은 몇 가지 법안을 처리한 후, 의회는 무기한 휴회에 동의합니다.
 
 - @reichstag_2
 
 @reichstag_2
-title: Papen's decree on wages is repealed!
+title: 임금에 대한 파펜의 긴급령이 폐지되다!
 on-arrival: workers_kpd -= 4; unemployed_kpd -= 4; workers_z += 2; workers_spd += 2; unemployed_spd += 4; pro_republic += 3; reichstag_break = 1; reichstag_rubicon = 0; oskar_goal = "Scheme against Schleicher"; papen_goal = "Scheme against Schleicher"; schleicher_approval += 1
 
-Schleicher has given his consent for the Reichstag to repeal one of Papen's more egregious decrees that had particulary offended the labor unions, as part of his prior promise and to calm their fury against the government. 
+슐라이허는 제국의회가 노동조합을 특히 분노하게 했던 파펜의 가장 지독한 긴급령 중 하나를 폐지하는 것에 동의했습니다. 이는 그의 이전 약속의 일부이자 정부에 대한 노동계의 분노를 진정시키기 위한 조치입니다.

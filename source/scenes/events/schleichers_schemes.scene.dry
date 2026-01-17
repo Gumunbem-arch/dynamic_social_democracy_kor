@@ -1,5 +1,5 @@
-title: Schleicher's Schemes
-subtitle: Chancellor Schleicher claims to have a plan to save Germany...
+title: 슐라이허의 계획
+subtitle: 슐라이허 총리는 독일을 구할 계획이 있다고 주장합니다...
 view-if: year >= 1932 and president = "Hindenburg" and chancellor = "Schleicher" and spd_in_government = 0 and largest_party = "NSDAP" and hitler_deported = 0 and not presidential_powers
 on-arrival: economic_growth += 1; budget -= 1; unemployed -= 3 if unemployed > 10; rural_dnvp += 3; old_middle_dnvp += 3; new_middle_dnvp += 3; workers_dnvp += 3
 new-page: true
@@ -7,13 +7,13 @@ max-visits: 1
 face-image: img/portraits/SchleicherKurt.jpg
 #tags: event
 
-= Schleicher's Schemes
+= 슐라이허의 계획
 
-Chancellor Kurt von Schleicher claims to have a plan to save Germany, and he has reached out to the Social Democrats with vague promises. He claims that in order to govern, the Reichstag must be temporarily suspended to prevent the Nazis and Communists from disrupting government, in effect giving him and Hindenburg dictatorial powers. In the meantime, he is enacting a public works program and job creation plan, which he claims will stabilize the economy, 
+쿠르트 폰 슐라이허 총리는 독일을 구할 계획이 있다고 주장하며, 모호한 약속을 내걸고 사회민주당에 접근했습니다. 그는 원활한 통치를 위해 나치와 공산주의자들이 정부를 방해하지 못하도록 제국의회를 일시적으로 정지시켜야 한다고 주장합니다. 이는 사실상 그와 힌덴부르크에게 독재 권력을 부여하는 것입니다. 그 대가로 그는 공공 사업 프로그램과 일자리 창출 계획을 시행하고 있으며, 이것이 경제를 안정시킬 것이라 주장합니다.
 
-[? if works_program <= 0: The trade unions are somewhat favorable to Schleicher's plan, as they see a commonality between Schleicher's economic plan and the ADGB's WTB-plan for debt-funded job creation. However, the rest of our party is vehemently against Schleicher. ?]
+[? if works_program <= 0: 노동조합들은 슐라이허의 계획에 다소 호의적입니다. 슐라이허의 경제 계획과 ADGB가 추진하는 부채 조달을 통한 일자리 창출안인 WTB 계획 사이에 공통점이 있다고 보기 때문입니다. 그러나 우리 당의 나머지 구성원들은 슐라이허에게 격렬하게 반대하고 있습니다. ?]
 
-Rumors are that Schleicher is also reaching out to the Nazis with similar promises of cooperation; he seems to believe that he can "tame" the Nazis. Most in our party do not trust him to not bring the Nazis to power. In addition, working with him would essentially mean the end of our claim to be a "democratic" party.
+소문에 따르면 슐라이허는 협력에 대한 비슷한 약속을 미끼로 나치에게도 손을 뻗고 있다고 합니다. 그는 자신이 나치를 "길들일" 수 있다고 믿는 듯합니다. 우리 당의 대다수는 그가 나치를 권좌에 올리지 않을 것이라는 말을 믿지 않습니다. 게다가 그와 협력하는 것은 본질적으로 우리가 "민주적인" 정당이라는 주장을 포기하는 것을 의미합니다.
 
 # if this works: delay elections by 1 year (requires over 50% support - need Z and DVP and others to join as well based on relations; DNVP might support? Also should depend on Hindenburg relations).
 
@@ -22,25 +22,25 @@ Rumors are that Schleicher is also reaching out to the Nazis with similar promis
 - @reject
 
 @accept
-title: Accept Schleicher's schemes.
-subtitle: We will support the suspension of the Reichstag.
+title: 슐라이허의 계획을 받아들인다.
+subtitle: 우리는 제국의회의 정지를 지지할 것이다.
 
-Are we sure that we wish to do this? The vast majority of the party is against this proposal.
+정말 이 일을 진행하시겠습니까? 당의 절대다수가 이 제안에 반대하고 있습니다.
 
 - @accept_2
 - @reject
 
 @accept_2
-title: Accept Schleicher's schemes.
-subtitle: We will support the suspension of the Reichstag.
+title: 슐라이허의 계획을 받아들인다.
+subtitle: 우리는 제국의회의 정지를 지지할 것이다.
 on-arrival: schleicher_support = spd_r; workers_spd -= 3; new_middle_spd -= 3; reformist_dissent += 20; left_dissent += 30; center_dissent += 30; neorevisionist_dissent += 25; pro_republic -= 10; schleicher_support += z_r if z_relation >= 50; schleicher_support += other_r + dvp_r if dvp_relation >= 30; schleicher_support += dnvp_r if kpd_relation <= 10 and left_strength + center_strength < labor_strength; labor_dissent -= 10
 go-to: schleicher_success if schleicher_support >= 50; schleicher_failed if schleicher_support < 50
 
 # There isn't enough resolution in this game to create conditions for when the DNVP would support Schleicher. It's possible that SPD support for Schleicher would push Hugenberg to ally with Hitler.
 
-With the exception of the trade unions, every faction of the SPD is horrified by this betrayal of democracy.
+노동조합을 제외하고, 사회민주당의 모든 파벌은 민주주의에 대한 이 배신 행위에 경악을 금치 못하고 있습니다.
 
-[? if kpd_relation <= 10 and left_strength + center_strength < labor_strength: Somehow, the DNVP has agreed to Schleicher's proposal, forming a temporary alliance with the general against Nazis and Communists. ?][? if z_relation >= 50 : The Center Party also supports Schleicher's plan. ?][? if dvp_relation >= 30 : In addition, the DVP and some other smaller parties support this proposal. ?][? if kpd_relation > 10 or left_strength + center_strength >= labor_strength: The DNVP, despite being courted by Schleicher, is not interested in joining this alliance. DNVP chairman Hugenberg seems to prefer working with Hitler to any alliance that includes the SPD. ?]
+[? if kpd_relation <= 10 and left_strength + center_strength < labor_strength: 웬일인지 국가인민당은 슐라이허의 제안에 동의했고, 나치와 공산주의자들에 맞서 장군과 일시적인 동맹을 맺었습니다. ?][? if z_relation >= 50 : 중앙당 또한 슐라이허의 계획을 지지합니다. ?][? if dvp_relation >= 30 : 게다가 인민당과 몇몇 군소 정당들이 이 제안을 지지합니다. ?][? if kpd_relation > 10 or left_strength + center_strength >= labor_strength: 국가인민당은 슐라이허의 구애에도 불구하고 이 동맹에 참여하는 데 관심이 없습니다. 국가인민당 당수 후겐베르크는 사회민주당이 포함된 그 어떤 동맹보다 차라리 히틀러와 협력하는 것을 선호하는 듯합니다. ?]
 
 @schleicher_success
 on-arrival: time_to_election = 13; schleichers_scheme_success = 1; next_election_time = 10000;
@@ -48,15 +48,15 @@ call: set_next_election_time
 
 # hack to set next election time
 
-The scheme has succeeded - there is a majority in the Reichstag backing Schleicher. New elections have been tentatively set for [+ next_election_month : month +] [+ next_election_year +].
+계획은 성공했습니다. 제국의회 내에 슐라이허를 지지하는 과반수가 형성되었습니다. 새로운 선거는 [+ next_election_year +]년 [+ next_election_month : month +]로 잠정 연기되었습니다.
 
 @schleicher_failed
 
-Unfortunately, the coalition supporting the dissolution of the Reichstag does not constitute a majority. There will be elections as scheduled.
+불행하게도 제국의회 해산을 지지하는 연합은 과반수를 확보하지 못했습니다. 예정대로 선거가 치러질 것입니다.
 
 @reject
-title: Reject Schleicher's schemes.
-subtitle: The Reichstag will continue to meet.
+title: 슐라이허의 계획을 거부한다.
+subtitle: 제국의회는 계속 소집될 것입니다.
 on-arrival: labor_dissent += 10 if works_program = 0
 
-In the end, there is no uptake for Schleicher's schemes by any political party.
+결국 그 어떤 정당도 슐라이허의 계획을 받아들이지 않았습니다.

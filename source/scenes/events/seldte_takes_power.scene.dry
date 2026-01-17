@@ -1,23 +1,23 @@
-title: The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> Ascendant?
-subtitle: The beginning of the end.
+title: <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우파</span>의 부상?
+subtitle: 파국의 서막.
 view-if: chancellor == "Seldte"
 on-arrival: spd_in_government = 0
 tags: event
 new-page: true
 
-With Seldte and Hergt in charge of Germany, presiding over a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> "New Harzburg" Coalition ruling by presidential decree, the beginning of the end is near. 
+젤테와 헤르크트가 독일을 장악하고, 대통령 긴급 명령권으로 통치하는 <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span> "신 하르츠부르크" 연정을 주도하면서, 파국이 임박했습니다.
 
-However, the two coalition parties have irreparable differences over the German <span style="color: #808080;">monarchy</span> and next steps, and with the <span style="color: #3E88B3;">nationalists</span> having an edge over their <span class="tooltip-text" title="good mod">dynamic</span> peers, it seems that this arrangement won't last. Furthermore, it is anticipated that the current government will avoid any moves to restore the monarchy until after the 1935 referendum, and the cabinet must survive until then.
+하지만, 두 연정 파트너는 독일의 <span style="color: #808080;">군주제</span>와 향후 행보에 대해 좁힐 수 없는 이견을 보이고 있으며, <span style="color: #3E88B3;">민족주의자들</span>이 그들의 <span class="tooltip-text" title="good mod">역동적인</span> 동료들보다 우위를 점하고 있어, 이 합의는 오래가지 못할 것으로 보입니다. 게다가, 현 정부는 1935년 국민투표 전까지 군주제 복원과 관련된 어떠한 움직임도 피할 것으로 예상되며, 내각은 그때까지 살아남아야 합니다.
 
-What are we to do now?
+우리는 지금 어떻게 해야 합니까?
 
-- @fight: We will fight on the streets to prevent Seldte from consolidating power.
-- @game_over: We will vote against the government in the Reichstag.
+- @fight: 젤테가 권력을 공고히 하는 것을 막기 위해 거리 투쟁에 나선다.
+- @game_over: 제국의회에서 정부 불신임안에 투표한다.
 
 
 @fight
 
-Do we realize that this means civil war, against the full force of the state?
+이것이 국가의 모든 공권력을 상대로 한 내전을 의미한다는 것을 인지하고 있습니까?
 
-- @civil_war: Yes.
-- @game_over: We are not ready for war. Instead, we will vote against the government in the Reichstag.
+- @civil_war: 그렇다.
+- @game_over: 우리는 전쟁을 치를 준비가 되지 않았다. 대신, 제국의회에서 정부 불신임안에 투표한다.

@@ -1,5 +1,5 @@
-title: Reichsexekution of Thuringia
-subtitle: History repeats itself.
+title: 튀링겐에 대한 제국집행
+subtitle: 역사는 반복된다.
 view-if: president = "Hindenburg" and red_thuringia and (rb_force + rfb_force < 75) and not presidential_powers and (prussian_coup_seen or prussian_reichsexekution or hindenburg_angry >= 100 or hindenburg_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or saxony_joever) and year >= 1930
 on-arrival: thuringia_joever = 1; strife += 1; hindenburg_angry += 25; hindenburg_angry_bruning -= 25
 new-page: true
@@ -7,19 +7,19 @@ tags: event
 max-visits: 1
 face-image: img/Reichswehr.jpg
 
-= Reichsexekution of Thuringia
+= 튀링겐에 대한 제국집행
 
-President [+ president +] has invoked the <i>Reichsexekution</i> to dismiss the Thuringian government, citing its "inability to maintain order" amidst escalating clashes between the <span style="color: #7A3C00;">**SA**</span>, Reichsbanner, and the increasingly militant <span style="color: #700000;">**RFB**</span>.
+[+ president +] 대통령은 <span style="color: #7A3C00;">**SA**</span>,  국기단, 그리고 점점 더 호전적인 <span style="color: #700000;">**RFB**</span> 사이의 충돌이 격화되는 가운데 "질서를 유지할 수 없음"을 이유로 튀링겐 주 정부를 해산하기 위해 <i>제국집행</i>을 발동했습니다.
 
-However, the true motivation is clear: the left-wing coalition governing Thuringia poses a direct threat to the conservative and nationalist establishment in Germany.
+하지만 진짜 동기는 분명합니다. 튀링겐을 통치하는 좌파 연정이 독일의 보수적이고 민족주의적인 기득권층에 직접적인 위협이 되기 때문입니다.
 
 - @surrender
 
 @surrender
-title: Resign our positions, to prevent bloodshed.
-subtitle: Hindenburg will appoint a new <i>Reichskommissar</i>.
+title: 유혈 사태를 막기 위해 사임한다.
+subtitle: 힌덴부르크는 새로운 <i>국가판무관</i>을 임명할 것입니다.
 on-arrival: red_thuringia = 0; workers_spd -= 3; workers_kpd -= 3; unemployed_kpd -= 3; unemployed_spd -= 3; left_dissent += 10; labor_dissent += 5; rb_militancy = rb_militancy*0.8; rb_strength -= 200; rfb_banned = 1; rfb_strength -= 100; rfb_militancy -= 0.1; kpd_relation -= 25; communist_coalition -= 1
 
-The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Reichswehr patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
+거리에서 시위하는 <span style="color: #700000;">공산주의자들</span>은 잔인하게 진압당하고 있으며, 국방군은 거리를 순찰하고 정치 집회를 제한하면서도 <span style="color: #7A3C00;">나치</span> <span style="color: #7A3C00;">**SA**</span>가 지역 당 관리들을 괴롭히는 것은 못 본 체하고 있습니다.
 
-Hindenburg appoints <span style="color: #7FCEB1;">**CNBLP**</span> member Erwin Baum as <i>Reichskommissar</i> to govern Saxony, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.
+힌덴부르크는 <span style="color: #7FCEB1;">**CNBLP**</span> 소속의 에르빈 바움을 작센을 통치할 <i>국가판무관</i>으로 임명하여, 우리의 개혁을 백지화하고 <span style="color: #700000;">**RFB**</span>를 폭력적으로 진압하는 임무를 맡겼습니다.
