@@ -1,49 +1,49 @@
-title: Young Plan Campaigning
+title: 영안 캠페인
 new-page: true
-subtitle: How should we campaign in favor of the Plan?
+subtitle: 우리는 독일이 영안에 찬성하게 하기 위해 어떻게 선전해야 합니까?
 tags: event
 view-if: year = 1929 and month >= 10 and weimar_ref_signatures <= 0
 max-visits: 1
 
-= Young Plan Referendum
+= Y영안 국민투표
 
-While the Young Plan seems to be a positive development for the country, the Right are gathering signatures to initiate a referendum this December. While the referendum itself is likely to fail, their propaganda is striking a chord with many, especially amid the ongoing depression. 
+영안이 국가를 위해 긍정적인 발전인 것처럼 보이지만, 우파는 이번 12월 국민투표를 발의하기 위해 서명을 모으고 있습니다. 국민투표 자체는 실패할 가능성이 높지만, 그들의 선전은 많은 이들에게 호소력을 얻고 있습니다. 특히 진행 중인 대공황 속에서 말입니다.
 
-It comes down to us to campaign against the rhetoric of those that seek to destroy our republic. [? if spd_in_government: We are able to use government resources for this campaign, lowering the cost for our party. ?]
+우리 공화국을 파괴하려는 자들의 수사에 맞서 캠페인을 벌이는 것은 우리에게 달려 있습니다. [? if spd_in_government: 우리는 이 캠페인을 위해 정부 자원을 사용할 수 있어, 우리 당의 비용 부담을 줄일 수 있습니다. ?]
 
-- @pro_plan: Campaign in favor of the Young Plan and against the referendum.
-- @no_plan: Do not campaign on the Young Plan, one way or another.
+- @pro_plan: 영안에 찬성하고 국민투표에 반대하여 캠페인한다.
+- @no_plan: 영안에 대해 찬반 어느 쪽으로도 캠페인하지 않는다.
 
 @pro_plan
-subtitle: [? if spd_in_government: -1 resources ?][? if not spd_in_government: -2 resources ?]
+subtitle: [? if spd_in_government: -1 자원 ?][? if not spd_in_government: -2 자원 ?]
 choose-if: (resources >= 1 and spd_in_government = 1) or (resources >= 2 and spd_in_government = 0)
-unavailable-subtitle: Not enough resources.
+unavailable-subtitle: 자원이 충분하지 않습니다.
 on-arrival: resources -= 1 if spd_in_government; resources -= 2 if not spd_in_government;
 
-How should we campaign in favor of the Plan?
+우리는 독일이 영안에 찬성하게 하기 위해 어떻게 선전해야 합니까?
 
-- @internationalism: As part of a broader campaign in favor of internationalism and pacifism.
-- @rational: The Young Plan is simply the most rational choice for Germany.
+- @internationalism: 국제주의와 평화주의를 옹호하는 더 폭넓은 캠페인의 일환으로.
+- @rational: 영안은 단순히 독일을 위한 가장 합리적인 선택일 뿐이다.
 
 @internationalism
 on-arrival: pro_republic -= 3 if pacifism < 3; workers_spd += 2 if radio >= 2; nationalism -= 5*(1-dissent) if pacifism >= 2 else nationalism += 3; pacifism += 1; workers_spd += 5*(1-dissent) if pacifism >= 3 and nationalism <= 50; workers_spd += 1; workers_nsdap += 4 if pacifism < 3; rural_nsdap += 5; catholics_spd -= 3 if pacifism < 3; rural_dvp -= 4
 go-to: recalculate
 
-We rail hard against nationalism and in favor of pacifism and belonging to the international community of nations. [? if radio >= 2: Our radio network has helped us spread our message.&nbsp;?][? if pacifism >= 3 and nationalism <= 50 : We have rallied the workers to the cause of internationalism. ?]Although the bourgeois are not too pleased for us having monopolized the campaign for the Young Plan.
+우리는 민족주의를 맹렬히 비판하며 평화주의와 국제 사회의 일원이 되는 것을 옹호합니다. [? if radio >= 2: 우리의 라디오 네트워크가 메시지를 확산시키는 데 도움이 되었습니다.&nbsp;?][? if pacifism >= 3 and nationalism <= 50 : 우리는 노동자들을 국제주의의 대의로 결집시켰습니다. ?]비록 부르주아들은 우리가 영안 찬성 캠페인을 독점한 것에 대해 달가워하지 않지만 말입니다.
 
 
 @rational
-subtitle: The bourgeois will be more inclined to work with us on this.
+subtitle: 부르주아들은 이 문제에 대해 우리와 협력할 의향이 더 클 것입니다.
 on-arrival: pro_republic -= 3; pro_republic += 2 if (z_relation >= 50 and (dvp_relation >= 40 and ddp_relation >= 40 and dvp_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); nationalism += 5; nationalism -= 2 if (z_relation >= 50 and (dvp_relation >= 40 and ddp_relation >= 40 and dvp_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); old_middle_spd += 2 if radio >= 2; new_middle_spd += 2 if radio >= 2; old_middle_spd += 2; new_middle_spd += 2; workers_nsdap += 4; rural_nsdap += 5; rural_nsdap -= 3 if (z_relation >= 50 and (dvp_relation >= 40 and ddp_relation >= 40 and dvp_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); catholics_spd -= 3; workers_spd -= 3; workers_spd += 1 if radio >= 2; rural_dvp -= 4; rural_dvp += 2 if (z_relation >= 50 and (dvp_relation >= 40 and ddp_relation >= 40 and dvp_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); z_relation += 5; dvp_relation += 5; ddp_relation += 5; ddp_left += 1; ddp_cohesion += 1; dvp_left += 2
 go-to: recalculate
 
-We argue that the Young Plan is simply the most rational choice for Germany. Although it doesn't advance any broader political objectives, most people can get behind economic stability and recovery. [? if (z_relation >= 50 and (dvp_relation >= 40 and ddp_relation >= 40 and dvp_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)): The bourgeois parties have rallied with us to campaign against the referendum and for the Young Plan.&nbsp;?][? if radio >= 2: Our radio network has helped us spread our message.&nbsp;?]
+우리는 영안이 단순히 독일을 위한 가장 합리적인 선택일 뿐이라고 주장합니다. 비록 그것이 더 거창한 정치적 목표를 진전시키지는 않지만, 대부분의 사람들은 경제적 안정과 회복을 지지할 수 있습니다. [? if (z_relation >= 50 and (dvp_relation >= 40 and ddp_relation >= 40 and dvp_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)): 부르주아 정당들은 국민투표에 반대하고 영안을 지지하기 위해 우리와 함께 결집했습니다.&nbsp;?][? if radio >= 2: 우리의 라디오 네트워크가 메시지를 확산시키는 데 도움이 되었습니다.&nbsp;?]
 
 @no_plan
 on-arrival: nationalism += 5; workers_spd -= 3; old_middle_spd -= 3; new_middle_spd -= 3; pacifism -= 1; workers_nsdap += 5; rural_nsdap += 5; catholics_spd -= 5; rural_dvp -= 5; pro_republic -= 6
 go-to: recalculate
 
-The referendum is easily going to fail with or without our presence in the campaign. However, nationalist sentiment is inflamed, and the right-wing parties are using our silence around the Plan as a tacit admission of its faults. Our silence has only emboldened the Right, especially the <span style="color: #7A3C00;">**NSDAP**</span>.
+국민투표는 우리가 캠페인에 참여하든 안 하든 실패할 것이 뻔합니다. 그러나 민족주의적 정서는 들끓고 있으며, 우파 정당들은 계획에 대한 우리의 침묵을 그 결점에 대한 암묵적인 인정으로 이용하고 있습니다. 우리의 침묵은 우파, 특히 <span style="color: #7A3C00;">**NSDAP**</span>를 대담하게 만들었을 뿐입니다.
 
 
 @recalculate

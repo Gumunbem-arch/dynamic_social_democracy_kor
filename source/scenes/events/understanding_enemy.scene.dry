@@ -1,27 +1,27 @@
-title: Understanding the Enemy
-subtitle: Why did the <span style="color: #7A3C00;">Nazis</span> gain so many votes?
+title: 적을 이해하기
+subtitle: 왜 <span style="color: #7A3C00;">나치</span>가 그토록 많은 표를 얻었는가?
 view-if: year >= 1929 and year <= 1932 and nsdap_r >= 15 and understanding_enemy_seen = 0 and understanding_enemy_timer = 0 and neorevisionism = 0
 on-arrival: understanding_enemy_seen = 1
 max-visits: 1
 new-page: true
 tags: event
 
-= Understanding the Enemy
+= 적을 이해하기
 
-The <span style="color: #7A3C00;">Nazis</span>' rise is unprecedented for a political party in modern Germany, and <span style="color: #c00000;">socialist</span> intellectuals are doing their best to come to terms with the rapid rise of this dangerous party.
+<span style="color: #7A3C00;">나치</span>의 부상은 현대 독일 정당사에서 전례를 찾아볼 수 없는 일이며, <span style="color: #c00000;">사회주의</span> 지식인들은 이 위험한 정당의 급격한 성장을 이해하기 위해 최선을 다하고 있습니다.
 
 # Harsch p. 106-109
 
-The trade union researcher Theodor Geiger has written an article titled "Panik im Mittelstand", in which he describes the <span style="color: #7A3C00;">Nazis</span> as being primarily a movement of the middle class, especially lower-middle civil servants and professionals who fear the proletarianizing effects of the Depression. Geiger argues that the middle class has been economically and politically unmoored, long split between many competing parties, squeezed between the big businesses and the proletariat. The mix of nationalist, anti-democratic, and loosely anti-capitalist rhetoric of the <span style="color: #7A3C00;">Nazis</span> appeals to this group, perhaps only temporarily before the middle class discovers its true class interests.
+노동조합 연구원 테오도어 가이거는 "중산층의 공황"이라는 제목의 기고문에서 <span style="color: #7A3C00;">나치</span>를 주로 중산층, 특히 대공황으로 인한 프롤레타리아화를 두려워하는 하위 중산층 공무원과 전문직의 운동으로 묘사합니다. 가이거는 중산층이 경제적, 정치적으로 기반을 잃고 표류하고 있으며, 오랫동안 수많은 경쟁 정당들 사이에서 분열된 채 대기업과 프롤레타리아 사이에서 쥐어짜이고 있다고 주장합니다. <span style="color: #7A3C00;">나치</span>가 내세우는 민족주의적, 반민주적, 그리고 느슨한 반자본주의적 수사의 혼합은 이 집단에게 호소력이 있으며, 아마도 이는 중산층이 그들의 진정한 계급 이익을 깨닫기 전까지만 일시적으로 유효할 것입니다.
 
-By contrast, the theoretician Alexander Schifrin understands the <span style="color: #7A3C00;">Nazis</span> as a new, unprecedented type of political movement, a <span style="color: #7A3C00;">fascist</span> party that has non-economic appeal across class lines. He calls to attention its use of violent propaganda and street demonstrations as central to their rise.
+대조적으로, 이론가 알렉산더 쉬프린은 <span style="color: #7A3C00;">나치</span>를 새롭고 전례 없는 유형의 정치 운동, 즉 계급을 초월하여 비경제적 호소력을 지닌 <span style="color: #7A3C00;">파시스트</span> 정당으로 이해합니다. 그는 그들의 성장에 있어 폭력적 선전과 거리 시위의 사용이 핵심적이라는 점을 환기시킵니다.
 
 # Harsch p. 77-78
 
-Carlo Mierendorff, a leader of the "new revisionists", understands the <span style="color: #7A3C00;">Nazis</span> as a politically incoherent but nevertheless powerful movement. They are kept together by the strength of their organizing machine and the emotional appeal of their nebulous ideology, which is able to attract less informed voters who voted based on feeling. Countering them would require a new style of campaigning, focused more on symbols and emotion rather than reason.
+"신수정주의자들"의 지도자인 카를로 미어렌도르프는 <span style="color: #7A3C00;">나치</span>를 정치적으로 일관성은 없지만 그럼에도 불구하고 강력한 운동으로 이해합니다. 그들은 강력한 조직력과 모호한 이데올로기의 감정적 호소력으로 결속되어 있으며, 이는 감정에 기반하여 투표하는 정보가 부족한 유권자들을 끌어들이고 있습니다. 그들에 대항하기 위해서는 이성보다는 상징과 감정에 더 초점을 맞춘 새로운 스타일의 선거 캠페인이 필요할 것입니다.
 
 
-It is possible that all or none of these hypotheses are correct. Whatever the case, there must be something we can do to stop their rise.
+이 가설들 모두가 맞을 수도, 혹은 아무것도 맞지 않을 수도 있습니다. 어쨌든, 그들의 부상을 막기 위해 우리가 할 수 있는 일이 분명히 있을 것입니다.
 
 # Georg Decker
 
@@ -29,29 +29,29 @@ It is possible that all or none of these hypotheses are correct. Whatever the ca
 
 # Carlo Mierendorff
 
-- @p1: The <span style="color: #7A3C00;">Nazis</span> are the fault of the <span style="color: #000000;">petit</span> <span style="color: #C0A054;">bourgeois</span>. It is not our responsibility as a working-class party to stop them.
-- @p2: We can combat the <span style="color: #7A3C00;">Nazis</span> by adopting a "People's Party" posture that might compete for support among the middle class.
-- @p3: We should use new Mierendorff's new propaganda methods to fight the the <span style="color: #7A3C00;">Nazis</span>.
-- @p4: We must focus our work among the working class to prevent <span style="color: #7A3C00;">Nazi</span> in-roads.
+- @p1: <span style="color: #7A3C00;">나치</span>는 <span style="color: #000000;">쁘띠</span> <span style="color: #C0A054;">부르주아</span>들의 과오로 인해 생겨났다. 그들을 막는 것은 노동계급 정당인 우리의 책임이 아니다.
+- @p2: 중산층 사이에서 지지를 두고 경쟁할 수 있는 "대중 정당" 노선을 채택하여 <span style="color: #7A3C00;">나치</span>와 싸워야 한다.
+- @p3: <span style="color: #7A3C00;">나치</span>와 싸우기 위해 미어렌도르프의 새로운 선전 방식을 도입해야 한다.
+- @p4: <span style="color: #7A3C00;">나치</span>의 침투를 막기 위해 노동계급 내에서의 활동에 집중해야 한다.
 
 @p1
 
-The <span style="color: #7A3C00;">Nazis</span> are the fault of the petit bourgeoisie. It is not our responsibility as a working-class party to stop them.
+<span style="color: #7A3C00;">나치</span>는 쁘띠 부르주아들의 과오로 인해 생겨났습니다. 그들을 막는 것은 노동계급 정당인 우리의 책임이 아닙니다.
 
 @p2
 on-arrival: peoples_party_support += 1; neorevisionist_strength += 5; left_strength -= 3; left_dissent += 4; center_dissent += 3;
 
-We can combat the <span style="color: #7A3C00;">Nazis</span> by adopting a "People's Party" posture that might compete for support among the middle class. In order to do this, we can create a new and inclusive vision of the party that encompasses all people who work for a living, which is almost everyone in the country save the aristocrats and top capitalists.
+우리는 중산층 사이에서 지지를 두고 경쟁할 수 있는 "대중 정당" 노선을 채택함으로써 <span style="color: #7A3C00;">나치</span>와 싸울 수 있습니다. 이를 위해, 우리는 생계를 위해 일하는 모든 사람을 아우르는 당의 새롭고 포용적인 비전을 만들 수 있으며, 이는 귀족들과 최상위 자본가들을 제외한 나라의 거의 모든 사람을 포함합니다.
 
-[? if peoples_party = 0 : This effort faces great opposition from the left and center of our party, who would prefer a party focused on the working class. To fully adopt the vision of a people's party, we should increase our campaigning among other demographics. ?]
+[? if peoples_party = 0 : 이 노력은 노동계급에 집중된 당을 선호하는 우리 당의 좌파와 중앙파로부터 큰 반대에 직면해 있습니다. 국민 정당의 비전을 완전히 채택하기 위해서는, 다른 인구 계층을 대상으로 한 캠페인을 늘려야 합니다. ?]
 
 
 @p3
 on-arrival: neorevisionist_strength += 10; nazi_urgency += 1; neorevisionism += 1;
 
-Working together with other "neorevisionists" such as Sergei Chakhotin, Mierendorff has developed new propaganda methods to fight the rise of the Nazis. They focus on visually striking symbols and repetitious slogans. Time will tell how effective they are.
+세르게이 차호틴과 같은 다른 "신수정주의자들"과 협력하여, 미어렌도르프는 나치의 부상에 맞서기 위한 새로운 선전 방법들을 개발했습니다. 그들은 시각적으로 강렬한 상징들과 반복적인 구호들에 초점을 맞춥니다. 그것들이 얼마나 효과적일지는 시간이 말해줄 것입니다.
 
 @p4
 on-arrival: left_strength += 4; center_strength += 4; labor_strength += 4; left_dissent -= 3; center_dissent -= 3; labor_dissent -= 3; workers_spd += 2*(1-dissent); unemployed_spd += 2*(1-dissent)
 
-The <span style="color: #7A3C00;">Nazis</span>' appeals are making in-roads even among the working class, so we must redouble our propaganda campaigns among our base in order to prevent any <span style="color: #7A3C00;">Nazi</span> attachment.
+<span style="color: #7A3C00;">나치</span>의 호소력은 심지어 노동계급 사이에서도 침투하고 있으므로, 우리는 어떠한 <span style="color: #7A3C00;">나치</span> 성향도 생겨나지 않도록 우리의 지지 기반 내에서 선전 캠페인을 두 배로 강화해야 합니다.

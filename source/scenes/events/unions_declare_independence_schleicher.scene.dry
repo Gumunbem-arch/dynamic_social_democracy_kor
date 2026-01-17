@@ -1,6 +1,6 @@
-title: Unions Declare Independence
+title: 노조의 독립 선언
 new-page: true 
-subtitle: Labor's disagreements with our policies have grown too severe.
+subtitle: 우리의 정책에 대한 노동계의 반발이 극에 달했습니다.
 tags: event
 view-if: labor_dissent >= 60 and not unions_independent and chancellor == "Schleicher"
 on-arrival: {!
@@ -107,10 +107,10 @@ if (Q.n_advisors < Q.n_advisors_start) Q.shuffle_leadership_timer = 0;
 !}
 max-visits: 1
 
-= Unions Declare Independence
+= 노조의 독립 선언
 
-Our policy choices have greatly offended the labor movement. Union leaders have declared that they are independent of any political party, and some have been seen seeking accommodation with the <span style="color: #700000;">**KPD**</span> and even the <span style="color: #7A3C00;">**NSDAP**</span>. However, most unionists are now seeking an accommodation with Chancellor Schleicher[? if dnef_formed:&nbsp;and his <span style="color: #BFC8CC;">**DNEF**</span>?][? if not dnef_formed:, pressuring him to establish a political vehicle of his own?]. In doing so, they have stepped away from <span style="color: #9B0000;">Marxist</span> ideology and shifted toward a more pragmatic laborist stance.
+우리의 정책 결정은 노동 운동 진영의 심기를 크게 건드렸습니다. 노조 지도부는 그들이 어떠한 정당에도 속하지 않는 독립적인 상태임을 선언했으며, 일부는 <span style="color: #700000;">**KPD**</span>나 심지어 <span style="color: #7A3C00;">**NSDAP**</span>와도 타협을 모색하는 모습까지 보였습니다. 하지만 대부분의 조합원들은 이제 슐라이허 총리[? if dnef_formed:&nbsp;및 그의 <span style="color: #BFC8CC;">**DNEF**</span>?][? if not dnef_formed:, 그리고 그에게 독자적인 정치 세력을 구축하라고 압박하며 그?]와 타협을 모색하고 있습니다. 그 과정에서 그들은 <span style="color: #9B0000;">마르크스주의</span> 이념에서 벗어나 더 실리적인 노동조합주의 노선으로 이동했습니다.
 
-Nonetheless, most workers remain loyal to the <span style="color: #c00000;">**SPD**</span>, although their affiliation is less solid. Many workers move left[? if sapd_formed:, to the <span style="color: #700000;">**KPD**</span> or the nascent <span style="color: #9B0000;">**SAPD**</span>?], while others are drawn in a nationalist direction, as the ADGB signals its readiness to cooperate with the <span style="color: #c00000;">Red</span> General to tackle the crisis.
+그럼에도 불구하고 대부분의 노동자들은 여전히 <span style="color: #c00000;">**SPD**</span>에 충성하고 있지만, 그 결속력은 예전만 못합니다. 많은 노동자들이 좌측으로 이동하여[? if sapd_formed:, <span style="color: #700000;">**KPD**</span> 혹은 신생 <span style="color: #9B0000;">**SAPD**</span>로 향하고 있습니다?], 반면 다른 이들은 ADGB가 위기 극복을 위해 <span style="color: #c00000;">적색</span> 장군과 협력할 준비가 되었음을 알림에 따라 민족주의적인 방향으로 이끌리고 있습니다.
 
-Much of our working-class base has defected, and labor's influence in our party has greatly diminished.
+우리의 노동계급 지지 기반 중 상당수가 이탈했고, 당내 노동계의 영향력은 크게 위축되었습니다.

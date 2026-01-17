@@ -1,42 +1,42 @@
-title: 1930 [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] Conference 
-subtitle: [+ z_leader +] moves to merge with the anti-Hugenberg Right...
+title: 1930년 [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] 회의
+subtitle: [+ z_leader +]는 반-후겐베르크 우파와 합당하기 위해 움직입니다...
 view-if: stegerwald_skibidi_time == time and (z_leader == "Stegerwald" or z_leader == "Adenauer") and dnvp_ideology == "Radical" and not kvp_cnblp_sister and not dkp_merger_waiting
 new-page: true
 max-visits: 1
 tags: event
 face-image: img/zentrum_3.jpg
 
-= 1930 [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] Conference
+= 1930년 [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] 회의
 
-With Hugenberg’s hardliners tightening their grip over the <span style="color: #3E88B3;">**DNVP**</span>, any prospect of a merger with the <span style="color: #000000;">Center Party</span> has evaporated. But a new path to expansion has emerged. The party leadership now turns its attention to the fragmented remains of the anti-Hugenberg right—figures like Westarp and his <span style="color: #0087DC;">**KVP**</span>—as potential candidates for absorption.
+후겐베르크의 강경파가 <span style="color: #3E88B3;">**DNVP**</span>를 장악하면서, <span style="color: #000000;">중앙당</span>과의 합병 가능성은 사라졌습니다. 하지만 확장을 위한 새로운 길이 열렸습니다. 당 지도부는 이제 반-후겐베르크 우파의 파편화된 잔재들—베스타르프와 그의 <span style="color: #0087DC;">**KVP**</span> 같은 인물들—을 흡수 대상으로 주목하고 있습니다.
 
-The consequences are obvious. Bringing these elements into the fold would drag the <span style="color: #000000;">Center Party</span> further to the right—foreclosing any serious cooperation with the <span style="color: #c00000;">**SPD**</span> and entrenching the party within the conservative camp.
+결과는 명백합니다. 이 세력들을 당내로 끌어들이는 것은 <span style="color: #000000;">중앙당</span>을 더욱 우경화시킬 것입니다—<span style="color: #c00000;">**SPD**</span>와의 진지한 협력 가능성을 차단하고 당을 보수 진영 내에 고착시키면서 말입니다.
 
-A vote is now before them: merge with the <span style="color: #0087DC;">**KVP**</span>—or continue the status quo.
+이제 그들 앞에 투표가 놓여 있습니다: <span style="color: #0087DC;">**KVP**</span>와 합병할 것인가—아니면 현상 유지를 지속할 것인가.
 
-- @cvp_kvp_merger: The <span style="color: #000000;">Center Party</span> absorbs the <span style="color: #0087DC;">**KVP**</span>!
-- @status_quo: The <span style="color: #000000;">Center Party</span> has rejected a merger with the <span style="color: #3E88B3;">**DNVP**</span> splinters.
+- @cvp_kvp_merger: <span style="color: #000000;">중앙당</span>이 <span style="color: #0087DC;">**KVP**</span>를 흡수하다!
+- @status_quo: <span style="color: #000000;">중앙당</span>이 <span style="color: #3E88B3;">**DNVP**</span> 분파들과의 합병을 거부했다.
 
 @cvp_kvp_merger
-subtitle: The <span style="color: #000000;">Center Party</span> is not in government with us, and our strained relations have nudged them toward this option.
-unavailable-subtitle: The <span style="color: #000000;">Center</span> care enough about our mutual relations to obstruct this merger.
+subtitle: <span style="color: #000000;">중앙당</span>은 우리와 함께 정부에 참여하고 있지 않으며, 우리의 긴장된 관계가 그들을 이 선택으로 떠밀었습니다.
+unavailable-subtitle: <span style="color: #000000;">중앙당</span>은 이 합병을 저지할 만큼 우리와의 관계를 중요하게 여깁니다.
 choose-if: z_relation < 40 and not ((in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia)))
 on-arrival: z_party_name = "CVP"; workers_z -= 3; workers_spd += 3; unemployed_z -= 3; unemployed_spd += 3
 face-image: img/cvp.jpg
 go-to: cvp_kvp_formed if kvp_formed; cvp_kvp_lite_formed if not kvp_formed
 
-The <span style="color: #000000;">Center Party</span> has officially absorbed the much smaller <span style="color: #0087DC;">**KVP**</span>, expanding its reach to the right. Unsurprisingly, this has severely strained relations between our two parties, as former <span style="color: #3E88B3;">**DNVP**</span> figures like Westarp remain openly hostile to any cooperation with the <span style="color: #c00000;">**SPD**</span>.
+<span style="color: #000000;">중앙당</span>은 공식적으로 훨씬 더 작은 <span style="color: #0087DC;">**KVP**</span>를 흡수하여, 우측으로 그 외연을 확장했습니다. 놀랍지 않게도, 이는 우리 두 당 사이의 관계를 심각하게 악화시켰습니다. 베스타르프 같은 전 <span style="color: #3E88B3;">**DNVP**</span> 인물들은 <span style="color: #c00000;">**SPD**</span>와의 어떤 협력에도 공개적으로 적대적인 태도를 유지하고 있기 때문입니다.
 
-Still, the party’s transformation marches on. To mark the merger—and its progress toward becoming an interconfessional Volkspartei—it has formally rebranded itself as the <i>Christliche Volkspartei</i> (<span style="color: #000000;">Christian People's Party</span>)—an effort to finally shed its old, Catholic-associated <span style="color: #000000;">Center</span> label.
+그럼에도 불구하고, 당의 변혁은 계속됩니다. 합병을 기념하고 초교파적 대중정당이 되기 위한 진전을 위해, 당은 공식적으로 당명을 <i>Christliche Volkspartei</i> (<span style="color: #000000;">기독교 인민당</span>)로 변경했습니다—마침내 낡은, 가톨릭과 연관된 <span style="color: #000000;">중앙당</span>이라는 꼬리표를 떼어내기 위한 노력의 일환입니다.
 
 @status_quo
-subtitle: [? if in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia): The <span style="color: #000000;">Center Party</span> is currently in a coalition with us, and don't want to endanger its stability.?] [? if z_relation >= 40 and not (in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia)): Significant portions of the <span style="color: #000000;">Center Party</span> supporting maintaining our relationship, and don't want to potentially endanger it. ?]
+subtitle: [? if in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia): <span style="color: #000000;">중앙당</span>은 현재 우리와 연정 중이며, 그 안정을 위태롭게 하고 싶어 하지 않습니다.?] [? if z_relation >= 40 and not (in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia)): <span style="color: #000000;">중앙당</span>의 상당수는 우리와의 관계 유지를 지지하며, 잠재적으로 이를 위태롭게 하고 싶어 하지 않습니다. ?]
 choose-if: z_relation >= 40 or (in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia))
-unavailable-subtitle: [? if not (in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia)): We are not in any government with the <span style="color: #000000;">Center Party</span>, leaving them free to do what they want. ?] [? if z_relation < 40 : Our relations are too low for them to care about what we think. ?]
+unavailable-subtitle: [? if not (in_weimar_coalition or in_grand_coalition or in_popular_front or (spd_prussia and not in_left_front_prussia)): 우리는 <span style="color: #000000;">중앙당</span>과 어떤 정부에도 참여하고 있지 않으므로, 그들은 원하는 대로 할 자유가 있습니다. ?] [? if z_relation < 40 : 우리의 관계는 그들이 우리의 생각을 신경 쓸 만큼 좋지 않습니다. ?]
 on-arrival: z_relation += 10; z_party_name = "CVP"; pro_republic += 5; nationalism -= 3; rural_kvp -= 2; rural_other -= 2 if not kvp_formed; rural_z += 2
 face-image: img/zentrum_2.jpg
 
-The status quo prevails. The <span style="color: #000000;">Center Party</span> and the <span style="color: #0087DC;">**KVP**</span> will remain separate—at least for now. Perhaps this is proof enough that the party still values cooperation with us over chasing after every fragment of the old Right.
+현상 유지가 우세합니다. <span style="color: #000000;">중앙당</span>과 <span style="color: #0087DC;">**KVP**</span>는 분리된 상태로 남을 것입니다—적어도 지금은 말입니다. 아마도 이것은 당이 낡은 우파의 잔당을 쫓아다니는 것보다 우리와의 협력을 더 가치 있게 여긴다는 충분한 증거일 것입니다.
 
-Even so, the party’s transformation presses on. To cement its evolution into an interconfessional *Volkspartei*, it has formally rebranded itself as the <i>Christliche Volkspartei</i> (<span style="color: #000000;">Christian People's Party</span>)—a move to finally shed its old, Catholic-associated <span style="color: #000000;">Center</span> label.
+그럼에도 불구하고, 당의 변혁은 계속됩니다. 초교파적 *대중정당*으로의 진화를 공고히 하기 위해, 당은 공식적으로 당명을 <i>Christliche Volkspartei</i> (<span style="color: #000000;">기독교 인민당</span>)로 변경했습니다—마침내 낡은, 가톨릭과 연관된 <span style="color: #000000;">중앙당</span>이라는 꼬리표를 떼어내기 위한 노력의 일환입니다.
 

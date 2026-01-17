@@ -1,6 +1,6 @@
-title: Unions Declare Independence
+title: 노조의 독립 선언
 new-page: true 
-subtitle: Labor's disagreements with our policies have grown too severe.
+subtitle: 우리의 정책에 대한 노동계의 반발이 극에 달했습니다.
 tags: event
 view-if: labor_dissent >= 60 and dnvp_leader == "Lambach" and not unions_independent and chancellor != "Schleicher"
 on-arrival: {!
@@ -102,10 +102,10 @@ if (Q.n_advisors < Q.n_advisors_start) Q.shuffle_leadership_timer = 0;
 !}
 max-visits: 1
 
-= Unions Declare Independence
+=  노조의 독립 선언
 
-Our policy choices have greatly offended the labor movement. Union leaders have declared that they are independent of any political party, and some have been seen seeking accommodation with the extremists on the <span style="color: #700000;">far</span>-<span style="color: #9B0000;">left</span> and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. However, a sizeable majority of unionists however are identifying with the <span style="color: #6D5298;">Christian Socials</span> of the <span style="color: #3E88B3;">**DNVP**</span>, who now control their leadership.
+우리의 정책 결정은 노동 운동 진영의 심기를 크게 건드렸습니다. 노조 지도부는 그들이 어떠한 정당에도 속하지 않는 독립적인 상태임을 선언했으며, 일부는 <span style="color: #700000;">극</span><span style="color: #9B0000;">좌</span>나 <span style="color: #7A3C00;">극</span><span style="color: #3E88B3;">우</span>의 극단주의자들과 타협을 모색하는 모습까지 보였습니다. 하지만 상당수의 조합원들은 현재 그들의 지도부를 장악하고 있는 <span style="color: #3E88B3;">**DNVP**</span>의 <span style="color: #6D5298;">기독교 사회파</span>에 동조하고 있습니다.
 
-Most workers remain loyal to the <span style="color: #c00000;">**SPD**</span>, although their affiliation is less solid. Many workers move left[? if sapd_formed:, to the <span style="color: #700000;">**KPD**</span> or the nascent <span style="color: #9B0000;">**SAPD**</span>?]. Others move in a more nationalist direction, towards the <span style="color: #3E88B3;">**DNVP**</span> as the ADGB signals its willingness to work with the <span style="color: #6D5298;">Christian Socials</span> to solve the economic crisis.
+대부분의 노동자들은 여전히 <span style="color: #c00000;">**SPD**</span>에 충성하고 있지만, 그 결속력은 예전만 못합니다. 많은 노동자들이 좌측으로 이동하여[? if sapd_formed:, <span style="color: #700000;">**KPD**</span> 혹은 신생 <span style="color: #9B0000;">**SAPD**</span>로 향하고 있습니다?]. 다른 이들은 더 민족주의적인 방향으로 선회하여, ADGB가 경제 위기 해결을 위해 <span style="color: #6D5298;">기독교 사회파</span>와 협력할 의지를 보임에 따라 <span style="color: #3E88B3;">**DNVP**</span> 쪽으로 기울고 있습니다.
 
-Much of our working-class base has defected, and labor's influence in our party has greatly diminished.
+우리의 노동계급 지지 기반 중 상당수가 이탈했고, 당내 노동계의 영향력은 크게 위축되었습니다.

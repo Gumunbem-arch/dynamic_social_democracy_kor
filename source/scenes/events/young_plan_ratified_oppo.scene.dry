@@ -1,16 +1,16 @@
-title: Young Plan Ratified
+title: 영안 비준됨
 new-page: true
 tags: event
 view-if: year = 1930 and month >= 3 and not spd_in_government and not young_plan_ratified
 on-arrival: dvp_right += 3; ddp_right += 1; dvp_relation -= 5; lvp_right += 3; lvp_relation -= 5; young_plan_ratified = 1
 max-visits: 1
 
-= Young Plan Ratified
+= 영안 비준됨
 
-The Young Plan is finally ratified, and with that, the main reason President Hindenburg and the [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: bourgeois right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of German finances in order to make the payments, likely including cuts to social spending.
+영안이 마침내 비준되었습니다. 이로써 힌덴부르크 대통령과 [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: 부르주아 우파?]가 우리와의 통치를 고려했던 주된 명분이 사라졌습니다. [+ chancellor +] 총리는 배상금을 지불하기 위해 독일 재정의 전면적인 개혁을 단행할 가능성이 높으며, 여기에는 사회 지출 삭감이 포함될 것입니다.
 
-- @joever: If this year couldn't get any worse...
+- @joever: 설상가상이라더니...
 
 @joever
 
-This is outside of our control.
+이건 우리의 통제 밖의 일입니다.

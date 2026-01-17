@@ -1,19 +1,19 @@
-title: Young Plan Referendum
+title: 영안 국민투표
 new-page: true
-subtitle: The results have come in.
+subtitle: 결과가 나왔습니다.
 tags: event
 view-if: year = 1929 and month >= 12 and young_plan_signatures >= 10
 max-visits: 1
 
-= Young Plan Referendum
+= 영안 국민투표
 
-After months of campaigning and propaganda by both sides, the German people have come to vote on the referendum against the Young Plan, which has taken the backseat in comparison to the devastating economic depression. 
+양측의 몇 달간에 걸친 캠페인과 선전 끝에, 독일 국민은 영안 반대 국민투표에 참여했습니다. 하지만 이 투표는 파괴적인 경제 대공황에 밀려 뒷전이 되었습니다.
 
-Passing the referendum would need to require the approval of more than 50% of those eligible to vote, rather than a majority of those that do vote. This makes it impossible for the referendum to succeed, even with the recent economic depression.
+국민투표가 통과되려면 투표자의 과반수가 아니라, 유권자 전체의 50% 이상의 찬성이 요구됩니다. 이는 최근의 경제 대공황 상황을 고려할 때 국민투표의 성공을 불가능하게 만듭니다.
 
-- @results: The nation votes...
+- @results: 온 나라가 투표한다...
 
 @results
 on-arrival: nationalism -= 5 if young_plan_votes < 12 else nationalism += 3; workers_spd += 5 if young_plan_votes < 12 and nationalism <= 50; workers_nsdap += 4 if nationalism >= 55 and young_plan_votes >= 18; rural_nsdap += 5 if nationalism >= 55 and young_plan_votes >= 18; catholics_spd -= 4 if pacifism <= 3 and young_plan_votes >= 18; rural_dvp -= 4 if young_plan_votes >= 18; dvp_right += 3 if young_plan_votes >= 18; ddp_right += 2 if young_plan_votes >= 18; ddp_cohesion -= 1 if young_plan_votes >= 18; lvp_right += 3 if young_plan_votes >= 18; rural_lvp -= 4 if young_plan_votes >= 18; pro_republic -= 5 if young_plan_votes >= 18; pro_republic += 5 if young_plan_votes < 12; rural_dnf -= 2 if dnf_formed; old_middle_dnf -= 2 if dnf_formed; rural_nsdap += 2 if dnf_formed; old_middle_nsdap += 2 if dnf_formed; dvp_left += 1 if young_plan_votes < 12; ddp_left += 0.5 if young_plan_votes < 12; ddp_cohesion += 1 if young_plan_votes < 12; lvp_left += 1 if young_plan_votes < 12; nationalism += 3; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; unemployed_nsdap += 6; catholics_nsdap += 2
 
-The referendum easily fails, with only around [+ young_plan_votes +]% of voters participating in it. It seems that nationalism is not omnipotent in Germany, despite everything. [? if young_plan_votes >= 20: However, the support for the referendum is higher than expected. ?][? if young_plan_votes < 12: The support for the referendum was lower than expected, this should weaken the right-wing parties. ?] The <span style="color: #7A3C00;">**NSDAP**</span> is the main beneficiary of this campaign to the detriment of the [? if not dnf_formed: <span style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?].
+국민투표는 유권자의 약 [+ young_plan_votes +]%만이 참여하며 쉽게 실패했습니다. 이 모든 상황에도 불구하고, 민족주의가 독일에서 전능하지는 않은 모양입니다. [? if young_plan_votes >= 20: 그러나 국민투표에 대한 지지는 예상보다 높았습니다. ?][? if young_plan_votes < 12: 국민투표에 대한 지지는 예상보다 낮았으며, 이는 우파 정당들을 약화시킬 것입니다. ?] <span style="color: #7A3C00;">**NSDAP**</span>는 [? if not dnf_formed: <span style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?]의 손해를 바탕으로 이 캠페인의 주된 수혜자가 되었습니다.
