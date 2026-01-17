@@ -1,11 +1,11 @@
-title: Magnus Hirschfeld
+title: 마그누스 히르슈펠트
 is-pinned-card: true
 tags: advisor
 card-image: img/portraits/HirschfeldMagnus.jpg
 view-if: hirschfeld_advisor = 1
 new-page: true 
 
-= Magnus Hirschfeld
+= 마그누스 히르슈펠트
 
 마그누스 히르슈펠트는 성과학 연구소의 설립자이자 성소수자 권리 옹호자입니다. [? if homosexual_rights: 그는 <span style="color: #c00000;">**SPD**</span>가 <span style="color: red;">동</span><span style="color: orange;">성</span><span style="color: yellow;">애</span><span style="color: green;">자</span> <span style="color: blue;">권</span><span style="color: purple;">리</span> 증진을 이뤄낸 덕분에 현재 당내 여러 계파로부터 상당한 지지를 받고 있습니다. ?]
 
