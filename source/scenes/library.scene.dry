@@ -263,9 +263,9 @@ go-to: menu
 
 @public_opinion
 on-arrival: {!
-Q.pro_republic_disp = Math.round(Q.pro_republic);
-Q.nationalism_disp = Math.round(Q.nationalism);
-Q.socialism_disp = Math.round(Q.socialism);
+Q.pro_republic_disp = Math.floor(Q.pro_republic);
+Q.nationalism_disp = Math.floor(Q.nationalism);
+Q.socialism_disp = Math.floor(Q.socialism);
 !}
 view-if: (((not historical_mode) or game_over) and not rubicon) or game_over
 go-to: election_algorithm
@@ -574,7 +574,6 @@ go-to: menu
 
 
 @factions
-go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 **<span style="color: #c00000;">**SPD**</span>의 내부 파벌**
 
@@ -612,17 +611,21 @@ go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 반발: [+ reformist_dissent : dissent +]
 
-@neorevisionists
-go-to: menu
+[? if neorevisionism: **신수정주의파** ?]
 
-**신수정주의자**
+[? if neorevisionism: 신수정주의자들은 공화국 수호와 민주주의 확대에 집중하는 한편, 노동 계급을 넘어 당의 지지 기반을 확장하여 대중 정당을 만들고자 합니다. 그들은 공화국을 수호하기 위한 새로운 선전 기법과 원외 활동을 지지합니다. ?]
 
-신수정주의자들은 공화국 수호와 민주주의 확대에 집중하는 한편, 노동 계급을 넘어 당의 지지 기반을 확장하여 대중 정당을 만들고자 합니다. 그들은 공화국을 수호하기 위한 새로운 선전 기법과 원외 활동을 지지합니다.
+[? if neorevisionism: 세력: [+ neorevisionist_strength : strength +] ?]
 
-세력: [+ neorevisionist_strength : strength +]
+[? if neorevisionism: 반발: [+ neorevisionist_dissent : dissent +] ?]
 
-반발: [+ neorevisionist_dissent : dissent +]
+[? if social_patriot: **사회애국주의파** ?]
 
+[? if social_patriot: 사회 애국주의자들은 친노동자적 사회 프로그램에 대한 지지와 열렬한 독일 민족주의, 그리고 반공주의를 결합한 사상을 따릅니다. 사회애국주의를 자처하는 사람들 중 많은 이들은 단지 슐라이허[? if dnef_formed :&nbsp;와 그의 <span style="color: #BFC8CC;">**DNEF**</span>?].의 앞잡이에 불과해 보입니다. 다른 파벌들은 이러한 주장을 모순적이고 일관성 없는 것으로 봅니다[? if schleicher_spd_influence > 5 :, 어쩌면 결국 그들이 옳을지도..?]. ?]
+
+[? if social_patriot: 세력: [+ social_patriot_strength : strength +] ?]
+
+[? if social_patriot: 반발: [+ social_patriot_dissent : dissent +] ?]
 
 @figures
 title: 수치와 차트
