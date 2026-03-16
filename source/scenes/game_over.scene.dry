@@ -6179,8 +6179,8 @@ go-to: fun_zone
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Kriegswirtschaft</div>
-      <div class="achievement_subtitle"> - the <span style="color: #c00000; font-weight: bold;">SPD</span> is in government, maintaining maximum tariffs, a Reichswehr of at least 200 thousand men, unemployment below 15%, and a budget surplus.
+      <div style="font-weight: bold;">전시 경제</div>
+      <div class="achievement_subtitle"> - 관세를 최대화하고, 국방군 병력을 최소 20만 명으로 유지하며, 실업률 15% 미만과 예산 흑자를 달성합니다.
     </div>
   {!</td>!}
 {!</tr>!}
