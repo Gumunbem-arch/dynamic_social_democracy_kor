@@ -107,7 +107,7 @@ Q.economic_growth_2 = '0';
 if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
-Q.pro_republic_disp = Math.round(Q.pro_republic);
+Q.pro_republic_disp = Math.floor(Q.pro_republic);
 !}
 
 = 비상 상황
@@ -248,6 +248,7 @@ Q.pro_republic_disp = Math.round(Q.pro_republic);
 
 {!<span class="tooltip-text" title="개혁파는 정부 참여에 실용적이며, 복지 국가의 확장과 민주주의 수호를 추구합니다.">개혁파</span>!} 세력: [+ reformist_strength : strength +], 불만: [+ reformist_dissent : dissent +]
 
+[? if neorevisionism: {!<span class="tooltip-text" title="신수정주의자들은 공화국 수호와 민주주의 확대에 집중하는 한편, 노동 계급을 넘어 당의 지지 기반을 확장하여 대중 정당을 만들고자 합니다. 그들은 공화국을 수호하기 위한 새로운 선전 기법과 원외 활동을 지지합니다. ">신수정주의파</span>!} 세력: [+ neorevisionist_strength : strength +], 불만: [+ neorevisionist_dissent : dissent +] ?]
 
 @paramilitaries
 on-arrival: {!
@@ -316,9 +317,9 @@ Q.sa_strength_2 = Q.sa_strength.toFixed(1);
 
 @polls
 on-arrival: {!
-Q.pro_republic_disp = Math.round(Q.pro_republic);
-Q.nationalism_disp = Math.round(Q.nationalism);
-Q.socialism_disp = Math.round(Q.socialism);
+Q.pro_republic_disp = Math.floor(Q.pro_republic);
+Q.nationalism_disp = Math.floor(Q.nationalism);
+Q.socialism_disp = Math.floor(Q.socialism);
 !}
 
 = 예상 선거 결과
