@@ -40,7 +40,7 @@ on-arrival: sa_strength += 50; workers_nsdap += 5; unemployed_nsdap += 5; new_mi
 불행히도 우리 병력은 히틀러를 에워싼 <span style="color: #7A3C00;">**SA**</span>를 뚫어내지 못했습니다. 그는 강력한 지도자이자 동시에 희생자라는 이미지를 얻어 입지가 더욱 강화되었습니다. <span style="color: #7A3C00;">나치</span>는 그 어느 때보다 강력해졌습니다.
 
 @force_success
-on-arrival: hitler_deported = 1; sa_strength = sa_strength/2; workers_nsdap *= 0.7; new_middle_nsdap *= 0.7; old_middle_nsdap *= 0.7; rural_nsdap *= 0.7; unemployed_nsdap *= 0.7; sa_banned = 1; coup_progress -= 2; nsdap_leader = "Goebbels"; nsdap_chancellor = "Göring"; pro_republic += 10
+on-arrival: hitler_deported = 1; sa_strength = sa_strength/2; workers_nsdap *= 0.7; new_middle_nsdap *= 0.7; old_middle_nsdap *= 0.7; rural_nsdap *= 0.7; unemployed_nsdap *= 0.7; interior_goal_prussia -= 1 if not sa_banned; sa_banned = 1; coup_progress -= 2; nsdap_leader = "Goebbels"; nsdap_chancellor = "Göring"; pro_republic += 10
 achievement: deport_hitler
 
 경찰과 국기단의 승리로 대치 상황이 종료되었고, 히틀러는 체포되어 추방되었습니다! 이는 나치의 나약함을 드러내는 신호이며, 물리적 거리가 멀어진 탓에 조직 운영이 어려워져 <span style="color: #7A3C00;">나치</span>의 득표 활동에 차질이 생길 것입니다.
@@ -48,7 +48,7 @@ achievement: deport_hitler
 히틀러의 부재로 요제프 괴벨스가 <span style="color: #7A3C00;">나치</span> 당의 임시 지도자가 되었으며, 헤르만 괴링이 상당한 영향력을 행사하고 있습니다.
 
 @deport_success
-on-arrival: hitler_deported = 1; sa_strength = sa_strength/2; workers_nsdap *= 0.7; new_middle_nsdap *= 0.7; old_middle_nsdap *= 0.7; rural_nsdap *= 0.7; unemployed_nsdap *= 0.7; sa_banned = 1; coup_progress -= 2; nsdap_leader = "Goebbels"; nsdap_chancellor = "Göring"; pro_republic += 10
+on-arrival: hitler_deported = 1; sa_strength = sa_strength/2; workers_nsdap *= 0.7; new_middle_nsdap *= 0.7; old_middle_nsdap *= 0.7; rural_nsdap *= 0.7; unemployed_nsdap *= 0.7; interior_goal_prussia -= 1 if not sa_banned; sa_banned = 1; coup_progress -= 2; nsdap_leader = "Goebbels"; nsdap_chancellor = "Göring"; pro_republic += 10
 achievement: deport_hitler
 
 어떻게든 계획이 성공했습니다! 히틀러의 추방 과정에서 저항은 미미했습니다. 이는 나치의 나약함을 드러내는 신호이며, 물리적 거리가 멀어진 탓에 조직 운영이 어려워져 <span style="color: #7A3C00;">나치</span>의 득표 활동에 차질이 생길 것입니다.

@@ -38,7 +38,7 @@ on-arrival: prussian_police_strength += 30; rfb_strength += 50
 우리는 프로이센 경찰의 규모를 늘렸습니다.
 
 @bureaucracy
-on-arrival: prussian_police_loyalty += 0.08; nationalism -= 5; pacifism += 1; democratization += 2; pro_republic += 3*(1-dissent); new_middle_spd += 2*(1-dissent) if democratization >= 3; new_middle_spd += 2*(1-dissent) if democratization >= 4; coup_progress += 0.5; dvp_left += 2; ddp_left += 1; lvp_left += 1.5; reichsexekution += 1; bureaucracy_goal_prussia -= 1; new_middle_kpd += 2
+on-arrival: prussia_purge += 1; prussian_police_loyalty += 0.08; nationalism -= 5; pacifism += 1; democratization += 2; pro_republic += 3*(1-dissent); new_middle_spd += 2*(1-dissent) if democratization >= 3; new_middle_spd += 2*(1-dissent) if democratization >= 4; coup_progress += 0.5; dvp_left += 2; ddp_left += 1; lvp_left += 1.5; reichsexekution += 1; bureaucracy_goal_prussia -= 1; new_middle_kpd += 2
 
 관료 조직은 깊이 <span style="color: #808080;">반동적</span>이며, 많은 이들이 <span style="color: #3E88B3;">정치적 우파</span>를 돕기 위해 권력을 남용합니다. <span style="color: #3E88B3;">친제정</span> 및 <span style="color: #7A3C00;">친독재</span> 세력을 제거함으로써 우리는 관료 사회를 민주화할 수 있습니다. <span style="color: #700000;">**KPD**</span> 또한 주 관료 조직 내에 자신들의 인원을 침투시키기 시작했습니다...
 

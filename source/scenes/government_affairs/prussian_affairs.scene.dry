@@ -43,7 +43,7 @@ on-arrival: prussian_police_strength += 20
 우리는 프로이센 경찰의 규모를 늘렸습니다.
 
 @bureaucracy
-on-arrival: prussian_police_loyalty += 0.05; nationalism -= 3; pacifism += 1; democratization += 1; pro_republic += 3*(1-dissent); new_middle_spd += 2*(1-dissent) if democratization >= 3; new_middle_z += 0.5; new_middle_ddp += 1; new_middle_lvp += 2; coup_progress += 0.5; dvp_left += 0.5; ddp_left += 0.25; lvp_left += 0.5
+on-arrival: prussia_purge += 1; prussian_police_loyalty += 0.05; nationalism -= 3; pacifism += 1; democratization += 1; pro_republic += 3*(1-dissent); new_middle_spd += 2*(1-dissent) if democratization >= 3; new_middle_z += 0.5; new_middle_ddp += 1; new_middle_lvp += 2; coup_progress += 0.5; dvp_left += 0.5; ddp_left += 0.25; lvp_left += 0.5
 
 관료 조직은 깊이 <span style="color: #808080;">반동적</span>이며, 많은 이들이 <span style="color: #3E88B3;">정치적 우파</span>를 돕기 위해 권력을 남용합니다. <span style="color: #3E88B3;">친제정</span> 및 <span style="color: #7A3C00;">친독재</span> 세력을 제거함으로써 우리는 관료 사회를 민주화할 수 있습니다. 반대파 일부는 우리가 개인의 자유를 침해한다고 주장하지만, 공화국의 안보를 위해 필요한 일일지도 모릅니다.
 
