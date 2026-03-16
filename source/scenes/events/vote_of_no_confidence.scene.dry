@@ -7,9 +7,6 @@ view-if: chancellor_party == "SPD" and spd_in_government = 1 and ((in_grand_coal
 tags: event
 go-to: vonc_menu
 
-# Options: spend relations to reduce coalition_dissent, ask for kpd to abstain
-# (lmao <span style="color: #700000;">**KPD**</span> toleration arc...)
-
 = 불신임 투표
 
 [? if in_grand_coalition and not lvp_formed: <span style="color: #C0A054;">**DVP**</span>는 ?][? if (in_grand_coalition or in_social_liberal_coalition) and lvp_formed: <span style="color: #FFCC00;">**LVP**</span>는 ?][? if in_weimar_coalition or in_popular_front or in_minority_government and not in_social_liberal_coalition: [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?][? if lvp_formed and not in_social_catholic_coalition:&nbsp;및 <span style="color: #FFCC00;">**LVP**</span>?]?][? if in_social_liberal_coalition and not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>는 ?] 우리의 다양한 정책과 의견 차이를 이유로 내각 불신임안을 제출했습니다. 만약 이것이 통과된다면, 몇 달 안에 총선이 치러질 가능성이 높습니다.

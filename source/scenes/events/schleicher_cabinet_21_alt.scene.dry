@@ -1,4 +1,4 @@
-title: 가장 위대한 연정
+title: 가장 거대한 연정
 subtitle: 제국의회가 재소집되었습다.
 view-if: chancellor == "Treviranus" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: pro_republic += 8

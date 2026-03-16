@@ -559,6 +559,7 @@ go-to: bourgeois_campaign_menu
 @westarp
 title: 힌덴부르크의 절친한 친구인 베스타르프가 힌덴부르크를 위해 보수 세력을 결집하려 시도할 것이다.
 on-arrival: westarp_used = 1; hindenburg_support += 1
+view-if: not spd_campaign_1932
 max-visits: 1
 go-to: bourgeois_campaign_menu
 
@@ -567,7 +568,7 @@ go-to: bourgeois_campaign_menu
 @organizational_endorsements
 title: 비정당 조직들의 지지는 어떤가?
 subtitle: RLB, DHV, 그리고 범독일연맹과 같은 영향력 있는 그룹들은 그들 자신과 힌덴부르크 사이의 균열을 키워왔습니다.
-view-if: eckener_used and industry_used and (religion_used or not religion_available) and westarp_used
+view-if: eckener_used and industry_used and (religion_used or not religion_available) and (westarp_used or spd_candidate_1932)
 on-arrival: {!
 if (Q.hindenburg_support) {
     Q.new_middle_kvp += Q.hindenburg_support;
@@ -827,6 +828,7 @@ go-to: bourgeois_campaign_menu_op
 @westarp_op
 title: 힌덴부르크의 절친한 친구인 베스타르프가 힌덴부르크를 위해 보수 세력을 결집하려 시도할 것이다.
 on-arrival: westarp_used = 1; hindenburg_support += 1
+view-if: not spd_campaign_1932
 max-visits: 1
 go-to: bourgeois_campaign_menu_op
 
@@ -835,7 +837,7 @@ go-to: bourgeois_campaign_menu_op
 @organizational_endorsements_op
 title: 비정당 조직들의 지지는 어떤가?
 subtitle: RLB, DHV, 그리고 범독일연맹과 같은 영향력 있는 그룹들은 그들 자신과 힌덴부르크 사이의 균열을 키워왔습니다.
-view-if: eckener_used and industry_used and (religion_used or not religion_available) and westarp_used
+view-if: eckener_used and industry_used and (religion_used or not religion_available) and nd (westarp_used or spd_candidate_1932)
 on-arrival: {!
 if (Q.hindenburg_support) {
     Q.new_middle_kvp += Q.hindenburg_support;
@@ -889,6 +891,6 @@ if (Q.rlb_nazi) {
 
 [? if not rlb_nazi: 다양한 우익 이익 단체들 중에서, 백만 명의 회원과 수많은 영향력 있는 주 조직을 가진 독일 최대의 경제 이익 그룹인 RLB의 지지는 의심할 여지 없이 가장 중요합니다. 이 단체들에 대한 <span style="color: #7A3C00;">나치</span>의 전략은 그들을 직접 공격하는 것이 아니라 평회원들에게 영향을 미치는 것입니다. 이 압력은 지도부가 <span style="color: #7A3C00;">나치</span>를 지지하거나 회원들의 눈에 자신들을 불신하게 만들 위험을 감수하도록 강요합니다.<br><br> 그러나 이 접근 방식은 RLB에서 실패했습니다. 쉴레의 지도 하에, 이 조직은 <span style="color: #7A3C00;">민족주의</span> <span style="color: #3E88B3;">야당</span>에 회의적인 태도를 유지하며 <span style="color: #7A3C00;">나치</span> 인사가 상임간부회에 합류하는 것을 성공적으로 막았습니다. 그럼에도 불구하고, 평회원들 사이의 강력한 <span style="color: #7A3C00;">나치</span> 동조는 <span style="color: #7A3C00;">나치</span>의 대안 조직으로의 이탈로 이어졌습니다. ?]
 
-[? if rlb_nazi: 다양한 우익 이익 단체들 중에서, 백만 명의 회원과 수많은 영향력 있는 주 조직을 가진 독일 최대의 경제 이익 그룹인 RLB의 지지는 의심할 여지 없이 가장 중요합니다. 이 단체들에 대한 <span style="color: #7A3C00;">나치</span>의 전략은 그들을 직접 공격하는 것이 아니라 평회원들에게 영향을 미치는 것입니다. 이 압력은 지도부가 <span style="color: #7A3C00;">나치</span>를 지지하거나 회원들의 눈에 자신들을 불신하게 만들 위험을 감수하도록 강요합니다. <br><br> 이 접근 방식은 RLB 내에서 성공적인 것으로 판명되었는데, 그 새로운 지도자인 칼크로이트가 <span style="color: #7A3C00;">민족주의</span> <span style="color: #3E88B3;">야당</span>에 눈에 띄게 우호적이기 때문입니다. 그는 심지어 <span style="color: #7A3C00;">나치</span> 농업 관리를 상임간부회에 임명했습니다. 그러나 이러한 변화는 조직 내의 <span style="color: #7FCEB1;">**CNBLP**</span>와 제휴한 파벌들과 바이에른, 튀링겐, 뷔르템베르크의 주 계열사들로부터 상당한 반발을 불러일으켰습니다. 이 그룹들은 RLB의 지지를 거부하고 대신 회원들에게 [+ reactionary_candidate_1932 +][? if dnvp_candidate_1932: 또는 [+ dnvp_candidate_1932 +]?]에게 투표할 것을 촉구했습니다.?]
+[? if rlb_nazi: 다양한 우익 이익 단체들 중에서, 백만 명의 회원과 수많은 영향력 있는 주 조직을 가진 독일 최대의 경제 이익 그룹인 RLB의 지지는 의심할 여지 없이 가장 중요합니다. 이 단체들에 대한 <span style="color: #7A3C00;">나치</span>의 전략은 그들을 직접 공격하는 것이 아니라 평회원들에게 영향을 미치는 것입니다. 이 압력은 지도부가 <span style="color: #7A3C00;">나치</span>를 지지하거나 회원들의 눈에 자신들을 불신하게 만들 위험을 감수하도록 강요합니다. <br><br> 이 접근 방식은 RLB 내에서 성공적인 것으로 판명되었는데, 그 새로운 지도자인 칼크로이트가 <span style="color: #7A3C00;">민족주의</span> <span style="color: #3E88B3;">야당</span>에 눈에 띄게 우호적이기 때문입니다. 그는 심지어 <span style="color: #7A3C00;">나치</span> 농업 관리를 상임간부회에 임명했습니다. 그러나 이러한 변화는 조직 내의 <span style="color: #7FCEB1;">**CNBLP**</span>와 제휴한 파벌들과 바이에른, 튀링겐, 뷔르템베르크의 주 계열사들로부터 상당한 반발을 불러일으켰습니다. 이 그룹들은 RLB의 지지를 거부하고 대신 회원들에게 [+ reactionary_candidate_1932 +][? if dnvp_candidate_1932:&nbsp; 또는 [+ dnvp_candidate_1932 +]?]에게 투표할 것을 촉구했습니다.?]
 
 - @hope: 독일이 올바른 선택을 하기를 희망하자.

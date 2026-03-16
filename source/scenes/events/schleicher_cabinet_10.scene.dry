@@ -1,6 +1,6 @@
 title: <span style="color: #000000;">중앙당</span>의 정부 참여
 subtitle: <i>제국종교협약</i>의 약속이 그들을 협력으로 이끌었습니다.
-view-if: chancellor == "Schleicher" and dsu_in_gov and not dsu_was_gov and not z_in_gov and z_relation < 70 and z_leader == "Kaas" and schleicher_post_time >= 2
+view-if: chancellor == "Schleicher" and dsu_in_gov and not dsu_was_gov and not z_in_gov and z_relation < 70 and z_leader == "Kaas" and schleicher_post_time >= 2 and reichskonkordat = 0
 max-visits: 1
 new-page: true
 tags: event

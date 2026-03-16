@@ -1,6 +1,6 @@
 title: <i>제국종교협약</i> 체결!
 subtitle: 독일 전역에서 가톨릭의 권리가 공식적으로 보장되다.
-view-if: chancellor == "Schleicher" and z_in_gov and z_in_gov_time >= 6 and z_leader == "Kaas" 
+view-if: chancellor == "Schleicher" and z_in_gov and z_in_gov_time >= 6 and z_leader == "Kaas" and reichskonkordat = 0 
 max-visits: 1
 new-page: true
 tags: event
