@@ -31,15 +31,15 @@ on-arrival: nationalism += 3; old_middle_nsdap += 5; new_middle_nsdap += 3; work
 
 
 @allow_protect
-choose-if: prussian_police_loyalty >= 0.65 and prussia_leader = "Braun" or prussia_leader = "Rosenfeld"
-unavailable-subtitle: [? if prussian_police_loyalty < 0.65:경찰은 영화를 보호할 의향이 없습니다. ?] [? if not prussia_leader = "Braun" and not prussia_leader = "Rosenfeld": 우리의 연합 파트너들이 경찰 투입을 만류하고 있습니다. ?]
+choose-if: prussian_police_loyalty >= 0.65 and ((prussia_leader = "Braun" or prussia_leader = "Rosenfeld") or z_relation >= 65)
+unavailable-subtitle: [? if prussian_police_loyalty < 0.65:경찰은 영화를 보호할 의향이 없습니다. ?] [? if not prussia_leader = "Braun" and not prussia_leader = "Rosenfeld": 우리의 연정 파트너들이 경찰 투입을 만류하고 있습니다. ?]
 on-arrival: nationalism -= 4; pro_republic += 4*(1-dissent); strife += 1
 
 경찰의 보호 아래, 사람들은 평화롭게 영화를 관람할 수 있습니다. <span style="color: #7A3C00;">나치</span>의 소란은 최소한으로 억제되었습니다.
 
 @everyone
 choose-if: prussian_police_loyalty >= 0.75 and prussia_leader = "Braun" or prussia_leader = "Rosenfeld"
-unavailable-subtitle: [? if prussian_police_loyalty < 0.75: 경찰은 모든 관람객의 안전을 보장할 수 없습니다. ?] [? if not prussia_leader = "Braun" and not prussia_leader = "Rosenfeld": 우리의 연합 파트너들이 이 조치를 만류하고 있습니다. ?]
+unavailable-subtitle: [? if prussian_police_loyalty < 0.75: 경찰은 모든 관람객의 안전을 보장할 수 없습니다. ?] [? if not prussia_leader = "Braun" and not prussia_leader = "Rosenfeld" and z_relation < 65: 우리의 연정 파트너들이 이 조치를 만류하고 있습니다. ?]
 on-arrival: nationalism -= 5; pro_republic += 5*(1-dissent); workers_nsdap -= 3; unemployed_nsdap -= 3; new_middle_nsdap -= 3
 
 경찰의 보호 아래, <span style="color: #7A3C00;">나치</span>가 밖에서 시위하는 동안 군중이 영화 상영관으로 인산인해를 이룹니다. 반응은 엇갈리지만, 전쟁에 대한 우파의 역사관을 재검토하는 새로운 국가적 대화가 전개됩니다. 조용히, 많은 사람들의 생각이 바뀌거나, 적어도 미묘한 방식으로 영향을 받았습니다.

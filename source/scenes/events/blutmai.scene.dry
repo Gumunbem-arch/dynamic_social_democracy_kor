@@ -3,6 +3,7 @@ new-page: true
 subtitle: <span style="color: #700000;">공산당</span> 시위
 tags: event
 view-if: year = 1929 and month = 5
+priority: 1
 max-visits: 1
 face-image: img/redfront.jpg
 
