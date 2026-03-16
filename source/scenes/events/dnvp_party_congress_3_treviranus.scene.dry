@@ -46,7 +46,7 @@ face-image: img/portraits/Treviranus.jpg
 @westarp
 view-if: true_christian_democracy
 choose-if: westarp_trigger and not treviranus_trigger and not schiele_trigger
-unavailable-subtitle: [? if treviranus_trigger: 트레비라누스는 너무 인기가 많아 교체할 수 없습니다. ?][? if schiele_trigger: 당은 쉴레를 선출하는 것을 더 선호합니다. ?]
+unavailable-subtitle: [? if treviranus_trigger and not schiele_trigger: 트레비라누스는 너무 인기가 많아 교체할 수 없습니다. ?][? if schiele_trigger: 베스타르프가 이미 당 대표직을 역임한 바 있기 때문에, 당은 쉴레를 선출하는 것을 더 선호합니다. ?]
 on-arrival: dnvp_leader = "Westarp"; rural_dnvp += 2; rural_dnf -= 2; new_middle_dnvp -= 3; new_middle_dvp += 2; new_middle_ddp += 1; old_middle_dnvp += 5; old_middle_dnf -= 3; old_middle_nsdap -= 2; workers_dnvp -= 1; workers_nsdap += 1; catholics_dnvp -= 2; catholics_z += 2
 face-image: img/portraits/Kuno_von_Westarp.jpg
 

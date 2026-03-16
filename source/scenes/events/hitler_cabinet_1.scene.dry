@@ -58,7 +58,7 @@ view-if: (z_in_gov_mini and pro_republic < 30) or far_right_coalition >= 50
 @hitler_2
 title: [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>은?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>는?] 반대 투표한다!
 view-if: (not z_in_gov_mini or pro_republic >= 30) and far_right_coalition < 50
-on-arrival: rubicon_mini = 0; rubicon_mini_leave = 1
+on-arrival: rubicon_mini = 0; rubicon_mini_leave = 1;
 
 [? if not cvp_formed: [+ z_leader +]는?][? if cvp_formed: [+ cvp_formed +]는?] 슐라이허로부터 상당한 헌법적 안전장치를 개인적으로 보장받았지만, [+ chancellor +]에게서 서면 약속을 받아내는 데는 실패했습니다. [? if not cvp_formed: [+ z_leader +]는?][? if cvp_formed: [+ cvp_formed +]는?] 이 거짓말들을 꿰뚫어 보았고, 당 소속 의원들이 수권법에 반대 투표하도록 지휘합니다.
 
@@ -127,7 +127,9 @@ Q.bourgeois_cooperation += 3;
 Q.liberal_cooperation += 5;
 
 Q.rubicon_mini = 0;
-Q.rubicon_mini_leave = 1;
+Q.rubicon_mini_leave = 1;;
+
+Q.z_in_gov_mini = 0;
 !}
 
 국방군은 [+ old_chancellor +] 총리보다 [+ president +]를 더 신뢰했고, 이러한 영향력 하에서 [+ old_chancellor +]는 패배를 받아들일 수밖에 없었습니다. 그의 해임은, 많은 <span style="color: #7A3C00;">나치</span> 내각 장관들의 교체와 함께, 독재로 향하는 독일의 파멸적인 질주를 멈췄습니다.

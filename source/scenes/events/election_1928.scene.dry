@@ -4,7 +4,7 @@ tags: event
 priority: -2
 view-if: (year = next_election_year and month >= next_election_month and (next_election_week == week or not rubicon)) or (year > next_election_year)
 on-arrival: election_boycott = 0
-on-departure: in_election = 0; next_election_year = next_election_year + 4; n_elections += 1; next_election_time = time + 48; hindenburg_angry_old = hindenburg_angry
+on-departure: in_election = 0; next_election_year = next_election_year + 4; n_elections += 1; next_election_time = time + 48
 set-jump: post_election_1928
 set-bg: img/map_2.jpg
 #face-image: img/Rothe_Wahlen_1903.jpg
@@ -1128,7 +1128,9 @@ if (Q.dnvp_ideology === "Moderate") {
     Q.far_right_coalition = parseFloat((Q.dnvp_r + Q.nsdap_r).toFixed(1));
 }
 
-if (Q.hugenberg_dvp) Q.far_right_coalition = parseFloat((Q.far_right_coalition + Q.dvp_r).toFixed(1));
+if (Q.dvp_leader == "Dingeldey" && Q.dvp_ideology == "Right" && Q.dvp_right - Q.dvp_left >= 15 || Q.hugenberg_dvp) {
+    Q.far_right_coalition = parseFloat((Q.far_right_coalition + Q.dvp_r).toFixed(1));
+}
 
 Q.left_coalition = parseFloat((Q.spd_r + Q.kpd_r + Q.sapd_r).toFixed(1));
 
@@ -1204,7 +1206,10 @@ Q.grand_coalition_failed = 0;
 // Reset government and ministers... Based on Brüning's 1930 govt
 Q.coalition_dissent = 0;
 Q.kpd_coalition_dissent = 0;
-if (!Q.spd_in_government) Q.hindenburg_angry = 0;
+if (!Q.spd_in_government) {
+    Q.hindenburg_angry = 0;
+    Q.hindenburg_angry_old = 0;
+}
 if (Q.spd_in_government) Q.hindenburg_angry_old = Q.hindenburg_angry;
 Q.spd_in_government = 0;
 Q.in_weimar_coalition = 0;
@@ -1941,9 +1946,9 @@ go-to: achievement_check_e
 
 [? if dnef_formed: 슐라이허 좌파 연정 (<span style="color: #BFC8CC;">**DNEF**</span> + <span style="color: #c00000;">**SPD**</span>[? if not z_dnef:&nbsp;+ <span style="color: #000000;">**[+ z_party_name +]**</span> + <span style="color: #A2D8E0;">**BVP**</span>?][? if not lvp_formed and not dstp_dnef:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_dnef:&nbsp;+ <span style="color: #FFCC00;">**LVP**</span>?]): [+ schleicher_left_coalition +]% ?]
 
-[? if dnvp_ideology == "Radical" and far_right_coalition >= 35 and not cvp_formed: <span style="color: #7A3C00;">극</span>-<span style="color: #3E88B3;">우</span> 연정 ([?  if hugenberg_dvp: <span style="color: #C0A054;">**DVP**</span> + ?]<span style="color: #3E88B3;">**DNVP**</span> + <span style="color: #7A3C00;">**NSDAP**</span>): [+ far_right_coalition +]% ?]
+[? if dnvp_ideology == "Radical" and far_right_coalition >= 35 and not cvp_formed: <span style="color: #7A3C00;">극</span>-<span style="color: #3E88B3;">우</span> 연정 ([ if (dvp_leader == "Dingeldey" and dvp_ideology == "Right" and dvp_right - dvp_left >= 15) or hugenberg_dvp: <span style="color: #C0A054;">**DVP**</span> + ?]<span style="color: #3E88B3;">**DNVP**</span> + <span style="color: #7A3C00;">**NSDAP**</span>): [+ far_right_coalition +]% ?]
 
-[? if dnvp_ideology == "Moderate" and far_right_coalition >= 30: <span style="color: #7A3C00;">극</span>-<span style="color: #3E88B3;">우</span> 연정 ([?  if hugenberg_dvp: <span style="color: #C0A054;">**DVP**</span> + ?]<span style="color: #003755;">**DNF**</span> + <span style="color: #7A3C00;">**NSDAP**</span>): [+ far_right_coalition +]% ?]
+[? if dnvp_ideology == "Moderate" and far_right_coalition >= 30: <span style="color: #7A3C00;">극</span>-<span style="color: #3E88B3;">우</span> 연정 ([ if (dvp_leader == "Dingeldey" and dvp_ideology == "Right" and dvp_right - dvp_left >= 15) or hugenberg_dvp: <span style="color: #C0A054;">**DVP**</span> + ?]<span style="color: #003755;">**DNF**</span> + <span style="color: #7A3C00;">**NSDAP**</span>): [+ far_right_coalition +]% ?]
 
 [? if nazi_urgency <= 1 and nsdap_r >= 15 : <span style="color: #7A3C00;">**NSDAP**</span> 득표율의 급격한 상승은 극도로 우려스럽습니다. 많은 이들이 그 당이 <span style="color: #ff0000;">소멸해간다</span>고 믿었으나, 이제 우리 중 일부는 그들을 독일 민주주의에 대한 가장 큰 위협으로 간주하고 있습니다. ?]
 
@@ -1961,7 +1966,7 @@ go-to: achievement_check_e
 
 [? if left_coalition >= 50: <span style="color: #9B0000;">마르크스주의</span> 정당들이 이제 제국의회에서 단독 과반을 차지하고 있다는 사실은 우리 두 당의 풀뿌리 당원들이 더 긴밀한 협력을 요구하도록 자극했습니다. ?]
 
-[? if election_boycott: 우리는 이번 선거를 보이콧하여, 노동자들과 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주의</span><span style="color: #FFCC00;">자들</span> 모두의 눈에 결과의 정당성을 훼손했습니다. 그 영향은 얼마나 많은 사람들이 <span style="color: #BFC8CC;">**DNEF**</span>에 투표하는 대신 기권했는지로 측정됩니다. [? if boycott_effect < 1.05: 결국, 우리는 제한적인 성공만을 거두었습니다. 우리의 보이콧은 비교적 영향력이 없는 것으로 판명되었습니다. 헛수고였습니다. ?][? if boycott_effect >= 0.05 and boycott_effect < 1.1: 결국, 우리는 주목할 만한 성공을 거두었습니다. ?][? if boycott_effect >= 1.1: 결국, 우리는 대성공을 거두었습니다. ?] ?]
+[? if election_boycott: 우리는 이번 선거를 보이콧하여, 노동자들과 <span style="color: #000000;">공화</span><span style="color: #DD0000;">주의</span><span style="color: #FFCC00;">자들</span> 모두의 눈에 결과의 정당성을 훼손했습니다. 그 영향은 얼마나 많은 사람들이 <span style="color: #BFC8CC;">**DNEF**</span>에 투표하는 대신 기권했는지로 측정됩니다. [? if boycott_effect < 1.05: 결국, 우리는 제한적인 성공만을 거두었습니다. 우리의 보이콧은 비교적 영향력이 없는 것으로 판명되었습니다. 헛수고였습니다. ?][? if boycott_effect >= 1.05 and boycott_effect < 1.1: 결국, 우리는 주목할 만한 성공을 거두었습니다. ?][? if boycott_effect >= 1.1: 결국, 우리는 대성공을 거두었습니다. ?] ?]
 
 몇 가지 잠재적인 연정 구성안이 있습니다.
 
@@ -2190,9 +2195,7 @@ on-arrival: kpd_relation = 80; reichswehr_loyalty += 0.25;
 
 [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]은 국방군과 <span style="color: #3E88B3;">**철모단**</span>의 적대감을 일부 완화하는 데 성공했지만, 전투의 발발을 막는 데는 실패했습니다. 우리는 원하든 원하지 않든 <span style="color: #700000;">**KPD**</span>와 같은 편에서 싸워야 합니다.
 
-- @civil_war: 내전이다, 그렇다면.
-
-
+- @march_on_berlin_2: <span style="color: #7A3C00;">파시스트들</span>과 맞서 싸우자!
 
 @far_right_coalition
 title: <span style="color: #7A3C00;">극</span>-[? if not dnf_formed:<span style="color: #3E88B3;">우</span>?][? if dnf_formed:<span style="color: #003755;">우</span>?] 연정
@@ -2381,9 +2384,11 @@ on-arrival: reichswehr_loyalty += 0.1
 
 <span style="color: #700000;">**KPD**</span>의 정부 입각에 대응하여, 우파가 즉각적인 쿠데타를 감행했습니다. <span style="color: #3E88B3;">**철모단**</span>과 <span style="color: #7A3C00;">나치</span> <span style="color: #7A3C00;">**SA**</span>의 병력이 베를린에 진입하여 우리 지지자들과 충돌하기 시작했습니다. 국방군 내의 <span style="color: #808080;">반동적</span> 장교들은 병영에서 병력을 이끌고 나와 우리의 집권을 막기 위해 <span style="color: #3E88B3;">**철모단**</span>과 합류했습니다.
 
-- @civil_war: 그렇다면, 내전이다.
+- @march_on_berlin_2: <span style="color: #7A3C00;">파시스트들</span>과 맞서 싸우자!
 
-
+@march_on_berlin_2
+on-arrival: march_on_berlin_left = 1
+go-to: march_on_berlin
 
 @right_coalition
 title: 정부 구성을 거부하여, 우파 연정이 수립되도록 한다.
@@ -4127,7 +4132,7 @@ if (Q.in_wholesome_coalition) {
     }
 });
 }
-
+if (Q.hindenburg_angry_old > 0) Q.hindenburg_angry = Q.hindenburg_angry_old;
 !}
 subtitle: [? if leverage >= 10 : 우리에게는 장관직을 확보할 수 있는 영향력이 아직 조금 남아 있습니다. ?][? if leverage < 10 : 우리에게 남은 영향력이 많지 않습니다. ?]
 tags: mins_1928
