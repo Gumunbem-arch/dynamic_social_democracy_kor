@@ -3976,6 +3976,7 @@ go-to: ministries
 title: 농업부
 subtitle: 이곳은 우리가 주로 맡는 영역이 아닙니다.
 unavailable-subtitle: [? if leverage < 10: 우리에게는 충분한 영향력이 없습니다. ?] [? if cvp_ministers_accepted: 연정 합의에 따라 우리는 농업부를 포기해야 choose-if: leverage >= 10 and not cvp_ministers_accepted
+choose-if: leverage >= 10 and not cvp_ministers_accepted
 view-if: agriculture_minister_party != "SPD"
 on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_minister = "Baade"
 go-to: ministries
