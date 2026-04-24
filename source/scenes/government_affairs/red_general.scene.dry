@@ -43,10 +43,18 @@ on-arrival: schleicher_spd_support += 3; schleicher_spd_support += 1 if wtb_adop
 [? if otl_prussian_coup_seen: 게다가, 우리 프로이센 정부에 대한 쿠데타에서 그가 한 역할은 그와 <span style="color: #c00000;">**사회민주당**</span> 양쪽을 향한 적개심을 깊게 만들었을 뿐입니다. ?] 우리의 협력에 대한 소문은 노동 계급 사이에서 우리의 입지를 손상시켰습니다.
 
 @united_front
+view-if: chancellor_party != "SPD"
 subtitle: <span style="color: #c00000;">**사회민주당**</span> 내부의 합의된 견해입니다. 우리는 어쨌든 민주주의 정당이니까요.
 on-arrival: schleicher_spd_support -= 2 if schleicher_spd_support > 0; schleicher_spd_r -= 1 if schleicher_spd_r > 0; schleicher_spd_influence -= 1 if schleicher_spd_influence > 0; workers_spd += 2; workers_kpd -= 1; left_dissent -= 5; center_dissent -= 5
 
 우리는 인기 없는 [+ chancellor +] 정부에 맞서 민주 정당들이 연합하여 야당 역할을 해야 한다고 계속 주장하며, 이를 통해 국민들의 지지를 얻었습니다.
+
+@united_front_majority 
+view-if: chancellor_party == "SPD"
+subtitle: 정부 내에서 우리가 절대다수를 차지하고 있으므로 슐라이허와 협력할 필요가 없으며, 대신 공화국을 붕괴시키려는 세력에 맞서 공동 전선을 확대하는 데 주력할 수 있습니다.
+on-arrival: schleicher_spd_support -= 2 if schleicher_spd_support > 0; schleicher_spd_r -= 1 if schleicher_spd_r > 0; schleicher_spd_influence -= 1 if schleicher_spd_influence > 0; workers_spd += 2; workers_kpd -= 1; left_dissent -= 5; center_dissent -= 5
+
+우리는 반민주적 반대 세력이 공화국에 파멸을 초래한다고 계속해서 규탄하며, 상황을 안정시키는 데 있어 [+ chancellor +] 총리의 역할을 강조합니다. 이는 대중들 사이에서 우리의 지지를 높이는 데 도움이 됩니다.
 
 @schleicher_spd_established
 
