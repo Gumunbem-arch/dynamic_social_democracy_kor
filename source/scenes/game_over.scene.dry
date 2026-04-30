@@ -6276,6 +6276,21 @@ go-to: fun_zone
 {!</tr>!}
 ?]
 
+[? if not achievement_mr_breitscheid: 
+{!<tr>!}
+  {!<td style="width: 60px; height: 78px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
+    <img src="img/achievement/mr_breitscheid.png" alt="Mr Breitscheid Icon"
+         style="width: 100%; height: 100%; object-fit: cover; display: block;">
+  {!</td>!}
+  {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
+    <div style="padding-left: 0.5em;">
+      <div style="font-weight: bold;">왜냐히면 나는 미스터 브라이트샤이트이니까</div>
+      <div class="achievement_subtitle"> - 게임 종료 시점에 브라이트샤이트는 수상에 올라 있고, 프랑스에서는 <span style="color: #FFC0C0;">좌파 연합</span>이 승리했으며, 배상금 문제는 해결되었습니다. 또한 오스트리아는 민주 국가로 남아 있고 라디오 방송국에 자금이 지원된 상태입니다.
+    </div>
+  {!</td>!}
+{!</tr>!}
+?]
+
 [? if not achievement_alt_aber_gold: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
