@@ -6285,7 +6285,7 @@ go-to: fun_zone
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">왜냐하면 나는 미스터 브라이트샤이트이니까</div>
-      <div class="achievement_subtitle"> - 게임 종료 시점에 브라이트샤이트는 수상에 올라 있고, 프랑스에서는 <span style="color: #FFC0C0;">좌파 연합</span>이 승리했으며, 배상금 문제는 해결되었습니다. 또한 오스트리아는 민주 국가로 남아 있고 라디오 방송국에 자금이 지원된 상태입니다.
+      <div class="achievement_subtitle"> - 게임 종료 시점에 브라이트샤이트는 수상에 올라 있고, 프랑스에서는 <span style="color: #FFC0C0;">좌파 연합</span>이 승리했으며, 배상금 문제는 해결되어야 합니다. 또한 오스트리아는 민주 국가로 남아 있고 라디오 방송국에 자금이 지원된 상태여야 합니다.
     </div>
   {!</td>!}
 {!</tr>!}
