@@ -18,13 +18,13 @@ face-image: img/danat_bank.jpg
 - @stabilization: 경제 안정을 위한 조치를 취한다!
 - @austerity: [+ chancellor +] 총리의 대응은, 언제나 그렇듯, 더 많은 긴축이다.
 - @end_toleration: 긴축 정책에 지쳤다. 묵인 협정을 끝내자!
-- @austerity_toleration: Chancellor Brüning's response is, as always, more austerity.
-- @austerity_majority: Chancellor Brüning's response is, as always, more austerity.
-- @austerity_snaps: Chancellor Brüning's response is, as always, more austerity.
-- @austerity_goerdeler: Chancellor Goerdeler's response is, as always, more austerity.
-- @austerity_hitler: Chancellor Hitler's response is more austerity.  With extra racism, of course.
-- @austerity_wirth: Chancellor Wirth's response is, reluctantly, more austerity.
-- @end_toleration: We are tired of austerity. End the toleration arrangement!
+- @austerity_toleration: 브뤼닝 총리의 대응은 늘 그렇듯 긴축 정책이다.
+- @austerity_majority: 브뤼닝 총리의 대응은 늘 그렇듯 긴축 정책이다.
+- @austerity_snaps: 브뤼닝 총리의 대응은 늘 그렇듯 긴축 정책이다.
+- @austerity_goerdeler: 괴르델러 총리의 대응은 늘 그렇듯 긴축 정책이다.
+- @austerity_hitler: 히틀러 총리의 대응은 긴축 정책이다. 물론 여기에 인종주의는 덤이다.
+- @austerity_wirth: 비르트 총리의 대응은 마지못해이지만, 역시 긴축 정책이다.
+- @end_toleration: 우리는 긴축에 지쳤다. 묵인 협정을 끝내자!
 
 @nothing_to_do
 view-if: spd_in_government = 1
@@ -34,17 +34,51 @@ on-arrival: welfare -= 1; workers_spd -= 3; unemployed_spd -= 3; pro_republic -=
 
 @stabilization
 view-if: spd_in_government = 1
-subtitle: -1 budget
-choose-if: budget >= 1
-on-arrival: workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 2*(1-dissent); rural_spd += 2*(1-dissent); unemployed -= 2; inflation += 1 if inflation < 0; budget -= 1; workers_nsdap -= 3; economic_growth += 1;
+subtitle: -1 예산
+unavailable-subtitle: 우리는 충분한 예산이 없습니다. [? if budget <= 0 and budget >= -3 and wtb_adopted = 1: <span style="color: #C0A054;">**DVP**</span>는 선제적으로 불신임 투표를 발의할 것입니다.?] [? if wtb_adopted = 0: 우리 당 내부에서도 예산 적자 편성을 지지하지 않습니다.?] [? if budget <= 0 and economic_minister_party != "SPD": 현 연립 정부의 경제장관이 이 방침을 지지하기를 거부하고 있습니다.?]
+choose-if: budget >= 1 or (wtb_adopted = 1 and budget >= -3 and (in_spd_majority = 1 or in_social_catholic_coalition = 1 or in_weimar_coalition = 1 or in_left_front = 1 or in_popular_front = 1) and economic_minister_party = "SPD")
+on-arrival: workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 2*(1-dissent); rural_spd += 2*(1-dissent); unemployed -= 2; inflation += 1 if inflation < 0; budget -= 1; workers_nsdap -= 3; economic_growth += 1; coalition_dissent += 1 if budget <= 0 and (in_social_catholic_coalition = 1 or in_weimar_coalition = 1 or in_popular_front = 1)
 
 은행 위기에 직면하여, 우리는 은행 시스템에 자금을 투입해 경제를 안정시키기 위한 비상 조치를 취했습니다. 충분하지 않을 수도 있지만, 일시적으로 급한 불은 껐습니다.
 
-@austerity
-view-if: spd_in_government = 0
+@austerity_toleration
+view-if: spd_toleration = 1 and chancellor = "Brüning"
 on-arrival: welfare -= 1 if budget <= 0; workers_spd -= 3; workers_spd += 2 if budget > 0; workers_nsdap -= 2 if budget > 0; unemployed_spd -= 3; unemployed_spd += 2 if budget > 0; pro_republic -= 3; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; unemployed -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
 
-[? if budget <= 0: [+ chancellor +] 총리는 은행 위기에 대응해 복지 예산을 추가 삭감했습니다.?][? if budget > 0: 놀랍게도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제하고, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?]
+[? if budget <= 0: [+ chancellor +] 총리는 은행 위기에 대응해 복지 예산을 추가 삭감했습니다.?][? if budget > 0: 놀랍게도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제하고, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?]@austerity_majority
+
+@austerity_majority
+view-if: spd_in_government = 0 and spd_toleration = 0 and (in_right_coalition = 1 or in_center_right_coalition = 1 or in_bourgeois_coalition = 1)
+on-arrival: welfare -= 1 if budget <= 0; unemployed_spd += 3 if budget <= 0; workers_nsdap -= 2 if budget > 0; pro_republic -= 3; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; unemployed -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
+
+[? if budget <= 0: [+ chancellor +] 총리는 은행 위기에 대응해 복지 지출을 추가로 삭감하고 있습니다.?][? if budget > 0: 놀랍게도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제했으며, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?]
+[? if budget <= 0: 우리는 현 내각에 단호히 반대하고 있기 때문에, 이러한 긴축 정책에 맞서 자유롭게 대중을 결집시킬 수 있습니다. ?]
+
+@austerity_snaps
+view-if: spd_in_government = 0 and spd_toleration = 0 and in_right_coalition = 0 and in_center_right_coalition = 0 and secret_mode = 0 and chancellor = "Brüning"
+on-arrival: welfare -= 1 if budget <= 0; workers_spd -= 1; workers_spd += 1 if budget > 0; workers_nsdap -= 2 if budget > 0; unemployed_spd -= 1; unemployed_spd += 1 if budget > 0; pro_republic -= 3; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; unemployed -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
+
+[? if budget <= 0: [+ chancellor +] 총리는 은행 위기에 대응해 복지 지출을 추가로 삭감하고 있습니다.?][? if budget > 0: 놀랍게도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제했으며, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?]
+
+@austerity_goerdeler
+view-if: chancellor = "Goerdeler"
+on-arrival: welfare -= 1 if budget <= 0; unemployed_spd += 3 if budget <= 0; workers_nsdap -= 2 if budget > 0; pro_republic -= 3; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; unemployed -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
+
+[? if budget <= 0: [+ chancellor +] 총리는 은행 위기에 대응해 복지 지출을 추가로 삭감하고 있습니다.?][? if budget > 0: 놀랍게도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제했으며, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?]
+[? if budget <= 0: 우리는 현 내각에 단호히 반대하고 있기 때문에, 이러한 긴축 정책에 맞서 자유롭게 대중을 결집시킬 수 있습니다. ?]
+
+@austerity_hitler
+view-if: chancellor = "Hitler"
+on-arrival: welfare -= 1 if budget <= 0; unemployed_spd += 3 if budget <= 0; workers_nsdap -= 5; workers_nsdap += 4 if budget > 0; unemployed_nsdap -= 5; unemployed_nsdap += 4 if budget > 0; pro_republic -= 5; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; unemployed -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
+
+[? if budget <= 0: [+ chancellor +] 총리는 은행 위기에 대응해 복지 지출을 추가로 삭감하고 있습니다. 그는 이를 “유대-볼셰비키 음모”의 탓으로 돌리며 어쩔 수 없는 조치였다고 주장하지만, 그럼에도 불구하고 이러한 조치는 반(反)긴축주의자로서의 그의 신뢰를 훼손시키고 있습니다. ?][? if budget > 0: 놀랍게도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제했으며, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?] 
+[? if budget <= 0: 우리는 현 내각에 단호히 반대하고 있기 때문에, 이러한 긴축 정책에 맞서 자유롭게 대중을 결집시킬 수 있습니다. ?]
+
+@austerity_wirth
+view-if: spd_toleration = 1 and chancellor = "Wirth"
+on-arrival: welfare -= 1 if budget <= 0; workers_spd -= 3; workers_spd += 2 if budget > 0; workers_nsdap -= 2 if budget > 0; unemployed_spd -= 3; unemployed_spd += 2 if budget > 0; pro_republic -= 3; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; unemployed -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
+
+[? if budget <= 0: 연정 내 우파의 압박 속에서 [+ chancellor +] 총리는 은행 위기에 대응해 복지 지출을 추가로 삭감하고 있습니다.?][? if budget > 0: 다행히도 [+ chancellor +] 총리는 예산 흑자 덕분에 사회 지출 삭감을 자제했으며, 경제와 은행 시스템을 안정시키기 위한 조치를 취했습니다. ?]
 
 @end_toleration
 view-if: spd_toleration = 1
