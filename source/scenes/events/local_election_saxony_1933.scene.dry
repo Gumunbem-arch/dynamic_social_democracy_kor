@@ -834,7 +834,7 @@ on-arrival: hitler_explode = time + 36; saxony_nsdap_maj = 1; nsdap_left += 5; p
 go-to: president_hate if (president_ideology == "Left") and not presidential_powers; president_allow if (president_ideology != "Left") and not presidential_powers; president_oops if presidential_powers
 face-image: img/portraits/strasser.jpg
 
-T작센에서 결국 최악의 사태가 벌어지고 말았습니다. <span style="color: #7A3C00;">**NSDAP**</span>가 과반 의석을 차지한 것입니다. 이제 그레고어 슈트라서가 새로운 주 총리로 취임합니다.
+작센에서 결국 최악의 사태가 벌어지고 말았습니다. <span style="color: #7A3C00;">**NSDAP**</span>가 과반 의석을 차지한 것입니다. 이제 그레고어 슈트라서가 새로운 주 총리로 취임합니다.
 
 한때 <span style="color: #c00000;">사회주의</span>와 민주주의의 보루였던 작센은 이제 <span style="color: #7A3C00;">나치</span>에 의해 해체되고 있습니다. 특히 "민주주의"적인 측면이 더욱 그러한데, 슈트라서는 적어도 부르주아 정당들과 비교했을 때 상대적으로 친노동자 및 반자본주의적 정책을 채택했기 때문입니다. 이제 거의 전적으로 <span style="color: #7A3C00;">나치</span> 대원으로 채워진 주 경찰은 <span style="color: #c00000;">사회주의</span>, <span style="color: #700000;">공산주의</span>, 심지어 <span style="color: #FFCC00;">자유주의</span> 단체와 집회까지 적극적으로 탄압하고 있습니다. 정부에 비판적인 신문들은 발행이 금지되었으며, <span style="color: #c00000;">사회주의</span>나 <span style="color: #D3C24D;">민주주의</span> 성향이 의심되는 공무원들에 대한 대대적인 숙청이 진행되고 있습니다.
 

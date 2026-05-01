@@ -1,10 +1,9 @@
 title: 작센에 대한 제국집행
 subtitle: 역사는 반복된다.
-view-if: reichsexekution_defeated = 0 and president = "Hindenburg" and red_saxony and (rb_force + rfb_force < 75) and not presidential_powers and (prussian_coup_seen or prussian_reichsexekution or hindenburg_angry >= 100 or hindenburg_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or thuringia_joever) and year >= 1930
+view-if: not saxony_joever and (reichsex_sax_trigger or (reichsexekution_defeated = 0 and president = "Hindenburg" and red_saxony and (rb_force + rfb_force < 75) and not presidential_powers and (prussian_coup_seen or prussian_reichsexekution or hindenburg_angry >= 100 or hindenburg_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or thuringia_joever) and year >= 1930))
 on-arrival: saxony_joever = 1; strife += 1; hindenburg_angry += 40; hindenburg_angry_bruning -= 40
 new-page: true
 tags: event
-max-visits: 1
 face-image: img/Reichswehr.jpg
 
 = 작센에 대한 제국집행
@@ -31,7 +30,7 @@ go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory
 
 @defend_2_civil_war
 
-국방군과 반동주의적 보조 세력이 작센으로 진군해 오자, 그들과 작센 정부의 좌파 세력 사이에서 무력 충돌이 발생했습니다. 힌덴부르크는 제국집행령을 철회하기를 거부하고 더 많은 국방군 병력을 작센으로 투입하라고 명령했습니다.
+국방군과 반동주의적 보조 세력이 작센으로 진군해 오자, 그들과 작센 정부의 좌파 세력 사이에서 무력 충돌이 발생했습니다. [+ president +]은(는) 제국집행령을 철회하기를 거부하고 더 많은 국방군 병력을 작센으로 투입하라고 명령했습니다.
 
 - @civil_war: 이제 내전이다.
 
@@ -39,15 +38,15 @@ go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory
 on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; left_dissent -= 15; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; workers_spd += 5; unemployed_spd += 5; workers_kpd += 3; unemployed_kpd += 3; workers_nsdap -= 6; unemployed_nsdap -= 6; hindenburg_angry -= 50; hindenburg_angry_bruning += 40; coup_victory = 1; kpd_relation += 15; rfb_strength += 150; rfb_militancy += 0.1; rb_strength += 200
 achievement: drei_pfeile
 
-국기단와 RFB는 작센으로 향하는 길목에서 반동 세력과 맞섰으며, 놀랍게도 적은 전투도 없이 후퇴했습니다! 우리의 저항에 저들은 당황했으며, 힌덴부르크는 작센 문제로 내전을 감수하지 않기로 결정했습니다.
+국기단와 RFB는 작센으로 향하는 길목에서 반동 세력과 맞섰으며, 놀랍게도 적은 전투도 없이 후퇴했습니다! 우리의 저항에 저들은 당황했으며, [+ president +]은(는) 작센 문제로 내전을 감수하지 않기로 결정했습니다.
 
-이러한 무력 시위는 <span style="color: #c00000;">**SPD**</span>와 <span style="color: #700000;">**KPD**</span>모두에 대한 지지를 다시 활성화시켰고, 파시스트와 반동 세력은 약화되었습니다. 또한 힌덴부르크의 분노도 우리에게서 잠시 다른 곳으로 향하게 되었습니다. 적어도 지금은 말입니다.
+이러한 무력 시위는 <span style="color: #c00000;">**SPD**</span>와 <span style="color: #700000;">**KPD**</span>모두에 대한 지지를 다시 활성화시켰고, 파시스트와 반동 세력은 약화되었습니다. 또한 [+ president +]의 분노도 우리에게서 잠시 다른 곳으로 향하게 되었습니다. 적어도 지금은 말입니다.
 
 @surrender
 title: 유혈 사태를 막기 위해 우리의 직위를 사임한다.
-subtitle: 힌덴부르크는 우익 성향의 <i>국가판무관</i>을 임명할 것입니다.
+subtitle: [+ president +] 은(는) 우익 성향의 <i>국가판무관</i>을 임명할 것입니다.
 on-arrival: red_saxony = 0; workers_spd -= 5; workers_kpd -= 5; unemployed_kpd -= 5; unemployed_spd -= 5; left_dissent += 15; labor_dissent += 5; rb_militancy = rb_militancy*0.7; rb_strength -= 250; rfb_banned = 1; rfb_strength -= 150; rfb_militancy -= 0.1; kpd_relation -= 20; communist_coalition -= 1
 
 거리에서 시위하는 <span style="color: #700000;">공산주의자들</span>은 국방군이 거리를 순찰하고, 정치적 집회를 제한하며, <span style="color: #7A3C00;">나치</span> <span style="color: #7A3C00;">**SA**</span>가 지역 당 관리들을 괴롭히는 것을 묵인하는 가운데 잔인하게 진압됩니다.
 
-힌덴부르크는 [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] 소속의 빌헬름 뷘거를 작센을 통치할 *국가판무관*으로 임명하고, 우리의 개혁을 철폐하고 <span style="color: #700000;">**RFB**</span>를 폭력적으로 진압하는 임무를 맡깁니다.
+[+ president +] 은(는) [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] 소속의 빌헬름 뷘거를 작센을 통치할 *국가판무관*으로 임명하고, 우리의 개혁을 철폐하고 <span style="color: #700000;">**RFB**</span>를 폭력적으로 진압하는 임무를 맡깁니다.

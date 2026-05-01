@@ -457,8 +457,58 @@ Q.schleicher_fight = 1;
 
 [? if not spd_alone: <span style="color: #000000;">바</span><span style="color: #DD0000;">이마</span><span style="color: #FFCC00;">르</span> 연정 정당들 또한 명목상으로는 그러한 위헌적인 행위에 반대하고 있습니다. 그들에게 무장한 자위대는 없을지 몰라도, 수십만 명의 사무직 및 생산직 노동자들이 그들의 영향력 아래 있으며, 만약 그들이 <span style="color: #c00000;">사회주의</span> 자유 노조와 함께 행동한다면 경제를 완전히 마비시킬 수 있습니다. ?]
 
+- @spd_win
 - @spd_med
 - @spd_lose
+
+@spd_win
+title: 정부가 마비되다!
+on-arrival: {!
+Q.schleicher_spd_influence = 0;
+Q.schleicher_spd_r = 0;
+Q.schleicher_spd_support = 0;
+Q.schleicher_approval -= 4;
+Q.republicans_schleicher_bonus -= 4;
+Q.workers_schleicher_bonus -= 6;
+Q.industrialists_schleicher_bonus -= 2;
+Q.nationalists_schleicher_bonus -= 2;
+
+Q.hindenburg_schleicher_r -= 2;
+Q.schleicher_strength -= 2;
+Q.papen_strength += 1;
+
+Q.workers_spd += 8;
+Q.unemployed_spd += 6;
+Q.new_middle_spd += 2;
+Q.old_middle_spd += 2;
+Q.rural_spd += 2;
+Q.workers_kpd += 2;
+Q.unemployed_kpd += 2;
+
+Q.workers_dnef -= 6;
+Q.new_middle_dnef -= 6;
+Q.old_middle_dnef -= 6;
+Q.rural_dnef -= 6;
+Q.unemployed_dnef -= 6;
+Q.total_dnef_bonus -= 6;
+
+Q.rb_strength *= 1.2;
+Q.rb_militancy *= 0.8;
+Q.rfb_strength *= 1.4;
+Q.rfb_militancy *= 1.4;
+
+Q.reformist_dissent -= 20;
+Q.labor_dissent -= 20;
+!}
+view-if: spd_win
+
+대규모 총파업이 독일 경제를 마비시키며, 국가를 완전히 정지 상태로 몰아넣었습니다. 국기단이 끈끈하게 조직된 상황에서, 정부는 거리로 쏟아져 나온 수십만 명의 사회주의 시위대를 단순히 무력으로 진압할 수 없었습니다.
+
+한편, 의회가 무기한 휴회된 것에 반발하여 <span style="color: #000000;">공</span><span style="color: #DD0000;">화주</span><span style="color: #FFCC00;">의</span> 정당들은 서로 결집해 별도의 장소에서 비공식적으로 의회를 다시 소집했습니다. 이는 연방 정부의 권위에 대한 공개적인 도전입니다.
+
+앞으로 며칠은 혼란스럽겠지만, 동시에 독일 전체에 있어 매우 중요한 결정적인 시기가 될 것입니다.
+
+- @z_break
 
 @spd_med
 title: 슐라이허가 우리와 협상을 시도하다.
