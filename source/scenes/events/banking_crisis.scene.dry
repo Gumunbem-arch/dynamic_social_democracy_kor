@@ -16,8 +16,6 @@ face-image: img/danat_bank.jpg
 
 - @nothing_to_do: 우리가 할 수 있는 일은 없다.
 - @stabilization: 경제 안정을 위한 조치를 취한다!
-- @austerity: [+ chancellor +] 총리의 대응은, 언제나 그렇듯, 더 많은 긴축이다.
-- @end_toleration: 긴축 정책에 지쳤다. 묵인 협정을 끝내자!
 - @austerity_toleration: 브뤼닝 총리의 대응은 늘 그렇듯 긴축 정책이다.
 - @austerity_majority: 브뤼닝 총리의 대응은 늘 그렇듯 긴축 정책이다.
 - @austerity_snaps: 브뤼닝 총리의 대응은 늘 그렇듯 긴축 정책이다.
