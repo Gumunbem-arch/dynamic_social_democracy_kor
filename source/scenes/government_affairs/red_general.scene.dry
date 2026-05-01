@@ -9,13 +9,14 @@ go-to: schleicher_menu if not schleicher_spd_adopted; schleicher_spd_established
 
 = 붉은 장군과의 관계
 
-노조인 ADGB는 쿠르트 폰 슐라이허 장군과의 타협에 어느 정도 개방적인 태도를 보이고 있습니다. 슐라이허 또한 공공 사업 지지를 통해 노조를 자신의 편으로 끌어들이는 데 관심을 보였습니다.
+[? if chancellor_party == "SPD": 당분간 <span style="color: #c00000;">**SPD**</span>가 정부를 완전히 장악하고 있지만, 우리는 방심해서는 안 됩니다. 쿠르트 폰 슐라이허는 분명 아직도 여러 수를 숨기고 있으며 — 그가 상황에 추가로 영향을 미칠 능력을 무시하기에는 아직 이릅니다. ?][? if chancellor_party != "SPD": <span style="color: #c00000;">**SPD**</span>가 현 <span style="color: #808080;">반동적</span> 정부에 맞서 통일 전선을 유지하려는 입장을 굳건히 지키는 가운데, 우리 노동조합인 ADGB는 슐라이허 장군과의 타협에 어느 정도 열린 태도를 보여 왔습니다. 그는 공공사업을 지지함으로써 노동조합을 자기 편으로 끌어들이려는 관심 또한 보여 왔습니다. ?]
 
 @schleicher_menu
 
 - @spd_schleicher_adopted: 붉은 장군과의 협력 정책을 채택한다!
 - @convince_spd_schleicher: 당이 폰 슐라이허와 협력하는 노선으로 가도록 설득한다.
 - @united_front: <span style="color: #808080;">반동주의자들</span>에 대한 반대 입장을 재천명한다.
+- @united_front_majority: <span style="color: #808080;">반동 세력</span>에 대한 우리의 반대 입장을 다시 한번 분명히 하자.
 - @easy_discard
 - @cancel_advisor_action
 
