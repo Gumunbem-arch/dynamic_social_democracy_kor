@@ -53,12 +53,24 @@ if (Q.kpd_relation >= 60) {
 // use normalized workers_spd instead of labor_strength?
 Q.normalized_workers_spd = 100*Q.workers_spd/(Q.workers_spd + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_dnvp + Q.workers_z);
 Q.normalized_workers_kpd = 100*Q.workers_kpd/(Q.workers_spd + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_dnvp + Q.workers_z);
+if (Q.sapd_formed) {
+    Q.normalized_workers_spd = 100*Q.workers_spd/(Q.workers_spd + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_dnvp + Q.workers_z + Q.workers_sapd);
+    Q.normalized_workers_kpd = 100*Q.workers_kpd/(Q.workers_spd + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_dnvp + Q.workers_z + Q.workers_sapd);
+    Q.normalized_workers_sapd = 100*Q.workers_sapd/(Q.workers_spd + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_dnvp + Q.workers_z + Q.workers_sapd);
+}
 Q.normalized_workers_total = Q.normalized_workers_spd;
 if (Q.kpd_relation >= 60) {
     Q.normalized_workers_total += Q.normalized_workers_kpd;
 } else if (Q.kpd_relation >= 45) {
     Q.normalized_workers_total += Q.normalized_workers_kpd*0.5;
 }
+if (Q.kpd_relation >= 30 && Q.sapd_formed) {
+    Q.normalized_workers_total += Q.normalized_workers_sapd;
+} else if (Q.kpd_relation >= 15 && Q.sapd_formed) {
+    Q.normalized_workers_total += Q.normalized_workers_sapd*0.5;
+}
+
+
 Q.total_power += (2 - Q.labor_dissent/100)*Q.normalized_workers_total*(2 - Q.unemployed/100)*2.5;
 console.log("Supporter strength:", Q.total_power);
 
@@ -92,7 +104,7 @@ go-to: war_menu
 
 우리의 적은 [+ sh_strength +]천 명의 병력을 보유한 <span style="color: #808080;">민족주의</span> <span style="color: #3E88B3;">**철모단**</span>과 [+ sa_strength +]천 명의 병력을 보유한 <span style="color: #7A3C00;">나치</span> <span style="color: #7A3C00;">**SA**</span>입니다. [+ reichswehr_strength +]천 명의 정규군을 보유한 국방군과 [+ prussian_police_strength +]천 명의 병력을 가진 프로이센 경찰의 충성심은 불확실합니다.
 
-[? if chancellor_party == "KPD" or president == "Thälmann" : <span style="color: #700000;">**KPD**</span>의 준군사조직인 <span style="color: #8B0000;">**RFB**</span>가 전투를 주도하고 있으며, 우리는 그들의 전우입니다. ?]
+[? if chancellor_party == "KPD" or president == "Thälmann" or kpd_reichsex_sax : <span style="color: #700000;">**KPD**</span>의 준군사조직인 <span style="color: #8B0000;">**RFB**</span>가 전투를 주도하고 있으며, 우리는 그들의 전우입니다. ?]
 
 아군 측에는 [+ rb_strength +]천 명의 국기단원이 있습니다. [? if dissent > 0.15 and dissent <= 0.25: 당내 불화로 인해 전력이 다소 약화되었으며, 일부 단원들은 싸우지 않기를 선택했습니다. ?][? if dissent > 0.25 and dissent < 0.5: 당내 불화로 인해 전력이 약화되었으며, 많은 단원들이 싸우지 않기를 선택했습니다. ?][? if dissent >= 0.5: 당내 불화로 인해 전력이 심각하게 약화되었으며, 상당수의 단원들이 싸우지 않기를 선택했습니다. ?]
 
@@ -119,7 +131,7 @@ on-arrival: war_choices += 1
 
 @kpd_help
 max-visits: 1
-view-if: chancellor_party != "KPD" and president != "Thälmann" 
+view-if: chancellor_party != "KPD" and president != "Thälmann" and not kpd_reichsex_sax
 go-to: war_menu
 on-arrival: war_choices += 1
 

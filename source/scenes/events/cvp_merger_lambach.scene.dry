@@ -265,7 +265,7 @@ go-to: coalition_right if cvp_dnvp_balance < 60; coalition_moderate if cvp_dnvp_
 확고한 반-<span style="color: #9B0000;">마르크스주의</span> 성향의 <span style="color: #3E88B3;">**DNVP**</span>가 <span style="color: #000000;">중앙당</span>으로 통합되는 것은 그들과의 향후 협력 가능성을 배제시킬 가능성이 높습니다. 그러나 <span style="color: #000000;">중앙당</span> 내에는 여전히 목소리를 내는 소수의 진보주의자들이 존재하며, 그들은 우리를 옹호할 수도 있습니다. 이름과 달리, <span style="color: #6D5298;">기독교 사회파</span>는 전혀 우호적이지 않습니다.
 
 @coalition_right
-on-arrival: cvp_dnvp_balance += 10; cvp_right += 5; z_relation -= 10; rural_z += 6; rural_dnf -= 2; rural_other -= 2; rural_nsdap -= 2; old_middle_z += 10; old_middle_dnf -= 4; old_middle_dvp -= 2; old_middle_lvp -= 2; old_middle_other -= 4; new_middle_z += 6; new_middle_dnf -= 2; new_middle_other -= 4; workers_z -= 3; workers_spd += 3; workers_ddp += 2; workers_lvp += 2; unemployed_z -= 3; unemployed_spd += 3; unemployed_ddp += 2; unemployed_lvp += 2
+on-arrival: cvp_dnvp_balance += 10; cvp_right += 5; z_relation -= 10; rural_z += 6; rural_dnf -= 2; rural_other -= 2; rural_nsdap -= 2; old_middle_z += 10; old_middle_dnf -= 4; old_middle_dvp -= 2; old_middle_lvp -= 2; old_middle_other -= 4; new_middle_z += 6; new_middle_dnf -= 2; new_middle_other -= 4; workers_z -= 3; workers_spd += 3; workers_ddp += 2; workers_lvp += 2; unemployed_z -= 3; unemployed_spd += 3; unemployed_ddp += 2; unemployed_lvp += 2; cvp_coalition_right = 1
 go-to: cvp_dnvp_menu
 
 <span style="color: #3E88B3;">민족주의자들</span>과 <span style="color: #385A38;">농본주의자들</span>은 당 강령에 자신들의 격렬한 반-<span style="color: #c00000;">사회주의</span> 입장을 반영하기 위해 영향력을 행사했습니다.
@@ -279,7 +279,7 @@ go-to: cvp_dnvp_menu
 <span style="color: #7A3C00;">**NSDAP**</span> - 의심스러울 정도로 모호함
 
 @coalition_moderate
-on-arrival: z_relation -= 5; rural_z += 4; rural_other -= 2; rural_nsdap -= 2; old_middle_z += 6; old_middle_dvp -= 2; old_middle_lvp -= 2; old_middle_other -= 4; new_middle_z += 2; new_middle_other -= 2
+on-arrival: z_relation -= 5; rural_z += 4; rural_other -= 2; rural_nsdap -= 2; old_middle_z += 6; old_middle_dvp -= 2; old_middle_lvp -= 2; old_middle_other -= 4; new_middle_z += 2; new_middle_other -= 2; cvp_coalition_moderate = 1
 go-to: cvp_dnvp_menu
 
 <span style="color: #3E88B3;">민족주의자들</span>과 <span style="color: #385A38;">농본주의자들</span>은 당 강령에 자신들의 격렬한 반-<span style="color: #c00000;">사회주의</span> 입장을 반영하기 위해 영향력을 행사했습니다. 그러나 <span style="color: #FF7F00;">기독교 좌파</span>는 향후 협력을 위해 문을 열어두는 데 성공했습니다—비록 그 문이 매우 좁긴 하지만요.
@@ -293,7 +293,7 @@ go-to: cvp_dnvp_menu
 <span style="color: #7A3C00;">**NSDAP**</span> - 의심스러울 정도로 모호함
 
 @coalition_left
-on-arrival: cvp_dnvp_balance -= 10; cvp_left += 5; z_relation += 15; rural_z -= 4; rural_dnf += 2; rural_other += 4; old_middle_z -= 6; old_middle_dnf += 2; old_middle_other += 4; new_middle_z -= 4; new_middle_other += 4; workers_z += 3; workers_spd += 3; unemployed_z += 3; unemployed_spd += 3
+on-arrival: cvp_dnvp_balance -= 10; cvp_left += 5; z_relation += 15; rural_z -= 4; rural_dnf += 2; rural_other += 4; old_middle_z -= 6; old_middle_dnf += 2; old_middle_other += 4; new_middle_z -= 4; new_middle_other += 4; workers_z += 3; workers_spd += 3; unemployed_z += 3; unemployed_spd += 3; cvp_coalition_left = 1
 go-to: cvp_dnvp_menu
 
 <span style="color: #3E88B3;">민족주의자들</span>과 <span style="color: #385A38;">농본주의자들</span>은 당 강령에 자신들의 격렬한 반-<span style="color: #c00000;">사회주의</span> 입장을 반영하려 시도했습니다. 그러나 <span style="color: #FF7F00;">기독교 좌파</span>와 [+ z_leader +]는 향후 협력을 위해 문을 열어두는 데 성공했습니다.
