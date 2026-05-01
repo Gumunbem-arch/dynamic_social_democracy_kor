@@ -16,7 +16,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Elections, [+ month : month +] [+ year +]
+= [+ year +]년 [+ month : month +]선거
 
 
 작센 주 의회 선거가 지금 개최됩니다.
@@ -947,7 +947,7 @@ choose-if: mega_bourgeois_coalition_saxony >= 50 and true_bourgeois_coalition_sa
 unavailable-subtitle: [? if mega_bourgeois_coalition < 50: 반민주주의 정당들이 과반을 점하고 있어, 우리의 표는 의미가 없을 것입니다. ?][? if true_bourgeois_coalition_saxony >= 50: 그들에게는 우리의 각외 협력이 필요하지 않습니다. ?]
 on-arrival: saxony_toleration = 1; saxony_groko = 0; pro_republic += 2; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_spd = 0; saxony_right_2 = 0; saxony_nsdap = 0; saxony_spd_splinter = 0; saxony_soclib = 0; saxony_nsdap_maj = 0; saxony_kpd = 0; saxony_spd_maj = 0
 
-안타깝게도, 우리는 부르주아 정당들을 각외 협력으로 지원하는 처지로 밀려나고 말았습니다.
+안타깝게도, 우리는 부르주아 정당들을 묵인 협정으로 지원하는 처지로 밀려나고 말았습니다.
 [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>와 <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?][? if stegerwald_path: 그리고 [? if z_party_name != "CVP": <span style="color: #000000;">중앙당</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]?]로만 구성된 쉬크 내각이 다시 수립되었습니다.
 
 @far_right_coalition_saxony
