@@ -781,9 +781,9 @@ choose-if: (kpd_relation >= 25 and kpd_leader == "Conciliators") or (kpd_relatio
 unavailable-subtitle: 양당의 관계가 이미 너무나 악화되었습니다.
 on-arrival: red_saxony = 1; z_relation -= 4; ddp_relation -= 4; dvp_relation -= 4; lvp_relation -= 4; coup_progress += 3; hindenburg_angry += 30; rfb_militancy += 0.04; rfb_strength += 100; sa_strength += 40; sh_strength += 40; strife += 1; workers_spd += 3; workers_kpd += 3; unemployed_spd += 3; new_middle_spd -= 3; old_middle_spd -= 3; rural_spd -= 3; communist_coalition += 2; kpd_relation += 10; saxony_toleration = 0; saxony_groko = 0; saxony_joever = 0; saxony_spd = 0; saxony_right_2 = 0; saxony_nsdap = 0; saxony_spd_splinter = 0; saxony_soclib = 0; saxony_nsdap_maj = 0; saxony_kpd = 0; saxony_spd_maj = 0
 
-<span style="color: #c00000;">**Red**</span> Saxony is maintained.  The bourgeois parties hate us all the more, but their cries are ineffectual.  We will continue transforming the state into a stronghold of <span style="color: #c00000;">socialism</span>.
+<span style="color: #c00000;">**붉은**</span> 작센이 유지되었습니다. 부르주아 정당들은 우리를 더욱 증오하겠지만, 그들의 비난은 무력할 뿐입니다. 우리는 계속해서 이 국가를 <span style="color: #c00000;">사회주의</span>의 보루로 변모시켜 나갈 것입니다.
 
-[? if coup_progress >= 8: Amidst our electoral victory, a far-right coup attempt is rumored to be close at hand.  Proceed with caution. ?]
+[? if coup_progress >= 8: 우리의 선거 승리 와중에, 극우 쿠데타 시도가 임박했다는 소문이 돌고 있습니다. 신중하게 진행하십시오. ?]
 
 @continue_borko_saxony
 title: 부르주아 정당들이 의회 내 과반 의석을 유지했습니다.
